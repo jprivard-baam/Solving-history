@@ -23,9 +23,11 @@ export function switchLocaleHref(current: Locale, path: string): string {
 }
 
 export function pathWithoutLocale(pathname: string): string {
-  if (pathname === "/fr" || pathname.startsWith("/fr/")) {
-    const stripped = pathname.slice(3);
-    return stripped.length === 0 ? "/" : stripped;
+  for (const prefix of ["/fr", "/en"] as const) {
+    if (pathname === prefix || pathname.startsWith(`${prefix}/`)) {
+      const stripped = pathname.slice(prefix.length);
+      return stripped.length === 0 ? "/" : stripped;
+    }
   }
   return pathname || "/";
 }

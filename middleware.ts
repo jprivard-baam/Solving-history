@@ -2,6 +2,11 @@ import { NextResponse, type NextRequest } from "next/server";
 
 const FILE = /\.[^/]+$/;
 
+function withLocale(response: NextResponse, locale: "en" | "fr") {
+  response.headers.set("x-locale", locale);
+  return response;
+}
+
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
@@ -20,24 +25,17 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(new URL("/fr/help", request.url));
   }
 
+  if (pathname === "/fr" || pathname.startsWith("/fr/")) {
+    return withLocale(NextResponse.next(), "fr");
+  }
+
   if (pathname === "/en" || pathname.startsWith("/en/")) {
-    const stripped = pathname.replace(/^\/en/, "") || "/";
-    return NextResponse.redirect(new URL(stripped, request.url));
+    return withLocale(NextResponse.next(), "en");
   }
 
-  const locale = pathname === "/fr" || pathname.startsWith("/fr/") ? "fr" : "en";
-
-  if (locale === "en") {
-    const url = request.nextUrl.clone();
-    url.pathname = pathname === "/" ? "/en" : `/en${pathname}`;
-    const response = NextResponse.rewrite(url);
-    response.headers.set("x-locale", "en");
-    return response;
-  }
-
-  const response = NextResponse.next();
-  response.headers.set("x-locale", "fr");
-  return response;
+  const url = request.nextUrl.clone();
+  url.pathname = pathname === "/" ? "/en" : `/en${pathname}`;
+  return withLocale(NextResponse.rewrite(url), "en");
 }
 
 export const config = {
