@@ -97,6 +97,12 @@ export type UiCopy = {
     line: string;
     robots: string;
   };
+  notFound: {
+    kicker: string;
+    title: string;
+    body: string;
+    back: string;
+  };
 };
 
 export type Dictionary = UiCopy & {
