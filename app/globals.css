@@ -69,6 +69,17 @@ a {
   cursor: pointer;
 }
 
+.atlas-pin-icon {
+  background: none !important;
+  border: none !important;
+}
+
+.atlas-pin-icon img {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
 .leaflet-popup-content-wrapper,
 .leaflet-popup-tip {
   background: #1c1812;

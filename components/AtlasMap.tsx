@@ -4,8 +4,16 @@ import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import Image from "next/image";
 import Link from "next/link";
-import { CircleMarker, MapContainer, TileLayer, useMap } from "react-leaflet";
+import L from "leaflet";
+import { MapContainer, Marker, TileLayer, useMap } from "react-leaflet";
 import { CARTO_ATTRIBUTION, CARTO_DARK_URL } from "@/lib/dossiers";
+
+const atlasPinIcon = L.divIcon({
+  className: "atlas-pin-icon",
+  html: '<img src="/mark-pin.svg" width="32" height="32" alt="" />',
+  iconSize: [32, 32],
+  iconAnchor: [16, 16],
+});
 
 export type AtlasPin = {
   id: string;
@@ -160,27 +168,18 @@ export function AtlasMap({
       <AtlasMapEffects
         focus={selected ? { lat: selected.lat, lng: selected.lng } : null}
       />
-      {pins.map((pin) => {
-        const isSelected = pin.id === selectedId;
-        return (
-          <CircleMarker
-            key={pin.id}
-            center={[pin.lat, pin.lng]}
-            radius={isSelected ? 11 : 8}
-            pathOptions={{
-              color: isSelected ? "#eadcc4" : "#c9a44a",
-              fillColor: "#c9a44a",
-              fillOpacity: isSelected ? 1 : 0.92,
-              weight: isSelected ? 2 : 1,
-            }}
-            eventHandlers={{
-              click: () => {
-                onPinClick(pin.id);
-              },
-            }}
-          />
-        );
-      })}
+      {pins.map((pin) => (
+        <Marker
+          key={pin.id}
+          position={[pin.lat, pin.lng]}
+          icon={atlasPinIcon}
+          eventHandlers={{
+            click: () => {
+              onPinClick(pin.id);
+            },
+          }}
+        />
+      ))}
       {selected ? (
         <PinLaidCard
           pin={selected}

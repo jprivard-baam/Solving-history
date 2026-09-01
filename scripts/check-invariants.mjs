@@ -52,6 +52,23 @@ if (!atlasMap.includes("latLngToContainerPoint") || !atlasMap.includes("createPo
 if (!atlasMap.includes("atlas-summary-lede") || !atlasMap.includes("openLabel")) {
   errors.push("Laid card must be the summary teaser, not a title+link stub");
 }
+if (!atlasMap.includes("/mark-pin.svg") || !atlasMap.includes("iconAnchor")) {
+  errors.push("Atlas pins must use mark-pin.svg as a 32×32 centered divIcon");
+}
+if (atlasMap.includes("CircleMarker") || atlasMap.includes("teardrop")) {
+  errors.push("Atlas pins must not be CircleMarker or a teardrop");
+}
+
+const header = readFileSync(join(root, "components/SiteHeader.tsx"), "utf8");
+if (!header.includes('width="28"') || !header.includes('r="9"') || !header.includes("gap-3")) {
+  errors.push("Header mark must be the 28px borne left of the wordmark");
+}
+for (const file of ["public/favicon.svg", "public/mark-borne.svg", "public/mark-pin.svg"]) {
+  const svg = readFileSync(join(root, file), "utf8");
+  if (!svg.includes('cx="16"') || !svg.includes('cy="16"') || !svg.includes("#c9a44a")) {
+    errors.push(`Locked mark missing in ${file}`);
+  }
+}
 const atlasWorkspace = readFileSync(join(root, "components/AtlasWorkspace.tsx"), "utf8");
 if (atlasWorkspace.includes("absolute bottom-3") || atlasWorkspace.includes("z-[800]")) {
   errors.push("Summary card must not float in a page corner");
