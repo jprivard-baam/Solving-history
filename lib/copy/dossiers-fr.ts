@@ -24,14 +24,14 @@ const CARD_HOOKS: Record<DossierId, string> = {
   "serapeum-saqqara": "Vingt-quatre cuves, dès Amasis",
 };
 const LIST_BLURB: Record<DossierId, string> = {
-  baalbek: "Trois pierres géantes sont dans un mur romain. Personne ne les a jamais pesées. Elles sont encore en place.",
-  "unfinished-obelisk-aswan": "On a commencé à tailler une immense aiguille de pierre dans la montagne. Une fissure est apparue, et on s’est arrêté. Elle est encore prise dans le roc.",
-  sacsayhuaman: "Les murs zigzaguent. Ils sont taillés dans le calcaire de la colline, pas dans la pierre volcanique sombre d’une autre carrière.",
-  pumapunku: "Ils ont taillé la pierre en forme de H. Ces blocs pèsent environ 600 kg. La plateforme a été faite vers 580–710.",
-  "gobekli-tepe": "Des gens qui chassaient et cueillaient encore ont dressé d’immenses pierres en forme de T. L’âge qu’on donne au lieu vient du plâtre, pas des pierres en T.",
-  "great-pyramid-khufu": "C’est le tombeau d’un roi. Ce qui étonne, c’est le granite dur posé très haut à l’intérieur — pas une histoire d’esclaves.",
-  "antikythera-mechanism": "Une machine de bronze d’une trentaine de roues, trouvée dans une épave vers 60 AEC. On n’en a qu’un seul exemplaire.",
-  "serapeum-saqqara": "Sous terre, vingt-quatre énormes caisses de pierre, vers 550, au temps d’Amasis.",
+  baalbek: "Trois pierres si grandes qu’elles font le mur. Elles sont encore là, l’une à côté de l’autre.",
+  "unfinished-obelisk-aswan": "Ils ont taillé une immense aiguille de pierre, puis l’ont laissée dans la montagne. Elle s’est fendue. Elle est encore prise dans le roc.",
+  sacsayhuaman: "Le mur ne va pas droit — il zigzague. D’énormes pierres se penchent l’une contre l’autre et tiennent, sans rien au milieu.",
+  pumapunku: "Ils ont taillé la pierre en forme de H. On dirait que les morceaux doivent s’emboîter.",
+  "gobekli-tepe": "Avant même de planter un champ, des gens ont dressé d’immenses pierres en forme de T. Ils chassaient encore leur nourriture.",
+  "great-pyramid-khufu": "Un tombeau grand comme une montagne de pierre. Dedans, ils ont posé du granite, très haut.",
+  "antikythera-mechanism": "De la mer, une machine de bronze d’une trentaine de petites roues, comme l’intérieur d’une horloge. On n’en a qu’une seule.",
+  "serapeum-saqqara": "Sous terre, un long couloir sombre. Dedans, vingt-quatre énormes caisses de pierre, posées dans le noir.",
 };
 
 const LAYER_TITLES = [
