@@ -96,19 +96,23 @@ if (/yearLabel[^}]*500–950/.test(pumapunkuFr) || /yearLabel[^}]*500-950/.test(
 }
 
 const pumapunkuEn = readFileSync(join(root, "lib/copy/dossiers-en.ts"), "utf8");
-const pumapunkuEnLede = pumapunkuEn.match(/pumapunku:[\s\S]*?lede: "([^"]+)"/);
-if (!pumapunkuEnLede) {
-  errors.push("Missing Pumapunku EN lede");
+const pumapunkuEnBlock = pumapunkuEn.split("pumapunku:")[1]?.split('"gobekli-tepe"')[0] ?? "";
+if (!pumapunkuEnBlock) {
+  errors.push("Missing Pumapunku EN block");
 } else {
-  if (/500[–-]950/.test(pumapunkuEnLede[1])) {
-    errors.push("Pumapunku EN lede must not use 500–950");
-  }
-  if (!/580[–-]710/.test(pumapunkuEnLede[1])) {
+  if (!/lede: "[^"]*580[–-]710/.test(pumapunkuEnBlock)) {
     errors.push("Pumapunku EN lede must lock Marsh 2023 ~580–710");
   }
-}
-if (!/cardDate: "c\. 580[–-]710 CE"/.test(pumapunkuEn)) {
-  errors.push("Pumapunku EN cardDate must stay 580–710");
+  if (!/cardDate: "c\. 580[–-]710 CE"/.test(pumapunkuEnBlock)) {
+    errors.push("Pumapunku EN cardDate must stay 580–710");
+  }
+  const visibleWithoutVranich = pumapunkuEnBlock
+    .split("\n")
+    .filter((line) => !/Vranich, Alexei/.test(line))
+    .join("\n");
+  if (/500[–-]950/.test(visibleWithoutVranich)) {
+    errors.push("Pumapunku EN visible copy must not use 500–950");
+  }
 }
 
 const publicUi = [
