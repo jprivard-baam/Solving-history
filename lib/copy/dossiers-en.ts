@@ -4,7 +4,7 @@ import type { DossierId } from "@/lib/dossiers";
 export const dossiersEn: Record<DossierId, DossierCopy> = {
   baalbek: {
     title: "Baalbek",
-    listBlurb: "Three giant stones sit in a Roman wall. Nobody has ever weighed them. They are still in place."
+    listBlurb: "Three stones so big they make the wall. They are still there, one beside the other."
     cardHook: "Three blocks of ~800 t, still in the wall",
     cardDate: "1st c. CE",
     place: "Heliopolis, Lebanon",
@@ -67,7 +67,7 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
   },
   "unfinished-obelisk-aswan": {
     title: "Unfinished obelisk of Aswan",
-    listBlurb: "They started cutting a huge stone needle out of the mountain. A crack appeared, and they stopped. It is still stuck in the rock."
+    listBlurb: "They carved a giant needle of stone, then left it in the mountain. It cracked. It is still stuck in the rock."
     cardHook: "41.75 m — still in the bed",
     cardDate: "Date open",
     place: "Aswan granite quarries, Egypt",
@@ -129,7 +129,7 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
   },
   sacsayhuaman: {
     title: "Sacsayhuamán",
-    listBlurb: "The walls zigzag. They are cut from the limestone of the hill itself, not from the dark volcanic stone of another quarry."
+    listBlurb: "The wall does not go straight \u2014 it zigzags. Huge stones lean into each other and hold, with nothing in between."
     cardHook: "Limestone. Blocks of ~150 t",
     cardDate: "15th c. CE",
     place: "Cusco, Peru",
@@ -191,7 +191,7 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
   },
   pumapunku: {
     title: "Pumapunku",
-    listBlurb: "They cut stone into the shape of an H. Those blocks weigh about 600 kg. The platform was built around 580\u2013710."
+    listBlurb: "They cut stone into the letter H. The pieces look as if they should lock together."
     cardHook: "H-blocks of ~600 kg",
     cardDate: "c. 580–710 CE",
     place: "Tiwanaku, Bolivia",
@@ -252,7 +252,7 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
   },
   "gobekli-tepe": {
     title: "Göbekli Tepe",
-    listBlurb: "People who still hunted and gathered stood up giant stones shaped like a T. The age we give the site comes from the plaster, not from the T-stones."
+    listBlurb: "Before anyone planted a field, people stood up giant stones shaped like a T. They were still hunting their food."
     cardHook: "Carbon dates the plaster, not the T-pillars",
     cardDate: "c. 9600–8000 BCE",
     place: "Şanlıurfa, Türkiye",
@@ -314,7 +314,7 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
   },
   "great-pyramid-khufu": {
     title: "Great Pyramid of Khufu",
-    listBlurb: "This is a king\u2019s tomb. What is strange is the hard granite placed high up inside \u2014 not a story about slaves."
+    listBlurb: "A tomb as big as a mountain of stone. Inside, they put granite very high up."
     cardHook: "Bias −3.9′. Granite of ~50 t at 43 m",
     cardDate: "c. 2580–2560 BCE",
     place: "Giza, Egypt",
@@ -376,7 +376,7 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
   },
   "antikythera-mechanism": {
     title: "Antikythera Mechanism",
-    listBlurb: "A bronze machine with about thirty gears, found in a wreck around 60 BCE. We have only this one."
+    listBlurb: "From the sea, a bronze machine with about thirty little wheels, like the inside of a clock. We have only this one."
     cardHook: "Thirty gears. One surviving example",
     cardDate: "Wreck c. 60 BCE",
     place: "Antikythera wreck, Aegean",
@@ -438,7 +438,7 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
   },
   "serapeum-saqqara": {
     title: "Serapeum of Saqqara",
-    listBlurb: "Under the ground sit twenty-four huge stone chests, from around 550, in the time of Amasis."
+    listBlurb: "Under the ground, a long dark hallway. In it, twenty-four huge stone boxes, sitting in the dark."
     cardHook: "Twenty-four vats, from Amasis",
     cardDate: "Greater Vaults from Amasis, c. 550 BCE",
     place: "Saqqara, Egypt",
