@@ -65,6 +65,10 @@ a {
   width: 100%;
 }
 
+.atlas-map .leaflet-tile-pane {
+  filter: invert(1) hue-rotate(180deg) brightness(0.88) contrast(1.05) saturate(0.25);
+}
+
 .leaflet-interactive {
   cursor: pointer;
 }
