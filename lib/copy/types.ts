@@ -32,6 +32,7 @@ export type UiCopy = {
     atlas: string;
     mission: string;
     method: string;
+    shop: string;
     help: string;
   };
   language: {
@@ -61,6 +62,11 @@ export type UiCopy = {
     commonLabel: string;
     advancedLabel: string;
     layers: { title: string; body: string }[];
+  };
+  shop: {
+    kicker: string;
+    title: string;
+    intro: string;
   };
   help: {
     kicker: string;
