@@ -24,7 +24,7 @@ export const uiEn: UiCopy = {
     title: "Atlas",
     intro:
       "A contradiction can not exist in reality. Not in part, nor in whole.",
-    lede: "A dark map of measured problems. Each pin is a dossier. Masses that were never weighed stay marked estimated. Dates say what they actually date.",
+    lede: "To find an inconsistency, choose from the list or search the map.",
     openDossier: "Open dossier",
     closeCard: "Close",
     listLabel: "Dossier list",
@@ -70,22 +70,31 @@ export const uiEn: UiCopy = {
     ],
   },
   shop: {
-    kicker: "Temporary page",
+    kicker: "Open, without a till",
     title: "Boutique",
-    intro:
-      "This page is temporary. Nothing is for sale. No checkout.",
+    description:
+      "The boutique is open. Nothing is for sale. No cart, no checkout.",
+    intro: "This page is open. Nothing on it is for sale.",
+    body: [
+      "The boutique is a room in the atlas, not a cart. There is no inventory here, no price, no processor. The word stands in the navigation so that it is not a disguise for a checkout.",
+      "When an object belongs on this page, it will be named here. It will not be sold through this page until a till exists. That till does not exist.",
+      "Money, if it is to help the work, is not a product. It has a path on Help us. That path does not collect a payment either.",
+    ],
+    toHelp: "Help us",
   },
   help: {
-    kicker: "Three paths, no storefront",
+    kicker: "Three paths, no till",
     title: "Help us",
-    intro: "The atlas is unpublished. Help is not a shop. Three paths are open as intention. None of them processes a payment.",
+    description:
+      "Three ways to help an unpublished atlas. Share a file. Bring data or a specialty. Help financially — this path does not take a payment.",
+    intro: "The atlas is unpublished. Help is not a purchase. Three paths are open. None of them takes a payment.",
     paths: [
       {
         id: "share",
-        title: "Share the mystery",
+        title: "Share",
         body: [
           "A site, a block, a crack, a photograph with a scale, a measurement taken on the ground. Not a finished theory. The file.",
-          "When correspondence opens, this path will carry an address. Until then, keep the notes: place, datum, how the number was obtained, and what remains estimated.",
+          "Until this path carries an address, keep the notes: place, how the figure was obtained, and what remains estimated.",
         ],
       },
       {
@@ -93,15 +102,15 @@ export const uiEn: UiCopy = {
         title: "Data + specialty",
         body: [
           "Petrography, epigraphy, photogrammetry, geodesy, experimental archaeology, the languages of the primary sources. A specialty is useful when it can correct a card.",
-          "The atlas would rather have one weighed density than another legend. If you work in a field that can tighten a mass, a date, or a misnamed stone, that is this path.",
+          "The atlas would rather have one weighed density than another legend. If a field can tighten a mass, a date, or a misnamed stone, that is this path.",
         ],
       },
       {
         id: "finance",
         title: "Help financially",
         body: [
-          "There is no checkout on this site. No cart, no processor, no SKU, no shop. /shop is sent to this page on purpose.",
-          "Financial help, when it exists, will be listed here as an address or a public statement — not as a product. Until then this path is a placeholder, not a payment.",
+          "There is no checkout on this site. No cart, no processor, no product. The Boutique is a page without a till. This path is not a second shop.",
+          "When financial help can exist without turning the atlas into a cart, it will be listed here as an address or a public statement — not as a SKU. Until then this path names an intention. It does not collect a payment.",
         ],
       },
     ],
