@@ -11,7 +11,8 @@ export const uiEn: UiCopy = {
     atlas: "Atlas",
     mission: "Mission",
     method: "Method",
-    help: "Help",
+    shop: "Boutique",
+    help: "Help us",
   },
   language: {
     en: "EN",
@@ -68,9 +69,15 @@ export const uiEn: UiCopy = {
       },
     ],
   },
+  shop: {
+    kicker: "Not a cart",
+    title: "Boutique",
+    intro:
+      "Nothing is for sale yet. No checkout. When something can sit here without eating the atlas, it will.",
+  },
   help: {
     kicker: "Three paths, no storefront",
-    title: "Help",
+    title: "Help us",
     intro: "The atlas is unpublished. Help is not a shop. Three paths are open as intention. None of them processes a payment.",
     paths: [
       {
@@ -109,7 +116,7 @@ export const uiEn: UiCopy = {
   },
   pathsTitle: "Three paths",
   footer: {
-    line: "Solving History — unpublished atlas. Eight dossiers. No shop.",
+    line: "Solving History — unpublished atlas. Eight dossiers. Not live.",
     robots: "robots: noindex, nofollow",
   },
 };
