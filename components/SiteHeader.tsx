@@ -9,7 +9,7 @@ const navHrefs: Record<(typeof navKeys)[number], string> = {
   atlas: "/",
   mission: "/mission",
   method: "/method",
-  shop: "/shop",
+  shop: "/boutique",
   help: "/help",
 };
 
