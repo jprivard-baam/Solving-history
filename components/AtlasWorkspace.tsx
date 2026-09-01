@@ -89,9 +89,9 @@ export function AtlasWorkspace({
 
   return (
     <section className="flex min-h-0 flex-1 flex-col">
-      <div className="border-b border-rule px-4 py-6 sm:px-6 lg:hidden">
-        <h1 className="font-serif text-3xl uppercase tracking-[0.12em] text-gold sm:text-4xl">{title}</h1>
-        <p className="font-serif mt-4 max-w-2xl text-lg font-normal italic leading-relaxed text-ink">
+      <div className="border-b border-rule px-4 py-8 sm:px-6 lg:hidden">
+        <h1 className="font-serif text-4xl uppercase tracking-[0.12em] text-gold">{title}</h1>
+        <p className="font-serif mt-6 max-w-2xl text-lg font-normal italic leading-relaxed text-ink">
           {intro}
         </p>
         <div className="paper-rule my-4 max-w-2xl" />
@@ -105,9 +105,9 @@ export function AtlasWorkspace({
           className="flex max-h-[min(46svh,24rem)] min-h-0 w-full flex-col border-b border-rule bg-paper lg:max-h-none lg:w-[min(26rem,38%)] lg:border-b-0 lg:border-r"
           aria-label={listLabel}
         >
-          <div className="hidden border-b border-rule px-5 py-6 lg:block">
-            <h1 className="font-serif text-3xl uppercase tracking-[0.12em] text-gold sm:text-4xl">{title}</h1>
-            <p className="font-serif mt-4 max-w-2xl text-lg font-normal italic leading-relaxed text-ink">
+          <div className="hidden border-b border-rule px-5 py-8 lg:block">
+            <h1 className="font-serif text-4xl uppercase tracking-[0.12em] text-gold">{title}</h1>
+            <p className="font-serif mt-6 max-w-2xl text-lg font-normal italic leading-relaxed text-ink">
               {intro}
             </p>
             <div className="paper-rule my-4" />
