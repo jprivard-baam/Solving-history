@@ -95,6 +95,33 @@ if (/yearLabel[^}]*500–950/.test(pumapunkuFr) || /yearLabel[^}]*500-950/.test(
   errors.push("Pumapunku FR yearLabel must not be 500–950");
 }
 
+const pumapunkuEn = readFileSync(join(root, "lib/copy/dossiers-en.ts"), "utf8");
+const pumapunkuEnLede = pumapunkuEn.match(/pumapunku:[\s\S]*?lede: "([^"]+)"/);
+if (!pumapunkuEnLede) {
+  errors.push("Missing Pumapunku EN lede");
+} else {
+  if (/500[–-]950/.test(pumapunkuEnLede[1])) {
+    errors.push("Pumapunku EN lede must not use 500–950");
+  }
+  if (!/580[–-]710/.test(pumapunkuEnLede[1])) {
+    errors.push("Pumapunku EN lede must lock Marsh 2023 ~580–710");
+  }
+}
+if (!/cardDate: "c\. 580[–-]710 CE"/.test(pumapunkuEn)) {
+  errors.push("Pumapunku EN cardDate must stay 580–710");
+}
+
+const publicUi = [
+  "components/MethodLayers.tsx",
+  "components/FrResearchExtras.tsx",
+  "app/[locale]/dossier/[id]/page.tsx",
+].map((f) => readFileSync(join(root, f), "utf8")).join("\n");
+for (const key of ["hearsay", "jsonFields"]) {
+  if (publicUi.includes(key)) {
+    errors.push(`Public dossier UI must not render schema key ${key}`);
+  }
+}
+
 const serapeumFr = readFileSync(
   join(root, "lib/copy/fr-json/serapeum-saqqara-fr.json"),
   "utf8",

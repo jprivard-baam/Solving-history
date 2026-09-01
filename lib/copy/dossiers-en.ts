@@ -187,7 +187,7 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
     title: "Pumapunku",
     cardDate: "c. 580–710 CE",
     place: "Tiwanaku, Bolivia",
-    lede: "A stepped platform of red sandstone and finely cut andesite at Tiwanaku. Marsh 2023 places the construction of Pumapunku around 580–710 CE — not the popular 500–950 spread. The famous H-blocks are on the order of 600 kg. The photograph on this card is the H-block wall, not a stray fragment.",
+    lede: "A stepped platform of red sandstone and finely cut andesite at Tiwanaku. Marsh 2023 places the construction of Pumapunku around 580–710 CE. The famous H-blocks are on the order of 600 kg. The photograph on this card is the H-block wall, not a stray fragment.",
     imageAlt: "Wall of interlocking H-shaped andesite blocks at Pumapunku",
     imageCaption:
       "Pumapunku, H-blocks in a wall. Individual H-blocks ~600 kg. Construction window: Marsh 2023, ~580–710 CE.",
@@ -207,11 +207,11 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
         title: "Layer 2 — The date",
         common: [
           "The construction of Pumapunku belongs to Tiwanaku in the later first millennium CE. Marsh and colleagues (2023) model the platform at about 580–710 CE.",
-          "That window is not 500–950. The wider range is a popular smear, not the Bayesian construction span.",
+          "That window is the Bayesian construction span of the platform, not a smear of later occupation, offerings, or collapse.",
         ],
         advanced: [
           "Marsh, Vranich, Blom et al., 2023 (PLOS ONE): Bayesian models of the Tiwanaku radiocarbon set. Pumapunku construction begins ~580 CE and ends ~710 CE.",
-          "Never write 500–950 as the construction date of this platform. That spread confuses site-wide occupation, later offerings, and collapse with the building of the monument.",
+          "Do not take a site-wide occupation span, later offerings, or collapse as the building date of this monument.",
         ],
       },
       {
@@ -232,13 +232,14 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
           "Once the date and the kilograms are corrected, ‘lost high technology’ has to explain a Tiwanaku workshop, not a factory from another age.",
         ],
         advanced: [
-          "The residue is the surface finish and the modular grammar — worth studying — not a 500–950 occupation date treated as a construction date, and not tonne-scale H-blocks.",
+          "The residue is the surface finish and the modular grammar — worth studying — not a wide occupation span treated as a construction date, and not tonne-scale H-blocks.",
           "Hancock-style readings that depend on those two inflations are out of this dossier for the same reason: they are not on the stones.",
         ],
       },
     ],
     notes: [
-      "Marsh 2023: construction ~580–710 CE. Never 500–950 as the platform date.",
+      "Marsh 2023: construction ~580–710 CE.",
+      "Vranich, Alexei. “The construction and reconstruction of ritual space at Tiwanaku, Bolivia (AD 500–1000).” Journal of Field Archaeology 31.2, 2006.",
       "H-blocks ~600 kg.",
       "Image: H-blocks in wall, not a isolated prop.",
     ],
