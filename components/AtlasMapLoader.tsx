@@ -18,6 +18,8 @@ const AtlasMap = dynamic(
 export function AtlasMapLoader(props: {
   pins: AtlasPin[];
   selectedId: string | null;
+  openId: string | null;
+  flashId: string | null;
   onPinClick: (id: string) => void;
   onClose: () => void;
   openLabel: string;
