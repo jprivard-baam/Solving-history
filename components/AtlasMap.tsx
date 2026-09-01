@@ -8,13 +8,6 @@ import L from "leaflet";
 import { MapContainer, Marker, TileLayer, useMap } from "react-leaflet";
 import { CARTO_ATTRIBUTION, CARTO_DARK_URL } from "@/lib/dossiers";
 
-const atlasPinIcon = L.divIcon({
-  className: "atlas-pin-icon",
-  html: '<img src="/mark-pin.svg" width="32" height="32" alt="" />',
-  iconSize: [32, 32],
-  iconAnchor: [16, 12],
-});
-
 export type AtlasPin = {
   id: string;
   lat: number;
@@ -138,9 +131,20 @@ function PinLaidCard({
   );
 }
 
+function pinIcon(flash: boolean) {
+  return L.divIcon({
+    className: flash ? "atlas-pin-icon atlas-pin-flash" : "atlas-pin-icon",
+    html: '<img src="/mark-pin.svg" width="32" height="32" alt="" />',
+    iconSize: [32, 32],
+    iconAnchor: [16, 16],
+  });
+}
+
 export function AtlasMap({
   pins,
   selectedId,
+  openId,
+  flashId,
   onPinClick,
   onClose,
   openLabel,
@@ -148,12 +152,15 @@ export function AtlasMap({
 }: {
   pins: AtlasPin[];
   selectedId: string | null;
+  openId: string | null;
+  flashId: string | null;
   onPinClick: (id: string) => void;
   onClose: () => void;
   openLabel: string;
   closeLabel: string;
 }) {
-  const selected = pins.find((pin) => pin.id === selectedId) ?? null;
+  const focused = pins.find((pin) => pin.id === selectedId) ?? null;
+  const opened = pins.find((pin) => pin.id === openId) ?? null;
 
   return (
     <MapContainer
@@ -166,13 +173,13 @@ export function AtlasMap({
     >
       <TileLayer url={CARTO_DARK_URL} attribution={CARTO_ATTRIBUTION} />
       <AtlasMapEffects
-        focus={selected ? { lat: selected.lat, lng: selected.lng } : null}
+        focus={focused ? { lat: focused.lat, lng: focused.lng } : null}
       />
       {pins.map((pin) => (
         <Marker
           key={pin.id}
           position={[pin.lat, pin.lng]}
-          icon={atlasPinIcon}
+          icon={pinIcon(pin.id === flashId)}
           eventHandlers={{
             click: () => {
               onPinClick(pin.id);
@@ -180,9 +187,9 @@ export function AtlasMap({
           }}
         />
       ))}
-      {selected ? (
+      {opened ? (
         <PinLaidCard
-          pin={selected}
+          pin={opened}
           openLabel={openLabel}
           closeLabel={closeLabel}
           onClose={onClose}
