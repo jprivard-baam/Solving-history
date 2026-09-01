@@ -95,7 +95,7 @@ export const uiFr: UiCopy = {
         title: "Partager",
         body: [
           "Un site, un bloc, une fissure, une photographie avec une échelle, une mesure prise au sol. Pas une théorie finie. Le dossier.",
-          "Une rumeur sans lieu n’est pas un dossier. Le folklore n’est pas interdit ; il sort du pion tant qu’il ne peut pas être vérifié.",
+          "Une rumeur sans lieu n’est pas un dossier.",
           "Tant que ce chemin ne porte pas d’adresse, gardez les notes : le lieu, comment le chiffre a été obtenu, et ce qui reste estimé.",
         ],
       },
@@ -103,7 +103,7 @@ export const uiFr: UiCopy = {
         id: "data",
         title: "Données + spécialité",
         body: [
-          "Pétrographie, épigraphie, photogrammétrie, géodésie, archéologie expérimentale, langues des sources premières. Une spécialité sert quand elle peut corriger une fiche. Ce n’est pas une audience.",
+          "Pétrographie, épigraphie, photogrammétrie, géodésie, archéologie expérimentale, langues des sources premières. Une spécialité sert quand elle peut corriger une fiche.",
           "L’atlas préfère une densité pesée à une légende de plus. Si un champ peut resserrer une masse, une date ou une pierre mal nommée, c’est ce chemin.",
         ],
       },
