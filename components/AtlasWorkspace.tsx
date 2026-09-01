@@ -93,7 +93,7 @@ export function AtlasWorkspace({
         <p className="text-xs uppercase tracking-[0.22em] text-gold-dim">
           {kicker}
         </p>
-        <h1 className="font-display mt-2 text-4xl text-gold">{title}</h1>
+        <h1 className="mt-2 text-sm uppercase tracking-[0.12em] text-gold">{title}</h1>
         <p className="font-serif mt-4 max-w-2xl text-lg font-normal italic leading-relaxed text-ink">
           {intro}
         </p>
@@ -112,7 +112,7 @@ export function AtlasWorkspace({
             <p className="text-xs uppercase tracking-[0.22em] text-gold-dim">
               {kicker}
             </p>
-            <h1 className="font-display mt-2 text-4xl text-gold">{title}</h1>
+            <h1 className="mt-2 text-sm uppercase tracking-[0.12em] text-gold">{title}</h1>
             <p className="font-serif mt-4 max-w-2xl text-lg font-normal italic leading-relaxed text-ink">
               {intro}
             </p>
