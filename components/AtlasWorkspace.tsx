@@ -148,10 +148,7 @@ export function AtlasWorkspace({
                       />
                     </span>
                     <span className="block p-3">
-                      <span className="block text-[0.7rem] uppercase tracking-[0.2em] text-gold-dim">
-                        {card.date}
-                      </span>
-                      <span className="font-display mt-1 block text-xl leading-tight text-gold">
+                      <span className="font-display block text-xl leading-tight text-gold">
                         {card.title}
                       </span>
                       {card.listBlurb ? (
