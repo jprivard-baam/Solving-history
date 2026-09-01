@@ -23,6 +23,17 @@ const CARD_HOOKS: Record<DossierId, string> = {
   "antikythera-mechanism": "Trente engrenages. Un seul exemplaire",
   "serapeum-saqqara": "Vingt-quatre cuves, dès Amasis",
 };
+const LIST_BLURB: Record<DossierId, string> = {
+  baalbek: "Trilithon dans un mur julio-claudien. Masses estimées, jamais pesées.",
+  "unfinished-obelisk-aswan": "Encore dans le banc de granite, abandonné à la fissure. Date ouverte.",
+  sacsayhuaman: "Zigzags cyclopéens en calcaire local. L’andésite est une autre carrière.",
+  pumapunku: "Plateforme vers 580–710. Les blocs en H sont de l’ordre de 600 kg.",
+  "gobekli-tepe": "Chasseurs-cueilleurs, piliers en T. La date est le plâtre, pas les pierres.",
+  "great-pyramid-khufu": "Tombeau de la IVe dynastie. L’an 26 est dans un journal. La question ouverte est le granite, pas les esclaves.",
+  "antikythera-mechanism": "Un calculateur, une épave vers 60 AEC. Une trentaine de roues. Pas de second exemplaire.",
+  "serapeum-saqqara": "Grands souterrains dès Amasis, vers 550. Vingt-quatre caisses. Pas une fiche Nouvel Empire.",
+};
+
 const LAYER_TITLES = [
   uiFr.methodPage.layers[0].title,
   uiFr.methodPage.layers[1].title,
@@ -44,6 +55,7 @@ const payloads = {
 function fromPayload(p: FrResearchPayload, atlasId: DossierId): DossierCopy {
   return {
     title: p.name,
+    listBlurb: LIST_BLURB[atlasId],
     cardHook: CARD_HOOKS[atlasId],
     cardDate: p.yearLabel,
     place: p.place,
