@@ -1,0 +1,145 @@
+{
+  "id": "sacsayhuaman",
+  "order": 3,
+  "name": "Sacsayhuamán",
+  "place": "Colline au nord de Cusco, région de Cusco, Pérou",
+  "yearLabel": "Occupation Killke dès ≈ 900 n.è. (céramique, Rowe 1944 / Bauer) ; murailles cyclopéennes impériales, XVe s. (Pachacútec–Túpac Yupanqui–Huayna Cápac, chronique)",
+  "yearSort": 1450,
+  "lat": -13.50678,
+  "lng": -71.98024,
+  "coordSource": "OSM way 83130621",
+  "chips": [
+    "materiau",
+    "geste",
+    "organisation",
+    "precision",
+    "durabilite"
+  ],
+  "photo": {
+    "file": "Sacsayhuamán,_Cusco,_Perú,_2015-07-31,_DD_05.JPG",
+    "alt": "Coins des murailles en zigzag de calcaire à Sacsayhuamán, Cusco — pas le Rodadero.",
+    "credit": "Diego Delso, delso.photo, 31 juillet 2015. Coins des murailles en zigzag, Sacsayhuamán.",
+    "licence": "CC BY-SA 4.0"
+  },
+  "common": "À Sacsayhuamán, trois terrasses de calcaire local s’accrochent en zigzag au-dessus de Cusco. Les plus gros blocs, à l’est, font de l’ordre de trois mètres sur quatre sur cinq : une centaine et demie de tonnes si on les compte comme des caisses, moins si on compte la pierre vraiment là. On les a taillés au galet, ajustés à l’essai, sans mortier. En face, le Rodadero n’est pas un mur : c’est un dôme de diorite que la géologie a poli. La question n’est pas qui d’autre que l’Inca. C’est comment on a fait glisser soixante mètres cubes, et ce que la colline était déjà avant Pachacútec.",
+  "advanced": "Lithologie d’abord : zigzag = Yuncaypata ; Rodadero = stock dioritique tertiaire ; Rumiqolqa = andésite du Cusco, 35 km, autre dossier. Protzen a levé une séquence de pose (lits taillés dans l’assise déjà posée, claveaux par l’avant) et reproduit le fit sur de l’andésite de quelques dizaines de kilos ; il n’a pas halé 150 t de calcaire. CENEPRED a enfin des cotes de chantier (2,5 m d’épaisseur, 3 × 4 × 5 m à l’est, drains 12 × 8 cm) et montre que l’eau, pas le séisme, ouvre les joints aujourd’hui. Le modèle 2024 (PGA > 0,2 g) dit que les murs ne sont pas invulnérables. Tant qu’un nuage de points ne ferme pas les volumes, et qu’un charbon sous le premier lit ne date pas la pose, « 200 tonnes pré-incas » reste un slogan.",
+  "accepted": "Au nord de Cusco, capitale du Tawantinsuyu, une colline porte un complexe que les Espagnols ont appelé la Fortaleza et que Cieza dit que les naturels nommaient Casa del Sol (Cieza, Segunda parte, cap. LI). La chronique impériale (Cieza, Betanzos, Garcilaso) attribue le chantier à Pachacútec (Inca Yupanqui), poursuivi par Túpac Yupanqui et Huayna Cápac, dans la seconde moitié du XVe siècle. Rowe (1944) a calé le début du règne de Pachacútec vers 1438 d’après Cabello Balboa — chronologie dynastique, pas une date de pose. Céramique Killke sur la colline dès ≈ 900 n.è. (Rowe 1944 ; Bauer). En 2008, Oscar Rodríguez et Washington Camacho (INC / Parque Arqueológico) ont dégagé un temple périphérique de 11 pièces (≈ 250 m²) lu comme Killke puis repris par les Incas (Hearn, National Geographic, 31 mars 2008 ; Lumbreras : le site n’est pas « simplement une fortification militaire »). Le 13 mars 1536, Manco Inca occupe Sacsayhuamán : l’usage militaire est documenté, pas la preuve que le programme d’origine fût uniquement une forteresse. Dès les années 1530–1540, les Espagnols ont démonté l’appareil régulier des superstructures pour le Cusco colonial (Garcilaso, Comentarios reales, I, lib. VII, cap. XXIX, 1609). Ce qui reste, et ce dont on parle, ce sont surtout les trois terrasses cyclopéennes — trop lourdes à débiter.",
+  "fact": "Trois objets distincts ; toutes les masses sont des estimations, jamais des pesées. Les blocs sont des polygones, pas des prismes ; L × l × h est un plafond. (1) Murailles en zigzag (Baluartes) : calcaire Yuncaypata taillé, sans mortier, trois terrasses face à l’explanade. CENEPRED 5 janv. 2009 : altitudes 3 577–3 587 m (dix mètres de dénivelé sur les trois terrasses, pas un mur de 10 m) ; épaisseur moyenne 2,5 m ; premier niveau (ouest) ≈ 3 577–3 580 m, plateforme ≈ 5 m ; deuxième ≈ 3 580–3 585 m, plateforme ≈ 2,5 m ; troisième jusqu’à 3 587 m, chemin d’accès ≈ 2,5 m ; blocs moyens ouest 2,5 × 2,0 × 1,5 m ; blocs moyens est, 1er niveau, 3 × 4 × 5 m ; drains 12 × 8 cm. Convention de densité 2,6 t/m³ (calcaire compact 2,5–2,7 ; densité de ces blocs non publiée). Prisme ouest 7,5 m³ ≈ 19–20 t estimées (plafond). Prisme est 60 m³ ≈ 150–160 t estimées (plafond) — ordre de grandeur des plus gros. Scarre 1999 « 128 t à presque 200 t » : vulgarisation, pas un bloc nommé. Cieza 330 × 200 pasos est la fuerza entière à vue, pas un levé de zigzag ; le 400 m des guides (Scarre 1999) n’est pas un métrage de géomètre. Sancho 1534 : 30 palmos ≈ 6,3 m (palmo castellano 20,9 cm), estimation d’œil ; Scarre « about 6 meters » ; World History Encyclopedia 18 m incompatible avec CENEPRED ; 8,5 m / 9 m d’un seul bloc non vérifiés. Volume « over 6,000 cubic meters » (Scarre / Wikipedia EN) non vérifié. Protzen 1983 p. 183 « fractions of a millimeter » : phrase d’ouverture, pas un relevé au palmer. Protzen p. 195 lame de couteau : observation de visite sur les murs 26–27, pas une campagne de jauge. Real de Cieza ≈ 2,5–3 cm : chronique. Joints montants de quelques centimètres de profondeur, remplissage de blocaille (Protzen p. 193 ; Harth-terré 1965). CENEPRED : ouverture centimétrique des joints aujourd’hui, drains jusqu’à 60 cm au-dessus des plateformes actuelles. Dièdre 117° : andésite de Rumiqolqa (Protzen p. 189), pas ce calcaire. (2) Rodadero / Suchuna : stock naturel de diorite tertiaire ≈ 200 m de diamètre (CENEPRED 2009), pas un mur. (3) Trois tours (Muyuqmarka, Paucamarca, Sallaqmarca) détruites à la colonie ; il en reste des fondations. L’andésite de Rumiqolqa à 35 km a bâti Cuzco, pas ces murs. La carrière des zigzags est locale : îlots Yuncaypata de la meseta.",
+  "object": "Plusieurs enveloppes, pas un seul fort. Les zigzags sont des murs de terrasse / bastions retenant des plateformes ; Cieza : fondation taillée en roche vive. L’usage militaire en 1536 est un fait ; un programme d’origine uniquement défensif n’est pas démontré. Le sommet portait tours, magasins, un labyrinthe ; les chroniques ne s’accordent pas sur le nombre : Sancho 1534 une tour-cuba de 4–5 niveaux ; Cieza deux cubos ; Garcilaso (VII, XXIX) trois tours (Muyuqmarka, Paucamarca, Sallaqmarca). Les Espagnols les ont démontées ; le plan circulaire de Muyuqmarka reste au sol. Hauteur « 20 m » de Muyuqmarka : reconstitution, pas une élévation conservée. Suchuna / Rodadero, au nord de l’explanade : diorite naturelle ; sièges, marches, Trône de l’Inca taillés dans le vif (Protzen 1983, fig. 21). Secteur funéraire à l’ouest du Rodadero : 41 contextes en 1999, plus ≈ 35 (Justo Torres, années 1980) et quelques autres (Choque y Quispe) — Boletín de Arqueología PUCP 2003 ; usage cérémoniel / funéraire documenté pour Suchuna, distinct des zigzags. Le calcaire des murs est local (îlots Yuncaypata). Piedra cansada de Cieza : 270 palmos ≈ 56 m de circonférence, vue comme née sur place ; la localiser sur le site actuel est une tradition locale, pas un objet identifié par un archéologue nommé. Urbanisme en tête de puma (Sarmiento / Betanzos) : chronique symbolique, pas un levé morphologique. Le site n’est pas une carrière d’andésite. Le Rodadero n’est pas un mur.",
+  "technique": "Jean-Pierre Protzen, « Inca Quarrying and Stonecutting », Ñawpa Pacha 21, 1983, p. 183–214 ; terrain 1982–1983. Le livre Ollantaytambo 1993 prend le zigzag comme parallèle, pas comme objet. Protzen n’a pas résolu le transport (p. 195). Outils : percuteurs de galets de rivière 200 g à 8 kg, Mohs ≥ 5,5 ; 68 outils cartographiés dans la Llama Pit de Rumiqolqa. Garcilaso (II, XXVIII) : hihuaya, percussion plutôt que taille. Pas de fer pour tailler ; le bronze existe comme leviers possibles, pas comme ciseaux de dressage sur l’andésite (Protzen). Taille : percussion puis dressage au petit percuteur ; attaque 15–25° puis twist 40–45°. Expérience : andésite 25 × 25 × 30 cm, une face 20 min, trois faces + cinq arêtes 90 min — quelques dizaines de kilos d’andésite de Rumiqolqa, pas un essai à 150 t sur calcaire Yuncaypata. Assemblage à Sacsayhuamán (Diagram 3) : le lit de chaque assise nouvelle est taillé dans le dessus de l’assise déjà posée ; fit par essais répétés (Acosta 1589 : « era forzoso proballa muchas veces »). Claveaux (Harth-terré 1965 piedra-cuña) souvent enfoncés par l’avant (Protzen fig. 32). Impacts de percuteur sur les faces de calcaire, y compris taches blanchâtres de chaleur de choc (Protzen fig. 20) — l’argument fort contre le laser et le sciage généralisé. Cieza cap. LI (lu ici, Gutenberg #25255) : 20 000 hommes (4 000 à casser/extraire, 6 000 au halage avec maromas de cuir et de cabuya) — chronique, pas un registre de mita. Le calcaire est local, pas 35 km. Rampes de terre : hypothèse Protzen par analogie d’Ollantaytambo (rampes 8–12°, 4–8 m de large — mesurées là-bas). Pas de profil en long publié îlot → lit. Non démontré : aucune expérimentation à 20 t, encore moins à 150 t, sur calcaire Yuncaypata ; câbles de cabuya sous ≈ 150 t non testés ; les plus gros blocs sont à la base (horizontal + calage, pas un levage de 8 m) ; les 20 000 de Cieza non fouillés comme camp ; herbe / vitrification sans pétrographie qui tienne.",
+  "evidence": "Daté : usage militaire, siège du 13 mars 1536 (chroniques de la conquista) ; démontage colonial, Garcilaso témoin d’enfance (né 1539), carrière jusqu’au XXe s. Inféré : occupation de la colline dès ≈ 900 n.è., céramique Killke (Rowe 1944 ; Bauer) — Lumbreras 2008 « fortress in the 1100s » est une affirmation d’autorité, article C14 non lu ici ; temple périphérique 2008 Killke puis inca (céramique, appareil), Camacho attendait encore des C14 en 2008 ; murailles cyclopéennes impériales par l’appareil inca classique, la chronique (Pachacútec et successeurs), l’insertion dans le Cusco du XVe s. — pas de C14 de mortier (il n’y a pas de mortier), pas de terminus publié sous un lit. Tombes Valencia inférées post-1532 (stratigraphie du colmatage). Complexe funéraire Suchuna inca (contexte, céramique). Rodadero strié géologique (Tertiaire, friction), pas un chantier. Qui a relevé : Rowe 1944 ; Pardo / Ladrón de Guevara nettoyage jusqu’vers 1930 fin de carrière publique ; Kalafatovich 1970 Yuncaypata + diorite ; Valencia 1970 ; Protzen 1982–83 appareil, pas stratigraphie ; Justo Torres / Choque y Quispe Suchuna ; PUCP 1999, 41 contextes ; Camacho / Rodríguez temple 2008 ; CENEPRED 2009 1:750 baluartes ; Carlotto, Cárdenas, Carlier INGEMMET A 138, 2011 ; Engineering Failure Analysis 164, 2024, PGA > 0,2 g. Quiconque recule les zigzags de plusieurs millénaires avant les Incas doit produire un fait de terrain (outil, remplissage, C14 sous un lit) que Rowe, Valencia, Protzen et le Parque n’ont pas. L’occupation Killke est réelle ; elle n’est pas la preuve que ces blocs de 3 × 4 × 5 m sont Killke.",
+  "hearsay": "Noms à écarter ; ils n’expliquent aucune trace de percuteur, aucun drain de 12 × 8 cm, aucun colmatage colonial. Extra-terrestres / technologie perdue : un topos du web ; zéro artefact, zéro contexte ; les traces sont des impacts de galet. Herbe qui ramollit la pierre : folklore cusquénien, déjà noté par Protzen comme motif européen ; aucun résidu végétal, aucune pétrographie de pierre fondue. Incas qui n’auraient fait que réoccuper une muraille antédiluvienne (Gamarra, Uran Pacha ; relais Hancock) : contredit par des traces de percuteur identiques au reste de l’appareil inca, le lit taillé dans l’assise inférieure (chaîne opératoire Protzen), la chronique d’un chantier impérial encore en cours (piedra cansada, inachèvement), et Killke ≠ cyclopéen démontré. « On ne passe pas une lame » comme mesure : cliché de visite, observation Protzen, pas un relevé ; CENEPRED documente des joints centimétriques ouverts par l’eau. Blocs d’andésite / diorite venus de 35 km, 200 t : mélange de trois lithologies et d’un chiffre de Scarre ; les zigzags sont du calcaire local. Murs de 18 m : confusion avec les tours détruites ou le dénivelé cumulé. La colline est ancienne ; ces assises cyclopéennes ne le sont pas au même titre tant qu’on n’a pas un terminus sous le premier lit.",
+  "open": [
+    "Transport des blocs de ≈ 60 m³ : comment on a fait glisser ≈ 150 t (plafond) sur quelques centaines de mètres au plus, depuis les îlots de calcaire de la meseta jusqu’au lit. Cieza donne des câbles et des hommes ; Protzen n’a pas traité le halage. Pas d’expérimentation à cette masse.",
+    "Cubage vrai : aucun nuage de points publié des plus gros blocs orientaux. Tant que le volume est un prisme 3 × 4 × 5, la masse est un plafond. Un photogrammètre ferme le dossier « 128 vs 200 t ».",
+    "Date des zigzags séparée de l’Inca impérial. L’occupation Killke est réelle. L’attribution du travail cyclopéen aux Killke : non établie. Un remplissage daté sous le premier lit vaudrait dix chroniques.",
+    "Fonction : forteresse (1536, zigzag, tours) et cérémoniel (Casa del Sol, temple 2008, funéraire Suchuna, Inti Raymi moderne). Le « ou » est un faux problème ; le dosage du programme d’origine reste ouvert.",
+    "Joints : profondeur, pas seulement le filet de face. Protzen n’a pu mesurer les angles internes qu’à ≈ 5 cm. Les plans de joint sont souvent gauches. Un scan 3D des interfaces, là où un bloc a bougé (CENEPRED, zone 2), donnerait la géométrie vraie.",
+    "Drains et sols d’origine. Les plateformes actuelles sont sous le niveau des drains (jusqu’à 60 cm). Les fouilles de dégagement ont créé le problème hydrique qu’elles exposent. Reconstituer le niveau de circulation inca : ouvert, et urgent pour la conservation."
+  ],
+  "help": [
+    {
+      "role": "Tailleur de calcaire (pas d’andésite)",
+      "ask": "Lire les impacts, l’ordre des faces, le dièdre des arêtes sur cette roche. Dire si le 3 × 4 × 5 oriental se taille comme le 25 cm de Protzen, ou si le banc fossilifère change le geste. Comparer avec un calcaire de même grain, pas avec du granite."
+    },
+    {
+      "role": "Carrier de meseta / karst",
+      "ask": "Identifier les îlots Yuncaypata encore visibles, les faces d’extraction, les blocs abandonnés. Distinguer le calcaire in situ (Trône, Chincana) du calcaire mis en œuvre."
+    },
+    {
+      "role": "Géomètre-photogrammètre",
+      "ask": "Nuage de points des dix plus gros blocs orientaux, volume vrai, pas L × l × h. Profil en long îlot → lit. Fruit des murs en degrés. Longueur développée des trois zigzags, enfin."
+    },
+    {
+      "role": "Ingénieur de halage",
+      "ask": "Traction sur câble de cabuya / cuir sous 20 t d’abord, puis un modèle à 150 t : section, flèche, ornière, pente max. Dire si les 6 000 hommes de Cieza tiennent, et à quelle pente."
+    },
+    {
+      "role": "Archéologue du bâti",
+      "ask": "Un sondage daté sous un lit du premier niveau, hors zone déjà bouleversée. Phasage Killke / inca par joints et reprises, pas par style global."
+    },
+    {
+      "role": "Tailleurs encore au travail à Cusco",
+      "ask": "Rumiqolqa est toujours exploitée (Protzen 1983, déjà). Les paveurs cusquéniens marquent encore au llawlli (sève jaune). Le percuteur de galet n’est plus le geste courant ; le fit à l’essai, si. Les interroger sur le calcaire, pas seulement sur l’andésite des trottoirs."
+    }
+  ],
+  "sources": [
+    {
+      "cite": "Cieza de León, Pedro. Segunda parte de la Crónica del Perú, cap. LI. Ed. Jiménez de la Espada, Madrid, 1880. Gutenberg #25255. Lu ici : 20 000 hommes, 4 000 / 6 000, maromas de cuir et de cabuya, 330 × 200 pasos a mi parecer, pierres de 12 × >20 pies, « no podrán meter un real », pierre de 270 palmos de redondo, deux cubos, fondation en roche vive.",
+      "url": "https://www.gutenberg.org/files/25255/25255-h/25255-h.htm"
+    },
+    {
+      "cite": "Garcilaso de la Vega, Inca. Comentarios reales de los Incas, I, lib. II, cap. XXVIII (hihuaya); lib. VII, cap. XXVII–XXIX (fortress, three walls, three towers, piedra cansada), Lisbon, 1609. Témoin d’enfance à Cusco. [caps. VII.27–29 non lus en texte intégral ici ; cités via Rodríguez Mansilla 2020 et éditions savantes]",
+      "url": null
+    },
+    {
+      "cite": "Acosta, José de. Historia natural y moral de las Indias, lib. 6, cap. 14, 1590. “era forzoso proballa muchas veces.” Ed. O’Gorman, Mexico, 1962, p. 297 (cité par Protzen 1983).",
+      "url": null
+    },
+    {
+      "cite": "Pedro Sancho de la Hoz. Relación (1534; original lost; Italian Ramusio ≈ 1550; Sp. Odriozola, Documentos literarios del Perú, Lima, 1873, p. 61–64; Engl. Means, Cortes Society, 1917, Gutenberg #26602). Témoin 1533. Three girones, tour-cuba de 4–5 vueltas, pierres de 30 / 25 / 20 / 15 palmos. Le real entre les joints et les 330 pasos sont Cieza, pas Sancho.",
+      "url": null
+    },
+    {
+      "cite": "Rowe, John H. “An introduction to the archaeology of Cuzco.” Papers of the Peabody Museum 27.2, 1944. Killke ; 1438 pour Pachacútec. [non lu en entier]",
+      "url": null
+    },
+    {
+      "cite": "Valencia Zegarra, Alfredo. “Dos tumbas de Saqsaywaman.” Revista Española de Antropología Americana 5, 1970, p. 67–75. Calcaire polygonal ; 3 555 m ; tombes post-1532.",
+      "url": "https://revistas.ucm.es/index.php/REAA/article/download/REAA7070110067A/25532/26693"
+    },
+    {
+      "cite": "Kalafatovich, Carlos. “Geología del grupo arqueológico de la fortaleza de Saccsayhuaman y sus vecindades.” Saqsaywaman no. 1, Patronato Departamental de Arqueología del Cuzco, 1970. Yuncaypata + diorite. [non lu en entier ; repris par CENEPRED 2009]",
+      "url": null
+    },
+    {
+      "cite": "Pardo, Luis A. & Ladrón de Guevara, Oscar. Nettoyage et consolidation, Saqsaywaman no. 1, 1970.",
+      "url": "https://bvirtual.culturacusco.gob.pe/items/show/114"
+    },
+    {
+      "cite": "Protzen, Jean-Pierre. “Inca Quarrying and Stonecutting.” Ñawpa Pacha 21, 1983, p. 183–214.",
+      "url": "https://doi.org/10.1179/naw.1983.21.1.005"
+    },
+    {
+      "cite": "Protzen, Jean-Pierre. Inca Architecture and Construction at Ollantaytambo. New York: Oxford University Press, 1993. [non lu en entier ; le zigzag de Sacsayhuamán y est un parallèle, pas l’objet]",
+      "url": null
+    },
+    {
+      "cite": "Gasparini, Graziano & Margolies, Luise. Arquitectura Inka, Caracas, 1977; Engl. trans. Inca Architecture, Indiana University Press, 1980. [non lu en entier]",
+      "url": null
+    },
+    {
+      "cite": "Bauer, Brian S. The early ceramics of the Inca heartland; Ancient Cuzco: Heartland of the Inca, University of Texas Press, 2004. Killke, transition impériale. [partiellement via citations]",
+      "url": null
+    },
+    {
+      "cite": "CENEPRED / geological report, Cusco, 5 January 2009. Baluartes, 3,577–3,587 m, 2.5 m thickness, blocs 2,5 × 2,0 × 1,5 m (ouest) et 3 × 4 × 5 m (est), drains 12 × 8 cm, Rodadero 200 m, diorite vs calcaire.",
+      "url": "https://sigrid.cenepred.gob.pe/sigridv3/documento/14357/descargar"
+    },
+    {
+      "cite": "Carlotto, Víctor; Cárdenas, José; Carlier, Gabriel. Geología del cuadrángulo de Cusco, hoja 28-s. INGEMMET, Boletín A 138, 2011.",
+      "url": "https://hdl.handle.net/20.500.12544/992"
+    },
+    {
+      "cite": "Hearn, Kelly. “Ancient Temple Discovered Among Inca Ruins.” National Geographic News, 31 March 2008. Temple 2008, Camacho, Rodríguez, Bauer, Lumbreras.",
+      "url": "https://web.archive.org/web/20101206055613/news.nationalgeographic.com/news/2008/03/080331-inca-temple.html"
+    },
+    {
+      "cite": "UNESCO. “City of Cuzco.” World Heritage List no. 273, inscription 1983, criteria (iii)(iv).",
+      "url": "https://whc.unesco.org/en/list/273/"
+    },
+    {
+      "cite": "OpenStreetMap. Way 83130621 Sacsayhuamán, Nominatim 30 août 2026 : −13.5067815, −71.9802363; relation 12294870 Parque (ne pas confondre). ODbL.",
+      "url": null
+    },
+    {
+      "cite": "“Prácticas funerarias incaicas en Sacsayhuamán…” Boletín de Arqueología PUCP 7, 2003. Suchuna, 41 contextes.",
+      "url": "https://doi.org/10.18800/boletindearqueologiapucp.200301.004"
+    },
+    {
+      "cite": "Seismic numerical analysis… Sacsayhuaman. Engineering Failure Analysis 164, 2024, 108254. [paywall ; résumé lu : PGA > 0,2 g]",
+      "url": "https://doi.org/10.1016/j.engfailanal.2024.108254"
+    }
+  ],
+  "xLine": "Sacsayhuamán, baluarte est : blocs de calcaire local ≈ 3 × 4 × 5 m, ≈ 150 t estimées, XVe s. inca — fait d’appareil et de chronique. La diorite d’en face n’est pas le mur. Question : cubage vrai, et un terminus sous le lit. Qui peut aider : un tailleur de calcaire et un photogrammètre, le même jour, sur le premier niveau oriental."
+}

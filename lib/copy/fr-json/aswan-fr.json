@@ -1,0 +1,153 @@
+{
+  "id": "aswan",
+  "order": 2,
+  "name": "Obélisque inachevé d’Assouan",
+  "place": "Carrière nord, Assouan (Syène antique), rive est du Nil, Haute-Égypte",
+  "yearLabel": "Nouvel Empire, XVIIIe dynastie (chantier sans cartouche ; attribution Hatshepsout courante, non démontrée)",
+  "yearSort": -1460,
+  "lat": 24.07693,
+  "lng": 32.89547,
+  "coordSource": "OSM way 243566979",
+  "chips": [
+    "materiau",
+    "geste",
+    "organisation",
+    "precision",
+    "durabilite"
+  ],
+  "photo": {
+    "file": "Obelisco_inacabado,_Asuán,_Egipto,_2022-04-01,_DD_152.jpg",
+    "alt": "Obélisque inachevé encore dans le banc de granite à Assouan, fêlure visible vers le pyramidion.",
+    "credit": "Diego Delso (delso.photo), 1er avril 2022, 14:14. Obélisque encore dans le banc, fêlure visible vers le pyramidion.",
+    "licence": "CC BY-SA 4.0"
+  },
+  "common": "À Assouan, dans la carrière de granite rose, un obélisque de 41,75 m est encore dans le banc. On l’a entouré d’une tranchée à la boule de dolérite, on a dressé la face, on a vu les fissures, on a essayé un projet plus petit, puis on a tout arrêté. Il n’a jamais voyagé. Hatshepsout a fait extraire et dresser à Karnak une paire de 29,50 m en sept mois. La question n’est pas qui d’autre que l’homme. C’est jusqu’où un banc de granite permet d’aller, et ce qu’on fait quand il ment.",
+  "advanced": "Engelbach 1922 est le relevé. Les 1 168 tons English sont un tronc de pyramide × 2,679 t.angl./m³, soit ~1 187 t à 2,72 g/cm³, pour l’objet fini, pas pour le bloc attaché. La tranchée n’a ni coin ni ciseau : la dolérite suffit à expliquer les cupules ; le mouton d’Engelbach et le lancer-et-rattraper de Kelany–Harrell sont deux reconstitutions du même impact. L’attribution Hatshepsout est un voisinage (paire de Karnak, Senenmout, inscription S8) posé sur un bloc anonyme. Le second tracé à 3,15 m de base est le seul module interne, et il pointe vers Thoutmosis III autant que vers Hatshepsout. Tant qu’un C14 de tranchée et une lecture de l’hiératique de la face ne sont pas publiés, la date reste « Nouvel Empire, XVIIIe dynastie par analogie ». Le Latran à Rome est le cousin érigé ; celui d’Assouan est le cousin resté dans la pierre.",
+  "accepted": "Les carrières de granite d’Assouan (mȝt, granite rose d’Éléphantine : mȝt Ȝbw, Harris 1961 cité par Kelany et al. 2009) ont fourni, dès l’Ancien Empire, statues, sarcophages, revêtements de pyramides, puis au Nouvel Empire les obélisques de Thèbes. L’obélisque inachevé est un projet d’extraction en massif, non un bloc de surface. On l’a dégagé sur trois côtés par une tranchée, on a commencé à dresser la face supérieure, on a tracé des lignes directrices, on a examiné des fissures, puis on a abandonné. Un second projet, plus petit, a été calé sur le même bloc et abandonné à son tour. Le récit courant (ministère égyptien du Tourisme et des Antiquités ; notices de visite) donne le chantier à Hatshepsout (c. 1479–1458 av. n.è., chronologie basse courante), pour le temple d’Amon à Karnak. C’est une hypothèse, pas une inscription. Engelbach 1922 §3 : « As to the date of this obelisk, I have found nothing which gives any real clue to it. […] Unfortunately we are compelled to leave the question of the date open. » Hiératique sur la face de carrière : une date et un nombre, « no name of a king » (§19). Ostracon dans la tranchée nord : paléographie de XIXe dynastie (Gunn, Engelbach §45) — un texte de chantier ou un réemploi, pas le cartouche du commanditaire. Le graffito de Senenmout (Habachi 1957 ; Niedziółka 2001) concerne la paire extraite d’Hatshepsout à Karnak, 29,50 m, pas ce bloc. Une inscription à son nom existe dans les carrières centrales (S8, Kelany et al. 2009), pas sur ce banc. Le récit accepté est donc : Nouvel Empire, très probablement XVIIIe dynastie, commanditaire non inscrit. Hatshepsout est le nom le plus souvent donné ; Thoutmosis III est le candidat du second tracé. Ni l’un ni l’autre n’est démontré sur cette pierre.",
+  "fact": "Trois objets distincts ; toutes les masses sont des estimations, jamais des pesées. Le bloc est encore attaché : on ne peut pas lui assigner la masse d’un objet libre. (1) Ce monolithe inachevé, encore dans le banc de la carrière nord, non détaché, non transporté, non érigé. Engelbach 1922, §3 et pl. I, plan 1:100 : longueur totale 41,75 m ; base carrée 4,20 m (8 coudées royales de 0,525 m) ; base du pyramidion 2,50 m ; hauteur du pyramidion 4,50 m ; fût 37,25 m ; pointe 18,5° au nord de l’est ; inclinaison 11° descendant vers la base (butt) ; base du pyramidion 7,05 m au-dessus du niveau de la base ; tranchée largeur moyenne 75 cm, profondeur ~2/3 de celle nécessaire à une section carrée, pas d’angles vifs. Face inférieure non sous-cavée ; les tranchées nord et sud n’atteignent pas le lit ; tranchée de la base abandonnée plus tôt (ligne noire π, raccourcissement de plus de 2 m). Densité de travail « 2.679 tons per cubic metre » = tons English ; 2,679 × 1 016,047 = 2 722 kg/m³ = 2,72 g/cm³. Engelbach « when finished » : ~435 m³, 1 168 tons English. Recalcul indépendant sur les quatre cotes sans arrondi du fût : V = 436,4 m³ ; à 2,72 g/cm³ : 1 187 t. Fourchette ~1 160–1 200 t métriques à 2,65–2,75 g/cm³ pour l’obélisque fini. Ministère « 1168 tonnes » : Engelbach recopié sans conversion des long tons. « ~1 090 t » des notices secondaires : non vérifié, à écarter. Centre de gravité 15,84 m de la base, sur l’axe — calcul, pas une mesure. Bloc actuel plus massif (surépaisseur de dressage ~2 cm, faces encore irrégulières) et encore attaché. Fissures a–p observées ; abandon pour le banc, pas pour un changement de règne inscrit. Tranchée en cheese-scoop : cupules verticales parallèles, pas de ciseau, pas de coin dans la tranchée (Engelbach §12). Lignes d’ocre au fil à plomb, moyenne 29,9 cm. Percuteurs : boules de dolérite 8–13 in (~20–33 cm), 9–15 lb (~4–7 kg), d = 2,93–3,05 (Hume & Sadek) ; Kelany, Harrell & Brown 2010 : carrière de dolérite à Assouan, 1 419 percuteurs, les sphères sont des outils usés. Lithologie : granite rose d’Assouan, grain grossier à très grossier (quartz, feldspath K, plagioclase, biotite) ; le « granite noir » est une granodiorite/tonalite, pas cette pierre. Granitoïdes précambriens du socle du Premier Cataracte (Ball 1907). (2) Obélisques extraits et érigés (Engelbach §11, masses en tons English) : Latran, Rome, 32,15 m, 455 t. angl. (Gorringe), Thoutmosis III érigé par Thoutmosis IV — le plus grand jamais dressé ; Hatshepsout à Karnak 29,50 m, 323 t. angl., 7 mois « in the mountain » (Urkunden IV ; Breasted AR II, 313–316) — sa paire, pas ce bloc ; Vatican 25,31 m ; Paris (Louxor) 22,84 m, Ramsès II ; Londres/New York 21,18 m ; Thoutmosis Ier à Karnak 19,60 m. (3) Autres travaux de carrière : second tracé sur le même bloc, 32,10 m, base 3,15 m (6 coudées), pyramidion 2,02 × 5,31 m, 507 tons English = 515 t, plus tardif, axe θ au nord pour éviter les fissures sud — analogie de cotes avec Latran / pylône VII (Legrain, ASAE V), Engelbach non conclusif ; lit d’un petit monument ~7 m sur la face supérieure SO, déjà enlevé (Engelbach §20). Le nom OSM français « Obelisque brisé » est faux : le bloc n’a jamais quitté le banc.",
+  "object": "Deux enveloppes, pas un seul massif. La carrière est un paysage : bancs de granite, tranchées, lits d’extraction, rampes, déblais, percuteurs, inscriptions, un canal/chenal proposé vers le Nil (Kelany 2003 / Kelany, Parizek, Alexander et al. 2007). L’obélisque inachevé (secteur S1, Kelany et al. 2009) en est la pièce maîtresse, pas la seule. Face supérieure SO : un monument de ~7 m déjà enlevé, sous-cavé à la boule (Engelbach §20). Ce monolithe inachevé n’a jamais été détaché, jamais transporté, jamais érigé. La série érigée est un autre objet : la paire d’Hatshepsout à Karnak, 29,50 m extraite et dressée en sept mois (inscription de base, Engelbach §15 d’après Breasted) — l’ordre de grandeur tient pour ce module de 2,40 m (Engelbach 4,4 mois de tranchée), pas pour 41,75 m. Le Latran (~32 m) est le plus grand jamais érigé ; ce bloc, s’il avait été fini, l’aurait dépassé d’un tiers ; il ne l’a pas été. Confondre le plus grand conçu et le plus grand dressé est la faute de méthode touristique. Barge de Deir el-Bahari (Naville VI, pl. CLIV), ≥ 82 m, deux obélisques bout à bout : transport de la paire de 29,50 m, pas de celui-ci. Barge de Thoutmosis Ier 63 × 21 m (Breasted AR II, 105). Engelbach §47 : plus de 25 obélisques > 50 t, tous d’Assouan ; il n’a pas identifié le lit d’extraction d’un grand obélisque érigé. Le lit de 7 m n’est pas celui d’un Latran. Senenmout a extrait la paire d’Hatshepsout ; ce n’est pas un cartouche sur cette pierre.",
+  "technique": "Observé sur ce banc : (1) décapage du toit au feu et aux coins — brique crue brûlée, copeaux de granite calciné ; « not a trace of burning within 6 feet of the obelisk » (Engelbach §4). Le feu sert au décapage, pas à la tranchée. Kelany 2003 : charbon massif, cendres, briques crues brûlées — le feu peut-être plus largement impliqué, peut-être pour aider le canal d’extraction ; mécanisme non tranché. (2) Tranchée d’extraction : percussion à la dolérite seulement ; pas de coin, pas de ciseau, pas d’outil de cuivre au dégagement 1921–22 ; ocre tous les 29,9 cm ; travail par double-pied. Cadence propre d’Engelbach 5 mm/h à la main ; il en déduit un mouton / mindâlah (deux en haut, un en bas) — reconstitution, pas un outil trouvé en place. (3) Dressage de la face à la boule, moins régulier que la tranchée ; axes ciselés α β puis un projet réduit puis l’outline θ ; pas d’entasis à ce stade. (4) Coins autour, pas dans la tranchée ; plus grande encoche 0,25 m, espacement 1 m ; trous de mine noircis à la poudre, modernes. (5) Puits d’essai C et D dès le départ. Calculé, non observé ici : sous-cavage (jamais fait sur ce bloc) ; 5 824 hommes, cordes de 7¼ pouces, 30 leviers de 21 pieds — modèle de forces, zéro preuve de chantier ; le halage vers le Nil est le croquis d’Engelbach (pl. VII), pas un profil coté ; le chenal de granite de Kelany (> 2,5 m près de la carrière, ~7 m à mi-parcours, ~30 m de large, 24 géophones) est une hypothèse, fossé + sismique, pas de barge trouvée ; mouton vs lancer-et-rattraper (Kelany–Harrell 2010) tous deux compatibles avec les cupules ; temps de tranchée 7,22 mois de 12 h à 8 mm/h (Engelbach §15) est un ordre de grandeur ; photogrammétrie de cadence Marčiš & Fraštia 2023 non lue en entier ; cuivre « like steel » (Engelbach §27) est un embarras sur les encoches, pas une métallurgie ; sciage/forage Stocks au sable et au cuivre est pour le sciage, pas cette tranchée (pas de trace de scie). Arnold 1991 et Clarke & Engelbach 1930 cadrent le geste ; ils ne pèsent pas ce bloc.",
+  "evidence": "Mesuré : 41,75 / 4,20 / 2,50 / 4,50 m ; 11° ; 18,5° N de l’est (Engelbach 1922, plan 1:100). Estimé : masse 1 168 tons English = 1 187 t (tronc de pyramide × 2,679 t. angl./m³). Observé : abandon pour fissures a–p ; tranchée de la base arrêtée ; second tracé qui les évite ; pas d’extraction ; cupules de dolérite, pas de coins/ciseaux dans la tranchée, percuteurs en place ; feu pour le toit (brique brûlée, granite calciné). Feu dans la tranchée : non (Engelbach) / possible (Kelany 2003) — non tranché. Inféré : date du chantier — pas de cartouche ; ostracon XIXe dyn. (Gunn) est un texte, pas un décret royal ; poterie du Nouvel Empire dans les déblais de la carrière nord (Kelany et al. 2009) ; graffites grecs (Sabinianos, Serapeion fils d’Ursus, Hermeinos) sont des visiteurs tardifs (§46). Attribution Hatshepsout inférée par l’ampleur, la paire de Karnak, S8, Senenmout — contredite par rien, prouvée par rien sur ce bloc. Second projet = Latran ou pylône VII : analogie de dimensions, Engelbach non conclusif. Chenal vers le Nil : hypothèse Kelany. Les 7 mois d’Hatshepsout datés pour sa paire de 29,50 m, pas pour celui-ci. Qui a relevé : voyageurs avant 1920 (Gorringe, Baedeker, Jomard 1809) ont vu ~22 m et inventé des cotes ; Engelbach 1921–22 dégagement intégral avec Mahmûd Eff. Mohammad et Mustafa Eff. Hasan ; Röder 1965 ; Klemm & Klemm 1993/2008 ; Kelany CSA 2002–03 (70 p. inédites) ; QuarryScapes 2004–09 (S1–S17, Hatshepsout en S8 pas sur ce banc) ; sismique 2007/2013 ; Kelany–Harrell–Brown 2010. « Découvert au début du XXe siècle » est faux ; il était visible, puis dégagé. Quiconque date ce bloc d’avant le Nouvel Empire, ou d’une technique non égyptienne, doit produire un fait de terrain que les relevés Engelbach / CSA n’ont pas : un outil hors série, une inscription plus ancienne sur le banc, un C14 publié du charbon de cette tranchée. Rien de tel n’est publié.",
+  "hearsay": "Noms à écarter ; ils n’expliquent aucune cupule, aucune ligne d’ocre, aucune fissure. Extra-terrestres / lasers / « scie sonique » : un topos du web ; les parois de la tranchée sont un tapis de cupules de percuteur, pas un trait de scie (Engelbach : no chisel-work in the trench at all). « Impossible à la main, donc une machine perdue » : confusion entre très lent et physiquement impossible ; le granite d’Assouan part sous la dolérite (Engelbach, Stocks, Kelany–Harrell, Marčiš 2023) ; les 7 mois d’Hatshepsout pour 29,50 m sont une donnée égyptienne, pas une reconstitution moderne. Lévitation : Engelbach §36, déjà classé en 1922. « Plus grand obélisque du monde, érigé puis recouché » : faux ; jamais détaché ; le plus grand érigé est le Latran (~32 m) ; celui-ci est le plus grand conçu et abandonné. « Commande certaine d’Hatshepsout, pendant du Latran » : le Latran est Thoutmosis III/IV ; Hatshepsout a sa paire extraite à Karnak, 29,50 m ; ce bloc n’a pas de nom ; le second tracé peut viser un module Latran / pylône VII — pas une signature. Acide, « ramollir le granite » : Donaldson, écarté par Engelbach §26 ; les traces sont celles d’une roche dure. Le granite est dur. Le chantier a échoué pour une fissure, comme échouent les carriers d’aujourd’hui quand le banc ment. Pas un mystère : un procès-verbal d’extraction interrompue.",
+  "open": [
+    "Le commanditaire. Pas de cartouche. Ostracon XIXe dyn. (Gunn) : reprise ramesside, graffiti de carrier, ou dépôt secondaire ? Inédit en traduction complète utile. Une lecture publiée de l’hiératique de la face de carrière (§19) pourrait fermer le dossier — ou non.",
+    "Le second projet. Latran, pylône VII, ou un troisième obélisque jamais né. Les 3,15 m de base sont un fait ; l’identité du destinataire n’en est pas un.",
+    "Le geste exact dans la tranchée. Mouton (Engelbach) vs lancer-et-rattraper (Kelany–Harrell 2010) vs les deux selon la profondeur. Un nuage de points des cupules + une expérimentation filmée dans une tranchée de 75 cm (pas sur un plot de démonstration) trancherait la géométrie du coup, pas le calendrier.",
+    "Le feu. Décapage seulement, ou aide à la tranchée (Kelany 2003) ? Un C14 sur charbon en place dans la tranchée de l’obélisque, publié avec sa stratigraphie, manque. Storemyr / Heldal 2005 envisagent ces datations ; elles n’apparaissent pas, à la lecture des synthèses, comme un lot publié pour ce banc.",
+    "Sous-cavage et sortie. Engelbach n’a pas eu le crédit de niveler la vallée (§23 n. 10). Le chenal de Kelany n’a pas livré de barge, ni de glissière datée. Le parcours carrière → Nil pour un 1 200 t reste un modèle.",
+    "Volume vrai. 426 m³ (Engelbach, fût arrondi) vs 436 m³ (recalcul). Un scan 3D du bloc et du banc attacherait enfin un volume à l’objet réel, pas au prisme fini."
+  ],
+  "help": [
+    {
+      "role": "Chef de carrière (granite)",
+      "ask": "Lire le banc : pourquoi a–p n’ont pas été vues plus tôt ; si le second tracé était recoverable ; si l’on aurait sous-cavé ou coincé. Comparer avec une extraction actuelle d’un monolithe de 10–20 m, pas 42."
+    },
+    {
+      "role": "Tailleur (granite, taille directe)",
+      "ask": "Séquence cupule → face ; ce que dit un filet poli dans une dépression de contrôle ; l’écart entre martelage de tranchée et martelage de pyramidion. Dolérite vs acier, à la main, dans 75 cm."
+    },
+    {
+      "role": "Géomètre-photogrammètre",
+      "ask": "Nuage de points du monolithe + tranchées + face supérieure + lit de 7 m. Volume vrai. Profil en long vallée → Nil (pente réelle, pas le croquis pl. VII). Recaler les 18,5° et les 11°."
+    },
+    {
+      "role": "Pétrographe / mécanicien des roches",
+      "ask": "Carte 3D des fissures a–p : ouverture, remplissage, continuité sous le lit non dégagé. Densité de ce banc, pas d’une dalle d’ornement vendue « Rosa Aswan »."
+    },
+    {
+      "role": "Archéologue de carrière",
+      "ask": "Publier le rapport 2003. Dater le charbon de cette tranchée. Trancher l’ostracon XIXe dyn. : en place ou remblai. Lire l’hiératique de la face."
+    }
+  ],
+  "sources": [
+    {
+      "cite": "Engelbach, Reginald. The Aswân Obelisk, with some Remarks on the Ancient Engineering. Cairo: IFAO / Service des Antiquités de l’Égypte, 1922. Relevé fondateur.",
+      "url": "https://www.gutenberg.org/ebooks/59320"
+    },
+    {
+      "cite": "Engelbach, Reginald. The Problem of the Obelisks, from a study of the unfinished obelisk at Aswan. London: T. Fisher Unwin, 1923. Version développée. [non lu en entier ici ; Archive.org]",
+      "url": null
+    },
+    {
+      "cite": "Clarke, Somers & Engelbach, Reginald. Ancient Egyptian Masonry. The Building Craft. Oxford: Oxford University Press, 1930.",
+      "url": null
+    },
+    {
+      "cite": "Legrain, Georges. “Notes d’inspection.” Annales du Service des Antiquités de l’Égypte 5, 1904, p. 11–12. Base 3,15 m de Thoutmosis III au pylône VII ; 29,50 m / 2,40 m d’Hatshepsout.",
+      "url": null
+    },
+    {
+      "cite": "Breasted, James H. Ancient Records of Egypt, vol. II. Chicago, 1906. Sept mois d’Hatshepsout (AR II, p. 156, 313–316) ; barge de Thoutmosis Ier ; Senenmout.",
+      "url": null
+    },
+    {
+      "cite": "Habachi, Labib. “Two Graffiti at Sehēl from the Reign of Queen Hatshepsut.” Journal of Near Eastern Studies 16.2, 1957, p. 88–104. — The Obelisks of Egypt, AUC Press, 1984. [1957 lu via citations ; 1984 non lu en entier]",
+      "url": null
+    },
+    {
+      "cite": "Röder, Josef. “Zur Steinbruchsgeschichte des Rosengranits von Assuan.” Archäologischer Anzeiger 3, 1965, p. 467–552. [non lu en entier]",
+      "url": null
+    },
+    {
+      "cite": "Klemm, Rosemarie & Klemm, Dietrich D. Steine und Steinbrüche im Alten Ägypten. Berlin: Springer, 1993. Transl. Stones and Quarries in Ancient Egypt. London: British Museum Press, 2008. [non lu en entier ; cité via Kelany 2009]",
+      "url": null
+    },
+    {
+      "cite": "Kelany, Adel. Excavation of the Unfinished Obelisk Quarry. Rapport inédit, Supreme Council of Antiquities, 2003, 70 p. [non lu ; contenu via Kelany et al. 2009]",
+      "url": null
+    },
+    {
+      "cite": "Kelany, Adel; Negem, Mohamed; Tohami, Adel; Heldal, Tom. “Granite quarry survey in the Aswan region, Egypt: shedding new light on ancient quarrying.” In Abu-Jaber et al. (eds.), QuarryScapes, NGU Special Publication 12, 2009, p. 87–98.",
+      "url": "https://static.ngu.no/upload/Publikasjoner/Special%20publication/SP12_s87-98.pdf"
+    },
+    {
+      "cite": "Kelany, Adel; Harrell, James A.; Brown, Vernon. “Dolerite Pounders: Petrology, Sources and Use.” Lithic Technology 35.2, 2010, p. 127–148. [paywall ; arguments lus via résumé et citations]",
+      "url": "https://doi.org/10.1080/01977261.2010.11721087"
+    },
+    {
+      "cite": "Kelany, Adel et al. “Canal Extension Confirmed by Geophysical Surveys, Aswan Obelisk Quarry.” Proceedings of the Second International Conference on the Geology of the Tethys, 2007, p. 35–56. — Alexander, Shelton S.; Çakır, Recep; Kelany, Adel. “Shallow seismic profiles defining the channel…” SAGEEP, 2013.",
+      "url": "https://doi.org/10.4133/sageep2013-240.1"
+    },
+    {
+      "cite": "Stocks, Denys A. Experiments in Egyptian Archaeology: Stoneworking Technology in Ancient Egypt. Routledge, 2003 (2nd ed. 2022). Sciage, forage, percussion. [non lu en entier]",
+      "url": null
+    },
+    {
+      "cite": "Naville, Édouard. The Temple of Deir el Bahari, Part VI. London: EEF, 1908, pl. CLIV. Barge des deux obélisques d’Hatshepsout.",
+      "url": null
+    },
+    {
+      "cite": "UNESCO. “Nubian Monuments from Abu Simbel to Philae.” World Heritage List no. 88, inscription 1979, criteria (i)(iii)(vi).",
+      "url": "https://whc.unesco.org/en/list/88/"
+    },
+    {
+      "cite": "OpenStreetMap. Way 243566979 Unfinished obelisk (centroid 24.07693 N, 32.89547 E). ODbL.",
+      "url": "https://www.openstreetmap.org/way/243566979"
+    },
+    {
+      "cite": "Egyptian Ministry of Tourism and Antiquities. “The Unfinished Obelisk.” Attribution Hatshepsout comme croyance (« Believed to have been commissioned… ») ; 1 168 « tonnes » recopiées d’Engelbach sans conversion.",
+      "url": "https://egymonuments.gov.eg/monuments/the-unfinished-obelisk/"
+    },
+    {
+      "cite": "Ball, John. A Description of the First or Aswan Cataract of the Nile. Cairo: Survey Department, 1907. Géologie du cataracte, dolérites locales (cité par Hume & Sadek in Engelbach §13).",
+      "url": null
+    },
+    {
+      "cite": "Arnold, Dieter. Building in Egypt: Pharaonic Stone Masonry. Oxford: Oxford University Press, 1991.",
+      "url": null
+    },
+    {
+      "cite": "Brown, V. M. & Harrell, J. A. “Aswan granite and granodiorite.” Göttinger Miszellen 164, 1998, p. 33–39. [non lu en entier]",
+      "url": null
+    },
+    {
+      "cite": "Marčiš, Marián & Fraštia, Marek. “The problems of the obelisk revisited: Photogrammetric measurement of the speed of quarrying granite using dolerite pounders.” Digital Applications in Archaeology and Cultural Heritage 30, 2023, e00284. [non lu en entier]",
+      "url": null
+    },
+    {
+      "cite": "Niedziółka, Dariusz. “Some Remarks on the Graffito of Senenmut at Aswan.” In Popielska-Grzybowska (ed.), Proceedings of the First Central European Conference of Young Egyptologists, Warsaw, 2001, p. 85–104.",
+      "url": null
+    }
+  ],
+  "xLine": "Assouan, carrière nord : un granite de 41,75 m, ~1 187 t finies, encore dans le banc, fissuré — fait. Hatshepsout a dressé 29,50 m à Karnak ; ce bloc-ci n’a pas de nom. Question : qui a commandé les 42 m, et comment on comptait les sortir à 11° d’inclinaison. Qui peut aider : un carrier du granite et un photogrammètre, le même jour, dans la tranchée de 75 cm."
+}

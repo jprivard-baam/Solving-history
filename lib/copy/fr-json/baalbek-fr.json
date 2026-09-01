@@ -1,0 +1,134 @@
+{
+  "id": "baalbek",
+  "order": 1,
+  "name": "Baalbek",
+  "place": "plaine de la Beqaa, Liban",
+  "yearLabel": "Ier s. n.è. (podium julio-claudien ; temple presque achevé en 60 n.è.)",
+  "yearSort": 60,
+  "lat": 34.00682,
+  "lng": 36.20338,
+  "coordSource": "OSM way 244881408",
+  "quarry": {
+    "name": "Hajjar al-Hibla",
+    "lat": 33.999202,
+    "lng": 36.199905,
+    "coordSource": "OSM node 2521507956"
+  },
+  "chips": [
+    "materiau",
+    "geste",
+    "organisation",
+    "precision",
+    "durabilite"
+  ],
+  "photo": {
+    "file": "Temple_of_Jupiter,_West_wall,_Trilithon,_Baalbek_20422.jpg",
+    "alt": "Mur ouest du podium du temple de Jupiter à Baalbek : le trilithon, trois blocs de calcaire dans l’assise médiane.",
+    "credit": "Lodo27 (Moscou), 15 mai 2019. Mur ouest du podium, trilithon.",
+    "licence": "CC BY-SA 3.0 (and GFDL)"
+  },
+  "common": "À Baalbek, trois blocs de calcaire d’environ 19 m de long sont posés dans le mur ouest du podium du temple de Jupiter. Ce sont des blocs romains, taillés pour cette assise, au Ier siècle. Dans la carrière, à 900 m, d’autres blocs plus gros n’ont jamais bougé : l’un parce qu’il était fêlé, un autre, dégagé en 2014, parce que le chantier s’est arrêté. La question n’est pas qui d’autre que l’homme. C’est comment on a fait rouler huit cents tonnes, et pourquoi on a cessé.",
+  "advanced": "Podium I (terrasse en T, appareil à bossages type hérodien) et Podium II (U mégalithique, trilithon) sont deux enveloppes. Le temple s’assoit sur la première ; la seconde l’habille et reste inachevée. Lohmann a montré que le calepin du fronton sur le trilithon est contemporain du temple, pas la preuve d’une plateforme antérieure. Les 1 650 t de 2014 sont une estimation DAI sur un prisme dont le bas n’est pas atteint. Tant qu’un nuage de points ne ferme pas le volume, et qu’un niveau coté n’existe pas entre le banc de carrière et le lit de l’assise médiane, le transport reste un modèle de forces (Adam : 16 cabestans, 512 hommes, 557 t de trait) posé sur une pente non publiée.",
+  "accepted": "Baalbek, Héliopolis romaine, porte un sanctuaire impérial dédié à Jupiter Heliopolitanus (la triade héliopolitaine romanisée : Jupiter, Vénus, Mercure). Le temple de Jupiter, périptère corinthien, s’élève à l’ouest d’une enfilade de cours construite par phases du Ier au IIIe s. n.è. (UNESCO 1984 ; Lohmann 2010). Les fouilles allemandes de 1898–1905 (Wiegand 1921) en ont fixé le plan. Le graffito d’un tailleur sur un fût de colonne date le temple comme presque achevé en 60 n.è. (Seyrig 1937, p. 95, cité par Lohmann 2010, n. 9). Le podium à trois assises, dont l’assise médiane ouest est le trilithon, est lu par l’archéologie dominante comme un habillage romain, julio-claudien, d’une terrasse plus ancienne en T, pour donner au temple un podium « à la mode romaine » (Hoffmann 1998 ; Lohmann 2010).",
+  "fact": "Trois objets distincts ; toutes les masses sont des estimations, jamais des pesées. (1) Trilithon en place, mur ouest, assise médiane : Adam 1977, longueurs 19,6 / 19,3 / 19,1 m, hauteur 4,34 m, profondeur 3,65 m, masse moyenne « in the region of 800 tonnes ». Lohmann 2010 arrondit à 4 × 4 × 20 m ; hauteur du podium, trois assises ~12 m (Lohmann) ou 12,4 m (Ito & Sueyasu d’après Wiegand). van Ess 2015 : 4,35 m de haut, 3,7–4,7 m de profondeur, longueur moyenne 19,6 m, « ca. 1000 Tonnen » chacun — l’écart 800 t / 1 000 t vient de la profondeur et de la densité. Mesuré : longueurs et hauteur d’Adam, visibles depuis l’extérieur. Estimé : profondeur interne, volume, masse. Largeur de joint au jauge : non vérifiée ; « on ne passe pas une lame » est un cliché de visite, pas une mesure. Assise inférieure : Adam, ~10 m, ~350 t estimées. (2) Hajjar al-Hibla dans la carrière, incomplètement détaché : Adam 21,5 × 4,3 × 4,2 m, 970 t estimées ; calcul géodésique Linz 1996 1 000,12 t (Ruprechtsberger 1999, monographie non lue en entier) ; van Ess 2015 « knapp 1 000 Tonnen ». Abandonné pour une arête médiocre et une fissure (DAI 21 nov. 2014). (3) Bloc 2014 sous / à côté de Hajjar al-Hibla, DAI / Abdul Massih : 19,60 × 6 × au moins 5,5 m, environ 1 650 t estimées ; hauteur non close — la tranchée n’a pas atteint le bas (van Ess, Archaeology mars–avril 2015). Les 1 650 t sont un plancher estimé, pas un volume mesuré. Taillé pour être extrait, jamais mis en œuvre. Calcaire local ; densité 2,6–2,8 g/cm³ (Linz). Formation géologique non vérifiée pour ces blocs.",
+  "object": "Deux enveloppes, pas un seul massif. Podium I (Kropp & Lohmann 2011) : terrasse en T sous la péristasis, appareil à bossages et marges dressées ; parallèle hérodien avec Jérusalem ; date proposée autour de 15 av. n.è. — hypothèse architecturale, pas une inscription. Podium II : mur en U qui habille les trois côtés de Podium I, strictement parallèle ; trois assises, blocs croissant vers le haut ; seule la face ouest de l’assise supérieure est complète — le trilithon ; les faces nord et sud de cette assise n’ont pas reçu leurs équivalents. Le temple s’assoit sur Podium I, presque achevé en 60 n.è. ; le podium à trilithon est un habillage périphérique, pas le soubassement porteur des colonnes. Tell occupé dès le PPNB (van Ess et al. 2008). Kalayan 1969 : dessin gravé grandeur nature du fronton sud (~4 × 13 m) sur la face supérieure du bloc sud du trilithon ; il en inférait une plateforme plus ancienne. Lohmann 2009 : le dessin se superpose aux fragments du fronton de Wiegand 1921 ; c’est un calepin de chantier romain, tracé sur l’assise en cours, destiné à être recouvert par l’assise suivante. Trilithon et temple sont synchrones. Le podium mégalithique est inachevé : on extraie encore des assises de ~20 m quand le chantier s’arrête.",
+  "technique": "Adam (Syria 1977 ; Roman Building p. 34–36) est un modèle de forces, pas une preuve de chantier. Carrière ~800 m, légèrement plus haute : il pose l’absence de levage vertical, la piste calée sur le lit de chaque assise — hypothèse d’implantation, pas un niveau coté. Calcul : 16 cabestans × 32 hommes = 512 hommes ; palans à quatre poulies ; après un large coefficient de frottement, trait calculé 557 t, « approximately of the load ». Les 557 t sont un trait, pas une masse de bloc ; le rapport à ~800 t ne tient que si le coefficient de roulement est bas ; Adam ne le mesure pas sur ces blocs. Analogies (Pierre-tonnerre, Sélinonte / Éphèse) sont des modèles, pas des preuves à Baalbek. Ce qui n’est pas démontré : aucune expérimentation à 800 t, encore moins à 1 000–1 650 t ; rouleaux de bois sous ~800 t non testés ; parcours, pente, dévers non publiés comme profil en long ; le calcul à 512 hommes non répliqué et silencieux sur le bloc 2014 ; l’hypothèse des flasques de roulement EXARC 2026 est une conjecture, pas un fait. Vitruve couvre un ordre de charge inférieur. Baalbek est hors de la série documentée — ce n’est pas la preuve que Rome « ne pouvait pas ».",
+  "evidence": "Daté : occupation du tell dès le PPNB (van Ess et al. 2008) ; colonnes du temple, graffito 60 n.è. (Seyrig 1937) ; propylées, dédicace de chapiteau pour Caracalla, début IIIe s. (Winnefeld 1914 / Lohmann 2010). Inféré : terrasse en T (Podium I) par le style d’appareil et le parallèle hérodien, pas d’inscription, fenêtre ~fin Ier s. av. / début Ier s. n.è. ; podium à trilithon (Podium II) par l’appareil, le calepin du fronton, l’insertion dans le master plan julio-claudien (1re moitié du Ier s. n.è., Lohmann 2010), pas de C14 publié sur un mortier de pose (joints vifs). Blocs de carrière inférés romains : traces d’outil, modules ~20 m identiques au trilithon, inscription fragmentaire sur Hajjar al-Hibla (Ruprechtsberger) ; pas de date radiométrique. Observé : inachevé — assise supérieure incomplète ; blocs non détachés ; les dessins de chantier n’auraient été recouverts que si l’assise suivante arrivait, et elle n’est pas arrivée. Le podium à trilithon appartient au même élan julio-claudien que le temple, pas à une phase mesurée indépendamment. Quiconque sépare de plusieurs millénaires le podium et le temple doit produire un fait de terrain que les relevés DAI n’ont pas. « Kalos » n’est pas identifié ; le nom utile est Kalayan.",
+  "hearsay": "Noms à écarter ; ils n’expliquent aucun joint, aucune trace d’outil, aucun phasage. Géants / Nimrod / djinns de Salomon : légendes médiévales arabes (manuscrits, Alouf) — folklore, pas stratigraphie. Extra-terrestres : un topos du web ; zéro artefact, zéro contexte. Civilisation antédiluvienne / âge de glace (Hancock et relais) : le trilithon comme vestige d’avant 10 000 av. n.è., les Romains n’auraient fait que poser un temple dessus — contredit par le calepin du fronton sur le trilithon (Kalayan / Lohmann 2009), le pied romain des dessins, les traces de carrière romaines, et l’insertion du podium dans un plan julio-claudien. « Impossible pour Rome » : confusion entre non documenté à cette masse et physiquement impossible ; la première phrase est vraie, la seconde n’est pas un argument. Le tell est vieux ; le trilithon ne l’est pas au même titre. Mélanger les deux est la faute de méthode.",
+  "open": [
+    "Transport : comment on a fait rouler ~800 t sur ~900 m, puis calé l’assise médiane. Adam est un modèle de forces, pas un procès-verbal de chantier. Le bloc 2014 (~1 650 t) n’a jamais bougé ; on ne sait pas s’il était transportable avec le même attelage.",
+    "Datation absolue du Podium II : pas de terminus ante quem épigraphique sur le trilithon lui-même (le dessin de fronton date l’usage de la face supérieure, pas l’extraction). Mortier, charbon dans un remblai d’implantation, ou tesson sous l’assise : non publiés comme datation du trilithon.",
+    "Podium I = Hérode ? Le parallèle de Jérusalem est fort visuellement (Kropp & Lohmann 2011). Ce n’est pas une signature. Paturel 2019 (BMCR) souligne une plausibilité politique, pas une preuve.",
+    "La carrière inachevée : Hajjar al-Hibla abandonnée pour une fissure / un mauvais banc (DAI). Bloc 2014 : une face déjà lisse, hauteur inconnue, raison d’abandon inconnue. Podium ouest sans l’assise supérieure sur les autres faces : arrêt de programme, ou logistique saturée ?",
+    "Outil et séquence de taille : traces relevées (Abdul Massih), pas encore un atlas outil par outil en accès libre. Profondeur vraie des trois blocs du trilithon (3,65 vs 3,7–4,7 m) à trancher par un relevé 3D du parement et de l’intrados, si accessible."
+  ],
+  "help": [
+    {
+      "role": "Chef de carrière",
+      "ask": "Lire les rainures d’extraction, l’ordre des faces, les coins, le banc abandonné. Dire si Hajjar al-Hibla et le bloc 2014 sont le même lit, et pourquoi on a élargi le module (4 m → 6 m)."
+    },
+    {
+      "role": "Tailleur monumental",
+      "ask": "Relever les outils (ciseau droit, gradine, pointe), l’anathyrose, les bossages de levage du trilithon, la séquence rustication → joint. Comparer avec un calcaire de même grain, pas avec du granite."
+    },
+    {
+      "role": "Géomètre-photogrammètre",
+      "ask": "Nuage de points des trois blocs de carrière jusqu’au pied (le bloc 2014 n’est pas fermé). Volume vrai, pas L × l × h. Profil en long carrière → mur ouest (pente réelle, pas « 800 m à peu près »)."
+    },
+    {
+      "role": "Ingénieur de halage",
+      "ask": "Calcul de roulement sous 800 t : section des rouleaux, écrasement, ornière, rayon de giration. Dire si 16 cabestans tiennent, et à quelle pente maximale."
+    },
+    {
+      "role": "Archéologue du bâti",
+      "ask": "Continuer le phasage Podium I / II / temple par joints, reprises, lits. Un seul carottage daté sous l’assise du trilithon vaudrait dix hypothèses."
+    }
+  ],
+  "sources": [
+    {
+      "cite": "Wiegand, Theodor (ed.). Baalbek. Ergebnisse der Ausgrabungen und Untersuchungen in den Jahren 1898 bis 1905. Berlin / Leipzig: de Gruyter, 1921–1925. Plan fondateur. [non lu en entier ici]",
+      "url": null
+    },
+    {
+      "cite": "Seyrig, Henri. “Heliopolitana.” Bulletin du Musée de Beyrouth 1, 1937, p. 77–100. Graffito de 60 n.è. (p. 95, d’après Lohmann 2010).",
+      "url": null
+    },
+    {
+      "cite": "Kalayan, Haroutune. “The engraved drawing on the Trilithon and the related problems about the constructional history of Baalbek Temples.” Bulletin du Musée de Beyrouth 22, 1969, p. 151–155.",
+      "url": null
+    },
+    {
+      "cite": "Adam, Jean-Pierre. “À propos du trilithon de Baalbek. Le transport et la mise en œuvre des mégalithes.” Syria 54, 1977, p. 31–63.",
+      "url": "https://doi.org/10.3406/syria.1977.6623"
+    },
+    {
+      "cite": "Adam, Jean-Pierre. La construction romaine. Paris: Picard, 1984. Engl. trans. Roman Building, Routledge, 1994/1999, p. 34–36 (trilithon, 512 hommes, 557 t de trait).",
+      "url": null
+    },
+    {
+      "cite": "Ruprechtsberger, Erwin M. “Vom Steinbruch zum Jupitertempel von Heliopolis/Baalbek (Libanon).” Linzer Archäologische Forschungen 30, 1999, p. 7–56. Relevés 1996, Hajjar al-Hibla ≈ 1 000,12 t. [non lu en entier]",
+      "url": null
+    },
+    {
+      "cite": "Hoffmann, Adolf. “Terrace and Temple: Remarks on the Architectural History of the Temple of Jupiter in Baalbek.” In Sader, Scheffler, Neuwirth (eds.), Baalbek: Image and Monument, Stuttgart, 1998, p. 279–304.",
+      "url": null
+    },
+    {
+      "cite": "van Ess, Margarete (ed.). Baalbek / Heliopolis. BAAL Hors-Série IV, Beirut, 2008. Dont Lohmann 2008, Rheidt 2008.",
+      "url": null
+    },
+    {
+      "cite": "Lohmann, Daniel. “Drafting and Designing. Roman Architectural Drawings… Heliopolis/Baalbek.” Proceedings of the Third International Congress on Construction History, Cottbus, 2009.",
+      "url": "http://www.daniellohmann.net/dox/lohmann_ch2009.pdf"
+    },
+    {
+      "cite": "Lohmann, Daniel. “Giant Strides towards Monumentality — The Architecture of the Jupiter Sanctuary in Baalbek / Heliopolis.” Bollettino di Archeologia on line I, 2010.",
+      "url": "http://bollettinodiarcheologiaonline.beniculturali.it/wp-content/uploads/2021/09/3_LOHMANN.pdf"
+    },
+    {
+      "cite": "Kropp, Andreas J. M. & Lohmann, Daniel. “‘Master, look at the size of those stones!…’ Analogies in Construction Techniques Between the Temples at Heliopolis (Baalbek) and Jerusalem.” Levant 43.1, 2011, p. 38–50.",
+      "url": "https://doi.org/10.1179/007589111X12966443320819"
+    },
+    {
+      "cite": "Abdul Massih, Jeanine. “The Megalithic Quarry of Baalbek: Sector III the Megaliths of Ḥajjar al-Ḥibla.” JEMAHS 3.4, 2015, p. 313–329. [paywall ; dimensions 2014 lues via le communiqué DAI]",
+      "url": "https://doi.org/10.5325/jeasmedarcherstu.3.4.0313"
+    },
+    {
+      "cite": "van Ess, Margarete. “Baalbek, Libanon: Forschungen im Steinbruch und die Aufarbeitung der Forschungen von 2001–2012.” e-Forschungsberichte des DAI 2015/3. Communiqué DAI 21 nov. 2014 (19.60 × 6 × ≥ 5.5 m, ~1,650 t).",
+      "url": "https://doi.org/10.34780/23a9-k1j6"
+    },
+    {
+      "cite": "Lohmann, Daniel. Das Heiligtum des Jupiter Heliopolitanus in Baalbek. Die Planungs- und Baugeschichte. Orient-Archäologie 38. Rahden: Leidorf, 2017 (thèse Cottbus 2014). [non lu en entier]",
+      "url": null
+    },
+    {
+      "cite": "UNESCO. “Baalbek.” World Heritage List no. 294, inscription 1984.",
+      "url": "https://whc.unesco.org/en/list/294/"
+    },
+    {
+      "cite": "OpenStreetMap. Way 244881408 Temple of Jupiter (34.0068192, 36.2033838); way 244881406 / node 2521507956 Hajjar al-Hibla (33.999202, 36.199905). ODbL.",
+      "url": null
+    }
+  ],
+  "xLine": "Baalbek, mur ouest : trois blocs d’environ 19 m, ~800 t chacun, posés au Ier s. — fait. La carrière a laissé plus gros, dont un bloc ~1 650 t encore dans le banc (2014). Question : comment on a calé l’assise, et pourquoi on a arrêté. Qui peut aider : un carrier et un photogrammètre, le même jour, sur Hajjar al-Hibla."
+}

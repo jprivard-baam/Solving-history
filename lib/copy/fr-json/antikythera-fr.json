@@ -1,0 +1,161 @@
+{
+  "id": "antikythera",
+  "order": 7,
+  "name": "Machine d’Anticythère",
+  "place": "Au large de la côte nord-est d’Anticythère (Αντικύθηρα / Aigila antique), chenal entre Cythère et la Crète, mer Égée",
+  "yearLabel": "Construction : paléographie ~IIe–Ier s. AEC (fenêtre large) ; naufrage ~60 ± 10 AEC",
+  "yearSort": -60,
+  "lat": 35.86442,
+  "lng": 23.30379,
+  "coordSource": "OSM relation 957729",
+  "chips": [
+    "materiau",
+    "geste",
+    "precision",
+    "calcul",
+    "filiation"
+  ],
+  "photo": {
+    "file": "NAMA_Machine_d'Anticythère_1.jpg",
+    "alt": "Fragment A de la machine d’Anticythère, Musée archéologique national, Athènes, inv. Χ 15087 — pas le cartouche Wikimedia 15987.",
+    "credit": "Marsyas, 19 décembre 2005 (EXIF Olympus C8080WZ). Fragment A, Musée archéologique national, Athènes. Inventaire officiel Χ 15087.",
+    "licence": "CC BY-SA 3.0 (and GFDL; CC BY 2.5)"
+  },
+  "common": "Au large d’Anticythère, vers 60 avant notre ère, un cargo romain a coulé avec des statues et un petit coffret de bronze. Dedans : trente roues dentées qui calculent la Lune, les éclipses et un calendrier. On n’en a retrouvé qu’un. Les Grecs n’avaient pas « que de la théorie ». Ils ont limé des dents de un millimètre et demi. La question n’est pas qui d’autre que l’homme. C’est dans quel atelier, et combien d’autres ont disparu.",
+  "advanced": "Trente engrenages conservés, pas soixante-neuf. Les 34 du Cosmos 2021 sont un modèle qui satisfait l’inscription de couverture arrière et les piliers de b1 ; Wright avait déjà un Cosmos possible, différent, et construit. Le calendrier est corinthien, les glyphes sont calés sur 205 AEC, le navire coule vers 60 : trois horloges distinctes. L’ergot-fente de k1/k2 est la théorie lunaire d’Hipparque en bronze — ça, le CT le montre. Le jeu des dents triangulaires a pu noyer cette élégance une fois la manivelle tournée. Entre cet objet et l’horloge à échappement, le vide documentaire tient six siècles, jusqu’au cadran byzantin de Londres. Un second exemplaire sur le plateau de 50 m changerait le dossier plus que n’importe quelle vidéo.",
+  "accepted": "Pâques 1900 (calendrier julien alors en usage en Grèce) : deux bateaux d’épongeurs de Symi, capitaine Dimitrios Kondos, mouillent à l’abri sur la côte nord-est d’Anticythère, près de l’ormos de Potamos (Zapheiropoulou 2012 ; Laskaris, PoS 170/010). Un plongeur, Elias Stadiatis, descend vers 50 m, à ~25 m de la côte, et remonte le bras d’une statue de bronze. Sauvetage sous tutelle de l’État et de la Marine hellénique, novembre 1900 – fin septembre 1901 (Zapheiropoulou : dix mois ; un plongeur mort, deux infirmes). Cargaison : sculptures de bronze et de marbre (dont l’Éphèbe d’Anticythère, ~340–330 AEC), verrerie de luxe, bijoux, amphores de Rhodes, Kos, Éphèse, mobilier de bronze. Le navire est une holkas d’environ 300 tonnes, en route vers un port italien (Puteoli / Rome) avec des œuvres grecques destinées au marché romain (Zapheiropoulou 2012 ; Jones, ISAW Papers 4, 2012 : « within a few years after 70 BC »). Le mécanisme, remonté en une masse, passe inaperçu parmi les bronzes. Le 18 ou 20 mai 1902, Spyridon Stais (ancien ministre de l’Instruction, pas un archéologue) voit, dans une salle du Musée national, des plaques à dents et une inscription en écriture spéculaire (Jones, Almagest VII, 2016). Lecture immédiate : « …rayon du Soleil… » (ΗΛΙΟΥ ΑΚΤΙΣ). Première description détaillée : P. D. Rediadis, 23 juin 1902. Valerios Stais publie les trouvailles en 1905. Albert Rehm (notes 1905–1906, inédites, Bayerische Staatsbibliothek) y lit déjà un planétarium. Derek de Solla Price, Gears from the Greeks, 1974 : « calendar computer from ca. 80 BC ». Michael T. Wright (1990–2006) rectifie Price (spirales au dos, ergot-fente, phase lunaire). AMRP, automne 2005 : tomographie X microfoyer (X-Tek / Bladerunner) + Polynomial Texture Mapping (Hewlett-Packard). Nature 2006, Nature 2008, ISAW Papers 4 (2012), Almagest VII (2016), Scientific Reports 2021. Datation du naufrage, pas de la fabrication : 36 tétradrachmes cistophores (32 Pergame, 4 Éphèse), émissions ~104–67 AEC, trésor fermé avant 60 AEC (Oikonomidou 2001, citée par Zapheiropoulou 2012). Céramiques et amphores : milieu du Ier s. AEC. Jones, ISAW Papers 17 (2020) : 60 ± 10 AEC, plus de 20 ans de part et d’autre « rather unlikely ».",
+  "fact": "Trois objets distincts. Les reconstructions d’engrenages disparus sont des modèles, jamais des pièces mesurées. Les 30 roues conservées sont un inventaire ; les totaux 35 / 69 appartiennent à Freeth 2021, pas à un décompte de pièces. (1) L’épave : holkas romaine ~300 t, cargaison de luxe vers l’Italie, naufrage ~60 ± 10 AEC. L’objet OSM est l’île (relation 957729, centroïde 35.86442 N, 23.30379 E), pas l’épave. Overpass 30 août 2026, bbox 35.82–35.91 N / 23.26–23.33 E : aucun historic=wreck ni seamark:type=wreck. Point OSM nommé le plus proche sur la côte NE : nœud 4901948364 Κάστρο Αντικυθήρων, 35.8875093 N, 23.2957722 E — pas l’épave, ne pas le piquer comme telle. Épave au large de cette côte, ~25 m du rivage, profondeur ~50 m (Zapheiropoulou 2012) ; AUV 2014 : plateau 44–58 m, ~70 × 50 m, puis chute vers 75 m (Williams, Pizarro & Foley 2015). Paire 35.8897 N, 23.3078 E : notices secondaires, non vérifiée dans un rapport de terrain nommé ici. Ne pas inventer un pin d’épave. (2) Le mécanisme : un seul exemplaire connu, bronze, ~1/3 conservé, 82 fragments au NAM, inv. Χ 15087 (le « n° 15987 » Wikimedia est une erreur de cartouche). A–G grands + 1–75 petits. Fragment A : 224,209 cm², 369,1 g, 27 des 30 engrenages, ~180 × 150 mm ; B 66,692 cm², 99,4 g, cadran métonique, engrenage o1 ; C 65,767 cm², 63,8 g, cadrans avant, q1 phase lunaire ; D 15,491 cm², 15,0 g, r1, 63 dents Definite ; E 12,623 cm², 22,1 g ; F 50,197 cm², 86,2 g, bas du dos, bois de caisse ; G 68,757 cm², 31,7 g, inscription de couverture avant. Tôle 1–2 mm sauf fragment 26 à 2,6 mm. Caisse environ 33 × 18 × 10 cm (Freeth 2008 SI ; dernière cote la plus incertaine) ; Jones : plaque arrière ~31,5 × 17,0 cm, avant ~16,5 × 17 cm. Trente roues dentées de bronze (Freeth 2006 / 2008 / 2021 et NAM) : 27 dans A, une dans B, une dans C, une dans D. Dents triangulaires, taillées à la main, environ 1,5 mm de haut. Module moyen 0,47. Épaisseur des roues 1,0–2,7 mm, moyenne 1,3 mm ; b1 = 2,7 mm. Meilleur ajustement Freeth b1 = 223 dents (Wright 223 ; Price 225 ; limites Freeth 223/224). a1 = 48 Definite. Train métonique 5/19 tour par an, spirale de 5 tours = 235 mois. Train Saros 4 tours = 223 mois. Mois sidéral 254/19. Anomalie lunaire : ergot-fente e5–k1+k2–e6 sur e3 (Wright identifié ; Freeth 2006 cinématique). Dos : spirale métonique de la famille corinthienne (12 noms de mois identifiés) + cadran des Jeux ; spirale Saros à glyphes Σ/Η + Exeligmos 0/8/16 h. Cadran callippique mentionné dans la BCI ; aucune pièce conservée. Époque des glyphes calculée 12 mai 205 AEC (Carman & Evans 2014 ; Freeth 2014 ; Jones 2020) — pas une date d’atelier. CT/PTM : 2 160 caractères (Price en avait 923). Paléographie Kritzas ~150–100 AEC ± une génération ; Crowther/Iversen fin IIIe–milieu du Ier. Alliage Price 1974 ~95 % Cu, ~5 % Sn (Caley & Smith) ; Mitropoulos 2018 trois alliages Cu–Sn–Pb, papier non lu en entier ici. (3) Sphères littéraires : Cicéron, De re publica 1.21–22 (Archimède) et De natura deorum 2.88 (Posidonios de Rhodes). Témoignages, pas cet objet. Freeth 2021 Cosmos : 34 engrenages conjecturaux devant b1 + 35 derrière b1 = 69 ; « we cannot claim that our model is a replica of the original ». Fragment D = épicycle de Vénus à 63 dents : argument 2021, pas un fait 1902.",
+  "object": "Deux enveloppes, un seul usage. Boîte : cadre de bois, plaques de bronze avant et arrière, couvercles inscrits (manuel). Entrée latérale par pignon frontal a1, tournée à la main. Pas de ressort, pas de poids, pas d’échappement. Pas une horloge : un simulateur qu’on avance pour une date. Avant : cadran du zodiaque (12 × 30°) + anneau du calendrier égyptien de 365 jours (12 × 30 + 5 épagomènes), mobile d’un cran tous les 4 ans (365 trous) ; parapegma indexé par lettres ; phase de la Lune au centre (bille bicolore, Wright 2006) ; pointeurs / « petites sphères » pour Lune, Soleil, et — d’après la BCI — les cinq planètes dans l’ordre géocentrique. Freeth & Jones 2012 : pointeurs. Freeth 2021 : anneaux. Les deux sont des reconstitutions du front disparu. Dos : calendrier civil corinthien et Jeux calés sur Méton et Saros. Pas un instrument de navigation : ni rumb, ni latitude, ni garde. Le navire transporte une œuvre de luxe parmi d’autres. Price : « calendar computer ». Wright : spirales au dos ; l’ergot-fente encode l’anomalie lunaire d’Hipparque. Freeth 2006 : prédiction d’éclipses. Compendium astronomique portatif. « Ordinateur analogique » est une métaphore moderne utile ; ce n’est pas une machine de bord. Ne pas confondre trois objets : l’épave (holkas, ~60 AEC), le mécanisme (un exemplaire, 82 fragments, 30 engrenages, inv. Χ 15087), et les sphères littéraires (Cicéron sur Archimède et Posidonios). Sauter de « un seul conservé » à « un seul jamais fait » est une faute de méthode.",
+  "technique": "Ce qu’écrit l’ingénierie conservée : dents en triangles équilatéraux approximatifs, lime, pas de moteur à diviser (Freeth & Jones 2012) ; irrégularité angulaire mesurable sur plusieurs roues (Freeth 2006 SI, méthode 1/ε). Cinq couches e1–e6 dans ~7 mm ; entraxe face-à-face ~1,4 mm (ISAW Papers 4) ; entretoises en bande de bronze ; quatre clips retiennent b1 parallèle à la plaque. Excentration ergot-fente ~1,1 mm entre k1 et k2 (cote Wright–Freeth reprise dans les notices techniques) : réalisation mécanique de la première anomalie lunaire d’Hipparque (excentrique / épicycle, équivalence déjà chez Apollonios). Pointeurs en spirale : ergot vertical suivant la rainure, « like the tip of a record player needle » (Freeth 2006–2008). Pas de vis, pas d’écrou : goupilles, rivets, tenons percés, loquets coulissants (Freeth & Jones 2012). Ce qui n’est pas démontré pour cette machine : atelier, ville, nom du mécanicien ; nombre d’exemplaires (un conservé ; Cicéron atteste des sphaerae, pas cet objet) ; filiation continue jusqu’aux horloges médiévales — prochain engrenage métallique daté : cadran solaire-calendrier byzantin, 4 fragments de laiton (Cu-Zn), Science Museum Londres inv. 1983-1393, fin Ve–première moitié du VIe s. (Field & Wright 1985), puis al-Bīrūnī ~1000, astrolabe persan 1221/22 (Oxford) : analogues, pas une chaîne d’atelier ; précision de pointage une fois assemblé — Freeth & Jones 2012 : le jeu des dents triangulaires et les frottements « probably would have swamped the finer solar and lunar correction mechanisms » ; les 34 roues planétaires de 2021 — aucune dans les fragments, hors l’assignation argumentée de D à Vénus. Vitruve, Héron, Pappus décrivent un engrenage plus simple. L’objet est hors de la série documentée, pas hors de la physique du bronze.",
+  "evidence": "Daté : naufrage ~60 ± 10 AEC — cistophores fermés avant 60 (Oikonomidou / Zapheiropoulou) ; céramiques milieu du Ier s. (Jones 2020). Inventorié : 30 engrenages, 82 fragments (NAM + AMRP 2005) ; b1 meilleur ajustement Freeth 223 dents. Lu : Méton 19 ans / 235 mois, Saros 223 mois, Jeux, calendrier de la famille corinthienne (Freeth 2008) ; planètes de la BCI (Aphrodite, Arès, Zeus, Kronos, sphère d’or, ΚΟΣΜΟΥ). Calculé, pas une date de fonte : époque des glyphes 205–187 AEC (Carman & Evans 2014 ; Freeth, PLOS ONE 2014 ; Jones 2020). Inféré : fabrication — paléographie Kritzas ~150–100 AEC ± une génération ; Crowther / Iversen fin IIIe – milieu du Ier ; terminus ante quem = le naufrage. Lieu d’usage (Corinthe / Épire / Sicile) d’après le calendrier ; lieu de fabrication non signé. Gearing planétaire du front : inscription oui, 34 roues de 2021 = modèle ; Cosmos Wright 2002 à pointeurs = autre modèle, construit ; les deux ne peuvent pas être vrais ensemble. Archimède / Posidonios comme auteur : littéraire ; Cicéron ne signe pas Χ 15087. Qui a lu : épongeurs 1900–1901 ; Spyridon Stais / Rediadis mai 1902 ; Rehm 1905–1906 ; Svoronos 1903/1908 ; Price + Karakalos 1971–1974 ; Cousteau / Kalligas 1976 (fragment E) ; Wright / Bromley 1990–2006 ; AMRP CT/PTM 2005 ; Freeth et al. Nature 2006 et 2008 ; Freeth & Jones ISAW 4, 2012 ; Éphorie + Foley + AUV Sirius 2012–2014 ; Almagest VII 2016 ; Jones ISAW 17, 2020 ; Freeth et al. Sci. Rep. 2021 (modèle à 69 roues). Quiconque date la machine d’« aliens » ou d’un siècle des Lumières doit produire un fait que le CT, l’épigraphie et le trésor monétaire n’ont pas.",
+  "hearsay": "Noms à écarter ; ils n’expliquent aucune dent, aucun glyphe, aucun cistophore. Technologie hors époque / « les Grecs n’avaient que de la théorie » : contredit par l’objet ; la théorie (Méton, Saros, épicycle d’Hipparque, périodes babyloniennes) est dans le bronze ; ce qui est vrai, c’est qu’aucun autre exemplaire de cette densité n’a survécu, et que Vitruve et Héron décrivent plus simple. Le récit qui ne colle plus : « les Grecs savaient calculer sur tablette ; ils ne savaient pas usiner ». Ils ont usiné. On n’a qu’un exemplaire. Astrolabe / instrument de navigation / horloge de navire : première hypothèse 1902 (Svoronos) ; abandonnée dès Price ; pas de rumb, pas de latitude ; cargaison de luxe, pas un poste de barre. Extra-terrestres : un topos YouTube ; zéro artefact, zéro contexte ; l’objet a un manuel en grec koinè, des mois corinthiens, des Jeux panhelléniques. Un génie unique sans tradition : Cicéron atteste des sphaerae à Syracuse (butin de Marcellus, 212 AEC, revu en 166) et chez Posidonios à Rhodes (~années 80–70 AEC) — une tradition littéraire de simulateurs du cosmos ; atelier non identifié ; sauter de « un seul conservé » à « un seul jamais fait » est une faute de méthode. Faux moderne : Jones, ISAW Papers 17 appendice — l’inauthenticité ne tient pas devant la corrosion marine, le contexte de cargaison, la paléographie et les cycles babyloniens encodés avant que Price ne les lise.",
+  "open": [
+    "Atelier et inventeur. Rhodes (école de Posidonios — hypothèse de Price), Syracuse (héritage d’Archimède — piste Freeth 2008 via le calendrier), Corinthe / Épire (calendrier d’usage). Aucune signature. Le calendrier dit où on lisait la date, pas où on a limé les dents.",
+    "Combien ont existé. Un conservé. Des sphaerae attestées. Entre les deux : non chiffré. Le bronze se refond ; la mer en a peut-être d’autres ; l’épave d’Anticythère n’est pas entièrement fouillée (campagne Foley / Éphorie, 2e épave au sud, 2012–2014).",
+    "Front planétaire. Inscriptions : oui. 34 roues de 2021 : un modèle qui « matches all the surviving evidence » selon ses auteurs, pas une pièce. Wright 2002 avait un autre Cosmos, à pointeurs, construit. Les deux ne peuvent pas être vrais ensemble.",
+    "Heures des glyphes. Freeth 2008 SI : « We have not discovered a rational or plausible basis for the glyph times. » Jones 2020 isole une composante anomalistique, mais les heures restent médiocres même pour le cycle d’époque (~2 h d’écart-type après exclusion d’erreurs). La machine n’était pas un observatoire de vérification.",
+    "Module et état d’origine. Corrosion, retrait, déformation. Rayons Freeth ±0,5 mm. Le module 0,47 est une moyenne sur pièces corrodées.",
+    "Alliages par pièce. Mitropoulos 2018 cité, texte intégral non lu ici. Distinguer bronze de roue et bronze de plaque reste une hypothèse métallurgique à republier clairement."
+  ],
+  "help": [
+    {
+      "role": "Horloger / mécanicien de précision",
+      "ask": "Lire le jeu réel d’une denture triangulaire à module 0,47. Dire si l’anomalie lunaire se voit une fois le jeu et le frottement pris en compte, ou si elle est une élégance arithmétique. Reconstruire le front sans ajouter de vis."
+    },
+    {
+      "role": "Graveur sur bronze",
+      "ask": "Relever la hauteur des lettres 1,2 mm, le ductus (pi à jambes inégales, sigma ouvert, omicron minuscule — Kritzas). Dire si un seul graveur a fait cadrans et couvertures, et avec quel outil (burin, pointe, guide peint)."
+    },
+    {
+      "role": "Métallurgiste du bronze",
+      "ask": "Refaire, en analyses publiées, la carte Cu–Sn–Pb pièce par pièce (Price 5 % Sn vs Mitropoulos). Dureté des dents vs plaques. Traces de forge à froid / sciage (hypothèse des notices de reconstruction)."
+    },
+    {
+      "role": "Épigraphiste du petit bronze",
+      "ask": "Comparanda sur métal, pas sur marbre. La fenêtre paléographique se ferme seulement avec ça."
+    },
+    {
+      "role": "Archéologue sous-marin",
+      "ask": "Finir le plateau 44–58 m. Un second mécanisme, un outil d’atelier, un débris de caisse : n’importe lequel change le dossier « un seul exemplaire »."
+    }
+  ],
+  "sources": [
+    {
+      "cite": "Svoronos, Ioannis N. Ὁ Θησαυρὸς τῶν Ἀντικυθήρων. Athens: Beck & Barth, 1903 (repr. 1908), pl. X. Premières photographies A–D.",
+      "url": null
+    },
+    {
+      "cite": "Rediadis, P. D. “Ὁ ἐξ Ἀντικυθήρων ἀστρόλαβος.” In Svoronos 1903, p. 44–52. Première description technique.",
+      "url": null
+    },
+    {
+      "cite": "Stais, Valerios. Τὰ ἐξ Ἀντικυθήρων εὑρήματα. Athens, 1905.",
+      "url": null
+    },
+    {
+      "cite": "Rehm, Albert. Notizbuch, 1905–1906. Munich, Bayerische Staatsbibliothek, Rehmiana III/7 and III/9. Inédit. Planétarium (« Mein Planetarium »).",
+      "url": null
+    },
+    {
+      "cite": "Price, Derek de Solla. Gears from the Greeks: The Antikythera Mechanism — A Calendar Computer from ca. 80 B.C. Trans. Am. Philos. Soc. N.S. 64.7, 1974, p. 1–70. Appendice Caley & Smith : bronze ~95 Cu / 5 Sn.",
+      "url": "https://doi.org/10.2307/1006146"
+    },
+    {
+      "cite": "Wright, M. T. “Epicyclic gearing and the Antikythera Mechanism, Part I.” Antiquarian Horology 27 (2003), p. 270–279; Part II, ibid. 29 (2005), p. 51–63; et articles connexes 2002–2006 (schéma d’engrenages, affichage planétaire, phase lunaire).",
+      "url": null
+    },
+    {
+      "cite": "Freeth, T. et al. “Decoding the ancient Greek astronomical calculator known as the Antikythera Mechanism.” Nature 444 (2006), p. 587–591. SI lu ici : fragments, inscriptions, table des dents.",
+      "url": "https://doi.org/10.1038/nature05357"
+    },
+    {
+      "cite": "Freeth, T., Jones, A., Steele, J. M. & Bitsakis, Y. “Calendars with Olympiad display and eclipse prediction on the Antikythera Mechanism.” Nature 454 (2008), p. 614–617. SI (corr. 2 juin 2011) OA.",
+      "url": "https://doi.org/10.1038/nature07130"
+    },
+    {
+      "cite": "Freeth, T. & Jones, A. “The Cosmos in the Antikythera Mechanism.” ISAW Papers 4 (2012). OA. Module moyen 0,47 ; planètes BCI ; Cosmos à pointeurs.",
+      "url": "http://dlib.nyu.edu/awdl/isaw/isaw-papers/4/"
+    },
+    {
+      "cite": "Freeth, T. “Eclipse prediction on the ancient Greek astronomical calculating machine known as the Antikythera Mechanism.” PLOS ONE 9.7 (2014), e103275. OA.",
+      "url": "https://doi.org/10.1371/journal.pone.0103275"
+    },
+    {
+      "cite": "Carman, C. C. & Evans, J. “On the epoch of the Antikythera mechanism and its eclipse predictor.” Archive for History of Exact Sciences 68 (2014), p. 693–774.",
+      "url": "https://doi.org/10.1007/s00407-014-0145-5"
+    },
+    {
+      "cite": "Bitsakis, Y. & Jones, A. (et al.). The Inscriptions of the Antikythera Mechanism. Almagest VII.1 (2016): 6 articles. Partiellement OA via archive.nyu.edu (bitstream 2451/71597).",
+      "url": null
+    },
+    {
+      "cite": "Jones, Alexander. A Portable Cosmos: Revealing the Antikythera Mechanism. Oxford: OUP, 2017. Synthèse de référence. Livre, paywall.",
+      "url": null
+    },
+    {
+      "cite": "Jones, Alexander. “The Epoch Dates of the Antikythera Mechanism (With an Appendix on its Authenticity).” ISAW Papers 17 (2020). OA. Naufrage 60 ± 10 AEC ; glyphes 205 AEC ; paléographie élargie.",
+      "url": "http://dlib.nyu.edu/awdl/isaw/isaw-papers/17/"
+    },
+    {
+      "cite": "Freeth, T., Higgon, D., Dacanalis, A., MacDonald, L., Georgakopoulou, M. & Wojcik, A. “A Model of the Cosmos in the ancient Greek Antikythera Mechanism.” Scientific Reports 11, 5821 (2021). OA. Correction : Sci. Rep. 11, 17361 (2021).",
+      "url": "https://doi.org/10.1038/s41598-021-84310-w"
+    },
+    {
+      "cite": "Pakzad, A. et al. “Improved X-ray computed tomography reconstruction of the largest fragment of the Antikythera Mechanism…” PLOS ONE 13.11 (2018), e0207430. OA.",
+      "url": "https://doi.org/10.1371/journal.pone.0207430"
+    },
+    {
+      "cite": "Field, J. V. & Wright, M. T. “Gears from the Byzantines: A portable sundial with calendrical gearing.” Annals of Science 42.2 (1985), p. 87–138. Science Museum, inv. 1983-1393.",
+      "url": "https://doi.org/10.1080/00033798500200131"
+    },
+    {
+      "cite": "Zapheiropoulou, Mary. “The Antikythera shipwreck and the treasures.” PoS 170 (2012) 006. OA. NAM ; 70–50 AEC ; cistophores ; 82 fragments.",
+      "url": "https://pos.sissa.it/170/006/pdf"
+    },
+    {
+      "cite": "Kaltsas, N., Vlachogianni, E. & Bouyia, P. (eds.). The Antikythera Shipwreck: The Ship, the Treasures, the Mechanism. Catalogue d’exposition, NAM Athènes, 2012.",
+      "url": null
+    },
+    {
+      "cite": "Williams, S. B., Pizarro, O. & Foley, B. “Return to Antikythera: Multi-Session SLAM based AUV mapping of a first century B.C. wreck site.” Field and Service Robotics, 2015. OA. 44–58 m, plateau ~70 × 50 m.",
+      "url": "https://fsr.utias.utoronto.ca/submissions/FSR_2015_submission_59.pdf"
+    },
+    {
+      "cite": "Ministry of Culture (Greece). “The Antikythera Mechanism.” Fiche NAM, inv. Χ 15087.",
+      "url": "https://olympicgames.culture.gov.gr/en/texnologia/1_Mixanismos-Antikithirwn.html"
+    },
+    {
+      "cite": "OpenStreetMap. Relation 957729 Αντικύθηρα (35.8644182, 23.3037898) ; nœud 4901948364 château NE (35.8875093, 23.2957722). Pas de nœud d’épave. ODbL.",
+      "url": null
+    },
+    {
+      "cite": "Cicero. De re publica 1.21–22 (sphere of Archimedes); De natura deorum 2.88 (sphere of Posidonius). Témoignage littéraire, pas l’objet.",
+      "url": null
+    },
+    {
+      "cite": "Seiradakis, J. H. & Edmunds, M. G. “Our current knowledge of the Antikythera Mechanism.” Nature Astronomy 2 (2018), p. 35–42.",
+      "url": "https://doi.org/10.1038/s41550-017-0346-3"
+    }
+  ],
+  "xLine": "Anticythère, côte NE : un calculateur de bronze, 30 engrenages conservés, Méton et Saros dans les dents, naufrage ~60 AEC — fait. Un seul exemplaire. Question : l’atelier, et le front disparu. Qui peut aider : un horloger et un graveur, le même jour, sur le fragment A."
+}

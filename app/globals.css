@@ -1,0 +1,106 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+:root {
+  --paper: #14110c;
+  --paper-2: #1c1812;
+  --paper-3: #241f17;
+  --ink: #eadcc4;
+  --muted: #a89878;
+  --gold: #c9a44a;
+  --gold-dim: #8a7030;
+  --rule: #3d3426;
+  --danger-line: #5a4630;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper-2: var(--paper-2);
+  --color-paper-3: var(--paper-3);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-gold: var(--gold);
+  --color-gold-dim: var(--gold-dim);
+  --color-rule: var(--rule);
+  --font-serif: var(--font-source-serif);
+  --font-display: var(--font-cormorant);
+}
+
+html,
+body {
+  background: var(--paper);
+  color: var(--ink);
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--font-source-serif), "Times New Roman", serif;
+  background-image:
+    radial-gradient(ellipse at 20% 0%, rgba(201, 164, 74, 0.06), transparent 50%),
+    radial-gradient(ellipse at 80% 100%, rgba(90, 70, 40, 0.18), transparent 45%);
+}
+
+body::before {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  opacity: 0.07;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  z-index: 50;
+}
+
+a {
+  color: inherit;
+}
+
+.font-display {
+  font-family: var(--font-cormorant), "Palatino Linotype", serif;
+}
+
+.leaflet-container {
+  background: #0c0b09;
+  font-family: var(--font-source-serif), serif;
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: #1c1812;
+  color: #eadcc4;
+  border: 1px solid #3d3426;
+  box-shadow: none;
+  border-radius: 2px;
+}
+
+.leaflet-popup-content {
+  margin: 10px 12px;
+}
+
+.leaflet-popup-content a {
+  color: #c9a44a;
+  text-decoration: none;
+}
+
+.leaflet-control-attribution {
+  background: rgba(20, 17, 12, 0.85) !important;
+  color: #a89878 !important;
+}
+
+.leaflet-control-attribution a {
+  color: #c9a44a !important;
+}
+
+.leaflet-bar a {
+  background: #1c1812;
+  color: #eadcc4;
+  border-bottom-color: #3d3426;
+}
+
+.leaflet-bar a:hover {
+  background: #241f17;
+}
+
+.paper-rule {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold-dim), transparent);
+}

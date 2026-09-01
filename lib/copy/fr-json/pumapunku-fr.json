@@ -1,0 +1,154 @@
+{
+  "id": "pumapunku",
+  "order": 4,
+  "name": "Pumapunku",
+  "place": "Tiwanaku (Tiahuanaco), province Ingavi, département de La Paz, Bolivie",
+  "yearLabel": "VIe–VIIIe s. n.è. (plateforme ~580–710 ; pierre taillée neuve jusqu’à ~630)",
+  "yearSort": 630,
+  "lat": -16.56169,
+  "lng": -68.67959,
+  "coordSource": "OSM way 155719393",
+  "chips": [
+    "materiau",
+    "geste",
+    "organisation",
+    "precision",
+    "durabilite"
+  ],
+  "photo": {
+    "file": "Puma_Punku_H_profile_wall.JPG",
+    "alt": "Quatre blocs d’andésite à profil en H à Pumapunku, Tiwanaku — pas la Puerta del Sol du Kalasasaya.",
+    "credit": "Janikorpi, 10 août 2011. Quatre blocs à profil en H.",
+    "licence": "CC BY-SA 3.0"
+  },
+  "common": "À Pumapunku, une plateforme de terre en T, haute de quelques mètres, porte encore des dalles de grès et un éboulis d’andésite. Les blocs en H pèsent de l’ordre de six cents kilos, pas des centaines de tonnes. On les a taillés au VIe–VIIe siècle, en une ou deux générations, avec des pierres dures, des plans, des crampons de bronze coulé. Le reste est un chantier arrêté, puis pillé. La question n’est pas qui d’autre que l’homme. C’est avec quel outil on a fini l’angle rentrant, et comment on a fait monter le grès.",
+  "advanced": "Deux enveloppes : tertre en T (grès, argile, trois revêtements) et superstructure d’andésite (blocs en H, portails, le modèle 0,5774). Marsh 2023 coupe la taille neuve à ~630 ; après, réemploi, comme à l’Akapana. Protzen a mesuré des niches à ±1 mm et n’a pas trouvé d’unité ; Nair a reproduit une demi-croix en ~25 heures et pas le plan intérieur. Les 131 t de Ponce et les 83 t de Vranich 2018 ne sont pas réconciliées. Tant qu’un nuage de points ne ferme pas les 17 dalles, et qu’un percuteur en contexte n’est pas identifié pour l’andésite, le « laser » reste une phrase, et le geste reste une taille dont on a le début (piquetage) et pas la fin (l’angle vif).",
+  "accepted": "Pumapunku (aymara / quechua : « porte du puma ») est une plateforme à terrasses en T, au sud-ouest du noyau monumental de Tiwanaku — un tertre de terre damée, face de pierre, avec une cour enfoncée et une rampe d’accès, édifié comme seuil rituel de la ville (Vranich 2006 : « ritual gateway to the city »). Récit dominant depuis Vranich (1996, 2000–2002) et Yaeger & Vranich 2013, modèle bayésien Marsh, Vranich et al. 2023 : la plateforme est posée directement sur des sédiments stériles du Pléistocène moyen, pas de village antérieur sous le tertre (Vranich, cité Isbell 2004) ; la construction commence au VIe s. n.è. ; la taille neuve d’andésite s’arrête vers ~630, puis réemploi comme à l’Akapana ; le chantier monumental cesse vers ~710 ; des offrandes encore ~740–770. Le Tiwanaku classique VIe–Xe s. tient pour la ville ; pour cette plateforme, la fenêtre serrée est VIe–VIIIe s. Le Xe s. est celui de l’occupation urbaine et de l’effondrement résidentiel (~1010), pas celui de la taille des blocs en H. Cieza de León 1549 : déjà des ruines. Cobo : un portail et une fenêtre encore debout. Au début du XVIIe s., presque plus rien ne tient. Ce que l’on photographie depuis Angrand (1848) et Uhle (1893) est un éboulis.",
+  "fact": "Trois objets distincts ; toutes les masses sont des estimations, jamais des pesées. (1) Plateforme à terrasses, en T, cœur d’argile, trois revêtements : Yaeger & Vranich 2013 167,4 m N–S (ouest), 116,7 m E–O, ailes 27,6 m ; Vranich 2018 167 / 116 / 27 m, largeur d’aile « estimated 20 m ». La hauteur 5 m est un ordre de grandeur de notice, non vérifiée dans Vranich 2018 ni Marsh 2023. (2) Plataforma Lítica, bord est : 17 pièces de grès, 6,75 × 38,72 m (Vranich 2018). Plus grande dalle — deux relevés qui ne coïncident pas, aucun n’est une pesée : Ponce 7,81 × 5,17 × 1,07 m, ~131 t estimées (densité non lue dans Ponce 1970 ici) ; même tradition, 2e dalle 7,90 × 2,50 × 1,86 m, ~85,21 t (fausse précision) ; Vranich 2018 8,12 × 3,86 × 1,2 m, ~83 t, densité non donnée. Ne pas additionner 131 t et 83 t. Estimations d’andésite Vranich 2018 : petit bloc 34 × 26 × 14 cm ~8,5 kg ; blocs en H 97 × 99 × 55 cm ~600 kg ; portail monolithe un peu sous 3 m ~9 t ; un bloc 3,5 × 3,2 × 0,64 m ~20 t. ~150 pièces d’andésite autour des dalles, aucune en place d’origine. Blocs en H : Protzen & Nair 1997 types 1 et 2, « significant dimensional variations », pas un kit interchangeable ; 97 × 99 × 55 cm est un ordre de grandeur. « ~80 faces par bloc » non vérifié. Ils forment des portails miniatures aveugles, pas un mur cyclopéen. Escritorio del Inca / Model Stone 1 au rapport 0,5774. Précision des faces : Protzen 1997 tolérance de relevé ±1 mm sur les niches, pas une planéité démontrée de toutes les faces ; type 2a 1 : 1,0399 (n = 20, écart-type 0,013) ; type 2b 1 : 1,4495 (n = 10, écart-type 0,043). « 1/1000 of an inch » (0,025 mm) n’est pas une mesure — quarante fois plus fin que le ±1 mm de Protzen ; à rayer. ±0,2 mm sur les joints des H : pas dans Protzen 1997 ni Vranich 2018. Laser / CNC : zéro trace d’outil ; les blocs inachevés montrent le piquetage (Protzen 1997 fig. 20, 23, 24). Nair (2013 pp. 154–174, monographie non lue en entier) : demi-croix ~20 cm, 40 heures d’essai, ~25 heures pour un praticien ; bronze largement inefficace ; planéité intérieure non reproduite. Grès : Kimsachata / Kausani ~10 km ; andésite : Ccapia / Copacabana ~90 km. Expérience totora 2002/2005 : faisabilité à ~9 t d’andésite, pas 20 t, pas 80–130 t de grès (par terre). Crampons Cu–As–Ni (Lechtman 1998), coulés en place dans le canal sud (Protzen 1997) ; ~5 % As / ~4 % Ni à vérifier dans Lechtman 2005. (3) La Puerta del Sol est au Kalasasaya, ~1 km NE — pas ce site ; ne pas l’y épingler. « Kapi Kalani » non trouvé ; noms utiles Kapia/Ccapia (andésite), Kimsachata / Kausani / Kaliri (grès).",
+  "object": "Deux enveloppes, pas un seul massif : tertre en T (terre tamisée, trois revêtements ; emprise en T dès la première phase, Yaeger & Vranich 2013 ; cour ouest, esplanade, escalier de grès ; est Plataforma Lítica + tumulus d’andésite) et superstructure d’andésite (~150 ashlars, au moins cinq fragments de portail du type Puerta del Sol, jusqu’à huit prévus, relais Protzen/Nair ; blocs en H, croix, flèches, losanges, linteaux à double courbure). Vranich 2018 impression 3D à 4 % : un bâtiment à salles autour d’une cour, analogue à Chiripa (550 av. n.è.–100 n.è.) et Pukara — version monumentale d’un type du bassin, pas une invention orpheline. Inachevé : Protzen 1997 dernière assise du 1er gradin, sud, sommet non dressé ; bulbes résiduels ; chroniqueurs « unfinished » ; Marsh 2023 après ~630 plus de pierre neuve, après ~710 plus de construction. Détruit : pillage colonial, extraction, ballast de chemin de fer, intempéries à 3 850 m, restaurations Ponce, « fix » présidentiel de 2006 qui a nivelé des dalles et reposé des blocs hors des publications (Vranich 2018). Modèles de bois de Stübel détruits dans le bombardement de Leipzig. Un kit démonté, incomplet, déplacé, pas un objet d’usine intact. Drone 2016 ~17 ha / ~2 ha dégagés : chiffres de presse, pas un article de géophysique lu ici. UNESCO zone Pumapunku 7,0 ha (rapport d’État 2014). La Puerta del Sol se tient au Kalasasaya ; Kolata 1993 reste analogique (motifs, pas un joint de reprise publié).",
+  "technique": "Jean-Pierre Protzen et Stella Nair, sept saisons de terrain, années 1990 (JSAH 1997, 2000 ; Stones of Tiahuanaco 2013). Ébauche : piquetage à la pierre, cupules et auges ; percuteur d’hématite hors contexte ; galets de quartzite dans la vallée, usage non démontré. Finition : plans, orthogonaux, angles intérieurs vifs — pas le bossage inca. Protzen : « techniques unknown to the Incas and to us at this time » — une phrase sur l’outil de finition, pas sur l’espèce de l’artisan. Préfabrication partielle d’un appareil quasi-isodome (cote, angle, planéité au sol) coexiste avec un dressage in situ (2e gradin à bond in-and-out, bulbes en place). Pas de pierre en coin inca. Manutention : rainures 2–3 cm, canaux 15–18 cm, rares poignées de levage percées, rares bossages de levage, traces de traînage ; roue absente ; traîneau / cordes / rampe est le modèle par défaut, pas un procès-verbal de piste. Outils postulés, non trouvés : ciseau/poinçon, scie ou lime, équerre et règle, foret. Le bronze d’outillage ne tient pas contre l’andésite dans l’expérience Nair. Les Incas n’ont pas appris ce métier à Tiwanaku ; Cieza et Cobo disent que Pachacuti a vu et voulu imiter ; Protzen : s’il y a imitation, elle est réinterprétée ; des siècles sans appareil de pierre de taille entre l’effondrement de Tiwanaku et l’Inca. Non démontré : aucune expérimentation à 80–130 t de grès sur 10 km ; totora 2002 couvre ~9 t d’andésite, pas 20 t, pas le grès de Kimsachata ; conjecture de « route de glace » ; géopolymère contredit par le match carrière–monument et les bancs inachevés en cours de taille. L’outil de l’angle intérieur vif et du plan rentrant n’est pas identifié — ce n’est pas « donc laser ». Vitruve n’a rien à faire ici ; les parallèles utiles sont Chiripa / Pukara (forme) et Nair (geste).",
+  "evidence": "Daté : début de construction, charbon OS-17860 en sommet du remplissage d’argile, 1σ 542–593 n.è., 2σ 437–618 (Yaeger & Vranich 2013) ; Isbell 2004 citant Vranich 1510 ± 25 BP, cal. 536–600 ; modèle Marsh et al. 2023, début ~580. Surface verte et rouge datée par cinq dates ; interpolation Marsh ~630, fin de la pierre extraite et taillée neuve, ensuite réemploi. Fin de la construction monumentale modélisée ~710 ; offrandes sous revêtements ~740–770 (trois dates). TW059 ~710 ; fosse de pillage ~1020 ; inhumation d’enfant TW1000 ~1090 (Marsh 2023). L’occupation de la ville s’achève ~1010 (970–1060, 95 %) — autre objet. Observé : tertre sur sédiment stérile, pas d’occupation Middle Horizon sous Pumapunku (tranchées Vranich) ; assise sud inachevée (Protzen 1997) ; ~150 andésites aucune en place d’origine (Vranich 2018). Inféré : transport lacustre de l’andésite (piedras cansadas, Iwawe, match Ccapia) + expérimenté à 9 t, pas un convoi documenté ; grès 10 km en pente par match pétrographique, pas de profil en long publié ici ; l’analogie Chiripa / Pukara est un argument de forme. Chronologie Ponce I–V dépassée (non calibrée, petit échantillon). Posnansky 15 000 av. n.è. écarté. Une ou deux générations de tailleurs (~580–630) ont fait presque toute la pierre plane ajustée, dont les blocs en H (Marsh et al. 2023) — le fait le plus dur du dossier. Ponce a daté et restauré ; Vranich a stratifié ; Protzen a mesuré la pierre ; Janusek a suivi la carrière ; Marsh a calé le temps. Personne n’a usiné.",
+  "hearsay": "Noms à écarter ; ils n’expliquent aucun joint, aucune trace d’outil, aucun C14. Extra-terrestres / Ancient Aliens : un topos YouTube (History Channel s. 4 ép. 6) ; zéro artefact ; Vranich 2018 : le bâtiment d’andésite a des précurseurs locaux (Chiripa, Pukara) ; Rossi 2019 ; Card 2018. « Précision de 1/1000 of an inch », laser, CNC : aucune mesure originale à 0,025 mm ; le seul protocole chiffré est Protzen ±1 mm sur les niches ; les blocs inachevés montrent le piquetage ; Nair, une demi-croix en une journée de travail qualifié ; « unknown to us » porte sur l’outil de l’angle rentrant, pas sur une machine-outil. Posnansky 15 000 av. n.è. (Tihuanacu 1945 vol. II) : amplitude solaire du Kalasasaya → obliquité 23° 8′ 48″ → courbe de 41 000 ans de Paris 1911 — pour le Kalasasaya, pas même Pumapunku ; faute de méthode (Ruggles / Sillar) ; le C14 de cette plateforme (VIe s.) et la fondation du site ~180 n.è. (Marsh 2023) falsifient le chiffre. Posnansky reste utile pour les photographies, les plans, la pétrographie de Berlin ; sa chronologie astronomique n’est pas une preuve. Antédiluvien / Hancock : mélanger le tell ancien du bassin (cours enfoncés dès 1800 av. n.è.) avec cette plateforme du VIe s. — le lieu est vieux, l’assise n’est pas. Géopolymère (Davidovits) : les carrières matchent ; les blocs sont inachevés par taille. « 440 tonnes » : notices anciennes, corrigées ; rester sur 131 t estimées (Ponce) vs 83 t estimées (Vranich 2018), jamais pesées. Le bassin est vieux ; Pumapunku date du VIe–VIIIe s. Mélanger les deux est la faute.",
+  "open": [
+    "L’outil de l’angle rentrant et du plan intérieur. Nair n’a pas clos. Pas de ciseau en contexte. La phrase de Protzen tient encore : on ne sait pas avec quoi ils ont fini. On sait que c’est de la taille (blocs en cours, piquetage, rainure de lame).",
+    "Les deux prismes de la « plus grande dalle » : 7,81 × 5,17 × 1,07 m (Ponce, ~131 t) vs 8,12 × 3,86 × 1,2 m (Vranich, ~83 t). Un nuage de points des 17 dalles, jusqu’au chant, trancherait. Densité du grès : à publier avec le volume.",
+    "Transport. Grès : 10 km, pente, 80–130 t — un modèle, pas un profil en long. Andésite : lac + Iwawe, démontré à 9 t, pas au-delà. Les 20 t d’andésite (Vranich 2018) restent un problème de chantier ouvert.",
+    "Rapport des dalles de grès au bâtiment d’andésite. Vranich 2018 : un seul ancrage sûr (portails au sommet des encastrements en L) ; le reste est une reconstruction 3D, plausible, pas une anastylose de terrain.",
+    "Sol vert : malachite ou pas. Surface verte et rouge fouillée et datée. Recette « chaux + sable + malachite » non vérifiée dans un rapport d’analyse lu ici. Le mortier blanchâtre 3:1:1 (Pareja & Escalante) est une autre couche.",
+    "Hauteur vraie du tertre (5 m de notice) et emprise réelle du complexe (17 ha drone vs 7 ha UNESCO Pumapunku). Nivellement et polygone à recoller.",
+    "Combien de blocs en H, combien de portails. « Au moins cinq », « jusqu’à huit » : fragments. Kit incomplet, pièces au musée, pièces perdues depuis Angrand."
+  ],
+  "help": [
+    {
+      "role": "Tailleur (andésite, pas calcaire)",
+      "ask": "Reprendre l’expérience Nair sur un angle rentrant et un plan intérieur, pas seulement une demi-croix. Dire si la rainure d’apex est un ciseau lithique, un sillon d’abrasif, ou autre. Comparer le grain Ccapia, pas un granite."
+    },
+    {
+      "role": "Carrier",
+      "ask": "Lire Quebrada de Kausani / Kaliri (grès) et les pentes de Ccapia (andésite) : diaclases, épannelage, blocs abandonnés. Dire si un « banc fêlé » style Hajjar existe ici."
+    },
+    {
+      "role": "Géomètre-photogrammètre",
+      "ask": "Nuage de points des 17 dalles et d’un échantillon de blocs en H (volume vrai, pas L × l × h). Trancher 131 t vs 83 t. Planéité : déviation max sur 1 m, protocole, pas une formule YouTube."
+    },
+    {
+      "role": "Métallurgiste (type Lechtman)",
+      "ask": "Table d’alliage des crampons in situ encore accessibles ; confirmer coulé vs martelé par canal. Ne plus citer 5 % / 4 % sans la table."
+    },
+    {
+      "role": "Archéologue du bâti (type Vranich / Protzen)",
+      "ask": "Recoller dalles et andésite sans le « fix » de 2006. Un seul joint d’origine encore en place vaudrait dix reconstructions 3D."
+    },
+    {
+      "role": "Ingénieur de halage",
+      "ask": "Profil en long Kimsachata → plateforme pour 80–130 t. Traction, ornière, pente. Un calcul séparé pour 20 t d’andésite Iwawe → Tiwanaku."
+    }
+  ],
+  "sources": [
+    {
+      "cite": "Stübel, Alphons & Uhle, Max. Die Ruinenstätte von Tiahuanaco im Hochlande des alten Peru. Breslau: C. T. Wiskott, 1892. Premier corpus mesuré. [non lu en texte intégral ici]",
+      "url": "https://doi.org/10.11588/diglit.21775"
+    },
+    {
+      "cite": "Cieza de León, Pedro. Crónica del Perú [1553], cap. cv. Visite 1549.",
+      "url": null
+    },
+    {
+      "cite": "Cobo, Bernabé. Historia del Nuevo Mundo [1653]. Un portail, une fenêtre encore debout.",
+      "url": null
+    },
+    {
+      "cite": "Posnansky, Arthur. Tihuanacu: The Cradle of American Man. 4 vol., New York: J. J. Augustin, 1945. Obliquité 23° 8′ 48″ → 15 000 av. n.è. : à citer pour l’écarter. Pétrographie Schneiderhohn / Berlin, utile. [non lu en texte intégral]",
+      "url": null
+    },
+    {
+      "cite": "Ponce Sanginés, Carlos. Acerca de la procedencia del material lítico de los monumentos de Tiwanaku. Academia Nacional de Ciencias de Bolivia, 1970. Carrière de grès, Quebrada de Kausani. [non lu en texte intégral]",
+      "url": null
+    },
+    {
+      "cite": "Ponce Sanginés, Carlos. Tiwanaku: espacio, tiempo y cultura. La Paz, 1972. Cinq époques, dates non calibrées 1580 av. n.è.–1172 n.è. — cadre dépassé.",
+      "url": null
+    },
+    {
+      "cite": "Escalante Moscoso, Javier F. Arquitectura prehispánica en los Andes bolivianos. La Paz: CIMA, 1993. Revêtements, « leveling stones », mortier 3:1:1. [non lu en texte intégral]",
+      "url": null
+    },
+    {
+      "cite": "Protzen, Jean-Pierre & Nair, Stella. “Who taught the Inca stonemasons their skills? A comparison of Tiahuanaco and Inca cut-stone masonry.” Journal of the Society of Architectural Historians 56.2, 1997, p. 146–167. Lu. ±1 mm, niches, blocs en H, crampons, inachèvement sud.",
+      "url": "https://doi.org/10.2307/991281"
+    },
+    {
+      "cite": "Protzen, Jean-Pierre & Nair, Stella. “On Reconstructing Tiwanaku Architecture.” JSAH 59.3, 2000, p. 358–371.",
+      "url": "https://doi.org/10.2307/991648"
+    },
+    {
+      "cite": "Protzen, Jean-Pierre & Nair, Stella. The Stones of Tiahuanaco: A Study of Architecture and Construction. Monograph 75, Cotsen Institute of Archaeology, UCLA, 2013. Expériences Nair, pp. 154–174. [monographie non lue en texte intégral ; préface et article 1997 lus]",
+      "url": "https://doi.org/10.2307/j.ctvdmwwsq"
+    },
+    {
+      "cite": "Lechtman, Heather. “Architectural cramps at Tiwanaku: copper-arsenic-nickel bronze.” In Rehren, Hauptmann, Muhly (eds.), Metallurgica Antiqua, Der Anschnitt 8, Bochum, 1998, p. 77–92. [non lu en texte intégral]",
+      "url": null
+    },
+    {
+      "cite": "Vranich, Alexei. Interpreting the meaning of ritual spaces: the temple complex of Pumapunku, Tiwanaku, Bolivia. Thesis, University of Pennsylvania, 1999. Emprise 167,4 × 116,7 m. [non lu]",
+      "url": null
+    },
+    {
+      "cite": "Vranich, Alexei. “The construction and reconstruction of ritual space at Tiwanaku, Bolivia (AD 500–1000).” Journal of Field Archaeology 31.2, 2006, p. 121–136. [non lu en texte intégral ; cotes via Yaeger 2013 / Vranich 2018]",
+      "url": "https://doi.org/10.1179/009346906791071990"
+    },
+    {
+      "cite": "Yaeger, Jason & Vranich, Alexei. “A Radiocarbon Chronology of the Pumapunku Complex and a Reassessment of the Development of Tiwanaku, Bolivia.” In Vranich & Levine (eds.), Advances in Titicaca Basin Archaeology-2, Cotsen, 2013, p. 127–146. OS-17860, 1σ 542–593 CE. [chapitre non lu en texte intégral ; extraits Academia]",
+      "url": null
+    },
+    {
+      "cite": "Vranich, Alexei; Harmon, Paul; Knutson, Chris. “Reed boats and experimental archaeology on Lake Titicaca.” Expedition 47.2, 2005, p. 20–27. Expérience ~9 t.",
+      "url": null
+    },
+    {
+      "cite": "Janusek, John W. & Williams, P. Ryan. “Building Taypikala: Telluric Transformations in the Lithic Production of Tiwanaku.” In Tripcevich & Vaughn (eds.), Mining and Quarrying in the Ancient Andes, Springer, 2013, p. 65–97. Ccapia / Kimsachata. [chapitre non lu en texte intégral]",
+      "url": null
+    },
+    {
+      "cite": "Vranich, Alexei. “Reconstructing ancient architecture at Tiwanaku, Bolivia: the potential and promise of 3D printing.” Heritage Science 6, 65, 2018. Lu. H 97 × 99 × 55 cm / ~600 kg ; dalle 8,12 × 3,86 × 1,2 m / ~83 t ; 6,75 × 38,72 m ; 150 andésites hors place.",
+      "url": "https://doi.org/10.1186/s40494-018-0231-0"
+    },
+    {
+      "cite": "Marsh, Erik J.; Vranich, Alexei; Blom, Deborah et al. “The center cannot hold: A Bayesian chronology for the collapse of Tiwanaku.” PLOS One 18.11, e0288798, 2023. Lu. Pumapunku : début ~580, surface verte ~630, fin de chantier ~710.",
+      "url": "https://doi.org/10.1371/journal.pone.0288798"
+    },
+    {
+      "cite": "Isbell, William H. “Palaces and Politics in the Andean Middle Horizon.” In Palaces of the Ancient New World, Dumbarton Oaks, 2004, p. 191–246. Relais de la date 1510 ± 25 BP.",
+      "url": null
+    },
+    {
+      "cite": "UNESCO. “Tiwanaku: Spiritual and Political Centre of the Tiwanaku Culture.” World Heritage List no. 567, inscription 2000, criteria (iii)(iv). Altitude 3 850 m ; zone Pumapunku 7,0 ha (rapport d’État 2014).",
+      "url": "https://whc.unesco.org/en/list/567/"
+    },
+    {
+      "cite": "OpenStreetMap. Way 155719393 Puma Punku (−16.5616896, −68.6795893). ODbL. Un seul point de carte ; pas de seconde cote OSM pour une carrière ni pour la Puerta del Sol.",
+      "url": null
+    }
+  ],
+  "xLine": "Pumapunku, bord est : dalles de grès, blocs en H d’andésite ~97 × 99 × 55 cm, chantier VIe–VIIe s. — fait. Plus grande dalle : 83 t ou 131 t selon le relevé, jamais pesée. Les 15 000 ans de Posnansky ne sont pas une date. Question : l’outil de l’angle rentrant, et le halage du grès. Qui peut aider : un tailleur d’andésite et un photogrammètre, le même jour, sur un H et sur la dalle."
+}
