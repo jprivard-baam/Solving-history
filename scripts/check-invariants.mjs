@@ -43,11 +43,14 @@ if (!blob.includes("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.pn
 }
 
 const atlasMap = readFileSync(join(root, "components/AtlasMap.tsx"), "utf8");
-if (!atlasMap.includes("Popup") || !atlasMap.includes("setLatLng")) {
-  errors.push("Atlas summary card must be a Leaflet popup anchored to the pin");
+if (atlasMap.includes("Popup") || atlasMap.includes("leaflet-popup-tip")) {
+  errors.push("Summary card must not be a Leaflet balloon above the pin");
+}
+if (!atlasMap.includes("latLngToContainerPoint") || !atlasMap.includes("createPortal")) {
+  errors.push("Summary card must be laid on the map at the clicked lat-lng");
 }
 if (!atlasMap.includes("atlas-summary-lede") || !atlasMap.includes("openLabel")) {
-  errors.push("Anchored popup must be the summary card, not a title+link stub");
+  errors.push("Laid card must be the summary teaser, not a title+link stub");
 }
 const atlasWorkspace = readFileSync(join(root, "components/AtlasWorkspace.tsx"), "utf8");
 if (atlasWorkspace.includes("absolute bottom-3") || atlasWorkspace.includes("z-[800]")) {

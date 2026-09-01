@@ -1,16 +1,10 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import Image from "next/image";
 import Link from "next/link";
-import type { Popup as LeafletPopup } from "leaflet";
-import {
-  CircleMarker,
-  MapContainer,
-  Popup,
-  TileLayer,
-  useMap,
-} from "react-leaflet";
+import { CircleMarker, MapContainer, TileLayer, useMap } from "react-leaflet";
 import { CARTO_ATTRIBUTION, CARTO_DARK_URL } from "@/lib/dossiers";
 
 export type AtlasPin = {
@@ -63,7 +57,7 @@ function AtlasMapEffects({
   return null;
 }
 
-function PinSummaryPopup({
+function PinLaidCard({
   pin,
   openLabel,
   closeLabel,
@@ -75,62 +69,63 @@ function PinSummaryPopup({
   onClose: () => void;
 }) {
   const map = useMap();
-  const popupRef = useRef<LeafletPopup>(null);
+  const [point, setPoint] = useState(() =>
+    map.latLngToContainerPoint([pin.lat, pin.lng]),
+  );
 
   useEffect(() => {
-    const popup = popupRef.current;
-    if (!popup) {
-      return;
-    }
-    popup.setLatLng([pin.lat, pin.lng]);
-    popup.openOn(map);
+    const sync = () => {
+      setPoint(map.latLngToContainerPoint([pin.lat, pin.lng]));
+    };
+    sync();
+    map.on("move", sync);
+    map.on("zoom", sync);
+    map.on("zoomend", sync);
+    map.on("moveend", sync);
+    map.on("viewreset", sync);
     return () => {
-      map.closePopup(popup);
+      map.off("move", sync);
+      map.off("zoom", sync);
+      map.off("zoomend", sync);
+      map.off("moveend", sync);
+      map.off("viewreset", sync);
     };
   }, [map, pin.lat, pin.lng]);
 
-  return (
-    <Popup
-      ref={popupRef}
-      position={[pin.lat, pin.lng]}
-      className="atlas-summary-popup"
-      maxWidth={280}
-      minWidth={240}
-      autoPan
-      autoPanPadding={[28, 28]}
-      closeButton={false}
-      closeOnClick={false}
-      autoClose={false}
+  return createPortal(
+    <article
+      className="atlas-summary-card"
+      style={{
+        left: point.x,
+        top: point.y,
+      }}
+      onClick={(event) => event.stopPropagation()}
+      onPointerDown={(event) => event.stopPropagation()}
     >
-      <article className="atlas-summary-card">
-        <button
-          type="button"
-          onClick={onClose}
-          className="atlas-summary-close"
-        >
-          {closeLabel}
-        </button>
-        <div className="atlas-summary-photo">
-          <Image
-            src={pin.image}
-            alt={pin.imageAlt}
-            width={280}
-            height={158}
-            className="h-full w-full object-cover"
-          />
-        </div>
-        <div className="atlas-summary-body">
-          <p className="atlas-summary-meta">
-            {pin.place} · {pin.date}
-          </p>
-          <h2 className="atlas-summary-title">{pin.title}</h2>
-          <p className="atlas-summary-lede">{pin.lede}</p>
-          <Link href={pin.href} className="atlas-summary-open">
-            {openLabel}
-          </Link>
-        </div>
-      </article>
-    </Popup>
+      <button type="button" onClick={onClose} className="atlas-summary-close">
+        {closeLabel}
+      </button>
+      <div className="atlas-summary-photo">
+        <Image
+          src={pin.image}
+          alt={pin.imageAlt}
+          width={280}
+          height={158}
+          className="h-full w-full object-cover"
+        />
+      </div>
+      <div className="atlas-summary-body">
+        <p className="atlas-summary-meta">
+          {pin.place} · {pin.date}
+        </p>
+        <h2 className="atlas-summary-title">{pin.title}</h2>
+        <p className="atlas-summary-lede">{pin.lede}</p>
+        <Link href={pin.href} className="atlas-summary-open">
+          {openLabel}
+        </Link>
+      </div>
+    </article>,
+    map.getContainer(),
   );
 }
 
@@ -186,7 +181,7 @@ export function AtlasMap({
         );
       })}
       {selected ? (
-        <PinSummaryPopup
+        <PinLaidCard
           pin={selected}
           openLabel={openLabel}
           closeLabel={closeLabel}
