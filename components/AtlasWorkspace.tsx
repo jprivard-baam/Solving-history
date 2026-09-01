@@ -94,9 +94,10 @@ export function AtlasWorkspace({
           {kicker}
         </p>
         <h1 className="font-display mt-2 text-4xl text-gold">{title}</h1>
-        <p className="font-display mt-4 text-xl font-semibold leading-snug text-gold">
+        <p className="font-serif mt-4 max-w-2xl text-lg font-normal italic leading-relaxed text-ink">
           {intro}
         </p>
+        <div className="paper-rule my-4 max-w-2xl" />
         <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted">
           {lede}
         </p>
@@ -112,9 +113,10 @@ export function AtlasWorkspace({
               {kicker}
             </p>
             <h1 className="font-display mt-2 text-4xl text-gold">{title}</h1>
-            <p className="font-display mt-4 text-xl font-semibold leading-snug text-gold">
+            <p className="font-serif mt-4 max-w-2xl text-lg font-normal italic leading-relaxed text-ink">
               {intro}
             </p>
+            <div className="paper-rule my-4" />
             <p className="mt-3 text-sm leading-relaxed text-muted">{lede}</p>
           </div>
           <ol className="min-h-0 flex-1 space-y-2 overflow-y-auto p-3">
