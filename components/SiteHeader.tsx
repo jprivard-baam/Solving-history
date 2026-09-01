@@ -3,12 +3,13 @@ import type { Locale } from "@/lib/i18n";
 import { localizedHref, switchLocaleHref } from "@/lib/i18n";
 import type { Dictionary } from "@/lib/copy/types";
 
-const navKeys = ["atlas", "mission", "method", "help"] as const;
+const navKeys = ["atlas", "mission", "method", "shop", "help"] as const;
 
 const navHrefs: Record<(typeof navKeys)[number], string> = {
   atlas: "/",
   mission: "/mission",
   method: "/method",
+  shop: "/shop",
   help: "/help",
 };
 
