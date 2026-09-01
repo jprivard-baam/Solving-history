@@ -70,10 +70,10 @@ export const uiEn: UiCopy = {
     ],
   },
   shop: {
-    kicker: "Not a cart",
+    kicker: "Temporary page",
     title: "Boutique",
     intro:
-      "Nothing is for sale yet. No checkout. When something can sit here without eating the atlas, it will.",
+      "This page is temporary. Nothing is for sale. No checkout.",
   },
   help: {
     kicker: "Three paths, no storefront",
