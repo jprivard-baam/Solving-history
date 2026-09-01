@@ -76,7 +76,7 @@ export const uiFr: UiCopy = {
       "Rien n’est en vente pour l’instant. Pas de paiement. Quand quelque chose pourra tenir ici sans manger l’atlas, ce sera ici.",
   },
   help: {
-    kicker: "Trois chemins, pas de boutique",
+    kicker: "Trois chemins, pas de caisse",
     title: "Aidez-nous",
     intro: "L’atlas n’est pas publié. L’aide n’est pas une boutique. Trois chemins sont ouverts comme intention. Aucun ne traite un paiement.",
     paths: [
