@@ -1,9 +1,13 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import type { Popup as LeafletPopup } from "leaflet";
 import {
   CircleMarker,
   MapContainer,
+  Popup,
   TileLayer,
   useMap,
 } from "react-leaflet";
@@ -13,6 +17,13 @@ export type AtlasPin = {
   id: string;
   lat: number;
   lng: number;
+  image: string;
+  title: string;
+  place: string;
+  date: string;
+  lede: string;
+  imageAlt: string;
+  href: string;
 };
 
 function AtlasMapEffects({
@@ -52,16 +63,93 @@ function AtlasMapEffects({
   return null;
 }
 
+function PinSummaryPopup({
+  pin,
+  openLabel,
+  closeLabel,
+  onClose,
+}: {
+  pin: AtlasPin;
+  openLabel: string;
+  closeLabel: string;
+  onClose: () => void;
+}) {
+  const map = useMap();
+  const popupRef = useRef<LeafletPopup>(null);
+
+  useEffect(() => {
+    const popup = popupRef.current;
+    if (!popup) {
+      return;
+    }
+    popup.setLatLng([pin.lat, pin.lng]);
+    popup.openOn(map);
+    return () => {
+      map.closePopup(popup);
+    };
+  }, [map, pin.lat, pin.lng]);
+
+  return (
+    <Popup
+      ref={popupRef}
+      position={[pin.lat, pin.lng]}
+      className="atlas-summary-popup"
+      maxWidth={280}
+      minWidth={240}
+      autoPan
+      autoPanPadding={[28, 28]}
+      closeButton={false}
+      closeOnClick={false}
+      autoClose={false}
+    >
+      <article className="atlas-summary-card">
+        <button
+          type="button"
+          onClick={onClose}
+          className="atlas-summary-close"
+        >
+          {closeLabel}
+        </button>
+        <div className="atlas-summary-photo">
+          <Image
+            src={pin.image}
+            alt={pin.imageAlt}
+            width={280}
+            height={158}
+            className="h-full w-full object-cover"
+          />
+        </div>
+        <div className="atlas-summary-body">
+          <p className="atlas-summary-meta">
+            {pin.place} · {pin.date}
+          </p>
+          <h2 className="atlas-summary-title">{pin.title}</h2>
+          <p className="atlas-summary-lede">{pin.lede}</p>
+          <Link href={pin.href} className="atlas-summary-open">
+            {openLabel}
+          </Link>
+        </div>
+      </article>
+    </Popup>
+  );
+}
+
 export function AtlasMap({
   pins,
   selectedId,
   onPinClick,
+  onClose,
+  openLabel,
+  closeLabel,
 }: {
   pins: AtlasPin[];
   selectedId: string | null;
   onPinClick: (id: string) => void;
+  onClose: () => void;
+  openLabel: string;
+  closeLabel: string;
 }) {
-  const focus = pins.find((pin) => pin.id === selectedId) ?? null;
+  const selected = pins.find((pin) => pin.id === selectedId) ?? null;
 
   return (
     <MapContainer
@@ -73,19 +161,21 @@ export function AtlasMap({
       worldCopyJump
     >
       <TileLayer url={CARTO_DARK_URL} attribution={CARTO_ATTRIBUTION} />
-      <AtlasMapEffects focus={focus} />
+      <AtlasMapEffects
+        focus={selected ? { lat: selected.lat, lng: selected.lng } : null}
+      />
       {pins.map((pin) => {
-        const selected = pin.id === selectedId;
+        const isSelected = pin.id === selectedId;
         return (
           <CircleMarker
             key={pin.id}
             center={[pin.lat, pin.lng]}
-            radius={selected ? 11 : 8}
+            radius={isSelected ? 11 : 8}
             pathOptions={{
-              color: selected ? "#eadcc4" : "#c9a44a",
+              color: isSelected ? "#eadcc4" : "#c9a44a",
               fillColor: "#c9a44a",
-              fillOpacity: selected ? 1 : 0.92,
-              weight: selected ? 2 : 1,
+              fillOpacity: isSelected ? 1 : 0.92,
+              weight: isSelected ? 2 : 1,
             }}
             eventHandlers={{
               click: () => {
@@ -95,6 +185,14 @@ export function AtlasMap({
           />
         );
       })}
+      {selected ? (
+        <PinSummaryPopup
+          pin={selected}
+          openLabel={openLabel}
+          closeLabel={closeLabel}
+          onClose={onClose}
+        />
+      ) : null}
     </MapContainer>
   );
 }

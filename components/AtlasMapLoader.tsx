@@ -19,6 +19,9 @@ export function AtlasMapLoader(props: {
   pins: AtlasPin[];
   selectedId: string | null;
   onPinClick: (id: string) => void;
+  onClose: () => void;
+  openLabel: string;
+  closeLabel: string;
 }) {
   return <AtlasMap {...props} />;
 }

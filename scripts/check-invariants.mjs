@@ -43,8 +43,15 @@ if (!blob.includes("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.pn
 }
 
 const atlasMap = readFileSync(join(root, "components/AtlasMap.tsx"), "utf8");
-if (atlasMap.includes("Popup")) {
-  errors.push("Atlas map must open a summary card, not a Leaflet Popup");
+if (!atlasMap.includes("Popup") || !atlasMap.includes("setLatLng")) {
+  errors.push("Atlas summary card must be a Leaflet popup anchored to the pin");
+}
+if (!atlasMap.includes("atlas-summary-lede") || !atlasMap.includes("openLabel")) {
+  errors.push("Anchored popup must be the summary card, not a title+link stub");
+}
+const atlasWorkspace = readFileSync(join(root, "components/AtlasWorkspace.tsx"), "utf8");
+if (atlasWorkspace.includes("absolute bottom-3") || atlasWorkspace.includes("z-[800]")) {
+  errors.push("Summary card must not float in a page corner");
 }
 
 if (!blob.includes("Why it does not make sense") || !blob.includes("Pourquoi ça ne tient pas")) {

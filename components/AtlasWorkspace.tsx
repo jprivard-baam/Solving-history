@@ -1,8 +1,6 @@
 "use client";
 
-import { useEffect, useId, useMemo, useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
+import { useEffect, useMemo, useState } from "react";
 import { AtlasMapLoader } from "@/components/AtlasMapLoader";
 import type { DossierId } from "@/lib/dossiers";
 
@@ -39,11 +37,21 @@ export function AtlasWorkspace({
   listLabel: string;
   mapLabel: string;
 }) {
-  const headingId = useId();
   const [selectedId, setSelectedId] = useState<DossierId | null>(null);
-  const selected = cards.find((card) => card.id === selectedId) ?? null;
   const pins = useMemo(
-    () => cards.map((card) => ({ id: card.id, lat: card.lat, lng: card.lng })),
+    () =>
+      cards.map((card) => ({
+        id: card.id,
+        lat: card.lat,
+        lng: card.lng,
+        image: card.image,
+        title: card.title,
+        place: card.place,
+        date: card.date,
+        lede: card.lede,
+        imageAlt: card.imageAlt,
+        href: card.href,
+      })),
     [cards],
   );
 
@@ -148,52 +156,11 @@ export function AtlasWorkspace({
               pins={pins}
               selectedId={selectedId}
               onPinClick={togglePin}
+              onClose={() => setSelectedId(null)}
+              openLabel={openLabel}
+              closeLabel={closeLabel}
             />
           </div>
-
-          {selected ? (
-            <article
-              className="absolute bottom-3 left-3 right-3 z-[800] max-w-sm overflow-hidden border border-gold-dim bg-paper-2 shadow-[0_18px_48px_rgba(0,0,0,0.55)] sm:right-auto sm:w-[22rem]"
-              aria-labelledby={headingId}
-            >
-              <button
-                type="button"
-                onClick={() => setSelectedId(null)}
-                className="absolute right-2 top-2 z-10 border border-gold-dim bg-paper/85 px-2 py-0.5 text-[0.65rem] uppercase tracking-[0.16em] text-gold hover:bg-paper-3"
-              >
-                {closeLabel}
-              </button>
-              <div className="relative aspect-[16/9] border-b border-rule">
-                <Image
-                  src={selected.image}
-                  alt={selected.imageAlt}
-                  fill
-                  className="object-cover"
-                  sizes="22rem"
-                />
-              </div>
-              <div className="p-4">
-                <p className="pr-16 text-[0.7rem] uppercase tracking-[0.2em] text-gold-dim">
-                  {selected.place} · {selected.date}
-                </p>
-                <h2
-                  id={headingId}
-                  className="font-display mt-1 text-2xl text-gold"
-                >
-                  {selected.title}
-                </h2>
-                <p className="mt-2 line-clamp-4 text-sm leading-relaxed text-ink/85">
-                  {selected.lede}
-                </p>
-                <Link
-                  href={selected.href}
-                  className="mt-4 inline-block border border-gold px-3 py-1.5 text-[0.7rem] uppercase tracking-[0.16em] text-gold hover:bg-paper-3"
-                >
-                  {openLabel}
-                </Link>
-              </div>
-            </article>
-          ) : null}
         </div>
       </div>
     </section>
