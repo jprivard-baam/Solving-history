@@ -4,7 +4,7 @@ export const uiEn: UiCopy = {
   meta: {
     title: "Solving History",
     description:
-      "An unpublished atlas of open problems in ancient engineering. Measurements first. Not live.",
+      "An unpublished atlas of open problems in deep history and ancient engineering. A working table, not a channel. Not live.",
     notLive: "Not live. Not indexed.",
   },
   nav: {
@@ -28,17 +28,17 @@ export const uiEn: UiCopy = {
     openDossier: "Open dossier",
     closeCard: "Close",
     listLabel: "Dossier list",
-    mapLabel: "World atlas of the eight dossiers",
+    mapLabel: "Atlas of open files",
   },
   mission: {
     kicker: "Why this atlas exists",
     title: "Mission",
     paragraphs: [
-      "Solving History is an atlas of open problems in deep history and ancient engineering. It is not a channel, not a shop, and not a finished book. It is a working table: eight files, one method, two languages.",
+      "Solving History is an atlas of open problems in deep history and ancient engineering. It is not a channel, not a checkout, and not a finished book. It is a working table: eight files, one method, two languages.",
       "The public conversation around these sites is loud and thin. Blocks become heavier with each retelling. Dates stretch to fit a thesis. A plaster sample is treated as if it were the monument. A unique survival is treated as if it had no workshop behind it.",
       "This project holds a narrower rule. If a mass is estimated from volume and density, the card says estimated. If a radiocarbon date sits on plaster, the card says plaster. If a popular range is wider than the paper, the paper wins. Folklore is not banned; it is taken off the pin.",
       "The atlas is bilingual because the questions are not national. English carries much of the technical literature. French is the other public language of the project. Neither version is a summary of the other.",
-      "The site is not live. Robots are told noindex, nofollow. There is no storefront and no checkout. Help is three paths — share a mystery, bring data or a specialty, or help financially when that path can exist without turning the atlas into a cart.",
+      "The site is not live. Robots are told noindex, nofollow. Boutique is a room without a till. Help is three paths — share a file, bring data or a specialty, or help financially without turning the atlas into a cart.",
     ],
   },
   methodPage: {
@@ -47,6 +47,7 @@ export const uiEn: UiCopy = {
     intro: [
       "Every dossier on this atlas is cut the same way. Four layers, in order. A common register for the reader who wants the problem in clear language. An advanced register for the reader who wants the sample, the kilogram, and the citation.",
       "The layers are not a ladder toward a secret. They are a filter. What is on the ground. What the date actually dates. What mechanism carries the work with the fewest inventions. What still does not hold.",
+      "The method is the Mission’s narrower rule, applied to a file. Estimated stays estimated. A date says what it dates. Folklore is not banned; it is taken off the pin.",
     ],
     commonLabel: "Common",
     advancedLabel: "Advanced",
@@ -70,15 +71,15 @@ export const uiEn: UiCopy = {
     ],
   },
   shop: {
-    kicker: "Open, without a till",
+    kicker: "A room, not a cart",
     title: "Boutique",
-    description:
-      "The boutique is open. Nothing is for sale. No cart, no checkout.",
+    description: "A room in the atlas, not a cart. Nothing is for sale. No checkout.",
     intro: "This page is open. Nothing on it is for sale.",
     body: [
-      "The boutique is a room in the atlas, not a cart. There is no inventory here, no price, no processor. The word stands in the navigation so that it is not a disguise for a checkout.",
-      "When an object belongs on this page, it will be named here. It will not be sold through this page until a till exists. That till does not exist.",
-      "Money, if it is to help the work, is not a product. It has a path on Help us. That path does not collect a payment either.",
+      "Solving History is a working table. The files on the atlas are open problems, not merchandise. This room exists so the word in the navigation is not a disguise, and so a checkout has nowhere to hide.",
+      "There is no inventory here. No price, no processor, no SKU. When an object belongs on this page, it will be named here as a document of the work — not as a souvenir of a pin. Until then the cabinet is empty on purpose.",
+      "The dossiers are not products. A mass marked estimated does not become a print. A layer that does not hold does not become a slogan.",
+      "Money, if it is to help the table, is not sold here. It has a path on Help us. That path does not collect a payment either.",
     ],
     toHelp: "Help us",
   },
@@ -86,14 +87,15 @@ export const uiEn: UiCopy = {
     kicker: "Three paths, no till",
     title: "Help us",
     description:
-      "Three ways to help an unpublished atlas. Share a file. Bring data or a specialty. Help financially — this path does not take a payment.",
-    intro: "The atlas is unpublished. Help is not a purchase. Three paths are open. None of them takes a payment.",
+      "Three paths to sharpen an unpublished atlas. Share a file. Bring data or a specialty. Help financially — this path does not take a payment.",
+    intro: "The atlas is a working table, unpublished. It gets sharper when a file can be checked. Help is not a purchase. Three paths are open. None of them takes a payment.",
     paths: [
       {
         id: "share",
         title: "Share",
         body: [
           "A site, a block, a crack, a photograph with a scale, a measurement taken on the ground. Not a finished theory. The file.",
+          "A rumor without a place is not a file. Folklore is not banned; it comes off the pin until it can be checked.",
           "Until this path carries an address, keep the notes: place, how the figure was obtained, and what remains estimated.",
         ],
       },
@@ -101,7 +103,7 @@ export const uiEn: UiCopy = {
         id: "data",
         title: "Data + specialty",
         body: [
-          "Petrography, epigraphy, photogrammetry, geodesy, experimental archaeology, the languages of the primary sources. A specialty is useful when it can correct a card.",
+          "Petrography, epigraphy, photogrammetry, geodesy, experimental archaeology, the languages of the primary sources. A specialty is useful when it can correct a card. It is not a following.",
           "The atlas would rather have one weighed density than another legend. If a field can tighten a mass, a date, or a misnamed stone, that is this path.",
         ],
       },
@@ -109,7 +111,7 @@ export const uiEn: UiCopy = {
         id: "finance",
         title: "Help financially",
         body: [
-          "There is no checkout on this site. No cart, no processor, no product. The Boutique is a page without a till. This path is not a second shop.",
+          "There is no checkout on this site. No cart, no processor, no product. Boutique is a room without a till. This path is not a second shop.",
           "When financial help can exist without turning the atlas into a cart, it will be listed here as an address or a public statement — not as a SKU. Until then this path names an intention. It does not collect a payment.",
         ],
       },
@@ -125,7 +127,13 @@ export const uiEn: UiCopy = {
   },
   pathsTitle: "Three paths",
   footer: {
-    line: "Solving History — unpublished atlas. Eight dossiers. Not live.",
+    line: "Solving History — unpublished atlas. A working table. No checkout.",
     robots: "robots: noindex, nofollow",
+  },
+  notFound: {
+    kicker: "404",
+    title: "Solving History",
+    body: "This file is not on the atlas.",
+    back: "Atlas",
   },
 };
