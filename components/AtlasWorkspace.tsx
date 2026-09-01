@@ -87,6 +87,57 @@ export function AtlasWorkspace({
       </div>
 
       <div className="flex min-h-0 flex-1 flex-col lg:flex-row">
+        <aside
+          className="flex max-h-[min(46svh,24rem)] min-h-0 w-full flex-col border-b border-rule bg-paper lg:max-h-none lg:w-[min(26rem,38%)] lg:border-b-0 lg:border-r"
+          aria-label={listLabel}
+        >
+          <div className="hidden border-b border-rule px-5 py-6 lg:block">
+            <p className="text-xs uppercase tracking-[0.22em] text-gold-dim">
+              {kicker}
+            </p>
+            <h1 className="font-display mt-2 text-4xl text-gold">{title}</h1>
+            <p className="mt-3 text-sm leading-relaxed text-muted">{lede}</p>
+          </div>
+          <ol className="min-h-0 flex-1 overflow-y-auto">
+            {cards.map((card) => {
+              const active = card.id === selectedId;
+              return (
+                <li key={card.id} className="border-b border-rule">
+                  <button
+                    type="button"
+                    id={`atlas-row-${card.id}`}
+                    aria-pressed={active}
+                    onClick={() => selectFromList(card.id)}
+                    className={
+                      active
+                        ? "flex w-full items-start gap-3 bg-paper-3 px-5 py-4 text-left"
+                        : "flex w-full items-start gap-3 px-5 py-4 text-left transition-colors hover:bg-paper-2"
+                    }
+                  >
+                    <span className="mt-0.5 shrink-0 text-[0.7rem] tracking-[0.16em] text-gold-dim">
+                      {String(card.index + 1).padStart(2, "0")}
+                    </span>
+                    <span>
+                      <span
+                        className={
+                          active
+                            ? "font-display block text-xl text-gold"
+                            : "font-display block text-xl text-ink"
+                        }
+                      >
+                        {card.title}
+                      </span>
+                      <span className="mt-0.5 block text-xs text-muted">
+                        {card.place} · {card.date}
+                      </span>
+                    </span>
+                  </button>
+                </li>
+              );
+            })}
+          </ol>
+        </aside>
+
         <div
           className="relative h-[min(48svh,28rem)] shrink-0 lg:h-auto lg:min-h-0 lg:flex-1"
           role="region"
@@ -144,57 +195,6 @@ export function AtlasWorkspace({
             </article>
           ) : null}
         </div>
-
-        <aside
-          className="flex min-h-0 w-full flex-col border-t border-rule bg-paper lg:w-[min(26rem,38%)] lg:border-l lg:border-t-0"
-          aria-label={listLabel}
-        >
-          <div className="hidden border-b border-rule px-5 py-6 lg:block">
-            <p className="text-xs uppercase tracking-[0.22em] text-gold-dim">
-              {kicker}
-            </p>
-            <h1 className="font-display mt-2 text-4xl text-gold">{title}</h1>
-            <p className="mt-3 text-sm leading-relaxed text-muted">{lede}</p>
-          </div>
-          <ol className="min-h-0 flex-1 overflow-y-auto">
-            {cards.map((card) => {
-              const active = card.id === selectedId;
-              return (
-                <li key={card.id} className="border-b border-rule">
-                  <button
-                    type="button"
-                    id={`atlas-row-${card.id}`}
-                    aria-pressed={active}
-                    onClick={() => selectFromList(card.id)}
-                    className={
-                      active
-                        ? "flex w-full items-start gap-3 bg-paper-3 px-5 py-4 text-left"
-                        : "flex w-full items-start gap-3 px-5 py-4 text-left transition-colors hover:bg-paper-2"
-                    }
-                  >
-                    <span className="mt-0.5 shrink-0 text-[0.7rem] tracking-[0.16em] text-gold-dim">
-                      {String(card.index + 1).padStart(2, "0")}
-                    </span>
-                    <span>
-                      <span
-                        className={
-                          active
-                            ? "font-display block text-xl text-gold"
-                            : "font-display block text-xl text-ink"
-                        }
-                      >
-                        {card.title}
-                      </span>
-                      <span className="mt-0.5 block text-xs text-muted">
-                        {card.place} · {card.date}
-                      </span>
-                    </span>
-                  </button>
-                </li>
-              );
-            })}
-          </ol>
-        </aside>
       </div>
     </section>
   );
