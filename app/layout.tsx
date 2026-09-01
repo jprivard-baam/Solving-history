@@ -11,6 +11,7 @@ const cormorant = Cormorant_Garamond({
 
 const sourceSerif = Source_Serif_4({
   subsets: ["latin", "latin-ext"],
+  style: ["normal", "italic"],
   variable: "--font-source-serif",
 });
 
