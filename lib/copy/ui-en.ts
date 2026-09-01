@@ -95,7 +95,7 @@ export const uiEn: UiCopy = {
         title: "Share",
         body: [
           "A site, a block, a crack, a photograph with a scale, a measurement taken on the ground. Not a finished theory. The file.",
-          "A rumor without a place is not a file. Folklore is not banned; it comes off the pin until it can be checked.",
+          "A rumor without a place is not a file.",
           "Until this path carries an address, keep the notes: place, how the figure was obtained, and what remains estimated.",
         ],
       },
@@ -103,7 +103,7 @@ export const uiEn: UiCopy = {
         id: "data",
         title: "Data + specialty",
         body: [
-          "Petrography, epigraphy, photogrammetry, geodesy, experimental archaeology, the languages of the primary sources. A specialty is useful when it can correct a card. It is not a following.",
+          "Petrography, epigraphy, photogrammetry, geodesy, experimental archaeology, the languages of the primary sources. A specialty is useful when it can correct a card.",
           "The atlas would rather have one weighed density than another legend. If a field can tighten a mass, a date, or a misnamed stone, that is this path.",
         ],
       },
