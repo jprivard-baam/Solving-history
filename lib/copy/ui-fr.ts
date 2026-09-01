@@ -21,6 +21,8 @@ export const uiFr: UiCopy = {
   atlas: {
     kicker: "Huit dossiers ouverts",
     title: "Atlas",
+    intro:
+      "Une contradiction ne peut pas exister dans la réalité. Ni en partie, ni en entier.",
     lede: "Une carte sombre de problèmes mesurés. Chaque pion est un dossier. Les masses jamais pesées restent marquées estimées. Les dates disent ce qu’elles datent vraiment.",
     openDossier: "Ouvrir le dossier",
     closeCard: "Fermer",
