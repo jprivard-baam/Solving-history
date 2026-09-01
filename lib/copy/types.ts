@@ -42,6 +42,7 @@ export type UiCopy = {
   atlas: {
     kicker: string;
     title: string;
+    intro: string;
     lede: string;
     openDossier: string;
     closeCard: string;
