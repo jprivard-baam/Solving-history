@@ -4,6 +4,7 @@ import type { DossierId } from "@/lib/dossiers";
 export const dossiersEn: Record<DossierId, DossierCopy> = {
   baalbek: {
     title: "Baalbek",
+    cardHook: "Three blocks of ~800 t, still in the wall",
     cardDate: "1st c. CE",
     place: "Heliopolis, Lebanon",
     lede: "A Julio-Claudian podium in the sanctuary of Jupiter Heliopolitanus. Three blocks in the wall — the trilithon — are estimated near 800 t. In the quarry, Hajjar al-Hibla is estimated near 1,000 t. A third monolith, documented in 2014 by the German Archaeological Institute, is estimated near 1,650 t. None of these masses were weighed.",
@@ -65,6 +66,7 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
   },
   "unfinished-obelisk-aswan": {
     title: "Unfinished obelisk of Aswan",
+    cardHook: "41.75 m — still in the bed",
     cardDate: "Date open",
     place: "Aswan granite quarries, Egypt",
     lede: "The largest obelisk ever attempted, still attached to the granite bedrock of Aswan, abandoned after a crack. The date is open. Engelbach recorded the quarry; a Hatshepsut attribution is often repeated and has not been demonstrated. This block carries no cartouche.",
@@ -125,6 +127,7 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
   },
   sacsayhuaman: {
     title: "Sacsayhuamán",
+    cardHook: "Limestone. Blocks of ~150 t",
     cardDate: "15th c. CE",
     place: "Cusco, Peru",
     lede: "The great zigzag terraces above Cusco. The stone of the cyclopean courses is Yuncaypata limestone, not andesite. The largest blocks of the east sector sit under a ceiling of about 150–160 t — estimated, not weighed, and not the multi-hundred-ton andesite giants of the retelling.",
@@ -185,6 +188,7 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
   },
   pumapunku: {
     title: "Pumapunku",
+    cardHook: "H-blocks of ~600 kg",
     cardDate: "c. 580–710 CE",
     place: "Tiwanaku, Bolivia",
     lede: "A stepped platform of red sandstone and finely cut andesite at Tiwanaku. Marsh 2023 places the construction of Pumapunku around 580–710 CE. The famous H-blocks are on the order of 600 kg. The photograph on this card is the H-block wall, not a stray fragment.",
@@ -244,6 +248,7 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
   },
   "gobekli-tepe": {
     title: "Göbekli Tepe",
+    cardHook: "Carbon dates the plaster, not the T-pillars",
     cardDate: "c. 9600–8000 BCE",
     place: "Şanlıurfa, Türkiye",
     lede: "A Pre-Pottery Neolithic hill of T-shaped pillars and enclosures, built by hunter-gatherers. It is not a city. Radiocarbon sample KIA-44149 dates plaster from Enclosure D — not the T-pillars themselves. Lost-civilization readings that treat the site as a capital are out of this file.",
@@ -304,6 +309,7 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
   },
   "great-pyramid-khufu": {
     title: "Great Pyramid of Khufu",
+    cardHook: "Bias −3.9′. Granite of ~50 t at 43 m",
     cardDate: "c. 2580–2560 BCE",
     place: "Giza, Egypt",
     lede: "The pyramid of Khufu is not perfectly cardinal. Surveys find a small but consistent anticlockwise bias of about −3.6′ to −3.9′. The Diary of Merer records work in year 26 of Khufu. Aswan granite in the King’s Chamber sits near 43 m above the base; those beams are estimated around 50 t — estimated, not weighed.",
@@ -364,6 +370,7 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
   },
   "antikythera-mechanism": {
     title: "Antikythera Mechanism",
+    cardHook: "Thirty gears. One surviving example",
     cardDate: "Wreck c. 60 BCE",
     place: "Antikythera wreck, Aegean",
     lede: "One exemplar. About 30 gears in the Freeth reconstruction. An analog astronomical computer — not a ship’s clock. It went down with a wreck dated around 60 BCE. There is no second device from the same workshop in the record.",
@@ -424,6 +431,7 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
   },
   "serapeum-saqqara": {
     title: "Serapeum of Saqqara",
+    cardHook: "Twenty-four vats, from Amasis",
     cardDate: "Greater Vaults from Amasis, c. 550 BCE",
     place: "Saqqara, Egypt",
     lede: "The Greater Vaults of the Serapeum — the long gallery of huge granite chests — belong to the programme that begins with Amasis, around 550 BCE. They are not a New Kingdom card. Twenty-four chests. A working mass ceiling of about 56–62 t, estimated. The pin is 29.87611 N, 31.21028 E.",

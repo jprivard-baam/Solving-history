@@ -13,6 +13,16 @@ import antikythera from "./fr-json/antikythera-fr.json";
 import serapeumSaqqara from "./fr-json/serapeum-saqqara-fr.json";
 
 const LAYER4 = "Pourquoi ça ne tient pas";
+const CARD_HOOKS: Record<DossierId, string> = {
+  baalbek: "Trois blocs d’environ 800 t, encore dans le mur",
+  "unfinished-obelisk-aswan": "41,75 m — encore dans le banc",
+  sacsayhuaman: "Calcaire. Des blocs d’environ 150 t",
+  pumapunku: "Blocs en H d’environ 600 kg",
+  "gobekli-tepe": "Le carbone date le plâtre, pas les piliers en T",
+  "great-pyramid-khufu": "Biais −3,9′. Granite d’environ 50 t à 43 m",
+  "antikythera-mechanism": "Trente engrenages. Un seul exemplaire",
+  "serapeum-saqqara": "Vingt-quatre cuves, dès Amasis",
+};
 const LAYER_TITLES = [
   uiFr.methodPage.layers[0].title,
   uiFr.methodPage.layers[1].title,
@@ -31,9 +41,10 @@ const payloads = {
   "serapeum-saqqara": serapeumSaqqara,
 } as Record<keyof typeof FR_JSON_TO_ATLAS, FrResearchPayload>;
 
-function fromPayload(p: FrResearchPayload): DossierCopy {
+function fromPayload(p: FrResearchPayload, atlasId: DossierId): DossierCopy {
   return {
     title: p.name,
+    cardHook: CARD_HOOKS[atlasId],
     cardDate: p.yearLabel,
     place: p.place,
     lede: p.common,
@@ -70,7 +81,7 @@ export const dossiersFr = Object.fromEntries(
   (Object.keys(FR_JSON_TO_ATLAS) as (keyof typeof FR_JSON_TO_ATLAS)[]).map(
     (jsonId) => {
       const atlasId = FR_JSON_TO_ATLAS[jsonId];
-      return [atlasId, fromPayload(payloads[jsonId])];
+      return [atlasId, fromPayload(payloads[jsonId], atlasId)];
     },
   ),
 ) as Record<DossierId, DossierCopy>;

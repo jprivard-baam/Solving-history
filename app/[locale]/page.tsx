@@ -39,6 +39,7 @@ export default async function AtlasPage({
       lng: d.lng,
       image: d.image,
       title: copy.title,
+      hook: copy.cardHook,
       place: copy.place,
       date: copy.cardDate,
       lede: copy.lede,

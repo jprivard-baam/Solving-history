@@ -134,8 +134,8 @@ a {
 .atlas-summary-title {
   margin: 0.25rem 0 0;
   font-family: var(--font-cormorant), "Palatino Linotype", serif;
-  font-size: 1.45rem;
-  line-height: 1.15;
+  font-size: 1.25rem;
+  line-height: 1.2;
   color: #c9a44a;
 }
 

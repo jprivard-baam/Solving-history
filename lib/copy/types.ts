@@ -9,6 +9,8 @@ export type MethodLayer = {
 
 export type DossierCopy = {
   title: string;
+  /** Atlas pin-card H2 only. Dossier page H1 stays `title`. */
+  cardHook: string;
   cardDate: string;
   place: string;
   lede: string;

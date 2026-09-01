@@ -13,6 +13,7 @@ export type AtlasPin = {
   lng: number;
   image: string;
   title: string;
+  hook: string;
   place: string;
   date: string;
   lede: string;
@@ -118,7 +119,7 @@ function PinLaidCard({
         <p className="atlas-summary-meta">
           {pin.place} · {pin.date}
         </p>
-        <h2 className="atlas-summary-title">{pin.title}</h2>
+          <h2 className="atlas-summary-title">{pin.hook}</h2>
         <p className="atlas-summary-lede">{pin.lede}</p>
         <Link href={pin.href} className="atlas-summary-open">
           {openLabel}

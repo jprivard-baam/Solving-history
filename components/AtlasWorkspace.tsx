@@ -10,6 +10,7 @@ export type AtlasCard = {
   lng: number;
   image: string;
   title: string;
+  hook: string;
   place: string;
   date: string;
   lede: string;
@@ -46,6 +47,7 @@ export function AtlasWorkspace({
         lng: card.lng,
         image: card.image,
         title: card.title,
+        hook: card.hook,
         place: card.place,
         date: card.date,
         lede: card.lede,

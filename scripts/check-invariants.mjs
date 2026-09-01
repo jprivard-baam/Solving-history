@@ -57,6 +57,44 @@ if (atlasWorkspace.includes("absolute bottom-3") || atlasWorkspace.includes("z-[
   errors.push("Summary card must not float in a page corner");
 }
 
+const cardHooks = {
+  en: [
+    "Three blocks of ~800 t, still in the wall",
+    "41.75 m — still in the bed",
+    "Limestone. Blocks of ~150 t",
+    "H-blocks of ~600 kg",
+    "Carbon dates the plaster, not the T-pillars",
+    "Bias −3.9′. Granite of ~50 t at 43 m",
+    "Thirty gears. One surviving example",
+    "Twenty-four vats, from Amasis",
+  ],
+  fr: [
+    "Trois blocs d’environ 800 t, encore dans le mur",
+    "41,75 m — encore dans le banc",
+    "Calcaire. Des blocs d’environ 150 t",
+    "Blocs en H d’environ 600 kg",
+    "Le carbone date le plâtre, pas les piliers en T",
+    "Biais −3,9′. Granite d’environ 50 t à 43 m",
+    "Trente engrenages. Un seul exemplaire",
+    "Vingt-quatre cuves, dès Amasis",
+  ],
+};
+const enCopy = readFileSync(join(root, "lib/copy/dossiers-en.ts"), "utf8");
+const frCopy = readFileSync(join(root, "lib/copy/dossiers-fr.ts"), "utf8");
+for (const hook of cardHooks.en) {
+  if (!enCopy.includes(hook)) errors.push(`Missing EN cardHook: ${hook}`);
+}
+for (const hook of cardHooks.fr) {
+  if (!frCopy.includes(hook)) errors.push(`Missing FR cardHook: ${hook}`);
+}
+const atlasMapSrc = readFileSync(join(root, "components/AtlasMap.tsx"), "utf8");
+if (!atlasMapSrc.includes("pin.hook")) {
+  errors.push("Atlas overlay H2 must read cardHook, not the site name");
+}
+if (!atlasWorkspace.includes("card.title") && !atlasWorkspace.includes("{card.title}")) {
+  errors.push("Atlas list rows must keep the site name");
+}
+
 if (!blob.includes("Why it does not make sense") || !blob.includes("Pourquoi ça ne tient pas")) {
   errors.push("Missing Layer 4 titles");
 }
