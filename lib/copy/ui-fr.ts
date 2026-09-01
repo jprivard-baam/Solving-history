@@ -11,7 +11,8 @@ export const uiFr: UiCopy = {
     atlas: "Atlas",
     mission: "Mission",
     method: "Méthode",
-    help: "Aide",
+    shop: "Boutique",
+    help: "Aidez-nous",
   },
   language: {
     en: "EN",
@@ -68,9 +69,15 @@ export const uiFr: UiCopy = {
       },
     ],
   },
+  shop: {
+    kicker: "Pas de caisse",
+    title: "Boutique",
+    intro:
+      "Rien n’est en vente pour l’instant. Pas de paiement. Quand quelque chose pourra tenir ici sans manger l’atlas, ce sera ici.",
+  },
   help: {
     kicker: "Trois chemins, pas de boutique",
-    title: "Aide",
+    title: "Aidez-nous",
     intro: "L’atlas n’est pas publié. L’aide n’est pas une boutique. Trois chemins sont ouverts comme intention. Aucun ne traite un paiement.",
     paths: [
       {
@@ -109,7 +116,7 @@ export const uiFr: UiCopy = {
   },
   pathsTitle: "Trois chemins",
   footer: {
-    line: "Solving History — atlas non publié. Huit dossiers. Pas de boutique.",
+    line: "Solving History — atlas non publié. Huit dossiers. Hors ligne.",
     robots: "robots : noindex, nofollow",
   },
 };
