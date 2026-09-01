@@ -23,6 +23,8 @@ export const uiEn: UiCopy = {
     title: "Atlas",
     lede: "A dark map of measured problems. Each pin is a dossier. Masses that were never weighed stay marked estimated. Dates say what they actually date.",
     openDossier: "Open dossier",
+    closeCard: "Close",
+    listLabel: "Dossier list",
     mapLabel: "World atlas of the eight dossiers",
   },
   mission: {

@@ -61,6 +61,12 @@ a {
 .leaflet-container {
   background: #0c0b09;
   font-family: var(--font-source-serif), serif;
+  height: 100%;
+  width: 100%;
+}
+
+.leaflet-interactive {
+  cursor: pointer;
 }
 
 .leaflet-popup-content-wrapper,

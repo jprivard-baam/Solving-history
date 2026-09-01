@@ -42,6 +42,8 @@ export type UiCopy = {
     title: string;
     lede: string;
     openDossier: string;
+    closeCard: string;
+    listLabel: string;
     mapLabel: string;
   };
   mission: {

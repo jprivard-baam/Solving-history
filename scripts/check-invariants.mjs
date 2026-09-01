@@ -42,6 +42,11 @@ if (!blob.includes("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.pn
   errors.push("Missing Carto Dark raster URL");
 }
 
+const atlasMap = readFileSync(join(root, "components/AtlasMap.tsx"), "utf8");
+if (atlasMap.includes("Popup")) {
+  errors.push("Atlas map must open a summary card, not a Leaflet Popup");
+}
+
 if (!blob.includes("Why it does not make sense") || !blob.includes("Pourquoi ça ne tient pas")) {
   errors.push("Missing Layer 4 titles");
 }

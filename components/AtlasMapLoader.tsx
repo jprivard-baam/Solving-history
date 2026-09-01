@@ -1,14 +1,14 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import type { Locale } from "@/lib/i18n";
+import type { AtlasPin } from "@/components/AtlasMap";
 
 const AtlasMap = dynamic(
   () => import("@/components/AtlasMap").then((m) => m.AtlasMap),
   {
     ssr: false,
     loading: () => (
-      <div className="flex h-[min(68vh,620px)] items-center justify-center bg-paper-2 text-sm text-muted">
+      <div className="flex h-full min-h-[16rem] items-center justify-center bg-paper-2 text-sm text-muted">
         …
       </div>
     ),
@@ -16,9 +16,9 @@ const AtlasMap = dynamic(
 );
 
 export function AtlasMapLoader(props: {
-  locale: Locale;
-  titles: Record<string, string>;
-  openLabel: string;
+  pins: AtlasPin[];
+  selectedId: string | null;
+  onPinClick: (id: string) => void;
 }) {
   return <AtlasMap {...props} />;
 }

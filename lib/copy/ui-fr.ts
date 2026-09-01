@@ -23,6 +23,8 @@ export const uiFr: UiCopy = {
     title: "Atlas",
     lede: "Une carte sombre de problèmes mesurés. Chaque pion est un dossier. Les masses jamais pesées restent marquées estimées. Les dates disent ce qu’elles datent vraiment.",
     openDossier: "Ouvrir le dossier",
+    closeCard: "Fermer",
+    listLabel: "Liste des dossiers",
     mapLabel: "Atlas mondial des huit dossiers",
   },
   mission: {
