@@ -22,7 +22,6 @@ export type AtlasCard = {
 
 export function AtlasWorkspace({
   cards,
-  kicker,
   title,
   intro,
   lede,
@@ -32,7 +31,6 @@ export function AtlasWorkspace({
   mapLabel,
 }: {
   cards: AtlasCard[];
-  kicker: string;
   title: string;
   intro: string;
   lede: string;
@@ -90,10 +88,7 @@ export function AtlasWorkspace({
   return (
     <section className="flex min-h-0 flex-1 flex-col">
       <div className="border-b border-rule px-4 py-6 sm:px-6 lg:hidden">
-        <p className="text-xs uppercase tracking-[0.22em] text-gold-dim">
-          {kicker}
-        </p>
-        <h1 className="mt-2 text-sm uppercase tracking-[0.12em] text-gold">{title}</h1>
+        <h1 className="font-serif text-sm uppercase tracking-[0.12em] text-gold">{title}</h1>
         <p className="font-serif mt-4 max-w-2xl text-lg font-normal italic leading-relaxed text-ink">
           {intro}
         </p>
@@ -109,10 +104,7 @@ export function AtlasWorkspace({
           aria-label={listLabel}
         >
           <div className="hidden border-b border-rule px-5 py-6 lg:block">
-            <p className="text-xs uppercase tracking-[0.22em] text-gold-dim">
-              {kicker}
-            </p>
-            <h1 className="mt-2 text-sm uppercase tracking-[0.12em] text-gold">{title}</h1>
+            <h1 className="font-serif text-sm uppercase tracking-[0.12em] text-gold">{title}</h1>
             <p className="font-serif mt-4 max-w-2xl text-lg font-normal italic leading-relaxed text-ink">
               {intro}
             </p>
