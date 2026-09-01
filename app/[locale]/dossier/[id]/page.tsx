@@ -103,7 +103,6 @@ export default async function DossierPage({
           commonLabel={dict.dossier.common}
           advancedLabel={dict.dossier.advanced}
           kicker={dict.dossier.methodKicker}
-          jsonFields={Boolean(copy.research)}
         />
 
         {copy.research ? (

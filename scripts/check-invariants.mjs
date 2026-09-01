@@ -90,6 +90,29 @@ if (/yearLabel[^}]*500–950/.test(pumapunkuFr) || /yearLabel[^}]*500-950/.test(
   errors.push("Pumapunku FR yearLabel must not be 500–950");
 }
 
+const pumapunkuEn = readFileSync(
+  join(root, "lib/copy/dossiers-en.ts"),
+  "utf8",
+);
+const pumapunkuEnBlock = pumapunkuEn.slice(
+  pumapunkuEn.indexOf("pumapunku:"),
+  pumapunkuEn.indexOf('"gobekli-tepe"'),
+);
+if (!pumapunkuEnBlock.includes("580–710") && !pumapunkuEnBlock.includes("580-710")) {
+  errors.push("Pumapunku EN copy must state 580–710");
+}
+if (pumapunkuEnBlock.includes("500–950") || pumapunkuEnBlock.includes("500-950")) {
+  errors.push("Pumapunku EN visible copy must not contain 500–950");
+}
+
+const dossierPage = readFileSync(
+  join(root, "app/[locale]/dossier/[id]/page.tsx"),
+  "utf8",
+);
+if (/jsonFields\s*=/.test(dossierPage)) {
+  errors.push("Public dossier page must not pass jsonFields");
+}
+
 const serapeumFr = readFileSync(
   join(root, "lib/copy/fr-json/serapeum-saqqara-fr.json"),
   "utf8",
