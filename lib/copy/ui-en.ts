@@ -21,6 +21,8 @@ export const uiEn: UiCopy = {
   atlas: {
     kicker: "Eight open files",
     title: "Atlas",
+    intro:
+      "A contradiction can not exist in reality. Not in part, nor in whole.",
     lede: "A dark map of measured problems. Each pin is a dossier. Masses that were never weighed stay marked estimated. Dates say what they actually date.",
     openDossier: "Open dossier",
     closeCard: "Close",
