@@ -14,6 +14,7 @@ export type AtlasCard = {
   hook: string;
   place: string;
   date: string;
+  listBlurb?: string;
   lede: string;
   imageAlt: string;
   href: string;
@@ -51,6 +52,7 @@ export function AtlasWorkspace({
         hook: card.hook,
         place: card.place,
         date: card.date,
+        listBlurb: card.listBlurb,
         lede: card.lede,
         imageAlt: card.imageAlt,
         href: card.href,
@@ -141,8 +143,13 @@ export function AtlasWorkspace({
                         {String(card.index + 1).padStart(2, "0")} · {card.date}
                       </span>
                       <span className="font-display mt-1 block text-xl leading-tight text-gold">
-                        {card.hook}
+                        {card.title}
                       </span>
+                      {card.listBlurb ? (
+                        <span className="mt-1 block text-sm leading-snug text-ink/90">
+                          {card.listBlurb}
+                        </span>
+                      ) : null}
                       <span className="mt-1 block text-xs text-muted">
                         {card.place}
                       </span>
