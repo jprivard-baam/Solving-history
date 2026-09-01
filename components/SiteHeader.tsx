@@ -43,10 +43,11 @@ export function SiteHeader({
                 key={key}
                 href={href}
                 className={
-                  current
+                  key === "atlas"
                     ? "text-gold"
                     : "transition-colors hover:text-ink"
                 }
+                aria-current={current ? "page" : undefined}
               >
                 {dict.nav[key]}
               </Link>
