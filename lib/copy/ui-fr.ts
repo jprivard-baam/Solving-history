@@ -111,7 +111,7 @@ export const uiFr: UiCopy = {
         id: "finance",
         title: "Aider financièrement",
         body: [
-          "Il n’y a pas de caisse sur ce site. Pas de panier, pas de prestataire, pas de produit. La Boutique est une page sans caisse. Ce chemin n’est pas une seconde boutique.",
+          "Il n’y a pas de caisse sur ce site. Pas de panier, pas de prestataire, pas de produit. La Boutique est une salle sans caisse. Ce chemin n’est pas une seconde boutique.",
           "Quand l’aide financière pourra exister sans faire de l’atlas un panier, elle sera indiquée ici comme une adresse ou une déclaration publique — pas comme une référence. D’ici là ce chemin nomme une intention. Il n’encaisse pas.",
         ],
       },
