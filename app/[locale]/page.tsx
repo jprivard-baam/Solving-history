@@ -55,6 +55,7 @@ export default async function AtlasPage({
         cards={cards}
         kicker={dict.atlas.kicker}
         title={dict.atlas.title}
+        intro={dict.atlas.intro}
         lede={dict.atlas.lede}
         openLabel={dict.atlas.openDossier}
         closeLabel={dict.atlas.closeCard}
