@@ -160,7 +160,7 @@ export function AtlasMap({
       center={[22, 18]}
       zoom={2}
       minZoom={2}
-      className="h-full w-full"
+      className="atlas-map h-full w-full"
       scrollWheelZoom
       worldCopyJump
     >
