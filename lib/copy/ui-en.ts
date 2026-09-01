@@ -24,7 +24,7 @@ export const uiEn: UiCopy = {
     title: "Atlas",
     intro:
       "A contradiction can not exist in reality. Not in part, nor in whole.",
-    lede: "To find an inconsistency, choose from the list or search the map.",
+    lede: "To find an inconsistency, choose from the list or a pin on the map.",
     openDossier: "Open dossier",
     closeCard: "Close",
     listLabel: "Dossier list",
