@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import Image from "next/image";
 import { AtlasMapLoader } from "@/components/AtlasMapLoader";
 import type { DossierId } from "@/lib/dossiers";
 
@@ -108,11 +109,11 @@ export function AtlasWorkspace({
             <h1 className="font-display mt-2 text-4xl text-gold">{title}</h1>
             <p className="mt-3 text-sm leading-relaxed text-muted">{lede}</p>
           </div>
-          <ol className="min-h-0 flex-1 overflow-y-auto">
+          <ol className="min-h-0 flex-1 space-y-2 overflow-y-auto p-3">
             {cards.map((card) => {
               const active = card.id === selectedId;
               return (
-                <li key={card.id} className="border-b border-rule">
+                <li key={card.id}>
                   <button
                     type="button"
                     id={`atlas-row-${card.id}`}
@@ -120,25 +121,28 @@ export function AtlasWorkspace({
                     onClick={() => selectFromList(card.id)}
                     className={
                       active
-                        ? "flex w-full items-start gap-3 bg-paper-3 px-5 py-4 text-left"
-                        : "flex w-full items-start gap-3 px-5 py-4 text-left transition-colors hover:bg-paper-2"
+                        ? "w-full overflow-hidden rounded-none border border-[#8a7030] bg-[#1c1812] text-left shadow-none"
+                        : "w-full overflow-hidden rounded-none border border-[#3d3426] bg-[#1c1812] text-left shadow-none hover:border-[#8a7030]"
                     }
                   >
-                    <span className="mt-0.5 shrink-0 text-[0.7rem] tracking-[0.16em] text-gold-dim">
-                      {String(card.index + 1).padStart(2, "0")}
+                    <span className="relative block aspect-video">
+                      <Image
+                        src={card.image}
+                        alt={card.imageAlt}
+                        fill
+                        className="object-cover opacity-90"
+                        sizes="26rem"
+                      />
                     </span>
-                    <span>
-                      <span
-                        className={
-                          active
-                            ? "font-display block text-xl text-gold"
-                            : "font-display block text-xl text-ink"
-                        }
-                      >
-                        {card.title}
+                    <span className="block p-3">
+                      <span className="block text-[0.7rem] uppercase tracking-[0.2em] text-gold-dim">
+                        {String(card.index + 1).padStart(2, "0")} · {card.date}
                       </span>
-                      <span className="mt-0.5 block text-xs text-muted">
-                        {card.place} · {card.date}
+                      <span className="font-display mt-1 block text-xl leading-tight text-gold">
+                        {card.hook}
+                      </span>
+                      <span className="mt-1 block text-xs text-muted">
+                        {card.place}
                       </span>
                     </span>
                   </button>
