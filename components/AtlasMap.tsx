@@ -12,7 +12,7 @@ const atlasPinIcon = L.divIcon({
   className: "atlas-pin-icon",
   html: '<img src="/mark-pin.svg" width="32" height="32" alt="" />',
   iconSize: [32, 32],
-  iconAnchor: [16, 16],
+  iconAnchor: [16, 12],
 });
 
 export type AtlasPin = {
