@@ -40,7 +40,9 @@ export function AtlasWorkspace({
   listLabel: string;
   mapLabel: string;
 }) {
-  const [selectedId, setSelectedId] = useState<DossierId | null>(null);
+  const [focusId, setFocusId] = useState<DossierId | null>(null);
+  const [cardId, setCardId] = useState<DossierId | null>(null);
+  const [flashId, setFlashId] = useState<DossierId | null>(null);
   const pins = useMemo(
     () =>
       cards.map((card) => ({
@@ -63,28 +65,34 @@ export function AtlasWorkspace({
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
-        setSelectedId(null);
+        setCardId(null);
       }
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [setSelectedId]);
+  }, []);
 
   useEffect(() => {
-    if (!selectedId) {
+    if (!focusId) {
       return;
     }
     document
-      .getElementById(`atlas-row-${selectedId}`)
+      .getElementById(`atlas-row-${focusId}`)
       ?.scrollIntoView({ block: "nearest" });
-  }, [selectedId]);
+  }, [focusId]);
 
   const selectFromList = (id: DossierId) => {
-    setSelectedId(id);
+    setFocusId(id);
+    setCardId(null);
+    setFlashId(id);
+    window.setTimeout(() => {
+      setFlashId((current) => (current === id ? null : current));
+    }, 560);
   };
 
   const togglePin = (id: string) => {
-    setSelectedId((current) => (current === id ? null : (id as DossierId)));
+    setFocusId(id as DossierId);
+    setCardId((current) => (current === id ? null : (id as DossierId)));
   };
 
   return (
@@ -115,7 +123,7 @@ export function AtlasWorkspace({
           </div>
           <ol className="min-h-0 flex-1 space-y-2 overflow-y-auto p-3">
             {cards.map((card) => {
-              const active = card.id === selectedId;
+              const active = card.id === focusId;
               return (
                 <li key={card.id}>
                   <button
@@ -124,9 +132,10 @@ export function AtlasWorkspace({
                     aria-pressed={active}
                     onClick={() => selectFromList(card.id)}
                     className={
-                      active
+                      (card.id === flashId ? "atlas-row-flash " : "") +
+                      (active
                         ? "w-full overflow-hidden rounded-none border border-[#8a7030] bg-[#1c1812] text-left shadow-none"
-                        : "w-full overflow-hidden rounded-none border border-[#3d3426] bg-[#1c1812] text-left shadow-none hover:border-[#8a7030]"
+                        : "w-full overflow-hidden rounded-none border border-[#3d3426] bg-[#1c1812] text-left shadow-none hover:border-[#8a7030]")
                     }
                   >
                     <span className="relative block aspect-video">
@@ -169,9 +178,11 @@ export function AtlasWorkspace({
           <div className="absolute inset-0">
             <AtlasMapLoader
               pins={pins}
-              selectedId={selectedId}
+              selectedId={focusId}
+              openId={cardId}
+              flashId={flashId}
               onPinClick={togglePin}
-              onClose={() => setSelectedId(null)}
+              onClose={() => setCardId(null)}
               openLabel={openLabel}
               closeLabel={closeLabel}
             />
