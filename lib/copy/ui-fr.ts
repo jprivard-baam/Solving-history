@@ -24,7 +24,7 @@ export const uiFr: UiCopy = {
     title: "Atlas",
     intro:
       "Une contradiction ne peut pas exister dans la réalité. Ni en partie, ni en entier.",
-    lede: "Une carte sombre de problèmes mesurés. Chaque pion est un dossier. Les masses jamais pesées restent marquées estimées. Les dates disent ce qu’elles datent vraiment.",
+    lede: "Pour découvrir une incohérence, choisir dans la liste ou chercher sur la carte.",
     openDossier: "Ouvrir le dossier",
     closeCard: "Fermer",
     listLabel: "Liste des dossiers",
@@ -70,22 +70,31 @@ export const uiFr: UiCopy = {
     ],
   },
   shop: {
-    kicker: "Page temporaire",
+    kicker: "Ouverte, sans caisse",
     title: "Boutique",
-    intro:
-      "Cette page est temporaire. Rien n’est en vente. Pas de caisse.",
+    description:
+      "La boutique est ouverte. Rien n’y est à vendre. Pas de panier, pas de caisse.",
+    intro: "Cette page est ouverte. Rien n’y est à vendre.",
+    body: [
+      "La boutique est une salle de l’atlas, pas un panier. Il n’y a ici ni inventaire, ni prix, ni prestataire. Le mot est dans la navigation pour ne pas déguiser une caisse.",
+      "Quand un objet appartiendra à cette page, il sera nommé ici. Il ne sera pas vendu par cette page tant qu’une caisse n’existe pas. Cette caisse n’existe pas.",
+      "L’argent, s’il doit aider le travail, n’est pas un produit. Il a un chemin sur Aidez-nous. Ce chemin n’encaisse rien non plus.",
+    ],
+    toHelp: "Aidez-nous",
   },
   help: {
     kicker: "Trois chemins, pas de caisse",
     title: "Aidez-nous",
-    intro: "L’atlas n’est pas publié. L’aide n’est pas une boutique. Trois chemins sont ouverts comme intention. Aucun ne traite un paiement.",
+    description:
+      "Trois chemins pour aider un atlas non publié. Partager un dossier. Apporter des données ou une spécialité. Aider financièrement — ce chemin n’encaisse pas.",
+    intro: "L’atlas n’est pas publié. L’aide n’est pas un achat. Trois chemins sont ouverts. Aucun n’encaisse.",
     paths: [
       {
         id: "share",
-        title: "Partager le mystère",
+        title: "Partager",
         body: [
           "Un site, un bloc, une fissure, une photographie avec une échelle, une mesure prise au sol. Pas une théorie finie. Le dossier.",
-          "Quand la correspondance s’ouvrira, ce chemin portera une adresse. D’ici là, gardez les notes : lieu, datum, comment le chiffre a été obtenu, et ce qui reste estimé.",
+          "Tant que ce chemin ne porte pas d’adresse, gardez les notes : le lieu, comment le chiffre a été obtenu, et ce qui reste estimé.",
         ],
       },
       {
@@ -93,15 +102,15 @@ export const uiFr: UiCopy = {
         title: "Données + spécialité",
         body: [
           "Pétrographie, épigraphie, photogrammétrie, géodésie, archéologie expérimentale, langues des sources premières. Une spécialité sert quand elle peut corriger une fiche.",
-          "L’atlas préfère une densité pesée à une légende de plus. Si vous travaillez dans un champ qui peut resserrer une masse, une date ou une pierre mal nommée, c’est ce chemin.",
+          "L’atlas préfère une densité pesée à une légende de plus. Si un champ peut resserrer une masse, une date ou une pierre mal nommée, c’est ce chemin.",
         ],
       },
       {
         id: "finance",
         title: "Aider financièrement",
         body: [
-          "Il n’y a pas de paiement sur ce site. Pas de panier, pas de prestataire, pas de référence, pas de boutique. /shop est renvoyé ici exprès.",
-          "L’aide financière, lorsqu’elle existera, sera indiquée ici comme une adresse ou une déclaration publique — pas comme un produit. D’ici là ce chemin est un occupant, pas un règlement.",
+          "Il n’y a pas de caisse sur ce site. Pas de panier, pas de prestataire, pas de produit. La Boutique est une page sans caisse. Ce chemin n’est pas une seconde boutique.",
+          "Quand l’aide financière pourra exister sans faire de l’atlas un panier, elle sera indiquée ici comme une adresse ou une déclaration publique — pas comme une référence. D’ici là ce chemin nomme une intention. Il n’encaisse pas.",
         ],
       },
     ],
