@@ -66,11 +66,15 @@ export type UiCopy = {
   shop: {
     kicker: string;
     title: string;
+    description: string;
     intro: string;
+    body: string[];
+    toHelp: string;
   };
   help: {
     kicker: string;
     title: string;
+    description: string;
     intro: string;
     paths: {
       id: "share" | "data" | "finance";
