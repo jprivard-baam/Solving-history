@@ -18,13 +18,6 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
-  if (pathname === "/shop" || pathname === "/shop/") {
-    return NextResponse.redirect(new URL("/help", request.url));
-  }
-  if (pathname === "/fr/shop" || pathname === "/fr/shop/") {
-    return NextResponse.redirect(new URL("/fr/help", request.url));
-  }
-
   if (pathname === "/fr" || pathname.startsWith("/fr/")) {
     return withLocale(NextResponse.next(), "fr");
   }
