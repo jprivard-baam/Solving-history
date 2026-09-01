@@ -4,7 +4,7 @@ import type { DossierId } from "@/lib/dossiers";
 export const dossiersEn: Record<DossierId, DossierCopy> = {
   baalbek: {
     title: "Baalbek",
-    listBlurb: "Trilithon in a Julio-Claudian wall. Masses estimated, never weighed.",
+    listBlurb: "Three giant stones sit in a Roman wall. Nobody has ever weighed them. They are still in place."
     cardHook: "Three blocks of ~800 t, still in the wall",
     cardDate: "1st c. CE",
     place: "Heliopolis, Lebanon",
@@ -67,7 +67,7 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
   },
   "unfinished-obelisk-aswan": {
     title: "Unfinished obelisk of Aswan",
-    listBlurb: "Still attached to the granite bank, abandoned at a crack. The date is open.",
+    listBlurb: "They started cutting a huge stone needle out of the mountain. A crack appeared, and they stopped. It is still stuck in the rock."
     cardHook: "41.75 m — still in the bed",
     cardDate: "Date open",
     place: "Aswan granite quarries, Egypt",
@@ -129,7 +129,7 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
   },
   sacsayhuaman: {
     title: "Sacsayhuamán",
-    listBlurb: "Cyclopean zigzags in local limestone. The andesite belongs to another quarry.",
+    listBlurb: "The walls zigzag. They are cut from the limestone of the hill itself, not from the dark volcanic stone of another quarry."
     cardHook: "Limestone. Blocks of ~150 t",
     cardDate: "15th c. CE",
     place: "Cusco, Peru",
@@ -191,7 +191,7 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
   },
   pumapunku: {
     title: "Pumapunku",
-    listBlurb: "Platform around 580\u2013710. The H-blocks are on the order of 600 kg.",
+    listBlurb: "They cut stone into the shape of an H. Those blocks weigh about 600 kg. The platform was built around 580\u2013710."
     cardHook: "H-blocks of ~600 kg",
     cardDate: "c. 580–710 CE",
     place: "Tiwanaku, Bolivia",
@@ -252,7 +252,7 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
   },
   "gobekli-tepe": {
     title: "Göbekli Tepe",
-    listBlurb: "Hunter-gatherers, T-pillars. The date is plaster, not the stones.",
+    listBlurb: "People who still hunted and gathered stood up giant stones shaped like a T. The age we give the site comes from the plaster, not from the T-stones."
     cardHook: "Carbon dates the plaster, not the T-pillars",
     cardDate: "c. 9600–8000 BCE",
     place: "Şanlıurfa, Türkiye",
@@ -314,7 +314,7 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
   },
   "great-pyramid-khufu": {
     title: "Great Pyramid of Khufu",
-    listBlurb: "A Fourth-Dynasty tomb. Year 26 is in a diary. The open question is the granite, not slaves.",
+    listBlurb: "This is a king\u2019s tomb. What is strange is the hard granite placed high up inside \u2014 not a story about slaves."
     cardHook: "Bias −3.9′. Granite of ~50 t at 43 m",
     cardDate: "c. 2580–2560 BCE",
     place: "Giza, Egypt",
@@ -376,7 +376,7 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
   },
   "antikythera-mechanism": {
     title: "Antikythera Mechanism",
-    listBlurb: "One calculator, one wreck around 60 BCE. About thirty gears. No second device.",
+    listBlurb: "A bronze machine with about thirty gears, found in a wreck around 60 BCE. We have only this one."
     cardHook: "Thirty gears. One surviving example",
     cardDate: "Wreck c. 60 BCE",
     place: "Antikythera wreck, Aegean",
@@ -438,7 +438,7 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
   },
   "serapeum-saqqara": {
     title: "Serapeum of Saqqara",
-    listBlurb: "Greater vaults from Amasis, around 550 BCE. Twenty-four chests. Not a New Kingdom card.",
+    listBlurb: "Under the ground sit twenty-four huge stone chests, from around 550, in the time of Amasis."
     cardHook: "Twenty-four vats, from Amasis",
     cardDate: "Greater Vaults from Amasis, c. 550 BCE",
     place: "Saqqara, Egypt",
