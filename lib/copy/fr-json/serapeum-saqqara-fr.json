@@ -1,0 +1,190 @@
+{
+  "id": "serapeum-saqqara",
+  "order": 8,
+  "name": "Sérapéum de Saqqara",
+  "place": "Saqqara (nécropole memphite), Gizeh, Égypte",
+  "yearLabel": "Grands souterrains, caisses de pierre dure dès Amasis ~550 av. n.è. (24 caisses). Tombes isolées : bois, autre enveloppe.",
+  "yearSort": -550,
+  "lat": 29.87611,
+  "lng": 31.21028,
+  "coordSource": "EXIF GPS Ovedc 29°52′34″ N, 31°12′37″ E (29.876111, 31.210278). Explicitement PAS Wikidata Q287375 P625 29.874722 / 31.212417 (~250 m ESE, probablement enceinte / temple de Nectanébo). OSM : aucun objet nommé Sérapéum à Saqqara au 30 août 2026 (Nominatim, Photon). Piquer la photo GPS de la galerie, pas le centroïde Wikidata. Leaflet/OSM seulement. Un seul point de site.",
+  "chips": [
+    "materiau",
+    "geste",
+    "organisation",
+    "precision",
+    "durabilite"
+  ],
+  "photo": {
+    "file": "By_ovedc_-_Serapeum_of_Saqqara_-_04.jpg",
+    "alt": "Galeries du Sérapéum de Saqqara, sarcophage d’Apis — pas le dromos, pas Alexandrie.",
+    "credit": "Ovedc, 5 octobre 2017. Galeries du Sérapéum, sarcophage d’Apis. GPS EXIF : 29°52′34″ N, 31°12′37″ E.",
+    "licence": "CC BY-SA 4.0"
+  },
+  "common": "Sous Saqqara, une galerie de deux cents mètres, large de trois, abrite vingt-quatre caisses de granite — tombes des taureaux Apis, dès Amasis, vers 550 avant notre ère. Une seule a un calcul : soixante-deux tonnes au plus, plutôt cinquante-six. On les a fait entrer dans le sens de la longueur, sur rouleaux, puis descendues au sable dans des chambres plus basses que le couloir. Mariette l’a vu, et l’a refait. La question n’est pas qui d’autre que l’homme. C’est comment on a calé trente-cinq tonnes de cuve dans un tube de trois mètres, à trente centimètres près.",
+  "advanced": "Trois enveloppes : tombes isolées (bois, XVIIIe–XIXe dynasties), petits souterrains de Khâemouaset, grands souterrains de Psammétique Ier. Les 24 caisses appartiennent à la troisième, et à elle seule. Linant retranche le vide et pose une densité maximale : ceux qui publient 80 t oublient le vide. Hamdy cote la galerie à 3 m ; Linant cote une caisse à 2,32 m. L’énigme du « couloir trop étroit » est, en l’état des chiffres publiés, un mythe de visiteur — sauf à montrer une porte plus étroite que la caisse la plus large, ce qui n’est pas publié. Mathieson a cartographié l’allée, pas les cuves. Lauer a sauvé le dromos. Il manque un nuage de points des 24 et du tube, le même jour.",
+  "accepted": "Le Sérapéum de Saqqara est la nécropole des taureaux Apis de Memphis, incarnations vivantes de Ptah, devenus à la mort Osiris-Apis (égyptien Wsjr-Ḥp → grec Σέραπις). Le culte d’Apis est ancien (tradition : Ménès) ; les tombes retrouvées ici commencent sous Amenhotep III (XIVe s. av. n.è.), pas au IIIe millénaire. Au moins soixante Apis sont attestés sur ~1 400 ans, du Nouvel Empire à la fin de l’époque ptolémaïque (Dodson 2005 ; Marković 2017). Séquence architecturale, pas un seul chantier : (1) tombes isolées c. 1390–1250 av. n.è., six caveaux pour huit taureaux, cercueils de bois ; la chambre E (Horemheb) avait un sarcophage maçonné sans couvercle, pas un monolithe de granite (Dodson 2005). (2) Petits souterrains, ordonnés par Khâemouaset, fils de Ramsès II ; cercueils de bois jusqu’au début de la XXVIe dynastie. (3) Grands souterrains ouverts l’an 52 de Psammétique Ier (~612 av. n.è.) ; dès Amasis II (~550) les sarcophages sont en pierre coûteuse (granite rose d’Assouan pour le premier nommé) ; dernière caisse à l’époque d’Auguste ; abandonné peu après 30 av. n.è. (Strabon, Dion Cassius). Au-dessus : dromos de Nectanébo Ier, allée de 370–380 sphinx, hémicycle de philosophes grecs (Lauer, BSFE 1950 ; Lauer & Picard 1955). Découverte : Mariette, allée 1er nov. 1850, catacombes nov. 1851–1854 ; Maspero édite Le Sérapéum de Memphis, t. I, 1882. Fermé après le séisme du Caire de 1992 ; consolidation 2001–2012 ; réouverture septembre 2012 ; seuls les grands souterrains visitables. Ne pas confondre avec le Sérapéum d’Alexandrie, ni avec le Panthéon de Rome.",
+  "fact": "Quatre objets distincts ; toutes les masses sont des estimations, jamais des pesées. Les caisses ne sont pas identiques. Un seul calcul de volume publié avec cotes internes et densité : Linant de Bellefonds, appendice F de Mariette 1882, p. 113. (1) Tombes isolées (XVIIIe–début XIXe dynasties) : caveaux individuels, cercueils de bois, parfois un sarcophage maçonné — pas les caisses de granite. (2) Petits souterrains : galerie nord–sud, Ramsès II → début XXVIe dynastie, cercueils de bois ; plafond effondré ; encore en cours de consolidation (mission Louvre 2020). (3) Grands souterrains — les 24 : galerie est–ouest dès Psammétique Ier, prolongée sous les Ptolémées. Galerie principale mesurée 211 × 3 × 4 m (Elshayeb 2023, citant Hamdy 2021 et Imam et al. 2007) ; seconde galerie ~50 m ; 28 chambres latérales en quinconce, sols plus bas que la galerie ; 24 caisses encore en place (Mariette → Gunn → Dodson → Hamdy). Wikipedia « ~350 m » = galerie + tunnel de service ptolémaïque, autre objet ; ne pas l’ajouter aux 211 m. Profondeur sous le plateau 10–15 m : non vérifiée comme cote unique ; roche hôte calcaire / marne / shale (Elshayeb 2023) ; le gonflement du shale a causé les désordres 1992–2010. Chambres : plancher 2–3 m sous le couloir (Mariette 1882, p. 80–83, d’après relais ; ces pages non relues ici en OCR suivi) ; alvéoles ~1 m de profondeur ; niches latérales pour extraire le sable. Une caisse calculée (Linant) : cuve extérieure 3,85 × 2,32 × 2,32 m = 20,72 m³ ; vide intérieur 3,17 × 1,46 × 1,73 m = −8,01 m³ ; cuve nette 12,72 m³ ; couvercle 3,85 × 2,32 × 0,92 m (texte Linant) / 0,98 m (table Wikipedia) = 8,27 m³ après pans coupés. Masse à la densité maximale de Linant 2,956 : cuve 37,6 t + couvercle 24,4 t = 62,0 t — un plafond, pas une pesée. Recalcul au granite courant, même volume : 2,65 g/cm³ ~56 t ; 2,70 ~57 t. Cuve seule ~34–38 t. Les chiffres 70–100 t sont un artefact de calcul (prisme extérieur sans retrancher le vide, ou cuve+couvercle empilés en un pavé plein ~78–79 t ; Gigal / Chacaruna 4 × 2,3 × 3,3 m). Pas un relevé. Les 24 ne sont pas un module unique. Isida Project 2012 (amateur, pas un étalon académique) : « Amasis » (n° 2) granite rose 3,8 × 2,5 × 2,4 m, dressé non poli ; n° 17 « syénite porphyrique » 3,8 × 2,17 × 2,3 m. Écart 2,50 vs Linant 2,32 m : soit deux caisses, soit un relevé amateur plus faible — ne pas fusionner. Gunn 1926a : quatre caisses inscrites seulement (Amasis II, Cambyse II, Khababash, une ptolémaïque à cartouches vides). Matériaux : Gunn, toutes « costly stone » ; les plus anciennes perdues « may have been of limestone » ; inscription d’Amasis : aucune faite en pierre coûteuse par aucun roi à aucune époque. Hamdy/Elshayeb « granitic and hard limestone coffins » : langage d’ingénieur, pas un catalogue pétrographique ; calcaire dur parmi les 24 non établi. Couloir vs caisse : galerie 3,0 m de moyenne (Hamdy/Elshayeb) vs Linant 2,32 m = 0,68 m de jeu total, ~34 cm de chaque côté si centrée ; Isida Amasis 2,50 m = 0,50 m au total, ~25 cm de chaque côté. Elles passent dans le sens de la longueur ; elles ne passent pas en travers (longueur 3,85 m > 3,0 m). Un sarcophage abandonné dans le tunnel de service prouve que des caisses ont circulé. Largeur minimale d’une porte, d’un coude ou d’un seuil vs chaque caisse : non publiée. Ne pas transformer une moyenne de 3 m en gabarit au centimètre. Poli variable, pas un miroir uniforme. Tolérances : aucune mesure au comparateur ; « millième de pouce » n’a aucune source. (4) Iseum : catacombe des vaches mères d’Apis, ~1 km au nord-est — autre monument.",
+  "object": "Quatre enveloppes, pas une masse. Tombes isolées : bois du Nouvel Empire, à côté des galeries plus tardives, pas la série des 24. Petits souterrains de Khâemouaset : bois, encore en consolidation. Grands souterrains de Psammétique Ier : les 24 caisses de pierre dure, dès Amasis II (~550) jusqu’à Auguste, et elles seules. Iseum : vaches mères, ~1 km au nord-est. Les 24 caisses sont des sarcophages. Preuves convergentes : stèles scellées sur la maçonnerie qui fermait chaque chambre (puis groupées à l’entrée et dans le tunnel de service) — naissance, intronisation, mort, inhumation de ce taureau sous ce roi, souvent avec la durée de vie en années-mois-jours (Malinine, Posener, Vercoutter 1968 ; Kitchen 1996 ; Dodson). Inscriptions sur quatre caisses (Gunn 1926a) : Amasis a dédié un grand sarcophage de granite à l’Apis vivant ; Cambyse un grand sarcophage de granite à son père Apis-Osiris ; Khababash an 2 ; ptolémaïque anonyme, formules des Textes des Pyramides adressées à Apis-Osiris. Parallèle du Bucheum à Armant pour les taureaux Buchis (Mond 1934). Tombes isolées et petits souterrains ont livré des canopes, ouchebtis à tête de taureau, masques, bijoux, bitume et os de bovidé. Grands souterrains pillés dans l’Antiquité (noms grattés sur des stèles ; momies déchiquetées ; pierres jetées sur les cuves — Mariette 1856). Trouver les 24 vides en 1851 est la preuve du pillage, pas la preuve qu’elles n’ont jamais contenu d’Apis. Papyrus de l’Apis : embaumement 68 jours, 70 jours au total (Dodson 2005). Stèle d’un maître d’œuvre sous Ptolémée II : creusement de la chambre 6 mois 5 jours ; transport de la cuve et du couvercle dans la chambre 1 mois 5 jours, dont 7 chômés = 28 jours ouvrés (Brugsch 1884). Un générateur, un résonateur ou un reliquaire atlante n’explique aucune stèle datée, aucun cartouche, aucun parallèle buchite, aucun os de taureau. Les caisses sont grandes pour un taureau (vide 3,17 × 1,46 × 1,73 m) : un fait de prestige (Amasis : jamais pareil depuis les temps anciens), aligné sur les sarcophages royaux tardifs de granite, pas une preuve d’autre fonction. « Trop grand donc pas un cercueil » est une pétition. Ne pas confondre avec le Sérapéum d’Alexandrie, ni avec le Panthéon de Rome.",
+  "technique": "Documenté au sol (Mariette 1882, p. 80–83, d’après relais Wikipedia/wikiland ; ces pages non relues ici en OCR suivi) : traces de rouleaux au sol des galeries ; deux treuils horizontaux de bois, chacun à huit leviers, trouvés dans une niche ; chambres remplies de sable jusqu’au niveau du couloir, la caisse entre à l’horizontale, on retire le sable, la caisse descend dans l’alvéole ; niches latérales pour extraire le sable. Expérience de Mariette : une caisse seulement à mi-descente ; il a achevé la descente « avec une parfaite régularité », même avec le vide rempli de gravats. Brugsch 1855, visite 1853 : « doubles rails » encore visibles au sol du tunnel de service ptolémaïque. Stèle de Ptolémée II : 28 jours ouvrés pour rentrer cuve + couvercle dans une chambre déjà creusée — un délai de chantier, pas une physique du frottement. Sable dans les puits aussi décrit par Mariette pour des tombes privées tardives de Saqqara (Onnophris, 1882, p. 12–13). Ce qui n’est pas un procès-verbal de chantier : trajet Assouan → Saqqara, ~800–900 km de Nil — documenté pour obélisques, cuves royales, colonnes ; aucun journal de bord pour ces 24 caisses ; le parallèle existe, le connaissement non. Descente depuis le plateau : rampe d’entrée actuelle ; l’entrée originelle des grands souterrains bouchée par le sarcophage de Cambyse, d’où une nouvelle percée sous Darius, puis la grande rampe ouest (Dodson 2005) — une séquence d’accès, pas un schéma de treuil vertical. Virage de la caisse dans la niche : jeu ~25–35 cm de chaque côté dans un tube de 3 m ; cabestans ancrés, leviers, peut-être élargissement local de la chambre avant le halage (Madain cite des chambres 4–6 m — non vérifié dans Hamdy) ; rien de publié comme profil coté couloir → seuil → chambre. Résistance au roulement sous ~40–60 t sur sol de galerie irrégulier : non mesurée. Les treuils à 8 leviers sont un objet trouvé, pas un calcul d’effort (contrairement à Adam à Baalbek, 512 hommes — ici, pas d’équivalent publié). Outils de taille du granite : percussion, abrasif, sciage au fil + quartz, bouchardage — attirail égyptien tardif, connu ailleurs (obélisques inachevés d’Assouan, sarcophages saïtes). Traces d’outil sur ces caisses : pas d’atlas en accès libre. Poli intérieur sans éclat (Isida) n’est pas une preuve d’usinage moderne. La stèle des 28 jours dit que le problème avait une solution de chantier, répétée pour chaque Apis pendant cinq siècles. Ce n’est pas une démonstration au newton.",
+  "evidence": "Daté : premières tombes d’Apis au Sérapéum = Amenhotep III (canopes, briques magiques, nom du prince Thoutmosis) ; petits souterrains = Khâemouaset / Ramsès II (stèles, mobilier, ans 16 / 30 / 55) ; grands souterrains ouverts l’an 52 de Psammétique Ier (stèle de restauration) ; première caisse de pierre coûteuse = Amasis II, an 23 (~550), inscription sur la caisse + stèle de chambre ; caisses suivantes (Cambyse, Darius, Khababash, Ptolémées) datées par inscriptions et/ou position + stèles de chambre ; abandon peu après 30 av. n.è. (Strabon, Dion) + arrêt des inhumations ici (Apis encore enterrés ailleurs à Saqqara–Abousir jusqu’au IIIe s. — Marković 2018). Mesuré : galerie 211 × 3 × 4 m (Imam 2007 / Hamdy 2021, repris Elshayeb 2023). Inféré : 13 niches ptolémaïques = 13 Apis de Ptolémée Ier à Auguste (dénombrement Dodson 2005 ; dernière caisse restée dans le tunnel de service) ; granite = Assouan pour le rose d’Amasis (l’inscription dit granite ; Assouan est le gisement classique ; pas de lame mince publiée lue ici). Non établi : calcaire parmi les 24 restantes (Hamdy le nomme ; Gunn et les photos pointent pierre dure). Qui a fouillé : Mariette 1850–1854 (allée, dromos, temple de Nectanébo, grands et petits souterrains, caveaux isolés) ; Brugsch 1853 (rails, inscriptions) ; Gunn 1926 (quatre sarcophages inscrits) ; Posener 1936 (Cambyse, Darius) ; Lauer 1950–1955 (plan inédit Mariette des accès, statues ptolémaïques du dromos — Lauer n’a pas publié de table de masses des caisses) ; Malinine, Posener, Vercoutter 1968 (catalogue des stèles) ; Mathieson 1990–2009 (géophysique de la Serapeum Way — pas les caisses) ; Dodson 1995, 2005 ; Conseil suprême / Hamdy, Imam, Helal 2001–2012 (stabilité, documentation 2007, arches d’acier) ; Marković 2014– ; Louvre / Vincent Rondot 2020– (petits souterrains). « Kalos » n’est pas identifié ; le nom utile pour Saqqara n’est pas Kalayan (Baalbek). Quiconque recule les 24 caisses de plusieurs millénaires avant Amasis doit produire un fait de terrain que les stèles et Gunn n’ont pas. Les tombes du Nouvel Empire sont à côté, en bois.",
+  "hearsay": "Noms à écarter ; ils n’expliquent aucune stèle, aucune trace de treuil, aucun phasage. Aliens / Atlantide / « civilisation perdue » (Chacaruna, Gigal, Ancient360) : un topos YouTube ; zéro artefact, zéro contexte ; les caisses portent des cartouches saïtes, perses, ptolémaïques. Usinage moderne / « trop dur pour le bronze » : le granite d’Assouan (Mohs ~6–7) est le matériau des obélisques, des cuves de Mykérinos, des sarcophages saïtes ; la difficulté est réelle, ce n’est pas une impossibilité ; l’argument Mohs « donc extra-terrestre » saute l’abrasif et le temps. « 70–100 tonnes, précision au millième de pouce » : masses obtenues en oubliant le vide intérieur ou en empilant cuve + couvercle en un pavé plein ; tolérances non mesurées ; le poli n’est pas uniforme (Gunn, Isida). « Couloir plus étroit que la caisse » : contredit par Hamdy 3,0 m vs Linant 2,32 m ; reste ouvert localement (portes, caisse la plus large) ; pas un fait global. « Vides donc pas des tombes » : pillage antique documenté par Mariette ; tombes isolées et petits souterrains ont livré momies et mobilier. « Hall d’énergie / résonateur / silo à grain » : aucune inscription, aucun parallèle, aucun grain ; les Textes des Pyramides sur la cuve ptolémaïque parlent à Apis-Osiris, pas à un silo. « Construit en 3000 av. n.è. » (Hurghada To Go et relais) : confond l’ancienneté du culte d’Apis avec la date des galeries ; les grands souterrains datent de Psammétique Ier. Le plateau de Saqqara est vieux (Djéser, IIIe dynastie). Ces caisses-là ne le sont pas au même titre. Mélanger les deux est la faute de méthode — la même qu’à Baalbek entre le tell et le trilithon.",
+  "open": [
+    "Gabarit local : la galerie fait 3 m en moyenne. Aucun minimum publié (porte d’entrée, coude, seuil de niche) collé à la largeur de chaque caisse. Si l’Amasis d’Isida mesure vraiment 2,50 m, le jeu tombe à 25 cm de chaque côté : praticable au levier, inconfortable, non levé au théodolite. C’est la vraie question, pas « plus étroit que la caisse ».",
+    "Masse vraie : un seul calcul (Linant), densité max. 2,956. Recalcul granite 2,65–2,70 : ~56–57 t cuve+couvercle. Le catalogue L × l × h des 24 n’existe dans aucune publication académique lue ici. Isida donne deux cotes. Hamdy ne pèse pas.",
+    "Lithologie caisse par caisse : granite rose (Amasis, inscription). Gris, sombre, « syénite porphyrique » (Isida). Calcaire dur : Hamdy le nomme, Gunn non. Lame mince : non publiée ici.",
+    "Descente dans la niche : Mariette a montré que le sable marche. Il n’a pas publié l’effort, ni le nombre d’hommes, ni le coefficient de roulement sous 40 t. Les 28 jours de Ptolémée II sont un délai, pas une physique.",
+    "Caisse abandonnée dans le tunnel de service (fin de série, Auguste ?) : arrêt de culte, accident de chantier, ou caisse trop tardive pour une chambre inachevée. Inféré.",
+    "Lacunes : pas d’Apis de la XXIe dynastie dans ce qui est fouillé. Pas de nécropole d’Apis avant Amenhotep III. L’absence n’est pas la preuve d’un autre site mythique ; ça reste à chercher (Dodson).",
+    "Identification de Khâemouaset : momie aux bijoux du prince dans les petits souterrains — taureau honoré ou inhumation du grand prêtre. Mariette a utilisé la poudre. Dossier sale."
+  ],
+  "help": [
+    {
+      "role": "Carrier granite (Assouan)",
+      "ask": "Lire les faces : ordre d’épannelage, traces de coin, de sciage, de bouchardage. Dire si le rose d’Amasis et les gris ptolémaïques sont le même banc. Comparer avec un obélisque inachevé d’Assouan, pas avec du calcaire."
+    },
+    {
+      "role": "Tailleur de sarcophage / marbrier granite",
+      "ask": "Relever le poli vs le dressé ; les angles intérieurs (vifs / congés) ; la séquence cuve → couvercle → inscriptions (griffonnage ptolémaïque sur poli = la caisse est finie avant le texte). Jauge le jeu couvercle / lèvre — un chiffre qui n’existe pas."
+    },
+    {
+      "role": "Géomètre-photogrammètre",
+      "ask": "Nuage de points des 24 cuves et du tube (largeur min / max par section). Volume vrai, pas L×l×h. Coupe type : galerie 3 m → seuil → chambre. Trancher 2,32 vs 2,50 m sur l’Amasis."
+    },
+    {
+      "role": "Ingénieur de haulage souterrain",
+      "ask": "Effort de roulement sous 35–40 t (cuve seule) dans un tube de 3 m, jeu 25–35 cm, virage à 90° vers la niche. Dire si deux treuils à 8 leviers suffisent, et à quel coefficient. Pas une reconstitution cinématographique : un ordre de grandeur."
+    },
+    {
+      "role": "Pétrographe",
+      "ask": "24 lames minces ou au moins un spectre pXRF. Trancher granite / granodiorite / basalte / grauwacke / calcaire dur. Le mot « diorite » circule sans analyse."
+    },
+    {
+      "role": "Égyptologue du bâti",
+      "ask": "Recoller chaque caisse à une stèle et à une chambre (type Dodson / Marković). La correspondance 13 niches / 13 Apis ptolémaïques est un dénombrement, pas un scellé."
+    }
+  ],
+  "sources": [
+    {
+      "cite": "Mariette, Auguste. Choix de monuments et de dessins découverts ou exécutés pendant le déblaiement du Sérapéum de Memphis. Paris, 1856. Pierres empilées sur une caisse.",
+      "url": null
+    },
+    {
+      "cite": "Mariette, Auguste. Le Sérapéum de Memphis. Paris: Gide, 1857 (plates).",
+      "url": null
+    },
+    {
+      "cite": "Mariette, Auguste; Maspero, Gaston (ed.). Le Sérapéum de Memphis, vol. I. Paris: Vieweg, 1882. Compte rendu des fouilles p. 1–84 ; appendice F, p. 113, calcul Linant. Fac-similé partiellement bloqué (Anubis) à la rédaction ; p. 113 lue via OCR Heidelberg / table Wikipedia ; p. 46–84 citées d’après relais, non relues en OCR suivi.",
+      "url": "https://doi.org/10.11588/diglit.4183"
+    },
+    {
+      "cite": "Brugsch, Heinrich. Reiseberichte aus Aegypten. Leipzig, 1855, p. 31–32. Rails. [non lu en entier ici]",
+      "url": null
+    },
+    {
+      "cite": "Brugsch, Heinrich. “Der Apiskreis aus den Zeiten der Ptolemäer…” ZÄS 22, 1884, p. 110–136; 24, 1886, p. 19–40. Stèle des 28 jours.",
+      "url": "https://doi.org/10.1524/zaes.1884.22.jg.110"
+    },
+    {
+      "cite": "Gunn, Battiscombe. “The Inscribed Sarcophagi in the Serapeum.” ASAE 26, 1926, p. 82–91. Quatre caisses inscrites, pierre coûteuse vs calcaire perdu. OCR de l’article non extrait ici.",
+      "url": "https://archive.org/details/ASAE-26-1-1926"
+    },
+    {
+      "cite": "Gunn, Battiscombe. “Two Misunderstood Serapeum Inscriptions.” ASAE 26, 1926, p. 92–94.",
+      "url": null
+    },
+    {
+      "cite": "Posener, Georges. La première domination perse en Égypte. Cairo: IFAO, 1936, p. 35–41. Cambyse, Darius. [monographie]",
+      "url": null
+    },
+    {
+      "cite": "Malinine, Michel; Posener, Georges; Vercoutter, Jean. Catalogue des stèles du Sérapéum de Memphis. Paris: Éditions des Musées nationaux, 1968. [paywall / monographie]",
+      "url": null
+    },
+    {
+      "cite": "Lauer, Jean-Philippe. Communication, BSFE 5, 1950. Plan inédit Mariette des accès.",
+      "url": "https://www.persee.fr/doc/bsfe_0037-9379_1950_num_5_1_1287"
+    },
+    {
+      "cite": "Lauer, Jean-Philippe & Picard, Charles. Les statues ptolémaïques du Sarapieion de Memphis. Paris: PUF, 1955. [monographie]",
+      "url": null
+    },
+    {
+      "cite": "Lauer, Jean-Philippe. Saqqara: The Royal Cemetery of Memphis. New York: Scribner, 1976, p. 21–28. [monographie ; non lu en entier ici]",
+      "url": null
+    },
+    {
+      "cite": "Dodson, Aidan. “Of Bulls & Princes, the early years of the Serapeum at Sakkara.” KMT 6.1, 1995, p. 18–32. [revue]",
+      "url": null
+    },
+    {
+      "cite": "Dodson, Aidan. “Bull Cults.” In Ikram, Salima (ed.), Divine Creatures: Animal Mummies in Ancient Egypt. Cairo: AUC Press, 2005, p. 72–102. [paywall]",
+      "url": "https://doi.org/10.5743/cairo/9789774248580.003.0004"
+    },
+    {
+      "cite": "Mathieson, Ian et al. “The National Museums of Scotland Saqqara survey project 1993–1995.” JEA 83, 1997, p. 17–53. [JSTOR]",
+      "url": "https://doi.org/10.1177/030751339708300103"
+    },
+    {
+      "cite": "Mathieson, Ian et al. “The National Museums of Scotland Saqqara survey project 1990–1998.” JEA 85, 1999, p. 21–43. [JSTOR]",
+      "url": "https://doi.org/10.1177/030751339908500103"
+    },
+    {
+      "cite": "Mathieson, Ian & Dittmer, J. “The Geophysical Survey of North Saqqara, 2001–7.” JEA 93, 2007, p. 79–93. Serapeum Way 2004–2006. [JSTOR]",
+      "url": null
+    },
+    {
+      "cite": "Hamdy, Gehan. “Stabilization of the Ancient Serapeum at Saqqara—Strengthening Proposals Using Advanced Composite Materials.” In Cities’ Identity Through Architecture and Arts, Springer, 2021, p. 15–24. [paywall] — cotes 211 × 3 × 4 m lues via Elshayeb 2023.",
+      "url": "https://doi.org/10.1007/978-3-030-14869-0_2"
+    },
+    {
+      "cite": "Elshayeb, Yasser. “30 Years of Cultural Heritage Landslides… Case Studies from Egypt.” Progress in Landslide Research and Technology 1.2, 2023, p. 169–175. OA. Galerie 211 m × 3 m × 4 m ; 28 chambres ; 24 caisses.",
+      "url": "https://doi.org/10.1007/978-3-031-18471-0_14"
+    },
+    {
+      "cite": "Imam, H.; Eltouny, S.; Abdelkader, N. Surveying and architectural documentation of all Serapeum units. Supreme Council of Antiquities, 2007. [rapport interne, non lu ; cité par Elshayeb]",
+      "url": null
+    },
+    {
+      "cite": "Marković, Nenad. “The Majesty of Apis has Gone to Heaven…” In Burial and Mortuary Practices in Late Period and Graeco-Roman Egypt, Budapest, 2017, p. 143–154.",
+      "url": null
+    },
+    {
+      "cite": "Marković, Nenad. “Changes in Urban and Sacred Landscapes of Memphis… Eclipse of the Divine Apis Bulls.” JEA 104.2, 2018, p. 195–204. [Sage]",
+      "url": "https://doi.org/10.1177/0307513319856863"
+    },
+    {
+      "cite": "Mond, Robert & Myers, Oliver. The Bucheum. London: EES, 1934. Parallèle Buchis.",
+      "url": null
+    },
+    {
+      "cite": "Thijs, Ad. “The Ramesside Section of the Serapeum.” SAK 47, 2018, p. 293–318.",
+      "url": null
+    },
+    {
+      "cite": "Málek, Jaromír. “Who Was the First to Identify the Saqqara Serapeum?” CdE 58, 1983, p. 65–72. Harris 1848 avant Mariette.",
+      "url": null
+    },
+    {
+      "cite": "Depuydt, Leo. “Murder in Memphis: The Story of Cambyses’s Mortal Wounding of the Apis Bull.” JNES 54.2, 1995, p. 119–126. [JSTOR]",
+      "url": "https://doi.org/10.1086/373741"
+    },
+    {
+      "cite": "Kitchen, K. A. The Third Intermediate Period in Egypt (1100–650 BC). Warminster: Aris & Phillips, 1996. Stèles d’Apis et chronologie.",
+      "url": null
+    },
+    {
+      "cite": "UNESCO. “Memphis and its Necropolis.” World Heritage List no. 86, inscription 1979.",
+      "url": "https://whc.unesco.org/en/list/86/"
+    },
+    {
+      "cite": "OpenStreetMap / Wikidata. Q287375 P625 29.874722, 31.212417 — ne pas piquer (décalage ~250 m ESE). GPS Ovedc 29.876111, 31.210278 (galerie). Aucun objet OSM nommé identifié au 30 août 2026. ODbL pour OSM le cas échéant.",
+      "url": null
+    },
+    {
+      "cite": "Wikimedia Commons. Category:Sarcophagi in the Serapeum of Saqqara. Photo retenue : File:By ovedc - Serapeum of Saqqara - 04.jpg, CC BY-SA 4.0. Ovedc, 5 oct. 2017, galeries + sarcophage d’Apis, EXIF GPS 29°52′34″ N, 31°12′37″ E.",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/41/By_ovedc_-_Serapeum_of_Saqqara_-_04.jpg"
+    }
+  ],
+  "xLine": "Saqqara, grands souterrains : 24 caisses, granite (et pierres dures), dès Amasis ~550 av. n.è. — fait. Une caisse calculée : ~56–62 t avec couvercle, pas 100. Galerie 3 m, caisse 2,32 m : elles passent en longueur. Question : le jeu réel au seuil, et le halage sous 40 t. Qui peut aider : un carrier d’Assouan et un photogrammètre, le même jour, sur l’Amasis et le tube."
+}

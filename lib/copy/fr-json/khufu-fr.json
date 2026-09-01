@@ -1,0 +1,157 @@
+{
+  "id": "khufu",
+  "order": 6,
+  "name": "Khéops",
+  "place": "Plateau de Gizeh, Gizeh, Égypte",
+  "yearLabel": "IVe dynastie, règne de Khéops. Année 26 interne (après le 13e recensement) au papyrus de Merer. Absolu : c. 2589–2566 av. n.è. (Shaw 2000) ou c. 2509–2483 (Hornung et al. 2006, repris par ScanPyramids 2017)",
+  "yearSort": -2560,
+  "lat": 29.97916,
+  "lng": 31.13421,
+  "coordSource": "OSM way 4420397",
+  "chips": [
+    "precision",
+    "materiau",
+    "organisation",
+    "geste",
+    "durabilite"
+  ],
+  "photo": {
+    "file": "Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg",
+    "alt": "Grande Pyramide de Khéops sur le plateau de Gizeh — pas Khéphren, pas le Sphinx.",
+    "credit": "Douwe C. van der Zee, 4 mai 2023. Pyramide de Khéops, plateau de Gizeh.",
+    "licence": "CC BY-SA 4.0"
+  },
+  "common": "À Gizeh, le tombeau de Khéops tourne de moins de quatre minutes d’arc par rapport au nord. Trois relevés, de Petrie à Dash, disent la même chose. Le calcaire blanc du parement a traversé le Nil : un contremaître nommé Merer l’a écrit, l’année 26 du roi. Le granite de la chambre vient d’Assouan, à sept cents kilomètres. La question n’est pas qui d’autre que l’homme. C’est comment on a calé cinquante tonnes de granite au cinquantième lit, et comment on a tiré un alignement de 230 m à quatre minutes près.",
+  "advanced": "L’azimut n’est pas un carré parfait : l’est de Cole/Dash (~ −5′) tire plus que le nord (~ −2,5′). Petrie avait lissé en forçant les coins sur les diagonales des encoches ; Cole et Dash mesurent les faces sur le pavement. Le gnomon équinoxial de Dash reproduit le signe du biais, pas la dispersion face par face. Merer ferme le dossier « civilisation perdue » pour le calcaire de Tourah ; il ne dit rien du granite ni du vide muonique. Le Big Void a la section d’une Grande Galerie et aucune fonction publiée : tant qu’un modèle 3D n’est pas contraint, Houdin n’est pas « confirmé ». Les 67 390 m³ de parement (Lehner via Tallet) tiennent dans quelques phyles de bateliers si l’on accepte 2,5 t, 70–80 t par bateau et cinq mois de crue — une pile d’hypothèses, pas un compte de chantier.",
+  "accepted": "La Grande Pyramide est le tombeau de Khéops (grec Cheops ; égyptien Khéoufou), IVe dynastie. Nom du monument : Akhet-Khufu. Elle s’inscrit dans une série : Meïdoum et Dahchour (Snéfrou, le père), puis Khéphren et Mykérinos sur le même plateau. Récit de chantier dominant : calcaire local extrait à quelques centaines de mètres au sud ; parement de Tourah amené par bateau ; granite d’Assouan par le Nil ; mise en œuvre par rampes (externes, éventuellement internes) et outils de cuivre (ciseaux, scies plus sable, massettes de dolérite). Main-d’œuvre saisonnière d’État, pas d’esclaves hollywoodiens — Heit el-Ghurab (Lehner, AERA). Le sarcophage de granite est en place ; aucune momie n’y a été trouvée. C’est le récit. La preuve de terrain et de texte ne le recouvre pas tout entier.",
+  "fact": "Trois lithologies, trois gestes ; toutes les masses sont des estimations, jamais des pesées. « 2,3 millions de blocs » n’est pas un dénombrement. Deux faits tiennent sans inférence : l’orientation cardinale (trois relevés indépendants) et le journal de Merer (texte daté, destination Akhet-Khufu). (1) Noyau — calcaire nummulitique local du plateau (formation de Moqattam), blocs irréguliers, éclats, un knoll en place. Pas un empilement de cubes égaux. (2) Parement — calcaire fin blanc de Tourah / Masara, rive est. Presque entièrement arraché (réemploi médiéval). Dash 2015 : ~54 m restent sur 920 m de périmètre (~6 %) ; 83 % du pourtour trop détruit pour donner une ligne de base. Petrie 1883, échantillon de la face nord encore en place : joint moyen 0,020 in = 0,51 mm ; écart moyen à la droite et à l’équerre 0,01 in sur 75 in (~0,25 mm sur 1,90 m) ; aire d’un joint ~3,3 m², cimenté de part en part ; contact local jusqu’à 0,05 mm ; pierre ~16 t estimées. Mesuré : ces joints, cette face. Ne pas étendre 0,5 mm au parement disparu. Le noyau n’a pas de tels joints. (3) Granite rose d’Assouan — chambre du roi, chambres de décharge, herse de l’antichambre, sarcophage. Petrie : chambre ~10,47 × 5,24 m (20 × 10 coudées), hauteur ~5,84 m ; cinq assises de granite ; neuf poutres de plafond N–S ; cinq chambres de décharge au-dessus (Davison 1765 ; Vyse 1837). Petrie §169 : 56 poutres de toit de la chambre et des vides, moyenne 320 × 52 × 73 in = 700 cu. ft, 54 t estimées. Aucune pesée instrumentale. Chiffre retenu ~50 t estimées. Hauteur de pose ~43 m au-dessus du pavement (Arnold/Stadelmann 43,03 m ; bases des murs Petrie 1686–1688 in ≈ 42,8 m). Lever ~50 t à ~43 m : non démontré expérimentalement. Posé, pas expliqué. Klemm 2010 et ScanPyramids XRF 2026 : granite rose d’Assouan. Distance géodésique OSM 679 km (way 4420397 → way 243566979) ; 800–900 km, c’est le fleuve. Merer ne transporte pas de granite. Orientation, signe d’arpenteur négatif = antihoraire (Dash 2017 n. 17). Biais retenu −3,6′ à −3,9′ (Petrie, Cole, Dash). Moyennes : Petrie 1883 −3′ 43″ ; Cole 1925 −3′ 06″ ; Lehner/Goodman 1984 −3,6′ ; Dash/Paulson/Lehner 2015 −3′ 54″ ± 44″. L’est de Cole/Dash (~ −5′) tire plus que le nord (~ −2,5′). Petrie avait lissé vers −3,7′ en forçant les coins sur les diagonales des encoches. Mesuré : les trois campagnes. Inféré : la méthode. Base 230,36 m (Cole 230,364 ; Dash 230,363 ; Petrie 230,348 m = 9068,8 in). Pavement Cole : pratiquement plat, ~15 mm de montée NO vers SE. Les encoches d’angle ne portent pas les coins du parement (Cole) ; fonction non établie. Angle Petrie 51° 52′ ± 2′ ; hauteur d’origine 146,71 ± 0,18 m ; hauteur OSM actuelle height=138.8 (parement et pyramidion disparus). « 2,3 millions de blocs » : Lehner 1997 volume / moyenne notionnelle ~2,5 t, pas un inventaire ; hauteur du knoll non close. Volume du parement 67 390 m³ (Lehner via Tallet) : même arithmétique. Merer, Ouadi el-Jarf 2013, Tallet MIFAO 136, 2017 : inspecteur, année 26, Tourah Sud/Nord → Akhet-Khufu via She-Khufu et Ro-She Khufu, Ânkhkhâf directeur de Ro-She Khufu. Ne dit ni levage, ni rampe, ni granite, ni blocs par bateau, ni que la pierre est pour le parement (Tallet : le plus probable mais pas exclusivement).",
+  "object": "Trois enveloppes, un knoll — pas une masse de cubes égaux. Knoll : le plateau n’est pas raboté à plat sous tout le volume ; hauteur connue aux percées (couloirs, chambre souterraine, coins) ; profil complet non publié comme MNT fermé ; tout « millions de blocs » qui ignore le knoll surestime la maçonnerie. Noyau : calcaire local, carrière immédiatement au sud (Lehner ; Klemm) ; assises plus hautes en bas (Petrie : 1re assise 148 cm) et plus basses en haut (~50 cm) ; appareil irrégulier, remplissage d’éclats, mortier ; ce que le visiteur voit, ce sont surtout les backing stones après enlèvement du parement (XIVe s., al-Nasir Hasan 1356 et réemplois du Caire — récit médiéval, pas un procès-verbal de chantier). Parement : calcaire blanc de la bande Tourah–Masara (~7 km de front, Klemm) ; échantillons restants de Khéops → Tourah plutôt que Masara (Masara = Snéfrou à Dahchour, Klemm 2010 p. 87–89) ; Merer distingue Tourah Nord et Tourah Sud ; encore en place Dash 54 m ; joints Petrie nord 0,51 mm de moyenne ; angle de face 51° 50′ 40″ au nord, moyenne 51° 52′. Granite : chambre du roi + cinq vides de construction + herses ; ~0,1 % du volume si l’on retient ~8 000 t / ~3 000 m³ (Lehner 1997, estimé) ; le geste n’est pas le même que le calcaire local — extraction à la dolérite (Engelbach 1922 sur l’obélisque inachevé : analogie d’outil du Nouvel Empire, pas un procès-verbal de la IVe dynastie), descente du Nil, levage à 43 m. ScanPyramids Big Void (Morishima et al., Nature 552, 2017) : vide ≥ 30 m au-dessus de la Grande Galerie, section comparable, trois techniques muoniques indépendantes (Nagoya, KEK, CEA). Les auteurs : « there is currently no information about the intended purpose of this void ». Détection, pas fonction. Pas une chambre secrète nommée, pas une rampe de Houdin démontrée, pas une chambre à énergie. Houdin / Big Void : hors fonction. Ne pas traiter comme une rampe confirmée.",
+  "technique": "Documenté : calcaire de Tourah par bateau, IVe dynastie année 26 (Merer) — halage, chargement, nuit à She-Khufu / Ro-She, déchargement à Akhet-Khufu ; Ânkhkhâf dirige Ro-She Khufu. Hydraulique de chantier à Gizeh (Lehner, carottages AMBRIC, bassin, Heit el-Ghurab) ; Tallet récuse Ro-She = Heit el-Ghurab (un jour de voile entre les toponymes) ; Ro-She reste un relais dans un rayon de ~10 km. Outils : cuivre (parfois arsénié), pas de fer ; scie de cuivre + sable quartzeux pour le granite, expérimental (Stocks 2003) ; boules de dolérite à Assouan (Engelbach) — attirail de l’Ancien Empire, pas un film du lever des 54 t. Parement dressé au sol, face lissée après pose : analogie des parements inachevés de Mykérinos et Henoutsen, pas un texte de Khéops. Inféré : rampes externes (Lehner 1997 p. 215–217 ; Arnold 1981 ; Lauer 1989) — aucune rampe de Khéops conservée en volume ; traces autour du plateau discutées, pas un profil en long coté jusqu’au pyramidion. Rampe interne de Jean-Pierre Houdin (2007–2011) : hypothèse architecturale. Tallet 2017 n. 1 n’entre pas dans le débat. ScanPyramids North Face Corridor / Big Void parfois invoqués comme « preuve Houdin » ; les papiers muoniques n’assignent pas de fonction. Traiter Houdin comme hypothèse, jamais comme fait. Détection sans fonction publiée ; ne pas traiter comme une rampe confirmée. Petrie §169 « machine of short pieces of wood » (Hérodote II.125) : modèle de bascule, 56 poutres, 10 hommes au levier, 5 t à la fois si appuis à 30 in — un modèle, comme les 512 hommes d’Adam à Baalbek ; non répliqué à 54 t × 43 m. Méthode d’alignement : quatre (plus une) peuvent marcher (Dash 2015a JHA) — étoile polaire, circumpolaire, transit simultané de Spence 2000 (circulaire si on s’en sert à la fois pour dater et expliquer l’erreur), gnomon solaire, gnomon équinoxial (Dash 2017). Aucun document d’ingénieur égyptien (Nell & Ruggles 2014 p. 305) ; le stretching of the cord est un rituel, pas un procès-verbal de théodolite. Non démontré pour ces masses : lever expérimental d’une poutre de granite de ~50 t à 43 m avec le kit de la IVe dynastie ; parcours Nil Assouan → Gizeh pour ces 56 poutres (aucun journal type Merer pour le granite) ; nombre total de blocs du noyau ; fonction du Big Void ; que Merer habille le parement (plausible, pas dit).",
+  "evidence": "Daté : monument = Akhet-Khufu, règne de Khéops — papyrus (toponyme + année 26 + Ânkhkhâf) et contexte IVe dynastie du plateau (mastabas, cartouches de chantier, série Snéfrou–Khéops–Khéphren). Transport Tourah → Gizeh, calcaire, crue, année 26 : daté (Merer). Mesuré : orientation −3,6′ à −3,9′ antihoraire (Petrie −3′ 43″ ; Cole −3′ 06″ ; Dash 2015 −3′ 54″ ± 44″) ; joints de parement ~0,5 mm sur l’échantillon nord de Petrie ; base 230,36 m ; pavement ~15 mm (Cole). Pétrographie : granite = Assouan (Klemm ; XRF 2026) ; distance OSM 679 km. Qui a mesuré : Petrie 1880–82 ; Cole 1925 (Survey of Egypt Paper 39, Borchardt ; Engelbach) ; Lehner/Goodman AERA GPMP dès 1984 ; Dash/Paulson/Lehner 2015 (84 points de ligne de parement, 176 de la plateforme) ; Tallet/Marouard IFAO/Sorbonne, Ouadi el-Jarf 2013, MIFAO 136, 2017 ; ScanPyramids 2015–17, Nature 552, 2017 ; Klemm pétrographie 2010. Inféré : date absolue av. n.è. (listes royales, Sothic, 14C de courte vie sur d’autres contextes IVe dynastie — pas un C14 du mortier de cette assise comme date du parement) ; écart Shaw / Hornung ≈ 80 ans ; rampes, Houdin, gnomon équinoxial ; parement = cargaison de Merer (fin de règne + lithologie). Non assigné : fonction du Big Void. Estimé : « 2,3 millions de blocs » (volume / moyenne) ; masses des poutres de granite (prisme × densité). Quiconque recule le monument de plusieurs millénaires doit produire un fait de terrain que Petrie, Cole, Lehner, Dash et Tallet n’ont pas : un toponyme, une année de règne, une pétrographie, un azimut. Ils n’en ont pas.",
+  "hearsay": "Noms à écarter ; ils n’expliquent aucun azimut, aucun joint de 0,5 mm, aucun papyrus. Extra-terrestres / Atlantide / civilisation antédiluvienne (Hancock et relais) : contredit par Merer (année 26 de Khéops, Tourah, Ânkhkhâf) et par la série Snéfrou → Khéops → Khéphren. Chambre à énergie / centrale / résonateur : la chambre du roi est une salle de granite à sarcophage dans un tombeau royal de la IVe dynastie ; zéro artefact de machine ; les fissures du plafond (tassement 2,5–5 cm) sont un désordre de structure, pas un cahier des charges énergétique. ScanPyramids = chambre secrète sensationnelle : détection muonique d’un vide ; fonction inconnue ; en dire plus que Nature 2017 est de la publicité ; Houdin / Big Void hors fonction. Géopolymère / béton coulé (Davidovits) : Klemm l’écarte sur pétrographie — calcaires de carrière, granite d’Assouan ; traces d’outil, joints, backing stones. « Impossible pour le cuivre » : confusion entre non répliqué à 54 t × 43 m et physiquement impossible ; la première phrase est vraie, la seconde n’est pas un argument ; l’alignement est mesuré. Orion / datation sauvage par les étoiles : Spence 2000 est une hypothèse de méthode d’alignement, pas une preuve que la pyramide date d’un autre âge ; l’erreur d’azimut est un fait, sa lecture astronomique est un modèle. Le plateau est un chantier d’État de la IVe dynastie. Mélanger le knoll géologique (vieux) et la maçonnerie (Khéops) est la faute de méthode — la même qu’à Baalbek entre le tell PPNB et le trilithon.",
+  "open": [
+    "Levage du granite : comment on a calé des poutres de ~50 t à ~43 m. Petrie est un modèle de bascule. Pas de journal, pas d’essai à l’échelle. Posé, pas expliqué.",
+    "Rampe : forme, pente, interne ou externe. Houdin reste une hypothèse. Le Big Void n’est pas une rampe tant qu’on n’y est pas entré ou qu’un modèle 3D contraint n’existe pas. Détection sans fonction publiée ; ne pas traiter comme une rampe confirmée.",
+    "Fonction du Big Void. Détecté. Non interprété.",
+    "Knoll : volume vrai de maçonnerie = volume géométrique − rocher en place. Pas de MNT publié du contact rocher / bloc. « 2,3 millions de blocs » est un volume / moyenne, pas un dénombrement.",
+    "Méthode d’alignement : le biais antihoraire −3,6′ à −3,9′ est un fait. Le gnomon équinoxial le reproduit ; d’autres méthodes aussi. Pas de document de terrain.",
+    "Merer ≠ granite, Merer ≠ rampe. Le papyrus ferme qui, quand, quelle pierre blanche (année 26, Tourah → Akhet-Khufu). Il n’ouvre pas le chantier intérieur."
+  ],
+  "help": [
+    {
+      "role": "Géomètre-photogrammètre",
+      "ask": "Refermer le knoll (contact rocher / maçonnerie) en nuage de points. Volume vrai, pas w²h/3. Contrôler les 84 points de Dash."
+    },
+    {
+      "role": "Tailleur de pierre (calcaire fin)",
+      "ask": "Relire les joints de Petrie encore accessibles au nord : outil, anathyrose, ciment, séquence face brute → lissage. Ne pas comparer au granite."
+    },
+    {
+      "role": "Carrier granite (Assouan)",
+      "ask": "Lire les traces de dolérite, l’ordre d’extraction d’une poutre de 8 × 1,3 × 1,9 m. Donner la masse d’un prisme, pas un slogan « 80 t »."
+    },
+    {
+      "role": "Ingénieur de levage / haulage",
+      "ask": "Un essai instrumenté à 50 t, pas à 2 t : cribs, palans, rampe, coefficient de roulement. Dire à quelle pente ça tient."
+    },
+    {
+      "role": "Égyptologue du bâti + papyrologue",
+      "ask": "Publier Jarf C–L (annoncés par Tallet). Un second journal sur le granite, s’il existe, vaut dix hypothèses de rampe."
+    },
+    {
+      "role": "Physicien muons",
+      "ask": "Contraindre la géométrie du Big Void (un volume, plusieurs, incliné, horizontal) sans lui coller une fonction."
+    }
+  ],
+  "sources": [
+    {
+      "cite": "Petrie, W. M. F. The Pyramids and Temples of Gizeh. London: Field & Tuer, 1883. Joints p. 44 (0.020 in) ; base 9068.8 in ; angle 51° 52′ ; hauteur 5776 in ; chambre du roi ; §169, 56 poutres 320 × 52 × 73 in, 54 t.",
+      "url": null
+    },
+    {
+      "cite": "Cole, J. H. Determination of the Exact Size and Orientation of the Great Pyramid of Giza. Survey of Egypt Paper no. 39. Cairo: Government Press, 1925. Azimuts, longueurs, nivellement (15 mm).",
+      "url": "https://home.hiwaay.net/~jalison/cole2.html"
+    },
+    {
+      "cite": "Petrie, W. M. F. “Surveys of the Great Pyramids.” Nature 116, 1925, p. 942. Comparaison avec Cole.",
+      "url": null
+    },
+    {
+      "cite": "Dash, Glen. “New Angles on the Great Pyramid.” AERAGRAM 13.2, 2012, p. 10–19. Données Lehner/Goodman 1984.",
+      "url": null
+    },
+    {
+      "cite": "Dash, Glen. “The Great Pyramid’s Footprint: Results from Our 2015 Survey.” AERAGRAM 16.2, 2015, p. 8–14. Longueurs, azimuts −3′ 54″ ± 44″, 54 m de parement restant, 84 points.",
+      "url": "http://dashfoundation.com/downloads/archaeology/as-published/AERAGRAM16_2_GDash.pdf"
+    },
+    {
+      "cite": "Dash, Glen & Paulson, Joel. “The 2015 Survey of the Base of the Great Pyramid.” JEA 102, 2016. [Sage paywall]",
+      "url": "https://doi.org/10.1177/030751331610200114"
+    },
+    {
+      "cite": "Dash, Glen. “Occam’s Egyptian razor: the equinox and the alignment of the pyramids.” JAEA 2, 2017, p. 1–8. CC-BY-NC. Table 3 des azimuts de la IVe dynastie.",
+      "url": "https://web.ujaen.es/investiga/egiptologia/journalarchitecture/downloads/JAEA2/JAEA2_Dash.pdf"
+    },
+    {
+      "cite": "Dash, Glen. “On the Field Testing of Methods the Egyptians May Have Used to Find Cardinal Directions.” Journal for the History of Astronomy 46.3, 2015, p. 351–364. [paywall]",
+      "url": null
+    },
+    {
+      "cite": "Nell, E. & Ruggles, C. “The Orientation of the Giza Pyramids and Associated Structures.” JHA 45, 2014, p. 304–360. [paywall]",
+      "url": null
+    },
+    {
+      "cite": "Spence, Kate. “Ancient Egyptian chronology and the astronomical orientation of the pyramids.” Nature 408, 2000, p. 320–324. [paywall] Hypothèse de méthode, pas un relevé de base.",
+      "url": null
+    },
+    {
+      "cite": "Lehner, Mark. The Complete Pyramids. London: Thames & Hudson, 1997. p. 108–109 (ordre de grandeur des blocs), 206–209 et 224–225 (main-d’œuvre), 215–217 (rampes). [livre]",
+      "url": null
+    },
+    {
+      "cite": "Lehner, Mark. “On the Waterfront: Canals and Harbors in the Time of Giza Pyramid Building.” AERAGRAM 15, 2014. “The Lost Port City of the Pyramids.” AERAGRAM 14, 2013.",
+      "url": null
+    },
+    {
+      "cite": "Tallet, Pierre. Les papyrus de la mer Rouge I. Le « journal de Merer » (Papyrus Jarf A et B). MIFAO 136. Cairo: IFAO, 2017. ISBN 978-2-7247-0706-9. [livre ; annexe anglaise OA]",
+      "url": "https://www.ancientportsantiques.com/wp-content/uploads/Documents/PLACES/RedSea/WadiJarf-Tallet2017.pdf"
+    },
+    {
+      "cite": "Tallet, Pierre & Marouard, Gregory. “The Harbor of Khufu on the Red Sea Coast at Wadi al-Jarf, Egypt.” Near Eastern Archaeology 77.1, 2014, p. 4–14. [Chicago paywall]",
+      "url": "https://doi.org/10.5615/neareastarch.77.1.0004"
+    },
+    {
+      "cite": "Tallet, Pierre & Lehner, Mark. The Red Sea Scrolls: How Ancient Papyri Reveal the Secrets of the Pyramids. London: Thames & Hudson, 2021. [livre]",
+      "url": null
+    },
+    {
+      "cite": "Klemm, Dietrich & Klemm, Rosemarie. The Stones of the Pyramids. Provenance of the Building Stones of the Old Kingdom Pyramids of Egypt. Berlin: De Gruyter, 2010. Tura p. 87–89; Aswan / Giza. [livre]",
+      "url": null
+    },
+    {
+      "cite": "ScanPyramids / in-situ conservation. “Material characterization of stone surfaces in the inner chambers of the Khufu (Cheops) Pyramid…” Scientific Reports, 2026. XRF du granite d’Assouan, chambre du roi. [accès à vérifier ; Klemm 2010 reste la pétrographie de référence]",
+      "url": "https://doi.org/10.1038/s41598-026-48805-8"
+    },
+    {
+      "cite": "Morishima, Kunihiro et al. “Discovery of a big void in Khufu’s Pyramid by observation of cosmic-ray muons.” Nature 552, 2017, p. 386–390. [Nature paywall; arXiv OA]",
+      "url": "https://doi.org/10.1038/nature24647"
+    },
+    {
+      "cite": "Stocks, Denys A. Experiments in Egyptian Archaeology: Stoneworking Technology in Ancient Egypt. London: Routledge, 2003. Copper, sand, granite. [livre]",
+      "url": null
+    },
+    {
+      "cite": "Engelbach, Reginald. The Problem of the Obelisks. London: T. Fisher Unwin, 1923 (carrière d’Assouan, dolérite). Analogie d’outil, pas un procès-verbal de la IVe dynastie.",
+      "url": null
+    },
+    {
+      "cite": "UNESCO. “Memphis and its Necropolis – the Pyramid Fields from Giza to Dahshur.” List no. 86, 1979.",
+      "url": "https://whc.unesco.org/en/list/86/"
+    },
+    {
+      "cite": "OpenStreetMap. Way 4420397 Grande Pyramide (centroïde 29.97916, 31.13421) ; way 243566979 Unfinished Obelisk, Assouan (distance seulement, pas un second point de carte Khéops). ODbL.",
+      "url": null
+    }
+  ],
+  "xLine": "Gizeh, parement de Khéops : −3,9′ d’arc, 230,36 m de côté, année 26, Merer à Tourah — faits. Granite d’Assouan ~50 t à 43 m — posé, pas expliqué. Question : le levage. Qui peut aider : un carrier d’Assouan et un géomètre, le même jour, sur une poutre et sur le knoll."
+}

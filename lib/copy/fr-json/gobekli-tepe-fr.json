@@ -1,0 +1,165 @@
+{
+  "id": "gobekli-tepe",
+  "order": 5,
+  "name": "Göbekli Tepe",
+  "place": "Germuş, Örencik / Haliliye, Şanlıurfa, Anatolie du Sud-Est, Turquie",
+  "yearLabel": "~9600–8200 AEC (UNESCO : PPNA puis PPNB ; abandon après le PPNB moyen)",
+  "yearSort": -9600,
+  "lat": 37.22385,
+  "lng": 38.92209,
+  "coordSource": "OSM way 124331302",
+  "chips": [
+    "materiau",
+    "geste",
+    "organisation",
+    "precision",
+    "durabilite"
+  ],
+  "photo": {
+    "file": "Göbekli_Tepe,_Urfa.jpg",
+    "alt": "Tell et enclos dégagés à piliers en T à Göbekli Tepe, Şanlıurfa — pas un bâtiment rectangulaire plus tardif, pas le pilier de carrière inachevé.",
+    "credit": "Teomancimit, 6 septembre 2011. Tell et enclos dégagés, piliers en T. Objet : 37°13′26.29″ N, 38°55′19.34″ E.",
+    "licence": "CC BY-SA 3.0"
+  },
+  "common": "À Göbekli Tepe, des chasseurs-cueilleurs du Xe millénaire ont dressé des piliers de calcaire en T, jusqu’à cinq mètres et demi, extraits à quelques centaines de mètres sur le même plateau, avec des pics de silex. Ce n’est pas une ville. Ce n’est pas de l’agriculture déjà faite. Le dogme du XXe siècle — d’abord les champs, ensuite les monuments — ne décrit pas ce sol. La question n’est pas qui d’autre que l’homme. C’est comment on a calé des T de dix tonnes dans le roc, pourquoi la monumentalité est venue avant la domestication morphologique, et ce que le remblai recouvre vraiment.",
+  "advanced": "Couche III (PPNA, enclos ovales) et couche II (PPNB, rectangles à petits piliers) sont deux enveloppes. KIA-44149 date le plâtre de l’enclos D, pas les piliers en T, pas le remblai ; Hd-20025/36 datent le sédiment de A, pas les piliers. Schmidt a lu un sanctuaire comblé d’un geste ; Kinzel et Clare lisent des bâtiments spéciaux dans un habitat, déformés par la pente, reconstruits. Les deux s’appuient sur le terrain ; une seule micromorphologie par enclos tranchera le remblai. Les 8–10 t sont une estimation DAI ; les ~50 t de la pièce de carrière de 7 m n’ont jamais bougé. Tant qu’un nuage de points ne ferme pas les volumes des piliers 18 et 31, et qu’un log de remplissage n’existe pas, le transport reste une analogie (Nias, traîneau) posée sur une pente non publiée, et l’« enfouissement rituel » reste une phrase.",
+  "accepted": "Göbekli Tepe est un tell du Néolithique précéramique en Haute Mésopotamie. Des groupes de chasseurs-cueilleurs y ont érigé, dès le PPNA (Xe millénaire AEC), des enclos mégalithiques à piliers monolithiques en T de calcaire local, sculptés d’animaux sauvages. La couche II (PPNB ancien–moyen, IXe millénaire) superpose des bâtiments plus petits, souvent rectangulaires. Abandonné après le PPNB moyen, vers 8000 AEC : les pointes du PPNB récent manquent (DAI / Dietrich et al. 2013 ; Tepe Telegrams 2016). Ni céramique, ni plantes morphologiquement domestiquées, ni animaux morphologiquement domestiqués dans les assemblages publiés (Peters & Schmidt 2004 ; Neef 2003). Pas une ville. Repéré en 1963 (prospection Istanbul–Chicago, Çambel, Braidwood ; Benedict 1980 a pris les têtes de piliers pour des stèles islamiques). Klaus Schmidt, formé à Nevalı Çori (Hauptmann), le reconnaît en 1994 ; fouilles 1995–2014 (Musée de Şanlıurfa + DAI Orient-Abteilung). Après 2014 : Lee Clare directeur de terrain ; depuis 2020 Necmi Karul chef de mission, Clare reste (DAI). Le récit qui ne colle plus est le dogme du XXe siècle : d’abord l’agriculture, ensuite les monuments. Schmidt l’a inversé (« Zuerst kam der Tempel, dann die Stadt », 2000). L’UNESCO 2018 conserve la tension : chasseurs-cueilleurs, architecture monumentale, au moment de la néolithisation. Ce que le terrain tient : des monuments antérieurs à la domestication morphologique. Ce qu’il ne tient pas : « le premier temple de l’humanité » comme sanctuaire exclusif, ni que ce soit une ville.",
+  "fact": "Trois objets distincts ; toutes les masses sont des estimations, jamais des pesées. Densité 2,4–2,6 g/cm³ (Banning 2011, calcaire) ; les ~7,1–7,2 t de Schmidt pour les piliers 9 et 10 de l’enclos B paraissent prendre ~3,13 g/cm³ — ordre du basalte, pas du calcaire (Banning 2011) ; traiter ces 7 t comme surestimées. (1) Piliers en T monumentaux des enclos de la couche III. Paire centrale de l’enclos D, piliers 18 et 31 : ~5,5 m (dégagés jusqu’au sol, 2009), ~8–10 t chacun estimées (DAI / Tepe Telegrams 2016 ; UNESCO OUV « up to 5.50 m » ; Schmidt 2010). Mesuré : ces hauteurs. Estimé : masses, profondeur d’encastrement, densité. Piliers périphériques ~3–4 m (UNESCO 3–5 m ; DAI « around 4 m »), quelques tonnes. Calculs Banning 2011, pas des relevés de volume : pilier de 5 m ~10–10,8 t ; pilier 43 (« Vulture Stone ») ~2,5–2,7 t ; pilier 1 de A ~5–5,4 t ; couche II « Lion Pillar Building » pilier 1 ~740–800 kg. Enclos A–D ovales/circulaires, intérieurs 10–20 m, anneaux jusqu’à ~30 m à l’extérieur ; 10 à 12 périphériques attendus (UNESCO ; Schmidt 2003 géophysique — une attente de prospection, pas un décompte fermé). A : ovale, serpents ; C14 du remplissage (Hd-20025/36, KIA-28407), pas de la construction. B : terrazzo ; KIA-38007 collagène 9065±35 BP trop jeune pour l’usage PPNA attendu. C : bedrock dressé, deux anneaux, piliers centraux détruits dans l’Antiquité ; UGAMS-10797 9700±30 BP, anneau extérieur près du bedrock. D : le plus grand, sol de bedrock, piédestaux taillés dans le roc ; KIA-44149 charbon dans le plâtre du mur 9984±42 BP, 9745–9314 cal AEC — date le plâtre de D, pas les T. (2) Bâtiments rectangulaires, couche II, PPNB : piliers ~1,5 m, sols de chaux / terrazzo. Pas un tissu urbain. Tell ~9 ha, diamètre ~300 m, hauteur jusqu’à ~15 m ; pas une ville. (3) Carrière du plateau ouest : bancs 0,60–1,50 m, pilier inachevé ~7 m de long, 1,5 m d’épaisseur, DAI ~50 t estimées, encore dans le banc ; distance « several hundred meters », transport DAI <100 m au mieux, ~500 m au pire, ailleurs 600–700 m. Jamais déplacé. Calcaire local, travaillable au silex ; formation géologique non vérifiée pour ces piliers. Faune toute sauvage (Peters & Schmidt 2004, NISP 15 471). Flore : engrain sauvage (Neef 2003). Meules >7 000 (Laura Dietrich 2021). Géophysique : ≥20 enclos, >200 piliers — extrapolation (Schmidt 2003) ; <10 % fouillé (ICOMOS 2018).",
+  "object": "Trois lectures, un seul tell ; aucune n’en fait une ville (pas de trame parcellaire, pas de rues, pas de densité urbaine, pas d’administration). Tell 9 ha : un amas de bâtiments spéciaux et de structures plus petites, pas Çatalhöyük. Schmidt (1995–2014), « colline-sanctuaire » : pas d’habitat dans la lecture initiale ; enclos = temples, pèlerinage, fêtes, puis remblai intentionnel rapide ; devise : le temple précède la ville. Banning 2011, « So Fair a House » : les critères temple sont ethnocentriques ; alternative bâtiments domestiques riches en images ; réponse DAI (Tepe Telegrams 2017) : piliers de 5,5 m et dépôts soignés de têtes restent disproportionnés pour un intérieur domestique ordinaire. Kinzel & Clare 2020 : bâtiments spéciaux dans un établissement de chasseurs-cueilleurs sédentarisés ; structures non monumentales à proximité (ICOMOS 2018 déjà) ; biographies longues, piliers réemployés, murs déformés du côté de la pente ; « premiers temples du monde » explicitement révisé par le DAI après 2015 — pas « seulement des maisons ». Sols : B terrazzo ; C et D bedrock dressé ; E le même geste hors tell. Toiture ouverte (Schmidt à ciel ouvert ; Kurapkat / DAI récent : toits possibles). Sanctuaire exclusif non établi. Habitat autour établi depuis les fouilles récentes, pas dans Schmidt 2000. L’objet : des enclos à piliers en T extraits à quelques centaines de mètres, dressés par des chasseurs-cueilleurs, dans un tell qui n’est pas une ville.",
+  "technique": "Extraction DAI (Tepe Telegrams 3 mai 2016 ; Notroff, Dietrich, Schmidt 2014) : carrière = le même plateau ; pas de transport inter-régional ; banc 0,60–1,50 m choisi près de l’épaisseur du fût fini ; pics de silex et peut-être bois ; canaux autour du contour ; leviers et coins de bois au joint de banc ; partir du bord du plateau réduit le volume d’un côté. Les pièces abandonnées dans la carrière rendent la chaîne opératoire visible. Outils métalliques absents (PPN). Transport : aucune trace directe au sol (DAI). Distances <100–500 m (max cité 600–700 m). Nias 1917 (Schröder) : 525 hommes, mégalithe de 4 m³ (plus petit), 3 km (plus loin), traîneau de bois, 3 jours — modèle ethnographique, pas un procès-verbal ; on ne peut pas convertir 525 hommes en effectif de Göbekli. Pas de roue, pas d’animal de trait, pas de métal. Traîneau + rouleaux / madriers : hypothèse analogique. Le pilier de 7 m / ~50 t n’a pas bougé ; on ne sait pas s’il était transportable. Piliers centraux de C et D calés sur des piédestaux taillés dans le bedrock. Peters & Schmidt notaient déjà une stabilité médiocre des centraux. Ce qui n’est pas démontré : aucune expérimentation publiée à 8–10 t sur ce calcaire, encore moins à 50 t ; pas de profil en long coté carrière → enclos D ; levage vertical dans la fosse semi-enterrée non reconstitué ; effectif inconnu (le « clan entier » de Schmidt est une nécessité logique, pas un décompte) ; toit non clos.",
+  "evidence": "Daté : construction de l’enclos D, PPNA milieu du Xe millénaire — KIA-44149 charbon dans le plâtre du mur (9984±42 BP, 9745–9314 cal AEC) entre les piliers 41 et 42, L9-68 Loc. 782.3 ; ça date le plâtre de D, pas les T (Dietrich & Schmidt 2010 ; Dietrich et al. 2013) — plus UGAMS-10795/96/99 charbon près du bedrock, 9664–9311 cal AEC. Remplissage de A : Hd-20025/36 charbon à vie courte, PPNA tardif / début IXe (Kromer & Schmidt 1998) ; origine du sédiment inférée. Abandon après le PPNB moyen : typologie lithique (formes du PPNB récent absentes) + IGAS-2658 TAQ 8241–7795 cal AEC. Enclos de la couche III non strictement contemporains (Dietrich et al. 2013) : D le plus tôt ; anneau extérieur de C (UGAMS-10797) peut être plus jeune ; A plus jeune que C et D. Onze dates organiques dans l’article 2013. Les « 80 échantillons » annoncés Tepe Telegrams 2016 : non vus ici comme table ; ne pas les inventer. Les dates utiles sont le charbon à vie courte et le plâtre de mur ; carbonates pédogéniques et apatite osseuse sont trop jeunes — TAQ d’enfouissement, pas de construction (Dietrich 2011). Établi : chasseurs-cueilleurs, pas de domestication morphologique (Peters ; Neef). Inféré : remblai rituel unique et rapide (Schmidt ; absence de lits stériles) — contredit par Kinzel/Clare/Schönicke (pentes, reprises) — ouvert. « Pas d’habitat, seulement un sanctuaire » : inféré par Schmidt, révisé par le DAI 2015–. Agriculture « déjà là » à cause des meules et de l’engrain : inféré ; engrain sauvage ; meules ≠ champs. 20 enclos / 200 piliers : extrapolé, géophysique 2003. Quiconque date les piliers en T d’une civilisation perdue avant le Dryas récent doit produire un fait de terrain que la date du plâtre et la chaîne opératoire locale n’ont pas.",
+  "hearsay": "Noms à écarter ; ils n’expliquent aucun joint de banc, aucune pointe de silex, aucun C14 de plâtre. Extra-terrestres / technologie impossible : un topos YouTube ; les carrières sont à côté des enclos, le calcaire se coupe au silex, les distances sont hectométriques ; zéro artefact hors série PPN. « Première civilisation » / Atlantide / Hancock (Magicians of the Gods) : Göbekli comme relique d’une civilisation supérieure détruite à la fin du Dryas récent, les chasseurs-cueilleurs n’auraient fait que réoccuper — contredit par le C14 du plâtre (construction au Xe millénaire, après le Dryas récent), la chaîne opératoire locale, le continuum régional (Nevalı Çori, Karahan Tepe, Jerf el Ahmar, Çayönü). Le Dryas récent précède les dates d’architecture ; il ne les date pas. Nommés ici seulement pour les écarter. Observatoire zodiacal / « Vulture Stone » = 10950 AEC (Sweatman & Tsikritsis 2017) : réponse des fouilleurs Notroff et al., MAA 17/2, 2017 — 10950±250 est 700–1000 ans plus vieux que KIA-44149 ; les constellations égyptiennes/grecques ne sont pas un invariant du XIIe millénaire ; piliers déplacés, bâtiments multi-phases, toit possible ; on ne lit pas un pilier hors de son enclos ; l’homme sans tête du fût 43 a un phallus, pas un pictogramme d’extinction. « Premiers temples de l’humanité » comme fait : un slogan de médiation (Schmidt 2000, presse) ; l’ICOMOS 2018 a demandé d’élargir vers le culte des ancêtres ; le DAI 2015– a retiré le slogan (Clare 2020). Garder : architecture monumentale parmi les plus anciennes connues. Lâcher : « temple » comme type fermé. Le tell est vieux ; les piliers le sont au titre du PPNA, pas d’un âge glaciaire antérieur. Mélanger les deux est la faute de méthode.",
+  "open": [
+    "Remblai : intentionnel, unique, rituel (Schmidt ; Dietrich et al. 2012 Antiquity) versus glissements de pente, reconstructions, spolia dans des ruines (Kinzel & Clare 2020 ; Kinzel, Clare, Sönmez 2021 ; Schönicke 2022). Les deux peuvent coexister par phase. Tant qu’une micromorphologie de remplissage n’est pas publiée enclos par enclos, l’« enfouissement » unique reste une lecture, pas un fait de chantier.",
+    "Fonction : bâtiment spécial / réunion / fête / funéraire / domestique enrichi. Bucranes, têtes coupées, oiseaux nécrophages sont un thème mortuaire PPN régional, pas une preuve que D est une tombe. Trois crânes travaillés (2017) : trop peu. Pas de nécropole fouillée sous les enclos.",
+    "Combien d’enclos encore enterrés. Géophysique : ≥20 au total (Schmidt 2003). Moins de 10 % du tell fouillé (ICOMOS). Le chiffre 20 inclut l’extrapolation ; H et I ont confirmé que la dépression nord-ouest n’est pas vide. Inventaire fermé : non.",
+    "Agriculture vs monument. Le dogme « champs d’abord » est cassé : monuments PPNA, domestication morphologique plus tard. Inversion complète (« le temple a causé l’agriculture », Schmidt) : non démontrée. Collecte intensive d’engrain sauvage + meules + fêtes de chantier : compatible avec une pression vers la domestication, pas une preuve. Heun et al. 1997 (engrain, Karacadağ, ~30 km) est une génétique de plante, pas une datation du tell.",
+    "Toit, contemporanéité, géométrie. Toiture : ouverte. Enclos simultanés ou échelonnés : le C14 penche vers l’échelon (D, puis C externe, puis A). Triangle B–C–D (Haklay & Gopher 2020) : à tester contre les phases de reprise.",
+    "Série C14 des « 80 échantillons » (Tepe Telegrams 2016) : non publiée comme table ici. Priorité documentaire."
+  ],
+  "help": [
+    {
+      "role": "Chef de carrière",
+      "ask": "Lire les canaux d’extraction du pilier de 7 m, l’ordre des faces, les coins, le joint de banc 0,60–1,50 m. Dire pourquoi on a laissé le 7 m, et si les fûts de 5,5 m sortent du même lit que les périphériques de 4 m."
+    },
+    {
+      "role": "Tailleur de pierre (calcaire, silex)",
+      "ask": "Relever pics, abrasifs, la séquence épannelage → bas-relief. Comparer avec un calcaire de même grain, pas avec du granite ni avec Baalbek."
+    },
+    {
+      "role": "Géomètre-photogrammètre",
+      "ask": "Nuage de points des piliers 18 et 31 jusqu’au piédestal (volume vrai, pas 5,5 × une section idéale). Profil en long carrière ouest → enclos D (pente réelle, pas « 500 m à peu près »). Centres originels de B, C, D vs reprises."
+    },
+    {
+      "role": "Micromorphologue / sédimentologue",
+      "ask": "Trancher remblai versé vs colluvion de pente : lits, granoclassement, vides, os en position de glissement. Un seul log publié par enclos vaudrait dix slogans."
+    },
+    {
+      "role": "Archéozoologue / carpologue",
+      "ask": "Tenir la ligne sauvage vs domestique morphologique. Ne pas convertir des meules en champs."
+    },
+    {
+      "role": "Architecte du bâti",
+      "ask": "Biographies de murs : joints, reprises, piliers en réemploi, déformation de pente."
+    }
+  ],
+  "sources": [
+    {
+      "cite": "Benedict, Peter. “Survey Work in Southeastern Anatolia.” In Çambel & Braidwood, Prehistoric Research in Southeastern Anatolia I, Istanbul, 1980, p. 151–191. Première notice (prospection 1963).",
+      "url": null
+    },
+    {
+      "cite": "Kromer, Bernd & Schmidt, Klaus. “Two Radiocarbon Dates from Göbekli Tepe, South Eastern Turkey.” Neo-Lithics 3/98, 1998, p. 8–9. Hd-20025, Hd-20036.",
+      "url": null
+    },
+    {
+      "cite": "Schmidt, Klaus. “Göbekli Tepe, Southeastern Turkey. A Preliminary Report on the 1995–1999 Excavations.” Paléorient 26/1, 2001, p. 45–54.",
+      "url": "https://doi.org/10.3406/paleo.2000.4697"
+    },
+    {
+      "cite": "Schmidt, Klaus. “Zuerst kam der Tempel, dann die Stadt.” Istanbuler Mitteilungen 50, 2000, p. 5–41.",
+      "url": null
+    },
+    {
+      "cite": "Pustovoytov, Konstantin. “14C Dating of Pedogenic Carbonate Coatings on Wall Stones at Göbekli Tepe.” Neo-Lithics 2/02, 2002, p. 3–4. — Pustovoytov, Schmidt, Parzinger, The Holocene 17.6, 2007, p. 835–843.",
+      "url": null
+    },
+    {
+      "cite": "Neef, Reinder. “Overlooking the Steppe-Forest: A Preliminary Report on the Botanical Remains from Early Neolithic Göbekli Tepe.” Neo-Lithics 2/03, 2003, p. 13–16.",
+      "url": null
+    },
+    {
+      "cite": "Peters, Joris & Schmidt, Klaus. “Animals in the symbolic world of Pre-Pottery Neolithic Göbekli Tepe.” Anthropozoologica 39/1, 2004, p. 179–218. OA.",
+      "url": "https://sciencepress.mnhn.fr/sites/default/files/articles/pdf/az2004n1a13.pdf"
+    },
+    {
+      "cite": "Dietrich, Oliver & Schmidt, Klaus. “A radiocarbon date from the wall plaster of Enclosure D of Göbekli Tepe.” Neo-Lithics 2/10, 2010, p. 82–83. KIA-44149.",
+      "url": null
+    },
+    {
+      "cite": "Schmidt, Klaus. “Göbekli Tepe – the Stone Age Sanctuaries.” Documenta Praehistorica 37, 2010, p. 239–256. OA.",
+      "url": "https://doi.org/10.4312/dp.37.21"
+    },
+    {
+      "cite": "Dietrich, Oliver. “Radiocarbon dating the first temples of mankind. Comments on 14C-Dates from Göbekli Tepe.” Zeitschrift für Orient-Archäologie 4, 2011, p. 12–25. [paywall DAI / ZOrA]",
+      "url": null
+    },
+    {
+      "cite": "Banning, Edward B. “So Fair a House: Göbekli Tepe and the Identification of Temples in the Pre-Pottery Neolithic of the Near East.” Current Anthropology 52/5, 2011, p. 619–660. [paywall]",
+      "url": "https://doi.org/10.1086/661207"
+    },
+    {
+      "cite": "Dietrich, Oliver; Heun, Manfred; Notroff, Jens; Schmidt, Klaus; Zarnkow, Martin. “The role of cult and feasting in the emergence of Neolithic communities. New evidence from Göbekli Tepe.” Antiquity 86, 2012, p. 674–695. [paywall Cambridge]",
+      "url": "https://doi.org/10.1017/S0003598X00047840"
+    },
+    {
+      "cite": "Dietrich, Oliver; Köksal-Schmidt, Çiğdem; Notroff, Jens; Schmidt, Klaus. “Establishing a Radiocarbon Sequence for Göbekli Tepe. State of Research and New Data.” Neo-Lithics 1/13, 2013, p. 36–41. OA. Table UGAMS-10795 to 10799, KIA-44149, KIA-44701.",
+      "url": "https://www.exoriente.org/repository/NEO-LITHICS/NEO-LITHICS_2013_1.pdf"
+    },
+    {
+      "cite": "Notroff, Jens; Dietrich, Oliver; Schmidt, Klaus. “Building Monuments – Creating Communities.” In Osborne (ed.), Approaching Monumentality in the Archaeological Record, SUNY, 2014, p. 83–105.",
+      "url": null
+    },
+    {
+      "cite": "PPND / ex oriente. C14 table site no. 25, coord. 37°13'22.81\" N, 38°55'20.51\" E. Compilation Dietrich.",
+      "url": "https://www.exoriente.org/associated_projects/ppnd_site.php?s=25"
+    },
+    {
+      "cite": "Notroff, Jens; Dietrich, Oliver; Clare, Lee; Dietrich, Laura; Schlindwein, Jonas; Kinzel, Moritz; Lelek Tvetmarken, Cecilie; Sönmez, Devrim. “More than a vulture: A response to Sweatman and Tsikritsis.” Mediterranean Archaeology and Archaeometry 17/2, 2017, p. 57–63. OA.",
+      "url": null
+    },
+    {
+      "cite": "Gresky, Julia; Haelm, Juliane; Clare, Lee. “Modified human crania from Göbekli Tepe.” Science Advances 3, 2017, e1700564. OA.",
+      "url": "https://doi.org/10.1126/sciadv.1700564"
+    },
+    {
+      "cite": "UNESCO / ICOMOS. Sheet 1572; ICOMOS evaluation March 2018; decision 42 COM 8B.34. Dates 9600–8200 AEC, 5.50 m, 126 ha.",
+      "url": "https://whc.unesco.org/en/list/1572/"
+    },
+    {
+      "cite": "Kinzel, Moritz & Clare, Lee. “Monumental – Compared to What? A Perspective from Göbekli Tepe.” In Gebauer, Sørensen, Teather, Valera (eds.), Monumentalising Life in the Neolithic, Oxbow, 2020, p. 31–50. [paywall]",
+      "url": "https://doi.org/10.2307/j.ctv13pk66m.7"
+    },
+    {
+      "cite": "Clare, Lee. “Göbekli Tepe, Turkey. A brief summary of research at a new World Heritage Site (2015–2019).” e-Forschungsberichte des DAI 2020/2. DAI ; révision du récit « World’s First Temples ».",
+      "url": "https://doi.org/10.34780/efb.v0i2.1012"
+    },
+    {
+      "cite": "Dietrich, Laura; Meister, Julia; Dietrich, Oliver; et al. “Cereal processing at Early Neolithic Göbekli Tepe.” PLOS One 14/5, 2019, e0215214. OA.",
+      "url": "https://doi.org/10.1371/journal.pone.0215214"
+    },
+    {
+      "cite": "Schönicke, Julia. “There and Back Again — Towards a New Understanding of Abandonment Practices at the Neolithic Settlement of Göbekli Tepe.” In Hess & Manuelli (eds.), Bridging the Gap, vol. 1, Archaeopress, 2022, p. 210–237. Opposition explicite au « ritual backfilling ».",
+      "url": null
+    },
+    {
+      "cite": "OpenStreetMap. Way 124331302 Göbekli Tepe (37.2238521, 38.9220886), wikidata Q214944, ref:whc 1572. ODbL.",
+      "url": null
+    },
+    {
+      "cite": "DAI, Tepe Telegrams (blog de chantier, pas une revue ; premier relais des fouilleurs) : datation 22.06.2016 ; extraction 03.05.2016 ; géophysique 18.07.2018 ; sanctuaire vs maison 24.01.2017.",
+      "url": "https://www.dainst.blog/the-tepe-telegrams/"
+    }
+  ],
+  "xLine": "Göbekli Tepe, enclos D : deux T de ~5,5 m, ~8–10 t estimées, calcaire local, PPNA — fait. KIA-44149 date le plâtre de D, pas les T. Chasseurs-cueilleurs, pas une ville. Carrière : un 7 m / ~50 t encore dans le banc. Question : comment on a dressé l’assise, ce que le remblai est, combien d’enclos restent sous le tell. Qui peut aider : un carrier et un micromorphologue, le même jour, sur le plateau ouest et dans D."
+}
