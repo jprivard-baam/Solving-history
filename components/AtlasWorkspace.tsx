@@ -24,6 +24,7 @@ export function AtlasWorkspace({
   cards,
   kicker,
   title,
+  intro,
   lede,
   openLabel,
   closeLabel,
@@ -33,6 +34,7 @@ export function AtlasWorkspace({
   cards: AtlasCard[];
   kicker: string;
   title: string;
+  intro: string;
   lede: string;
   openLabel: string;
   closeLabel: string;
@@ -92,6 +94,9 @@ export function AtlasWorkspace({
           {kicker}
         </p>
         <h1 className="font-display mt-2 text-4xl text-gold">{title}</h1>
+        <p className="font-display mt-4 text-xl font-semibold leading-snug text-gold">
+          {intro}
+        </p>
         <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted">
           {lede}
         </p>
@@ -107,6 +112,9 @@ export function AtlasWorkspace({
               {kicker}
             </p>
             <h1 className="font-display mt-2 text-4xl text-gold">{title}</h1>
+            <p className="font-display mt-4 text-xl font-semibold leading-snug text-gold">
+              {intro}
+            </p>
             <p className="mt-3 text-sm leading-relaxed text-muted">{lede}</p>
           </div>
           <ol className="min-h-0 flex-1 space-y-2 overflow-y-auto p-3">
