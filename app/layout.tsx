@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     template: "%s · Solving History",
   },
   description:
-    "An unpublished atlas of open problems in ancient engineering. Not live.",
+    "An unpublished atlas of open problems in deep history and ancient engineering. A working table, not a channel. Not live.",
   robots: {
     index: false,
     follow: false,
