@@ -1,4 +1,5 @@
 import type { DossierId } from "@/lib/dossiers";
+import type { FrResearchPayload } from "./fr-payload";
 
 export type MethodLayer = {
   title: string;
@@ -15,7 +16,9 @@ export type DossierCopy = {
   imageCaption: string;
   layers: [MethodLayer, MethodLayer, MethodLayer, MethodLayer];
   notes: string[];
-};
+  /** French research payload when the dossier copy is JSON-driven. */
+  research?: FrResearchPayload;
+}
 
 export type UiCopy = {
   meta: {

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { DossierMiniMapLoader } from "@/components/DossierMiniMapLoader";
+import { FrResearchExtras } from "@/components/FrResearchExtras";
 import { MethodLayers } from "@/components/MethodLayers";
 import { ThreePaths } from "@/components/ThreePaths";
 import { getDictionary } from "@/lib/copy/get-dictionary";
@@ -102,16 +103,21 @@ export default async function DossierPage({
           commonLabel={dict.dossier.common}
           advancedLabel={dict.dossier.advanced}
           kicker={dict.dossier.methodKicker}
+          jsonFields={Boolean(copy.research)}
         />
 
-        <aside className="mt-12 border border-rule bg-paper-2 p-5">
-          <h2 className="font-display text-xl text-gold">{dict.dossier.sources}</h2>
-          <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-muted">
-            {copy.notes.map((n) => (
-              <li key={n}>{n}</li>
-            ))}
-          </ul>
-        </aside>
+        {copy.research ? (
+          <FrResearchExtras research={copy.research} />
+        ) : (
+          <aside className="mt-12 border border-rule bg-paper-2 p-5">
+            <h2 className="font-display text-xl text-gold">{dict.dossier.sources}</h2>
+            <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-muted">
+              {copy.notes.map((n) => (
+                <li key={n}>{n}</li>
+              ))}
+            </ul>
+          </aside>
+        )}
 
         <ThreePaths locale={locale} dict={dict} compact />
 

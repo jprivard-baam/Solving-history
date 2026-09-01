@@ -3,16 +3,25 @@
 import { useState } from "react";
 import type { DossierCopy } from "@/lib/copy/types";
 
+const JSON_FIELD_KEYS = [
+  "fact · object",
+  "accepted · evidence",
+  "technique · advanced",
+  "hearsay · open",
+] as const;
+
 export function MethodLayers({
   dossier,
   commonLabel,
   advancedLabel,
   kicker,
+  jsonFields = false,
 }: {
   dossier: DossierCopy;
   commonLabel: string;
   advancedLabel: string;
   kicker: string;
+  jsonFields?: boolean;
 }) {
   const [register, setRegister] = useState<"common" | "advanced">("common");
 
@@ -54,6 +63,11 @@ export function MethodLayers({
               {index + 1} / 4
             </p>
             <h3 className="font-display mt-1 text-2xl text-gold">{layer.title}</h3>
+            {jsonFields ? (
+              <p className="mt-1 text-[0.7rem] uppercase tracking-[0.18em] text-gold-dim">
+                {JSON_FIELD_KEYS[index]}
+              </p>
+            ) : null}
             <div className="mt-3 space-y-3 text-[1.05rem] leading-relaxed text-ink/90">
               {(register === "common" ? layer.common : layer.advanced).map((p) => (
                 <p key={p.slice(0, 40)}>{p}</p>

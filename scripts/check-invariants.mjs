@@ -79,6 +79,29 @@ if (/\b(pantheon|poverty-point|chaco)\b/i.test(blob)) {
   errors.push("Forbidden ninth site present");
 }
 
+const pumapunkuFr = readFileSync(
+  join(root, "lib/copy/fr-json/pumapunku-fr.json"),
+  "utf8",
+);
+if (!pumapunkuFr.includes("580–710") && !pumapunkuFr.includes("580-710")) {
+  errors.push("Pumapunku FR yearLabel missing ~580–710");
+}
+if (/yearLabel[^}]*500–950/.test(pumapunkuFr) || /yearLabel[^}]*500-950/.test(pumapunkuFr)) {
+  errors.push("Pumapunku FR yearLabel must not be 500–950");
+}
+
+const serapeumFr = readFileSync(
+  join(root, "lib/copy/fr-json/serapeum-saqqara-fr.json"),
+  "utf8",
+);
+if (!serapeumFr.includes("Amasis") || !serapeumFr.includes("550")) {
+  errors.push("Serapeum FR yearLabel must keep Amasis ~550");
+}
+const serapeumYear = JSON.parse(serapeumFr).yearLabel;
+if (/Nouvel Empire/i.test(serapeumYear) || /New Kingdom/i.test(serapeumYear)) {
+  errors.push("Serapeum FR card date must not be New Kingdom");
+}
+
 if (errors.length) {
   console.error(errors.join("\n"));
   process.exit(1);
