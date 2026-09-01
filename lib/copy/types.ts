@@ -13,6 +13,8 @@ export type DossierCopy = {
   cardHook: string;
   cardDate: string;
   place: string;
+  /** Brief list-card line. Empty until Rédaction/Textes delivers. */
+  listBlurb?: string;
   lede: string;
   imageAlt: string;
   imageCaption: string;
