@@ -16,36 +16,8 @@ export type DossierMeta = {
   imageCredit: string;
 };
 
-/** Atlas order is locked. Do not add a ninth site. */
+/** List order: most improbable first (JP). No ninth site. */
 export const dossiers: DossierMeta[] = [
-  {
-    id: "baalbek",
-    lat: 34.0069,
-    lng: 36.2039,
-    image: "/dossiers/baalbek.jpg",
-    imageCredit: "Wikimedia Commons",
-  },
-  {
-    id: "unfinished-obelisk-aswan",
-    lat: 24.0764,
-    lng: 32.8953,
-    image: "/dossiers/aswan-obelisk.jpg",
-    imageCredit: "Wikimedia Commons",
-  },
-  {
-    id: "sacsayhuaman",
-    lat: -13.5075,
-    lng: -71.9817,
-    image: "/dossiers/sacsayhuaman.jpg",
-    imageCredit: "Wikimedia Commons",
-  },
-  {
-    id: "pumapunku",
-    lat: -16.5608,
-    lng: -68.6794,
-    image: "/dossiers/pumapunku-hblocks.jpg",
-    imageCredit: "Wikimedia Commons",
-  },
   {
     id: "gobekli-tepe",
     lat: 37.2233,
@@ -61,6 +33,27 @@ export const dossiers: DossierMeta[] = [
     imageCredit: "Wikimedia Commons",
   },
   {
+    id: "baalbek",
+    lat: 34.0069,
+    lng: 36.2039,
+    image: "/dossiers/baalbek.jpg",
+    imageCredit: "Wikimedia Commons",
+  },
+  {
+    id: "unfinished-obelisk-aswan",
+    lat: 24.0764,
+    lng: 32.8953,
+    image: "/dossiers/aswan-obelisk.jpg",
+    imageCredit: "Wikimedia Commons",
+  },
+  {
+    id: "serapeum-saqqara",
+    lat: 29.87611,
+    lng: 31.21028,
+    image: "/dossiers/serapeum-saqqara.jpg",
+    imageCredit: "Wikimedia Commons",
+  },
+  {
     id: "antikythera-mechanism",
     lat: 35.8886,
     lng: 23.3053,
@@ -68,10 +61,17 @@ export const dossiers: DossierMeta[] = [
     imageCredit: "Wikimedia Commons / National Archaeological Museum, Athens",
   },
   {
-    id: "serapeum-saqqara",
-    lat: 29.87611,
-    lng: 31.21028,
-    image: "/dossiers/serapeum-saqqara.jpg",
+    id: "sacsayhuaman",
+    lat: -13.5075,
+    lng: -71.9817,
+    image: "/dossiers/sacsayhuaman.jpg",
+    imageCredit: "Wikimedia Commons",
+  },
+  {
+    id: "pumapunku",
+    lat: -16.5608,
+    lng: -68.6794,
+    image: "/dossiers/pumapunku-hblocks.jpg",
     imageCredit: "Wikimedia Commons",
   },
 ];
