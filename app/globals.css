@@ -200,3 +200,33 @@ a {
   height: 1px;
   background: linear-gradient(90deg, transparent, var(--gold-dim), transparent);
 }
+
+@keyframes atlas-flash-border {
+  0%,
+  100% {
+    border-color: #3d3426;
+  }
+  30%,
+  60% {
+    border-color: #c23b22;
+    box-shadow: inset 0 0 0 1px #c23b22;
+  }
+}
+
+.atlas-row-flash {
+  animation: atlas-flash-border 0.55s ease-out;
+}
+
+@keyframes atlas-pin-flash {
+  0%,
+  100% {
+    filter: none;
+  }
+  40% {
+    filter: drop-shadow(0 0 10px #c23b22) brightness(1.35);
+  }
+}
+
+.atlas-pin-flash img {
+  animation: atlas-pin-flash 0.55s ease-out;
+}
