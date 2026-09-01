@@ -42,6 +42,7 @@ export default async function AtlasPage({
       hook: copy.cardHook,
       place: copy.place,
       date: copy.cardDate,
+      listBlurb: copy.listBlurb,
       lede: copy.lede,
       imageAlt: copy.imageAlt,
       href: localizedHref(locale, `/dossier/${d.id}`),
