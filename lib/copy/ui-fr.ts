@@ -70,10 +70,10 @@ export const uiFr: UiCopy = {
     ],
   },
   shop: {
-    kicker: "Pas de caisse",
+    kicker: "Page temporaire",
     title: "Boutique",
     intro:
-      "Rien n’est en vente pour l’instant. Pas de paiement. Quand quelque chose pourra tenir ici sans manger l’atlas, ce sera ici.",
+      "Cette page est temporaire. Rien n’est en vente. Pas de caisse.",
   },
   help: {
     kicker: "Trois chemins, pas de caisse",
