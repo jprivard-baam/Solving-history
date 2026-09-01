@@ -24,14 +24,8 @@ export function SiteHeader({
   return (
     <header className="sticky top-0 z-40 border-b border-rule/80 bg-paper/85 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
-        <Link href={localizedHref(locale, "/")} className="flex items-center gap-3 text-gold">
-          <svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true">
-            <circle cx="16" cy="16" r="9" fill="none" stroke="currentColor" strokeWidth="1.4" />
-            <circle cx="16" cy="16" r="2" fill="currentColor" />
-          </svg>
-          <span className="font-display text-xl tracking-[0.14em] uppercase">
-            Solving History
-          </span>
+        <Link href={localizedHref(locale, "/")} className="text-gold" aria-label="Solving History">
+          <img src="/wordmark.svg" alt="" height={28} className="h-7 w-auto" />
         </Link>
         <nav
           aria-label="Primary"
