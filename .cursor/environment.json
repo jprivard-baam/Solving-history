@@ -1,0 +1,17 @@
+{
+  "name": "Solving History",
+  "install": "npm ci",
+  "terminals": [
+    {
+      "name": "next-dev",
+      "command": "npm run dev",
+      "description": "Next.js development server on http://localhost:3000 (EN at /, FR at /fr)."
+    }
+  ],
+  "ports": [
+    {
+      "name": "web",
+      "port": 3000
+    }
+  ]
+}
