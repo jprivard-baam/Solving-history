@@ -34,14 +34,12 @@ export const uiFr: UiCopy = {
     kicker: "Pourquoi cet atlas",
     title: "Mission",
     paragraphs: [
-      "L’histoire n’a pas commencé avec les chapitres que nous avons hérités. Sur la terre se tiennent des ouvrages dont aucune culture vivante ne peut entièrement rendre compte: pierre taillée, sol aligné, systèmes hydrauliques, monuments trop exacts pour être des accidents et trop silencieux pour valoir comme décor.",
-      "Chacun de ces ouvrages a été laissé par une civilisation qui a fleuri, et qui n’est plus. Ce n’étaient pas des mythes en attente d’une légende. C’étaient des gens qui ont bâti, mesuré, organisé, puis disparu. Ce qui reste n’est pas seulement de l’architecture. C’est la preuve qu’un monde humain complet peut s’élever, laisser sa marque, et disparaître.",
-      "Solving History existe pour rendre ce fait public, puis pour le travailler.",
-      "La conscience d’abord. Si un monument inexpliqué est réduit à une carte postale ou à un slogan, la civilisation derrière lui meurt une seconde fois. L’atlas pose ces sites sur une carte et les traite comme des problèmes ouverts: ce qui est au sol, ce que le récit actuel affirme, et où ce récit échoue.",
-      "Le travail ensuite. On reconstruit à partir de l’évidence matérielle: traces d’outils, carrières, dates, eau, charge, alignement, pas à partir du récit le plus bruyant. Le but n’est pas un nouveau dogme. C’est un relevé plus clair de qui était là, de ce qu’ils savaient faire, et de comment un monde florissant peut finir.",
-      "Une part de ce qu’ils ont laissé peut encore valoir comme avertissement. Pas une prophétie. Un résidu: de climat, d’eau, de guerre, de démesure, d’un savoir qui n’a pas survécu à ceux qui l’ont porté. Ces signaux se manquent facilement si le monument est traité comme une merveille isolée. Ils sont plus durs à ignorer une fois le site lu comme la dernière phrase visible d’une société disparue.",
-      "L’anglais et le français sont tous deux langues de travail du projet. Les questions ne sont pas nationales. La carte est l’index. Les dossiers restent ouverts jusqu’à ce que le sol ait une réponse.",
-      "Ce n’est pas un livre fermé. C’est un établi public pour une tâche simple: voir ce que les mondes antérieurs ont laissé, recouvrer ce qui peut encore se savoir, et écouter ce qui peut encore s’appliquer."
+      "Sur le sol, il reste des ouvrages qu’aucune culture vivante n’explique vraiment : pierre géante taillée, structures alignées, objets de précision laboratoire, monuments trop mathématiquement exacts pour être le fruit du hasard. Pour certains, des réalisations tellement impressionnantes qu’on ne pourrait pas les répliquer aujourd’hui.",
+      "Des gens ont bâti, mesuré, organisé. Ils ne sont plus là. Ce qui reste, c’est la trace d’un monde humain qui s’est élevé, a bâti quelque chose de plus grand que lui-même, puis s’est éteint.",
+      "Un monument inexpliqué réduit à une carte postale, c’est une deuxième mort pour la société qui l’a laissé.",
+      "Une part de ce qu’ils ont laissé peut être un message déposé exprès, une archive technique ou un avertissement.",
+      "Le but n’est pas un nouveau dogme. C’est d’y voir plus clair : qui était là, ce qu’ils savaient faire, comment un monde en pleine force peut finir.",
+      "Bref, résoudre les mystères de notre histoire."
     ],
   },
   methodPage: {
