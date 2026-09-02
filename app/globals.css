@@ -33,6 +33,13 @@ body {
   min-height: 100%;
 }
 
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+  background: var(--paper);
+}
+
 body {
   font-family: var(--font-source-serif), "Times New Roman", serif;
   background-image:
@@ -252,7 +259,7 @@ a {
   display: block;
   width: 32px;
   height: 32px;
-  transform-origin: 16px 12px;
+  transform-origin: 16px 16px;
   animation: atlas-pin-flash 0.9s ease-out;
 }
 
