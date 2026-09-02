@@ -26,51 +26,29 @@ const CARD_HOOKS: Partial<Record<DossierId, string>> = {
 };
 
 const LIST_BLURB: Record<DossierId, string> = {
-  baalbek:
-    "Trois pierres si grandes qu’elles font le mur. Dans la carrière, deux autres n’ont jamais fait un mur : l’une encore dans la montagne, l’autre fendue et laissée.",
-  "us-01":
-    "Ils ont entassé une immense colline de terre en quatre-vingt-dix jours. Au-dedans, la terre n’est même pas devenue du sol.",
-  "us-06":
-    "Une colline de terre grande comme un château. Ils l’ont faite en deux grands élans, en moins de vingt ans.",
-  "gobekli-tepe":
-    "Avant même de planter un champ, des gens ont dressé d’immenses pierres en forme de T. Ils chassaient encore leur nourriture.",
-  "us-07":
-    "Onze collines de terre en rond. Ceux qui les ont faites chassaient encore leur nourriture. Pas encore de fermes.",
-  "antikythera-mechanism":
-    "De la mer, une machine de bronze d’une trentaine de petites roues, comme l’intérieur d’une horloge. On n’en a qu’une seule.",
-  "khufu-great-pyramid":
-    "Un tombeau grand comme une montagne de pierre. Dedans, ils ont posé du granite, très haut.",
-  "aswan-unfinished-obelisk":
-    "Ils ont taillé une immense aiguille de pierre, puis l’ont laissée dans la montagne. Elle s’est fendue. Elle est encore prise dans le roc.",
-  "serapeum-saqqara":
-    "Sous terre, un long couloir sombre. Dedans, vingt-quatre énormes caisses de pierre, posées dans le noir.",
-  pumapunku:
-    "Ils ont taillé la pierre en forme de H, comme si les morceaux devaient s’emboîter. À côté, un sol de dalles énormes — encore là.",
-  kalasasaya:
-    "Toute une porte taillée dans une seule pierre. Elle se tient dans une grande cour de pierres hautes.",
-  sacsayhuaman:
-    "Le mur ne va pas droit — il zigzague. D’énormes pierres se penchent l’une contre l’autre et tiennent, sans rien au milieu.",
-  stonehenge:
-    "Des pierres géantes se tiennent en rond, emboîtées comme du bois. Une pierre couchée vient de très loin au nord — bien plus loin que les autres.",
-  "us-02":
-    "Une ville de pierre dans un canyon sec. Les poutres du toit sont des arbres qui n’y poussent pas — on les a portés depuis des montagnes lointaines.",
-  "igbo-ukwu":
-    "Ils ont coulé du bronze en forme de tout petits insectes, un par un. Le métal brille encore.",
-  "tichitt-walata":
-    "Une ville de pierre sur la falaise, des centaines de pièces. Elle était déjà là, longtemps avant les caravanes du désert.",
-  "jerwan-aqueduct":
-    "Une longue route de pierre rien que pour l’eau, posée sur des arches. Les gens passaient en dessous. L’eau passait au-dessus.",
-  "aguada-fenix":
-    "Ils ont bâti une immense plateforme de terre, plus longue qu’une ville. Pas de pyramide de roi dessus. Juste la plateforme.",
-  "us-08":
-    "Ils ont entassé des collines de terre ici d’abord. Plus tard, plus loin, ils en ont fait de plus grandes.",
-  "nabta-playa":
-    "Un rond de pierres dans le désert, plus petit qu’une pièce. Ce n’est pas une grande machine du ciel. C’est un petit cercle.",
-  "ca-07":
-    "Ils ont fait une petite colline de terre pour quelqu’un de jeune, et l’ont déposé avec soin dans une caisse de pierre. C’est la plus ancienne tombe de ce genre que l’on connaisse au nord.",
-  "ca-12":
-    "Un village de bois sur une île. Dix maisons, et trente-deux grands poteaux — encore debout dans le vent.",
-};
+  baalbek: "Le mur, c’est trois pierres. Rien que trois. Dans la carrière, deux autres géants n’ont jamais bougé : l’un encore dans la montagne, l’autre fendu et laissé.",
+  "us-01": "Une colline de terre dressée en quatre-vingt-dix jours. Si vite que la terre, au-dedans, n’est même pas devenue du sol.",
+  "us-06": "Un château de terre. Ils l’ont jeté debout en deux grands élans, en moins de vingt ans.",
+  "gobekli-tepe": "D’immenses pierres en T, debout en cercle. Ceux qui les ont dressées chassaient encore leur nourriture. Pas encore de champs.",
+  "us-07": "Onze collines de terre, tracées en rond. Des chasseurs ont fait ça — avant même un champ.",
+  "antikythera-mechanism": "Une horloge de bronze sortie de la mer, pleine de petites roues — une trentaine. On n’en a qu’une seule au monde.",
+  "khufu-great-pyramid": "Une montagne de pierre, bâtie pour un tombeau. Dedans, ils ont hissé du granite vers le ciel.",
+  "aswan-unfinished-obelisk": "Une immense aiguille de pierre, encore prise dans la montagne. Elle s’est fendue. Elle ne s’est jamais dressée.",
+  "serapeum-saqqara": "Un long couloir sous la terre. Vingt-quatre énormes caisses de pierre attendent dans le noir.",
+  pumapunku: "Pierre taillée en H, prête à s’emboîter. À côté, des dalles si grandes qu’on pourrait s’y allonger.",
+  kalasasaya: "Toute une porte dans une seule pierre, debout dans une cour de géants.",
+  sacsayhuaman: "Le mur zigzague comme l’éclair. D’énormes pierres se serrent et tiennent, sans rien dans les fentes.",
+  stonehenge: "Un rond de géants, emboîtés comme du bois. Une pierre au sol vient de très loin au nord — plus loin que toutes les autres.",
+  "us-02": "Une ville de pierre dans un canyon sec. Les toits tiennent sur des arbres qui n’y ont jamais poussé — portés depuis des montagnes lointaines.",
+  "igbo-ukwu": "De tout petits insectes de bronze, coulés un par un. Ils brillent encore.",
+  "tichitt-walata": "Toute une ville de pierre sur la falaise — des centaines de pièces face au désert. Déjà debout avant les caravanes.",
+  "jerwan-aqueduct": "Une route de pierre en l’air, rien que pour l’eau. On passe sous les arches. L’eau passe au-dessus de la tête.",
+  "aguada-fenix": "Une plateforme de terre plus longue qu’une ville. Pas de pyramide. Pas de roi. Juste cette table géante de terre.",
+  "us-08": "Des collines de terre qui sortent de la plaine. On les a entassées ici d’abord — avant les plus grandes, plus loin.",
+  "nabta-playa": "Dans un désert immense, un rond de pierres plus petit qu’une pièce. Pas une machine du ciel. Un petit cercle, tout seul.",
+  "ca-07": "Une colline de terre pour quelqu’un de jeune. Déposé dans une caisse de pierre, avec soin. La plus ancienne tombe de ce genre au nord.",
+  "ca-12": "Un village de bois sur une île : dix maisons, trente-deux grands poteaux. Encore debout dans le vent.",
+}
 
 const LAYER_TITLES = [
   uiFr.methodPage.layers[0].title,
