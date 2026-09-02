@@ -86,6 +86,8 @@ a {
 .atlas-pin-icon {
   background: none !important;
   border: none !important;
+  box-shadow: none !important;
+  filter: none !important;
 }
 
 .atlas-pin-icon img,
