@@ -96,6 +96,16 @@ a {
   width: 32px;
   height: 32px;
 }
+.sh-pin-ring {
+  transform-origin: 16px 16px;
+  transform-box: fill-box;
+  animation: sh-breathe 3.5s ease-in-out infinite;
+}
+@keyframes sh-breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(0.778); }
+}
+
 
 .leaflet-popup-content-wrapper,
 .leaflet-popup-tip {
