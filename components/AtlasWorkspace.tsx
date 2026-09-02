@@ -5,27 +5,6 @@ import Image from "next/image";
 import { AtlasMapLoader } from "@/components/AtlasMapLoader";
 import type { DossierId } from "@/lib/dossiers";
 
-function CircumpunctRed() {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 32 32"
-      width={28}
-      height={28}
-      className="mt-6 h-7 w-7"
-      role="img"
-      aria-hidden
-    >
-      <circle cx="16" cy="16" r="2.2" fill="#c2302a" />
-      <circle cx="16" cy="16" r="9" fill="none" stroke="#c2302a" strokeWidth="1.6">
-        <animate attributeName="r" values="9;9;2.2;2.2;9" keyTimes="0;0.08;0.72;0.88;1" dur="5s" repeatCount="indefinite" />
-        <animate attributeName="stroke-width" values="1.6;1.6;0.6;0.6;1.6" keyTimes="0;0.08;0.72;0.88;1" dur="5s" repeatCount="indefinite" />
-        <animate attributeName="opacity" values="1;1;0.35;0;1" keyTimes="0;0.08;0.72;0.88;1" dur="5s" repeatCount="indefinite" />
-      </circle>
-    </svg>
-  );
-}
-
 export type AtlasCard = {
   id: DossierId;
   lat: number;
@@ -123,8 +102,7 @@ export function AtlasWorkspace({
       <div className="border-b border-rule px-4 py-8 sm:px-6 lg:hidden">
         <p className="text-xs uppercase tracking-[0.22em] text-gold-dim">{kicker}</p>
         <h1 className="font-serif mt-2 text-2xl uppercase tracking-[0.12em] text-gold">{title}</h1>
-        <CircumpunctRed />
-        <p className="font-serif mt-3 max-w-2xl text-lg font-normal italic leading-relaxed text-ink">
+        <p className="font-serif mt-6 max-w-2xl text-lg font-normal italic leading-relaxed text-ink">
           {intro}
         </p>
         <div className="paper-rule my-4 max-w-2xl" />
@@ -141,8 +119,7 @@ export function AtlasWorkspace({
           <div className="hidden border-b border-rule px-5 py-8 lg:block">
             <p className="text-xs uppercase tracking-[0.22em] text-gold-dim">{kicker}</p>
             <h1 className="font-serif mt-2 text-2xl uppercase tracking-[0.12em] text-gold">{title}</h1>
-            <CircumpunctRed />
-            <p className="font-serif mt-3 max-w-2xl text-lg font-normal italic leading-relaxed text-ink">
+            <p className="font-serif mt-6 max-w-2xl text-lg font-normal italic leading-relaxed text-ink">
               {intro}
             </p>
             <div className="paper-rule my-4" />
