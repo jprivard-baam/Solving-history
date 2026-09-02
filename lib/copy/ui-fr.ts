@@ -34,11 +34,14 @@ export const uiFr: UiCopy = {
     kicker: "Pourquoi cet atlas",
     title: "Mission",
     paragraphs: [
-      "Solving History est un atlas de problèmes ouverts en histoire profonde et en ingénierie ancienne. Ce n’est pas une chaîne, pas une caisse, pas un livre fermé. C’est une table de travail : dix dossiers, une méthode, deux langues.",
-      "La conversation publique autour de ces sites est bruyante et mince. Les blocs s’alourdissent à chaque récit. Les dates s’étirent pour servir une thèse. Un échantillon d’enduit est traité comme s’il était le monument. Une pièce unique est traitée comme si aucun atelier ne l’avait précédée.",
-      "Ce projet tient une règle plus étroite. Si une masse est estimée à partir d’un volume et d’une densité, la fiche dit estimée. Si une date radiocarbone porte sur un enduit, la fiche dit enduit. Si une fourchette populaire est plus large que l’article, l’article l’emporte. Le folklore n’est pas interdit ; il est retiré du pion.",
-      "L’atlas est bilingue parce que les questions ne sont pas nationales. L’anglais porte une grande part de la littérature technique. Le français est l’autre langue publique du projet. Ni l’une ni l’autre n’est un résumé.",
-      "Le site n’est pas en ligne. Les robots reçoivent noindex, nofollow. La Boutique est une salle sans caisse. L’aide tient en trois chemins — partager un dossier, apporter des données ou une spécialité, ou aider financièrement sans faire de l’atlas un panier.",
+      "L’histoire n’a pas commencé avec les chapitres que nous avons hérités. Sur la terre se tiennent des ouvrages dont aucune culture vivante ne peut entièrement rendre compte: pierre taillée, sol aligné, systèmes hydrauliques, monuments trop exacts pour être des accidents et trop silencieux pour valoir comme décor.",
+      "Chacun de ces ouvrages a été laissé par une civilisation qui a fleuri, et qui n’est plus. Ce n’étaient pas des mythes en attente d’une légende. C’étaient des gens qui ont bâti, mesuré, organisé, puis disparu. Ce qui reste n’est pas seulement de l’architecture. C’est la preuve qu’un monde humain complet peut s’élever, laisser sa marque, et disparaître.",
+      "Solving History existe pour rendre ce fait public, puis pour le travailler.",
+      "La conscience d’abord. Si un monument inexpliqué est réduit à une carte postale ou à un slogan, la civilisation derrière lui meurt une seconde fois. L’atlas pose ces sites sur une carte et les traite comme des problèmes ouverts: ce qui est au sol, ce que le récit actuel affirme, et où ce récit échoue.",
+      "Le travail ensuite. On reconstruit à partir de l’évidence matérielle: traces d’outils, carrières, dates, eau, charge, alignement, pas à partir du récit le plus bruyant. Le but n’est pas un nouveau dogme. C’est un relevé plus clair de qui était là, de ce qu’ils savaient faire, et de comment un monde florissant peut finir.",
+      "Une part de ce qu’ils ont laissé peut encore valoir comme avertissement. Pas une prophétie. Un résidu: de climat, d’eau, de guerre, de démesure, d’un savoir qui n’a pas survécu à ceux qui l’ont porté. Ces signaux se manquent facilement si le monument est traité comme une merveille isolée. Ils sont plus durs à ignorer une fois le site lu comme la dernière phrase visible d’une société disparue.",
+      "L’anglais et le français sont tous deux langues de travail du projet. Les questions ne sont pas nationales. La carte est l’index. Les dossiers restent ouverts jusqu’à ce que le sol ait une réponse.",
+      "Ce n’est pas un livre fermé. C’est un établi public pour une tâche simple: voir ce que les mondes antérieurs ont laissé, recouvrer ce qui peut encore se savoir, et écouter ce qui peut encore s’appliquer."
     ],
   },
   methodPage: {
