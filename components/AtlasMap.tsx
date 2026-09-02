@@ -185,6 +185,7 @@ export function AtlasMap({
           key={`${pin.id}-${pin.id === selectedId ? "active" : "idle"}`}
           position={[pin.lat, pin.lng]}
           icon={pinIcon(pin.id === selectedId)}
+          zIndexOffset={pin.id === selectedId ? 1000 : 0}
           eventHandlers={{
             click: () => {
               onPinClick(pin.id);
