@@ -96,6 +96,7 @@ export type UiCopy = {
   footer: {
     line: string;
     robots: string;
+    copyright: string;
   };
   notFound: {
     kicker: string;

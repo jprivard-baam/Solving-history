@@ -112,7 +112,7 @@ export function AtlasWorkspace({
 
       <div className="flex min-h-0 flex-1 flex-col lg:flex-row">
         <aside
-          className="flex max-h-[min(46svh,24rem)] min-h-0 w-full flex-col border-b border-rule bg-paper lg:max-h-none lg:w-[min(26rem,38%)] lg:border-b-0 lg:border-r"
+          className="flex min-h-0 w-full flex-1 flex-col border-b border-rule bg-paper lg:max-h-none lg:w-[min(26rem,38%)] lg:flex-none lg:border-b-0 lg:border-r"
           aria-label={listLabel}
         >
           <div className="hidden border-b border-rule px-5 py-8 lg:block">
@@ -170,7 +170,7 @@ export function AtlasWorkspace({
         </aside>
 
         <div
-          className="relative z-0 isolate h-[min(48svh,28rem)] shrink-0 overflow-hidden lg:h-auto lg:min-h-0 lg:flex-1"
+          className="relative z-0 isolate min-h-0 flex-1 overflow-hidden"
           role="region"
           aria-label={mapLabel}
         >

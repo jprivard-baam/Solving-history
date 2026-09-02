@@ -23,7 +23,7 @@ export function SiteHeader({
   path: string;
 }) {
   return (
-    <header className="site-header sticky top-0 z-[1100] isolate border-b border-rule bg-paper">
+    <header className="site-header sticky top-0 z-[1100] isolate shrink-0 border-b border-rule bg-paper">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
         <Link href={localizedHref(locale, "/")} className="text-gold" aria-label="Solving History">
           <img src="/wordmark.svg" alt="" className="h-[28px] w-auto" />

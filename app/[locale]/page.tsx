@@ -51,7 +51,7 @@ export default async function AtlasPage({
   });
 
   return (
-    <div className="flex min-h-[calc(100svh-3.5rem)] flex-col lg:h-[calc(100svh-3.5rem)] lg:min-h-0 lg:overflow-hidden">
+    <div className="flex min-h-0 flex-1 flex-col overflow-hidden">
       <AtlasWorkspace
         cards={cards}
         kicker={dict.atlas.kicker}

@@ -130,6 +130,7 @@ export const uiFr: UiCopy = {
   footer: {
     line: "Solving History — atlas non publié. Une table de travail. Pas de caisse.",
     robots: "robots : noindex, nofollow",
+    copyright: "© 2026 Solving History",
   },
   notFound: {
     kicker: "404",
