@@ -5,33 +5,45 @@ import { FR_JSON_TO_ATLAS } from "./fr-payload";
 import { uiFr } from "./ui-fr";
 import baalbek from "./fr-json/baalbek-fr.json";
 import aswan from "./fr-json/aswan-fr.json";
-import sacsayhuaman from "./fr-json/sacsayhuaman-fr.json";
-import pumapunku from "./fr-json/pumapunku-fr.json";
 import gobekliTepe from "./fr-json/gobekli-tepe-fr.json";
 import khufu from "./fr-json/khufu-fr.json";
 import antikythera from "./fr-json/antikythera-fr.json";
-import serapeumSaqqara from "./fr-json/serapeum-saqqara-fr.json";
 
 const LAYER4 = "Pourquoi ça ne tient pas";
-const CARD_HOOKS: Record<DossierId, string> = {
-  baalbek: "Trois blocs d’environ 800 t, encore dans le mur",
-  "unfinished-obelisk-aswan": "41,75 m — encore dans le banc",
-  sacsayhuaman: "Calcaire. Des blocs d’environ 150 t",
-  pumapunku: "Blocs en H d’environ 600 kg",
-  "gobekli-tepe": "Le carbone date le plâtre, pas les piliers en T",
-  "great-pyramid-khufu": "Biais −3,9′. Granite d’environ 50 t à 43 m",
-  "antikythera-mechanism": "Trente engrenages. Un seul exemplaire",
-  "serapeum-saqqara": "Vingt-quatre cuves, dès Amasis",
+
+const TITLES: Partial<Record<DossierId, string>> = {
+  "baalbek-trilithon": "Trilithe de Baalbek",
 };
+
+const CARD_HOOKS: Partial<Record<DossierId, string>> = {
+  "baalbek-trilithon": "Trois blocs d’environ 800 t, encore dans le mur",
+  "aswan-unfinished-obelisk": "41,75 m — encore dans le banc",
+  "gobekli-tepe": "Le carbone date le plâtre, pas les piliers en T",
+  "khufu-great-pyramid": "Biais −3,9′. Granite d’environ 50 t à 43 m",
+  "antikythera-mechanism": "Trente engrenages. Un seul exemplaire",
+};
+
 const LIST_BLURB: Record<DossierId, string> = {
-  baalbek: "Trois pierres si grandes qu’elles font le mur. Elles sont encore là, l’une à côté de l’autre.",
-  "unfinished-obelisk-aswan": "Ils ont taillé une immense aiguille de pierre, puis l’ont laissée dans la montagne. Elle s’est fendue. Elle est encore prise dans le roc.",
-  sacsayhuaman: "Le mur ne va pas droit — il zigzague. D’énormes pierres se penchent l’une contre l’autre et tiennent, sans rien au milieu.",
-  pumapunku: "Ils ont taillé la pierre en forme de H. On dirait que les morceaux doivent s’emboîter.",
-  "gobekli-tepe": "Avant même de planter un champ, des gens ont dressé d’immenses pierres en forme de T. Ils chassaient encore leur nourriture.",
-  "great-pyramid-khufu": "Un tombeau grand comme une montagne de pierre. Dedans, ils ont posé du granite, très haut.",
-  "antikythera-mechanism": "De la mer, une machine de bronze d’une trentaine de petites roues, comme l’intérieur d’une horloge. On n’en a qu’une seule.",
-  "serapeum-saqqara": "Sous terre, un long couloir sombre. Dedans, vingt-quatre énormes caisses de pierre, posées dans le noir.",
+  "baalbek-trilithon":
+    "Trois pierres si grandes qu’elles font le mur. Elles sont encore là, l’une à côté de l’autre.",
+  "baalbek-2014-block":
+    "Une pierre géante encore dans la montagne. On a commencé à la dégager, puis on s’est arrêté — on n’a même pas touché le fond. Elle n’a jamais bougé.",
+  "baalbek-hajjar-al-hibla":
+    "Une pierre géante encore collée au sol de la carrière. Elle s’est fendue, alors on l’a laissée. Elle n’est jamais devenue un mur.",
+  "us-01":
+    "Ils ont entassé une immense colline de terre en quatre-vingt-dix jours. Au-dedans, la terre n’est même pas devenue du sol.",
+  "us-06":
+    "Une colline de terre grande comme un château. Ils l’ont faite en deux grands élans, en moins de vingt ans.",
+  "gobekli-tepe":
+    "Avant même de planter un champ, des gens ont dressé d’immenses pierres en forme de T. Ils chassaient encore leur nourriture.",
+  "us-07":
+    "Onze collines de terre en rond. Ceux qui les ont faites chassaient encore leur nourriture. Pas encore de fermes.",
+  "antikythera-mechanism":
+    "De la mer, une machine de bronze d’une trentaine de petites roues, comme l’intérieur d’une horloge. On n’en a qu’une seule.",
+  "khufu-great-pyramid":
+    "Un tombeau grand comme une montagne de pierre. Dedans, ils ont posé du granite, très haut.",
+  "aswan-unfinished-obelisk":
+    "Ils ont taillé une immense aiguille de pierre, puis l’ont laissée dans la montagne. Elle s’est fendue. Elle est encore prise dans le roc.",
 };
 
 const LAYER_TITLES = [
@@ -44,19 +56,16 @@ const LAYER_TITLES = [
 const payloads = {
   baalbek,
   aswan,
-  sacsayhuaman,
-  pumapunku,
   "gobekli-tepe": gobekliTepe,
   khufu,
   antikythera,
-  "serapeum-saqqara": serapeumSaqqara,
 } as Record<keyof typeof FR_JSON_TO_ATLAS, FrResearchPayload>;
 
 function fromPayload(p: FrResearchPayload, atlasId: DossierId): DossierCopy {
   return {
-    title: p.name,
+    title: TITLES[atlasId] ?? p.name,
     listBlurb: LIST_BLURB[atlasId],
-    cardHook: CARD_HOOKS[atlasId],
+    cardHook: CARD_HOOKS[atlasId] ?? TITLES[atlasId] ?? p.name,
     cardDate: p.yearLabel,
     place: p.place,
     lede: p.common,
@@ -89,11 +98,292 @@ function fromPayload(p: FrResearchPayload, atlasId: DossierId): DossierCopy {
   };
 }
 
-export const dossiersFr = Object.fromEntries(
+const remappedFr = Object.fromEntries(
   (Object.keys(FR_JSON_TO_ATLAS) as (keyof typeof FR_JSON_TO_ATLAS)[]).map(
     (jsonId) => {
       const atlasId = FR_JSON_TO_ATLAS[jsonId];
       return [atlasId, fromPayload(payloads[jsonId], atlasId)];
     },
   ),
-) as Record<DossierId, DossierCopy>;
+) as Pick<
+  Record<DossierId, DossierCopy>,
+  | "baalbek-trilithon"
+  | "aswan-unfinished-obelisk"
+  | "gobekli-tepe"
+  | "khufu-great-pyramid"
+  | "antikythera-mechanism"
+>;
+
+const newFr: Record<
+  | "baalbek-2014-block"
+  | "baalbek-hajjar-al-hibla"
+  | "us-01"
+  | "us-06"
+  | "us-07",
+  DossierCopy
+> = {
+  "baalbek-2014-block": {
+    title: "Bloc 2014 de Baalbek",
+    listBlurb: LIST_BLURB["baalbek-2014-block"],
+    cardHook: "Bloc 2014 de Baalbek",
+    cardDate: "Documenté en 2014",
+    place: "Carrière de Cheikh Abdallah, Liban",
+    lede: "Un monolithe de calcaire encore dans la carrière de Cheikh Abdallah, à Baalbek. Documenté en 2014 par l’Institut archéologique allemand. On a commencé à le dégager ; il n’a jamais bougé.",
+    imageAlt: "Temple de Jupiter et programme calcaire de Baalbek",
+    imageCaption:
+      "Baalbek. Le bloc de 2014 reste dans la carrière de Cheikh Abdallah, à l’ouest de Hajjar al-Hibla.",
+    layers: [
+      {
+        title: LAYER_TITLES[0],
+        common: [
+          "Une pierre géante est encore dans la montagne, à la carrière de Cheikh Abdallah. On a commencé à la dégager, puis on s’est arrêté. On n’a pas touché le fond.",
+        ],
+        advanced: [
+          "Documenté en 2014 par l’Institut archéologique allemand (van Ess et coll.). Le pion est à environ 150 m à l’ouest de Hajjar al-Hibla, d’après la note DAI 2015 « knapp 150 m weiter westlich » — pas sur le nœud OSM de Hajjar.",
+        ],
+      },
+      {
+        title: LAYER_TITLES[1],
+        common: [
+          "2014 est la date de la publication, pas un cartouche sur la pierre.",
+        ],
+        advanced: [
+          "Aucune inscription sur ce monolithe ne nomme un règne. Il appartient au même bassin de carrière que Hajjar al-Hibla.",
+        ],
+      },
+      {
+        title: LAYER_TITLES[2],
+        common: [
+          "Le récit le moins étonnant est une extraction abandonnée : le bloc a été ouvert, puis laissé dans le banc.",
+        ],
+        advanced: [
+          "Laisser un bloc jamais détaché est cohérent avec une coupe arrêtée. Cette pierre n’est pas allée au podium du temple.",
+        ],
+      },
+      {
+        title: LAYER_TITLES[3],
+        common: [
+          "On a commencé une pierre qu’on n’a jamais finie et qui n’a jamais bougé. La carrière garde le résidu.",
+        ],
+        advanced: [
+          "Le résidu est la coupe inachevée — pas une seconde civilisation déduite de la taille. Cette fiche n’invente pas de masse.",
+        ],
+      },
+    ],
+    notes: [
+      "Pion : 33.99920, 36.19828 — 150 m à l’ouest du nœud OSM 2521507956 (van Ess DAI 2015).",
+    ],
+  },
+  "baalbek-hajjar-al-hibla": {
+    title: "Hajjar al-Hibla",
+    listBlurb: LIST_BLURB["baalbek-hajjar-al-hibla"],
+    cardHook: "Hajjar al-Hibla",
+    cardDate: "Encore dans la carrière",
+    place: "Carrière de Cheikh Abdallah, Liban",
+    lede: "Un monolithe de calcaire encore collé au sol de la carrière de Cheikh Abdallah. Il s’est fendu. Il n’est jamais devenu un mur.",
+    imageAlt: "Temple de Jupiter et programme calcaire de Baalbek",
+    imageCaption:
+      "Baalbek. Hajjar al-Hibla reste dans la carrière de Cheikh Abdallah.",
+    layers: [
+      {
+        title: LAYER_TITLES[0],
+        common: [
+          "Hajjar al-Hibla est encore collé au sol de la carrière. La pierre n’a pas quitté le banc.",
+        ],
+        advanced: [
+          "Repère OSM : nœud 2521507956 / way 244881406, 33.999202, 36.199905.",
+        ],
+      },
+      {
+        title: LAYER_TITLES[1],
+        common: [
+          "Pas d’inscription autonome qui daterait ce bloc à part du programme de carrière du sanctuaire.",
+        ],
+        advanced: [
+          "Le dossier le laisse dans le même bassin calcaire que le temple. Il ne lui invente pas un autre millénaire.",
+        ],
+      },
+      {
+        title: LAYER_TITLES[2],
+        common: [
+          "Elle s’est fendue, alors on l’a laissée. Le récit le moins étonnant est une extraction arrêtée.",
+        ],
+        advanced: [
+          "Une pierre fendue et jamais détachée n’a pas à porter un mur. Elle n’est pas le trilithon.",
+        ],
+      },
+      {
+        title: LAYER_TITLES[3],
+        common: ["Elle n’est jamais devenue un mur."],
+        advanced: [
+          "Le résidu est le bloc laissé au sol — pas une masse inventée, pas un second temple caché sous la carrière.",
+        ],
+      },
+    ],
+    notes: [
+      "Pion : 33.999202, 36.199905 — OSM node 2521507956 / way 244881406.",
+    ],
+  },
+  "us-01": {
+    title: "Poverty Point",
+    listBlurb: LIST_BLURB["us-01"],
+    cardHook: "Poverty Point",
+    cardDate: "Archaïque récent",
+    place: "Poverty Point, Louisiane",
+    lede: "Des tertres monumentaux en Louisiane. Le noyau des tertres, dont Mound A, est le fichier UNESCO / World Heritage Explorer — pas le centroïde du parc OSM.",
+    imageAlt: "Mound A, earthworks de Poverty Point, Louisiane",
+    imageCaption: "Mound A, Poverty Point. Wikimedia Commons.",
+    layers: [
+      {
+        title: LAYER_TITLES[0],
+        common: [
+          "Une immense colline de terre — Mound A — se dresse encore parmi les earthworks de Poverty Point.",
+        ],
+        advanced: [
+          "Coordonnées du noyau des tertres : 32.63694, −91.40639 (UNESCO / World Heritage Explorer).",
+        ],
+      },
+      {
+        title: LAYER_TITLES[1],
+        common: [
+          "Paysage civic-cérémoniel de l’Archaïque récent. UNESCO inscrit le site comme Monumental Earthworks of Poverty Point.",
+        ],
+        advanced: [
+          "La fiche retient la période UNESCO. Elle n’invente pas une autre date de pose.",
+        ],
+      },
+      {
+        title: LAYER_TITLES[2],
+        common: [
+          "Construction en terre. Le relevé de liste : entassée en quatre-vingt-dix jours ; au-dedans, la terre n’est même pas devenue du sol.",
+        ],
+        advanced: [
+          "Le mécanisme le moins étonnant est un chantier de tertre en terre rapportée, pas une butte naturelle.",
+        ],
+      },
+      {
+        title: LAYER_TITLES[3],
+        common: [
+          "Une colline de cette ampleur, levée vite, dont le cœur n’est pas devenu un sol, est le résidu.",
+        ],
+        advanced: [
+          "Cette fiche n’invente pas de masse. Le résidu est le rythme et la matière, tels que le relevé les tient.",
+        ],
+      },
+    ],
+    notes: [
+      "Pin UNESCO / World Heritage Explorer : 32.63694, −91.40639.",
+      "Photo : Mound A, Wikimedia Commons.",
+    ],
+  },
+  "us-06": {
+    title: "Cahokia",
+    listBlurb: LIST_BLURB["us-06"],
+    cardHook: "Cahokia",
+    cardDate: "Mississippien",
+    place: "Cahokia, Illinois",
+    lede: "Monks Mound, la grande colline de terre de Cahokia. Coordonnées : table UNESCO WHC 198.",
+    imageAlt: "Monks Mound à Cahokia, Illinois",
+    imageCaption: "Monks Mound, Cahokia. Wikimedia Commons.",
+    layers: [
+      {
+        title: LAYER_TITLES[0],
+        common: [
+          "Une colline de terre grande comme un château : Monks Mound, encore sur le site de Cahokia.",
+        ],
+        advanced: [
+          "Coordonnées de la table UNESCO WHC 198 : 38.659, −90.061.",
+        ],
+      },
+      {
+        title: LAYER_TITLES[1],
+        common: [
+          "Centre mississippien. La fiche UNESCO WHC 198 porte le bien.",
+        ],
+        advanced: [
+          "La période retenue est mississippienne. Cette fiche n’invente pas une autre dynastie.",
+        ],
+      },
+      {
+        title: LAYER_TITLES[2],
+        common: [
+          "Terre rapportée, en étapes. Le relevé de liste : deux grands élans, en moins de vingt ans.",
+        ],
+        advanced: [
+          "Le récit le moins étonnant est un chantier de tertre mississippien, pas une butte naturelle.",
+        ],
+      },
+      {
+        title: LAYER_TITLES[3],
+        common: [
+          "Une colline de cette taille, faite vite, en deux poussées, est le résidu.",
+        ],
+        advanced: [
+          "Cette fiche n’invente pas de masse. Le résidu est l’ampleur et le rythme du chantier.",
+        ],
+      },
+    ],
+    notes: [
+      "Pin UNESCO WHC 198 : 38.659, −90.061.",
+      "Photo : Monks Mound, Wikimedia Commons.",
+    ],
+  },
+  "us-07": {
+    title: "Watson Brake",
+    listBlurb: LIST_BLURB["us-07"],
+    cardHook: "Watson Brake",
+    cardDate: "Archaïque moyen",
+    place: "Watson Brake, Louisiane",
+    lede: "Onze collines de terre en rond, Ouachita Parish, Louisiane. Ceux qui les ont faites chassaient encore. Pas encore de fermes.",
+    imageAlt: "Reconstruction des tertres de Watson Brake, Louisiane",
+    imageCaption:
+      "Watson Brake, vue des tertres (illustration Commons ; le site n’a pas de photo de terrain libre).",
+    layers: [
+      {
+        title: LAYER_TITLES[0],
+        common: [
+          "Onze tertres de terre disposés en ovale / en rond, encore lus sur le site de Watson Brake.",
+        ],
+        advanced: [
+          "Coordonnées Wikipedia / Wikidata : 32°22′6.31″N 92°7′53.00″W = 32.36842, −92.13139 — pas le marais GNIS.",
+        ],
+      },
+      {
+        title: LAYER_TITLES[1],
+        common: [
+          "Archaïque moyen. Plus ancien que les grands centres agricoles à tertres plus tardifs.",
+        ],
+        advanced: [
+          "Le dossier retient la période archaïque moyenne du fichier publié. Il n’invente pas une date de pose plus serrée.",
+        ],
+      },
+      {
+        title: LAYER_TITLES[2],
+        common: [
+          "Levant de terre par des gens qui chassaient encore leur nourriture. Pas encore de fermes.",
+        ],
+        advanced: [
+          "Le récit le moins étonnant est un complexe de tertres de chasseurs-cueilleurs, pas un centre agricole.",
+        ],
+      },
+      {
+        title: LAYER_TITLES[3],
+        common: [
+          "Onze collines en rond avant les fermes : c’est le résidu.",
+        ],
+        advanced: [
+          "Cette fiche n’invente pas de hauteur ni de masse. Le résidu est l’ordre et le moment : un anneau avant l’agriculture.",
+        ],
+      },
+    ],
+    notes: [
+      "Pin Wikipedia / Wikidata : 32.36842, −92.13139.",
+      "Photo : illustration Commons des tertres (pas de photo de terrain libre sur Commons).",
+    ],
+  },
+};
+
+export const dossiersFr = {
+  ...remappedFr,
+  ...newFr,
+} as Record<DossierId, DossierCopy>;

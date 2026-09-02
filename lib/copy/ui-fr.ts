@@ -20,7 +20,7 @@ export const uiFr: UiCopy = {
     switchTo: "English",
   },
   atlas: {
-    kicker: "Huit dossiers ouverts",
+    kicker: "Dix dossiers ouverts",
     title: "Atlas",
     intro:
       "Une contradiction ne peut pas exister dans la réalité. Ni en partie, ni en entier.",
@@ -34,7 +34,7 @@ export const uiFr: UiCopy = {
     kicker: "Pourquoi cet atlas",
     title: "Mission",
     paragraphs: [
-      "Solving History est un atlas de problèmes ouverts en histoire profonde et en ingénierie ancienne. Ce n’est pas une chaîne, pas une caisse, pas un livre fermé. C’est une table de travail : huit dossiers, une méthode, deux langues.",
+      "Solving History est un atlas de problèmes ouverts en histoire profonde et en ingénierie ancienne. Ce n’est pas une chaîne, pas une caisse, pas un livre fermé. C’est une table de travail : dix dossiers, une méthode, deux langues.",
       "La conversation publique autour de ces sites est bruyante et mince. Les blocs s’alourdissent à chaque récit. Les dates s’étirent pour servir une thèse. Un échantillon d’enduit est traité comme s’il était le monument. Une pièce unique est traitée comme si aucun atelier ne l’avait précédée.",
       "Ce projet tient une règle plus étroite. Si une masse est estimée à partir d’un volume et d’une densité, la fiche dit estimée. Si une date radiocarbone porte sur un enduit, la fiche dit enduit. Si une fourchette populaire est plus large que l’article, l’article l’emporte. Le folklore n’est pas interdit ; il est retiré du pion.",
       "L’atlas est bilingue parce que les questions ne sont pas nationales. L’anglais porte une grande part de la littérature technique. Le français est l’autre langue publique du projet. Ni l’une ni l’autre n’est un résumé.",

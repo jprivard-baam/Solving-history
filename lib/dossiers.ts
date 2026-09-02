@@ -1,12 +1,14 @@
 export type DossierId =
-  | "baalbek"
-  | "unfinished-obelisk-aswan"
-  | "sacsayhuaman"
-  | "pumapunku"
+  | "baalbek-trilithon"
+  | "baalbek-2014-block"
+  | "baalbek-hajjar-al-hibla"
+  | "us-01"
+  | "us-06"
   | "gobekli-tepe"
-  | "great-pyramid-khufu"
+  | "us-07"
   | "antikythera-mechanism"
-  | "serapeum-saqqara";
+  | "khufu-great-pyramid"
+  | "aswan-unfinished-obelisk";
 
 export type DossierMeta = {
   id: DossierId;
@@ -16,8 +18,43 @@ export type DossierMeta = {
   imageCredit: string;
 };
 
-/** List order: most improbable first (JP). No ninth site. */
+/** Preview TEST 10. List order: most improbable first (JP). Do not add the 63. */
 export const dossiers: DossierMeta[] = [
+  {
+    id: "baalbek-trilithon",
+    lat: 34.00682,
+    lng: 36.20338,
+    image: "/dossiers/baalbek.jpg",
+    imageCredit: "Wikimedia Commons",
+  },
+  {
+    id: "baalbek-2014-block",
+    lat: 33.9992,
+    lng: 36.19828,
+    image: "/dossiers/baalbek.jpg",
+    imageCredit: "Wikimedia Commons",
+  },
+  {
+    id: "baalbek-hajjar-al-hibla",
+    lat: 33.999202,
+    lng: 36.199905,
+    image: "/dossiers/baalbek.jpg",
+    imageCredit: "Wikimedia Commons",
+  },
+  {
+    id: "us-01",
+    lat: 32.63694,
+    lng: -91.40639,
+    image: "/dossiers/poverty-point.jpg",
+    imageCredit: "Wikimedia Commons",
+  },
+  {
+    id: "us-06",
+    lat: 38.659,
+    lng: -90.061,
+    image: "/dossiers/cahokia.jpg",
+    imageCredit: "Wikimedia Commons",
+  },
   {
     id: "gobekli-tepe",
     lat: 37.2233,
@@ -26,31 +63,10 @@ export const dossiers: DossierMeta[] = [
     imageCredit: "Wikimedia Commons",
   },
   {
-    id: "great-pyramid-khufu",
-    lat: 29.9792,
-    lng: 31.1342,
-    image: "/dossiers/khufu.jpg",
-    imageCredit: "Wikimedia Commons",
-  },
-  {
-    id: "baalbek",
-    lat: 34.0069,
-    lng: 36.2039,
-    image: "/dossiers/baalbek.jpg",
-    imageCredit: "Wikimedia Commons",
-  },
-  {
-    id: "unfinished-obelisk-aswan",
-    lat: 24.0764,
-    lng: 32.8953,
-    image: "/dossiers/aswan-obelisk.jpg",
-    imageCredit: "Wikimedia Commons",
-  },
-  {
-    id: "serapeum-saqqara",
-    lat: 29.87611,
-    lng: 31.21028,
-    image: "/dossiers/serapeum-saqqara.jpg",
+    id: "us-07",
+    lat: 32.36842,
+    lng: -92.13139,
+    image: "/dossiers/watson-brake.jpg",
     imageCredit: "Wikimedia Commons",
   },
   {
@@ -61,17 +77,17 @@ export const dossiers: DossierMeta[] = [
     imageCredit: "Wikimedia Commons / National Archaeological Museum, Athens",
   },
   {
-    id: "sacsayhuaman",
-    lat: -13.5075,
-    lng: -71.9817,
-    image: "/dossiers/sacsayhuaman.jpg",
+    id: "khufu-great-pyramid",
+    lat: 29.9792,
+    lng: 31.1342,
+    image: "/dossiers/khufu.jpg",
     imageCredit: "Wikimedia Commons",
   },
   {
-    id: "pumapunku",
-    lat: -16.5608,
-    lng: -68.6794,
-    image: "/dossiers/pumapunku-hblocks.jpg",
+    id: "aswan-unfinished-obelisk",
+    lat: 24.0764,
+    lng: 32.8953,
+    image: "/dossiers/aswan-obelisk.jpg",
     imageCredit: "Wikimedia Commons",
   },
 ];

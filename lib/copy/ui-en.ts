@@ -20,7 +20,7 @@ export const uiEn: UiCopy = {
     switchTo: "Français",
   },
   atlas: {
-    kicker: "Eight open files",
+    kicker: "Ten open files",
     title: "Atlas",
     intro:
       "A contradiction can not exist in reality. Not in part, nor in whole.",
@@ -34,7 +34,7 @@ export const uiEn: UiCopy = {
     kicker: "Why this atlas exists",
     title: "Mission",
     paragraphs: [
-      "Solving History is an atlas of open problems in deep history and ancient engineering. It is not a channel, not a checkout, and not a finished book. It is a working table: eight files, one method, two languages.",
+      "Solving History is an atlas of open problems in deep history and ancient engineering. It is not a channel, not a checkout, and not a finished book. It is a working table: ten files, one method, two languages.",
       "The public conversation around these sites is loud and thin. Blocks become heavier with each retelling. Dates stretch to fit a thesis. A plaster sample is treated as if it were the monument. A unique survival is treated as if it had no workshop behind it.",
       "This project holds a narrower rule. If a mass is estimated from volume and density, the card says estimated. If a radiocarbon date sits on plaster, the card says plaster. If a popular range is wider than the paper, the paper wins. Folklore is not banned; it is taken off the pin.",
       "The atlas is bilingual because the questions are not national. English carries much of the technical literature. French is the other public language of the project. Neither version is a summary of the other.",

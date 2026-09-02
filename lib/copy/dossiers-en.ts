@@ -2,9 +2,9 @@ import type { DossierCopy } from "./types";
 import type { DossierId } from "@/lib/dossiers";
 
 export const dossiersEn: Record<DossierId, DossierCopy> = {
-  baalbek: {
-    title: "Baalbek",
-    listBlurb: "Three stones so big they make the wall. They are still there, one beside the other."
+  "baalbek-trilithon": {
+    title: "Baalbek Trilithon",
+    listBlurb: "Three stones so big they make the wall. They are still there, one beside the other.",
     cardHook: "Three blocks of ~800 t, still in the wall",
     cardDate: "1st c. CE",
     place: "Heliopolis, Lebanon",
@@ -65,9 +65,9 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
       "Podium: 1st c. CE, Julio-Claudian sanctuary of Jupiter Heliopolitanus.",
     ],
   },
-  "unfinished-obelisk-aswan": {
+  "aswan-unfinished-obelisk": {
     title: "Unfinished obelisk of Aswan",
-    listBlurb: "They carved a giant needle of stone, then left it in the mountain. It cracked. It is still stuck in the rock."
+    listBlurb: "They carved a giant needle of stone, then left it in the mountain. It cracked. It is still stuck in the rock.",
     cardHook: "41.75 m — still in the bed",
     cardDate: "Date open",
     place: "Aswan granite quarries, Egypt",
@@ -127,132 +127,9 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
       "No cartouche on this monolith.",
     ],
   },
-  sacsayhuaman: {
-    title: "Sacsayhuamán",
-    listBlurb: "The wall does not go straight \u2014 it zigzags. Huge stones lean into each other and hold, with nothing in between."
-    cardHook: "Limestone. Blocks of ~150 t",
-    cardDate: "15th c. CE",
-    place: "Cusco, Peru",
-    lede: "The great zigzag terraces above Cusco. The stone of the cyclopean courses is Yuncaypata limestone, not andesite. The largest blocks of the east sector sit under a ceiling of about 150–160 t — estimated, not weighed, and not the multi-hundred-ton andesite giants of the retelling.",
-    imageAlt: "Polygonal limestone terraces of Sacsayhuamán above Cusco",
-    imageCaption:
-      "Sacsayhuamán, east terraces. Yuncaypata limestone. Largest blocks: ~150–160 t ceiling, estimated.",
-    layers: [
-      {
-        title: "Layer 1 — The record",
-        common: [
-          "Three terraces of tightly fitted polygonal blocks form the visible monument. The joints are famous. The rock is less often named correctly.",
-          "The cyclopean stone is limestone from the Yuncaypata formation, quarried above the city. It is not andesite.",
-        ],
-        advanced: [
-          "Petrography: Yuncaypata limestone for the great walls. Andesite appears at Cusco in other Inca work; it is the wrong name for these courses.",
-          "East-sector largest blocks: published estimates put a ceiling near ~150–160 t. That is already enormous. It is not 200–300 t of andesite.",
-        ],
-      },
-      {
-        title: "Layer 2 — The date",
-        common: [
-          "The monument belongs to the Inca rebuilding of the Cusco basin in the 15th century CE, under the Pachacuti generation and its successors.",
-          "Older occupation of the ridge is expected. It does not turn the zigzag walls into a pre-Inca megastructure.",
-        ],
-        advanced: [
-          "Spanish-period descriptions, Inca masonry style, and the imperial remodelling of Cusco date the visible terraces to the Late Horizon.",
-          "A pre-Inca sacred hill is compatible with an Inca stone programme. Compatibility is not a second wall hidden inside the first.",
-        ],
-      },
-      {
-        title: "Layer 3 — The mechanism",
-        common: [
-          "Inca work crews moved and dressed large stones with ramps, ropes, hammerstones, and a large labour levy. The least-astonishing account is that programme, applied to local limestone.",
-          "The fit of the joints is the craft. The mass, once the stone is named and the ceiling is set at ~150–160 t, is a logistics problem inside that craft — not proof of another people.",
-        ],
-        advanced: [
-          "Misnaming the stone as andesite inflates both the romance and, in some tellings, the implied density and origin. Correct the lithology and the transport story shortens: the quarry is local.",
-          "The east-sector ceiling is an estimate. Treat it as a ceiling, not as a typical block.",
-        ],
-      },
-      {
-        title: "Why it does not make sense",
-        common: [
-          "The folklore needs andesite and ever-heavier giants. The wall is limestone, and the heaviest stones have a published ceiling.",
-          "Once those two corrections are in, the ‘impossible wall’ shrinks to a hard Inca problem — which is still a problem, just not the one on the posters.",
-        ],
-        advanced: [
-          "The residue is the dressing and setting of ~150–160 t estimated limestone blocks with no iron tools and no wheeled haul. That residue does not license a wrong rock name or a pre-Inca date for the zigzag.",
-          "Any higher mass must be shown block by block. The ceiling on the card is the ceiling until a weighing or a tighter volume is published.",
-        ],
-      },
-    ],
-    notes: [
-      "Lithology: Yuncaypata limestone, not andesite.",
-      "East blocks: ~150–160 t ceiling, estimated.",
-      "Visible monument: Inca, 15th c. CE.",
-    ],
-  },
-  pumapunku: {
-    title: "Pumapunku",
-    listBlurb: "They cut stone into the letter H. The pieces look as if they should lock together."
-    cardHook: "H-blocks of ~600 kg",
-    cardDate: "c. 580–710 CE",
-    place: "Tiwanaku, Bolivia",
-    lede: "A stepped platform of red sandstone and finely cut andesite at Tiwanaku. Marsh 2023 places the construction of Pumapunku around 580–710 CE. The famous H-blocks are on the order of 600 kg. The photograph on this card is the H-block wall, not a stray fragment.",
-    imageAlt: "Wall of interlocking H-shaped andesite blocks at Pumapunku",
-    imageCaption:
-      "Pumapunku, H-blocks in a wall. Individual H-blocks ~600 kg. Construction window: Marsh 2023, ~580–710 CE.",
-    layers: [
-      {
-        title: "Layer 1 — The record",
-        common: [
-          "Pumapunku is a ruined platform: sandstone slabs, andesite facing, clamp sockets, and a set of modular H-shaped blocks that photograph better than they weigh.",
-          "The H-blocks are precision pieces. They are not multi-tonne mysteries. A working figure is about 600 kg each.",
-        ],
-        advanced: [
-          "H-blocks: andesite modules, on the order of ~600 kg — a crew load, not a crane myth. The wall photograph on this dossier is the object, not a loose souvenir block.",
-          "Larger sandstone slabs at the platform are heavier. They are a different file from the H-module, and they should not inherit its folklore.",
-        ],
-      },
-      {
-        title: "Layer 2 — The date",
-        common: [
-          "The construction of Pumapunku belongs to Tiwanaku in the later first millennium CE. Marsh and colleagues (2023) model the platform at about 580–710 CE.",
-        ],
-        advanced: [
-          "Marsh, Vranich, Blom et al., 2023 (PLOS ONE): Bayesian models of the Tiwanaku radiocarbon set. Pumapunku construction begins ~580 CE and ends ~710 CE.",
-        ],
-      },
-      {
-        title: "Layer 3 — The mechanism",
-        common: [
-          "Tiwanaku cut andesite and sandstone with stone tools, abrasives, and a specialised masonry tradition. The least-astonishing account is that tradition, working for a few generations of platform-building.",
-          "Precision is real. Precision plus 600 kg does not require a lost machine shop.",
-        ],
-        advanced: [
-          "The 2023 model suggests that most of the iconic carved stonework at Tiwanaku may belong to one or two generations of masons before a shift to reused, less-modified stone.",
-          "Clamp sockets and modular H-forms are a design language. They are not evidence of machining in the industrial sense.",
-        ],
-      },
-      {
-        title: "Why it does not make sense",
-        common: [
-          "The paper gives a tight century-and-a-half and H-blocks that weigh like a heavy crate.",
-          "Once the date and the kilograms are on the card, ‘lost high technology’ has to explain a Tiwanaku workshop, not a factory from another age.",
-        ],
-        advanced: [
-          "The residue is the surface finish and the modular grammar — worth studying — and not tonne-scale H-blocks.",
-          "Hancock-style readings that depend on those two inflations are out of this dossier for the same reason: they are not on the stones.",
-        ],
-      },
-    ],
-    notes: [
-      "Marsh 2023: construction ~580–710 CE.",
-      "Vranich, Alexei. “The construction and reconstruction of ritual space at Tiwanaku, Bolivia (AD 500–1000).” Journal of Field Archaeology 31.2, 2006.",
-      "H-blocks ~600 kg.",
-      "Image: H-blocks in wall, not a isolated prop.",
-    ],
-  },
   "gobekli-tepe": {
     title: "Göbekli Tepe",
-    listBlurb: "Before anyone planted a field, people stood up giant stones shaped like a T. They were still hunting their food."
+    listBlurb: "Before anyone planted a field, people stood up giant stones shaped like a T. They were still hunting their food.",
     cardHook: "Carbon dates the plaster, not the T-pillars",
     cardDate: "c. 9600–8000 BCE",
     place: "Şanlıurfa, Türkiye",
@@ -312,9 +189,9 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
       "Lost-civilization / Hancock reading: out.",
     ],
   },
-  "great-pyramid-khufu": {
+  "khufu-great-pyramid": {
     title: "Great Pyramid of Khufu",
-    listBlurb: "A tomb as big as a mountain of stone. Inside, they put granite very high up."
+    listBlurb: "A tomb as big as a mountain of stone. Inside, they put granite very high up.",
     cardHook: "Bias −3.9′. Granite of ~50 t at 43 m",
     cardDate: "c. 2580–2560 BCE",
     place: "Giza, Egypt",
@@ -376,7 +253,7 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
   },
   "antikythera-mechanism": {
     title: "Antikythera Mechanism",
-    listBlurb: "From the sea, a bronze machine with about thirty little wheels, like the inside of a clock. We have only this one."
+    listBlurb: "From the sea, a bronze machine with about thirty little wheels, like the inside of a clock. We have only this one.",
     cardHook: "Thirty gears. One surviving example",
     cardDate: "Wreck c. 60 BCE",
     place: "Antikythera wreck, Aegean",
@@ -436,67 +313,262 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
       "Analog computer, not a ship clock. Wreck ~60 BCE.",
     ],
   },
-  "serapeum-saqqara": {
-    title: "Serapeum of Saqqara",
-    listBlurb: "Under the ground, a long dark hallway. In it, twenty-four huge stone boxes, sitting in the dark."
-    cardHook: "Twenty-four vats, from Amasis",
-    cardDate: "Greater Vaults from Amasis, c. 550 BCE",
-    place: "Saqqara, Egypt",
-    lede: "The Greater Vaults of the Serapeum — the long gallery of huge granite chests — belong to the programme that begins with Amasis, around 550 BCE. They are not a New Kingdom card. Twenty-four chests. A working mass ceiling of about 56–62 t, estimated. The pin is 29.87611 N, 31.21028 E.",
-    imageAlt: "Granite burial chest in the Greater Vaults of the Serapeum at Saqqara",
+  "baalbek-2014-block": {
+    title: "Baalbek 2014 block",
+    listBlurb: "A giant stone still in the mountain. They started to free it, then stopped — they never even reached the bottom. It never moved.",
+    cardHook: "Baalbek 2014 block",
+    cardDate: "Documented 2014",
+    place: "Cheikh Abdallah quarry, Lebanon",
+    lede: "A limestone monolith still in the Cheikh Abdallah quarry at Baalbek. Documented in 2014 by the German Archaeological Institute. Extraction was started and left; the stone never moved.",
+    imageAlt: "Temple of Jupiter and the Baalbek limestone programme",
     imageCaption:
-      "Serapeum of Saqqara, Greater Vaults. From Amasis, c. 550 BCE — not New Kingdom. 24 chests; ~56–62 t ceiling, estimated.",
+      "Baalbek. The 2014 block remains in the Cheikh Abdallah quarry, west of Hajjar al-Hibla.",
     layers: [
       {
         title: "Layer 1 — The record",
         common: [
-          "An underground gallery at Saqqara holds a line of monumental stone chests built for the Apis bulls. The Greater Vaults are the later, larger gallery.",
-          "Twenty-four chests. Granite and similar hard stone. The popular hundred-tonne sarcophagus is not the ceiling on this card.",
+          "A giant limestone block still lies in the mountain at the Cheikh Abdallah quarry. Work to free it was begun and then stopped. The bottom of the block was never reached.",
         ],
         advanced: [
-          "Count: 24 chests in the Greater Vaults file used here.",
-          "Mass: a working ceiling of ~56–62 t estimated from published dimensions and granite density. That is a ceiling, not a weighing, and not 100 t.",
-          "Coordinates of this pin: 29.87611, 31.21028.",
+          "Documented in 2014 by the German Archaeological Institute (van Ess and colleagues). The pin sits about 150 m west of Hajjar al-Hibla, from the DAI 2015 note « knapp 150 m weiter westlich », not on the Hajjar OSM node.",
         ],
       },
       {
         title: "Layer 2 — The date",
         common: [
-          "The Greater Vaults begin with Amasis (Ahmose II) of the 26th Dynasty, around 550 BCE. That is Late Period, not New Kingdom.",
-          "Earlier Apis burials exist at Saqqara. They do not date this gallery. Putting ‘New Kingdom’ on the Greater Vaults card is a category error.",
+          "The published record of this block is 2014. That is the date of the documentation, not a cartouche on the stone.",
         ],
         advanced: [
-          "Greater Vaults: from Amasis, c. 550 BCE. Never use New Kingdom as the date of this gallery.",
-          "Ramesside and earlier Apis installations are a different architectural file. This dossier is the Greater Vaults and their chests.",
+          "No inscription on this monolith names a reign. It belongs to the same quarry basin as Hajjar al-Hibla and the sanctuary limestone programme.",
         ],
       },
       {
         title: "Layer 3 — The mechanism",
         common: [
-          "The least-astonishing account is a Late Period royal cult with access to Aswan granite, a Saqqara digging crew, and the ordinary hard-stone methods of the first millennium BCE.",
-          "Moving an estimated 56–62 t chest underground is a brutal logistics problem. It is a 26th-Dynasty problem.",
+          "The least-astonishing account is an abandoned extraction in the Baalbek quarry: the block was opened, then left in the bed.",
         ],
         advanced: [
-          "Amasis’s gallery is a dated state project. The chests are cult furniture for Apis, not anonymous ‘impossible boxes’.",
-          "Inflating the mass toward 100 t and sliding the date to the New Kingdom manufactures a harder miracle than the gallery records.",
+          "Leaving a block that was never detached is consistent with a failed or stopped quarry cut. The stone did not travel to the temple podium.",
         ],
       },
       {
         title: "Why it does not make sense",
         common: [
-          "The popular card wants New Kingdom dates and hundred-tonne boxes. The gallery starts with Amasis, and the mass ceiling sits near 56–62 t.",
-          "Correct those two figures and the Serapeum is still severe. It is no longer a misplaced pyramid.",
+          "They started to free a stone they never finished and never moved. The quarry holds the residue.",
         ],
         advanced: [
-          "The residue is the underground haul and the dressing of the chests in the Late Period — not a New Kingdom date, not a 100 t ceiling.",
-          "Any higher mass must be argued from a named chest and a published volume. The card will not carry a round number that outruns the stone.",
+          "The residue is the unfinished cut — not a second civilization inferred from size alone. This card does not invent a mass.",
         ],
       },
     ],
     notes: [
-      "id: serapeum-saqqara. Pin: 29.87611, 31.21028.",
-      "Greater Vaults from Amasis, c. 550 BCE. Never New Kingdom as the card date.",
-      "24 chests. Mass ceiling ~56–62 t, estimated.",
+      "Pin: 33.99920, 36.19828 — 150 m west of Hajjar OSM node 2521507956 (van Ess DAI 2015).",
+    ],
+  },
+  "baalbek-hajjar-al-hibla": {
+    title: "Hajjar al-Hibla",
+    listBlurb: "A giant stone still glued to the quarry floor. It cracked, so they left it. It never became a wall.",
+    cardHook: "Hajjar al-Hibla",
+    cardDate: "Still in the quarry",
+    place: "Cheikh Abdallah quarry, Lebanon",
+    lede: "A limestone monolith still attached to the floor of the Cheikh Abdallah quarry. It cracked. It never became a wall.",
+    imageAlt: "Temple of Jupiter and the Baalbek limestone programme",
+    imageCaption: "Baalbek. Hajjar al-Hibla remains in the Cheikh Abdallah quarry.",
+    layers: [
+      {
+        title: "Layer 1 — The record",
+        common: [
+          "Hajjar al-Hibla is still glued to the quarry floor. The stone never left the bed.",
+        ],
+        advanced: [
+          "OSM node 2521507956 / way 244881406: 33.999202, 36.199905.",
+        ],
+      },
+      {
+        title: "Layer 2 — The date",
+        common: [
+          "No independent inscription dates this block apart from the sanctuary quarry programme.",
+        ],
+        advanced: [
+          "The file keeps it in the same limestone basin as the temple. It does not invent another millennium.",
+        ],
+      },
+      {
+        title: "Layer 3 — The mechanism",
+        common: [
+          "It cracked, so they left it. The least-astonishing account is a stopped extraction.",
+        ],
+        advanced: [
+          "A cracked stone that was never detached does not have to carry a wall. It is not the trilithon.",
+        ],
+      },
+      {
+        title: "Why it does not make sense",
+        common: ["It never became a wall."],
+        advanced: [
+          "The residue is the block left on the floor — not an invented mass, not a second temple under the quarry.",
+        ],
+      },
+    ],
+    notes: [
+      "Pin: 33.999202, 36.199905 — OSM node 2521507956 / way 244881406.",
+    ],
+  },
+  "us-01": {
+    title: "Poverty Point",
+    listBlurb: "They piled a giant hill of earth in ninety days. Inside, the dirt never even became soil.",
+    cardHook: "Poverty Point",
+    cardDate: "Late Archaic",
+    place: "Poverty Point, Louisiana",
+    lede: "Monumental earthworks in Louisiana. The pin is the mound core (UNESCO / World Heritage Explorer), not the OSM park centroid.",
+    imageAlt: "Mound A earthworks at Poverty Point, Louisiana",
+    imageCaption: "Mound A, Poverty Point. Wikimedia Commons.",
+    layers: [
+      {
+        title: "Layer 1 — The record",
+        common: [
+          "A giant hill of earth — Mound A — still stands among the Poverty Point earthworks.",
+        ],
+        advanced: [
+          "Mound-core coordinates: 32.63694, −91.40639 (UNESCO / World Heritage Explorer).",
+        ],
+      },
+      {
+        title: "Layer 2 — The date",
+        common: [
+          "Late Archaic civic-ceremonial landscape. UNESCO lists the site as Monumental Earthworks of Poverty Point.",
+        ],
+        advanced: [
+          "The card keeps the UNESCO period. It does not invent another founding date.",
+        ],
+      },
+      {
+        title: "Layer 3 — The mechanism",
+        common: [
+          "Earthen construction. The list record: piled in ninety days; inside, the dirt never even became soil.",
+        ],
+        advanced: [
+          "The least-astonishing account is a built mound of carried earth, not a natural hill.",
+        ],
+      },
+      {
+        title: "Why it does not make sense",
+        common: [
+          "A hill of this size, raised fast, whose core never became soil, is the residue.",
+        ],
+        advanced: [
+          "This card does not invent a mass. The residue is the pace and the material, as the list holds them.",
+        ],
+      },
+    ],
+    notes: [
+      "Pin UNESCO / World Heritage Explorer: 32.63694, −91.40639.",
+      "Photo: Mound A, Wikimedia Commons.",
+    ],
+  },
+  "us-06": {
+    title: "Cahokia",
+    listBlurb: "A hill of earth as big as a castle. They made it in two great pushes, in less than twenty years.",
+    cardHook: "Cahokia",
+    cardDate: "Mississippian",
+    place: "Cahokia, Illinois",
+    lede: "Monks Mound, the great earthen hill at Cahokia. Coordinates from the UNESCO WHC 198 property table.",
+    imageAlt: "Monks Mound at Cahokia, Illinois",
+    imageCaption: "Monks Mound, Cahokia. Wikimedia Commons.",
+    layers: [
+      {
+        title: "Layer 1 — The record",
+        common: [
+          "A hill of earth as big as a castle: Monks Mound, still on the Cahokia ground.",
+        ],
+        advanced: [
+          "UNESCO WHC 198 property-table coordinates: 38.659, −90.061.",
+        ],
+      },
+      {
+        title: "Layer 2 — The date",
+        common: [
+          "Mississippian centre. UNESCO WHC 198 carries the property.",
+        ],
+        advanced: [
+          "The period on this card is Mississippian. The file does not invent another dynasty.",
+        ],
+      },
+      {
+        title: "Layer 3 — The mechanism",
+        common: [
+          "Carried earth, in stages. The list record: two great pushes, in less than twenty years.",
+        ],
+        advanced: [
+          "The least-astonishing account is a Mississippian mound programme, not a natural hill.",
+        ],
+      },
+      {
+        title: "Why it does not make sense",
+        common: [
+          "A castle-scale hill of earth, made fast, in two pushes, is the residue.",
+        ],
+        advanced: [
+          "This card does not invent a mass. The residue is the scale and the pace of the work.",
+        ],
+      },
+    ],
+    notes: [
+      "Pin UNESCO WHC 198: 38.659, −90.061.",
+      "Photo: Monks Mound, Wikimedia Commons.",
+    ],
+  },
+  "us-07": {
+    title: "Watson Brake",
+    listBlurb: "Eleven hills of earth in a ring. The people who made them still hunted their food. No farms yet.",
+    cardHook: "Watson Brake",
+    cardDate: "Middle Archaic",
+    place: "Watson Brake, Louisiana",
+    lede: "Eleven hills of earth in a ring, Ouachita Parish, Louisiana. The people who made them still hunted. No farms yet.",
+    imageAlt: "Reconstruction of the Watson Brake mounds, Louisiana",
+    imageCaption:
+      "Watson Brake mounds (Commons illustration; no free ground photograph of the site is on Commons).",
+    layers: [
+      {
+        title: "Layer 1 — The record",
+        common: [
+          "Eleven earthen mounds arranged in an oval / a ring, still read on the Watson Brake ground.",
+        ],
+        advanced: [
+          "Wikipedia / Wikidata site coordinates: 32°22′6.31″N 92°7′53.00″W = 32.36842, −92.13139 — not the GNIS swamp.",
+        ],
+      },
+      {
+        title: "Layer 2 — The date",
+        common: [
+          "Middle Archaic. Older than the later farming mound centres.",
+        ],
+        advanced: [
+          "The card keeps the published Middle Archaic horizon. It does not invent a tighter founding year.",
+        ],
+      },
+      {
+        title: "Layer 3 — The mechanism",
+        common: [
+          "Earth piled by people who still hunted their food. No farms yet.",
+        ],
+        advanced: [
+          "The least-astonishing account is a hunter-gatherer mound complex, not an agricultural capital.",
+        ],
+      },
+      {
+        title: "Why it does not make sense",
+        common: [
+          "Eleven hills in a ring before farms: that is the residue.",
+        ],
+        advanced: [
+          "This card does not invent a height or a mass. The residue is the order and the moment: a ring before agriculture.",
+        ],
+      },
+    ],
+    notes: [
+      "Pin Wikipedia / Wikidata: 32.36842, −92.13139.",
+      "Photo: Commons illustration of the mounds (no free ground photograph on Commons).",
     ],
   },
 };
