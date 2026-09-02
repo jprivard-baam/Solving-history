@@ -72,16 +72,12 @@ export const uiEn: UiCopy = {
     ],
   },
   shop: {
-    kicker: "A room, not a cart",
+    kicker: "",
     title: "Boutique",
-    description: "A room in the atlas, not a cart. Nothing is for sale. No checkout.",
-    intro: "This page is open. Nothing on it is for sale.",
-    body: [
-      "Solving History is a working table. The files on the atlas are open problems, not merchandise. This room exists so the word in the navigation is not a disguise, and so a checkout has nowhere to hide.",
-      "There is no inventory here. No price, no processor, no SKU. When an object belongs on this page, it will be named here as a document of the work — not as a souvenir of a pin. Until then the cabinet is empty on purpose.",
-      "The dossiers are not products. A mass marked estimated does not become a print. A layer that does not hold does not become a slogan.",
-      "Money, if it is to help the table, is not sold here. It has a path on Help us. That path does not collect a payment either.",
-    ],
+    description: "The shop will open shortly.",
+    intro: "The shop will open shortly.",
+    body: [],
+    emptyState: "The shop will open shortly.",
     toHelp: "Help us",
   },
   help: {

@@ -72,16 +72,12 @@ export const uiFr: UiCopy = {
     ],
   },
   shop: {
-    kicker: "Une salle, pas un panier",
+    kicker: "",
     title: "Boutique",
-    description: "Une salle de l’atlas, pas un panier. Rien n’est à vendre. Pas de caisse.",
-    intro: "Cette page est ouverte. Rien n’y est à vendre.",
-    body: [
-      "Solving History est une table de travail. Les dossiers de l’atlas sont des problèmes ouverts, pas de la marchandise. Cette salle existe pour que le mot dans la navigation ne soit pas un déguisement, et pour qu’une caisse n’ait nulle part où se cacher.",
-      "Il n’y a ici ni inventaire, ni prix, ni prestataire, ni référence. Quand un objet appartiendra à cette page, il sera nommé ici comme un document du travail — pas comme un souvenir d’un pion. D’ici là le meuble est vide exprès.",
-      "Les dossiers ne sont pas des produits. Une masse marquée estimée ne devient pas une gravure. Une couche qui ne tient pas ne devient pas un slogan.",
-      "L’argent, s’il doit aider la table, ne se vend pas ici. Il a un chemin sur Aidez-nous. Ce chemin n’encaisse rien non plus.",
-    ],
+    description: "La boutique ouvrira sous peu.",
+    intro: "La boutique ouvrira sous peu.",
+    body: [],
+    emptyState: "La boutique ouvrira sous peu.",
     toHelp: "Aidez-nous",
   },
   help: {

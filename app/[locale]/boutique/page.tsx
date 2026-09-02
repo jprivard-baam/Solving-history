@@ -28,17 +28,9 @@ export default async function ShopPage({
 
   return (
     <article className="mx-auto max-w-2xl px-4 py-14 sm:px-6">
-      <p className="text-xs uppercase tracking-[0.22em] text-gold-dim">
-        {dict.shop.kicker}
-      </p>
-      <h1 className="font-display mt-2 text-5xl text-gold">{dict.shop.title}</h1>
+      <h1 className="font-display text-5xl text-gold">{dict.shop.title}</h1>
       <div className="paper-rule my-8" />
       <p className="text-lg leading-relaxed text-ink/90">{dict.shop.intro}</p>
-      <div className="mt-6 space-y-5 text-lg leading-relaxed text-ink/90">
-        {dict.shop.body.map((p) => (
-          <p key={p.slice(0, 40)}>{p}</p>
-        ))}
-      </div>
       <p className="mt-10">
         <Link
           href={localizedHref(locale, "/help")}

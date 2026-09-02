@@ -71,6 +71,7 @@ export type UiCopy = {
     description: string;
     intro: string;
     body: string[];
+    emptyState: string;
     toHelp: string;
   };
   help: {
