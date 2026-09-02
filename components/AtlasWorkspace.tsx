@@ -110,7 +110,7 @@ export function AtlasWorkspace({
     setFlashId(id);
     window.setTimeout(() => {
       setFlashId((current) => (current === id ? null : current));
-    }, 560);
+    }, 1000);
   };
 
   const togglePin = (id: string) => {
