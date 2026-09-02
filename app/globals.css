@@ -63,6 +63,8 @@ a {
   font-family: var(--font-source-serif), serif;
   height: 100%;
   width: 100%;
+  isolation: isolate;
+  z-index: 0;
 }
 
 .atlas-map .leaflet-tile-pane {
@@ -78,7 +80,8 @@ a {
   border: none !important;
 }
 
-.atlas-pin-icon img {
+.atlas-pin-icon img,
+.atlas-pin-icon svg {
   display: block;
   width: 32px;
   height: 32px;
@@ -220,18 +223,36 @@ a {
 @keyframes atlas-pin-flash {
   0%,
   100% {
-    filter: none;
+    filter: drop-shadow(0 0 0 transparent);
     transform: scale(1);
   }
-  35%,
-  55% {
-    filter: drop-shadow(0 0 8px #c2302a) drop-shadow(0 0 2px #c2302a);
-    transform: scale(1.25);
+  18%,
+  32% {
+    filter: drop-shadow(0 0 10px #e31b10) drop-shadow(0 0 3px #ff4a2a);
+    transform: scale(1.28);
+  }
+  50% {
+    filter: drop-shadow(0 0 2px #c23b22);
+    transform: scale(1);
+  }
+  68%,
+  82% {
+    filter: drop-shadow(0 0 12px #e31b10) drop-shadow(0 0 4px #ff4a2a);
+    transform: scale(1.28);
   }
 }
 
 .atlas-pin-flash {
-  animation: atlas-pin-flash 0.45s ease-out 2;
+  overflow: visible !important;
+}
+
+.atlas-pin-flash img,
+.atlas-pin-flash svg {
+  display: block;
+  width: 32px;
+  height: 32px;
+  transform-origin: 16px 12px;
+  animation: atlas-pin-flash 0.9s ease-out;
 }
 
 .atlas-map {

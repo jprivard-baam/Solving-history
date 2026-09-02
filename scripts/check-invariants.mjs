@@ -72,6 +72,12 @@ if (!header.includes("/wordmark.svg")) {
 if (header.includes("mark-pin") || header.includes("mark-borne") || header.includes("favicon")) {
   errors.push("Header must not carry the pin glyph or favicon");
 }
+if (!header.includes("z-[1100]") || !header.includes("bg-paper")) {
+  errors.push("Header must sit above Leaflet with a solid paper background");
+}
+if (header.includes("bg-paper/85") || header.includes("backdrop-blur")) {
+  errors.push("Header must not be translucent over the map");
+}
 
 const pinSvg = readFileSync(join(root, "public/mark-pin.svg"), "utf8");
 if (
@@ -135,96 +141,52 @@ for (const hook of remappedHooks.fr) {
 
 const listBlurbs = {
   en: {
-    baalbek:
-      "Three stones so big they make the wall. In the quarry, two more never became a wall: one still in the mountain, one cracked and left.",
-    "us-01":
-      "They piled a giant hill of earth in ninety days. Inside, the dirt never even became soil.",
-    "us-06":
-      "A hill of earth as big as a castle. They made it in two great pushes, in less than twenty years.",
-    "gobekli-tepe":
-      "Before anyone planted a field, people stood up giant stones shaped like a T. They were still hunting their food.",
-    "us-07":
-      "Eleven hills of earth in a ring. The people who made them still hunted their food. No farms yet.",
-    "antikythera-mechanism":
-      "From the sea, a bronze machine with about thirty little wheels, like the inside of a clock. We have only this one.",
-    "khufu-great-pyramid":
-      "A tomb as big as a mountain of stone. Inside, they put granite very high up.",
-    "aswan-unfinished-obelisk":
-      "They carved a giant needle of stone, then left it in the mountain. It cracked. It is still stuck in the rock.",
-    "serapeum-saqqara":
-      "Under the ground, a long dark hallway. In it, twenty-four huge stone boxes, sitting in the dark.",
-    pumapunku:
-      "They cut stone into the letter H, as if the pieces should lock. Beside them, a floor of huge stone slabs — still lying there.",
-    kalasasaya:
-      "A whole doorway cut from one stone. It stands in a great courtyard of tall stones.",
-    sacsayhuaman:
-      "The wall does not go straight — it zigzags. Huge stones lean into each other and hold, with nothing in between.",
-    stonehenge:
-      "Giant stones stand in a ring, fitted like wood. One lying stone came from far in the north — much farther than the others.",
-    "us-02":
-      "A stone city in a dry canyon. The roof beams are trees that do not grow there — they were carried from mountains far away.",
-    "igbo-ukwu":
-      "They poured bronze into the shape of tiny insects, one by one. The metal still shines.",
-    "tichitt-walata":
-      "A stone town on the cliff, hundreds of rooms. It was already there, long before the desert caravans.",
-    "jerwan-aqueduct":
-      "A long stone road just for water, standing on arches. People walked under it. The water walked on top.",
-    "aguada-fenix":
-      "They built a giant platform of earth, longer than a town. No king’s pyramid on top. Just the platform.",
-    "us-08":
-      "They piled hills of earth here first. Later, farther away, they piled even bigger ones.",
-    "nabta-playa":
-      "A ring of stones in the desert, smaller than a room. It is not a great sky machine. It is a small circle.",
-    "ca-07":
-      "They built a small hill of earth for someone young, and laid them with care in a box of stone. It is the oldest grave of its kind we know in the north.",
-    "ca-12":
-      "A village of wood on an island. Ten houses, and thirty-two tall poles — still standing in the wind.",
+    baalbek: "The wall is three stones. Just three.",
+    "us-01": "A hill of earth raised in ninety days.",
+    "us-06": "A castle of earth.",
+    "gobekli-tepe": "Giant T-stones standing in a circle.",
+    "us-07": "Eleven hills of earth, drawn in a ring.",
+    "antikythera-mechanism": "A bronze clock pulled from the sea",
+    "khufu-great-pyramid": "A mountain of stone, built as a tomb.",
+    "aswan-unfinished-obelisk": "A giant needle of stone, still stuck in the mountain.",
+    "serapeum-saqqara": "Twenty-four huge stone boxes wait in the dark.",
+    pumapunku: "Stone cut into the letter H, ready to lock.",
+    kalasasaya: "A whole doorway from a single stone",
+    sacsayhuaman: "The wall zigzags like lightning.",
+    stonehenge: "A ring of giants, fitted like wood.",
+    "us-02": "A stone city in a dry canyon.",
+    "igbo-ukwu": "Tiny bronze insects",
+    "tichitt-walata": "A whole stone town on the cliff",
+    "jerwan-aqueduct": "A stone road in the air, just for water.",
+    "aguada-fenix": "A platform of earth longer than a town.",
+    "us-08": "Hills of earth rising from the flat land.",
+    "nabta-playa": "a ring of stones smaller than a room",
+    "ca-07": "The oldest grave of its kind in the north.",
+    "ca-12": "ten houses, thirty-two tall poles",
   },
   fr: {
-    baalbek:
-      "Trois pierres si grandes qu’elles font le mur. Dans la carrière, deux autres n’ont jamais fait un mur : l’une encore dans la montagne, l’autre fendue et laissée.",
-    "us-01":
-      "Ils ont entassé une immense colline de terre en quatre-vingt-dix jours. Au-dedans, la terre n’est même pas devenue du sol.",
-    "us-06":
-      "Une colline de terre grande comme un château. Ils l’ont faite en deux grands élans, en moins de vingt ans.",
-    "gobekli-tepe":
-      "Avant même de planter un champ, des gens ont dressé d’immenses pierres en forme de T. Ils chassaient encore leur nourriture.",
-    "us-07":
-      "Onze collines de terre en rond. Ceux qui les ont faites chassaient encore leur nourriture. Pas encore de fermes.",
-    "antikythera-mechanism":
-      "De la mer, une machine de bronze d’une trentaine de petites roues, comme l’intérieur d’une horloge. On n’en a qu’une seule.",
-    "khufu-great-pyramid":
-      "Un tombeau grand comme une montagne de pierre. Dedans, ils ont posé du granite, très haut.",
-    "aswan-unfinished-obelisk":
-      "Ils ont taillé une immense aiguille de pierre, puis l’ont laissée dans la montagne. Elle s’est fendue. Elle est encore prise dans le roc.",
-    "serapeum-saqqara":
-      "Sous terre, un long couloir sombre. Dedans, vingt-quatre énormes caisses de pierre, posées dans le noir.",
-    pumapunku:
-      "Ils ont taillé la pierre en forme de H, comme si les morceaux devaient s’emboîter. À côté, un sol de dalles énormes — encore là.",
-    kalasasaya:
-      "Toute une porte taillée dans une seule pierre. Elle se tient dans une grande cour de pierres hautes.",
-    sacsayhuaman:
-      "Le mur ne va pas droit — il zigzague. D’énormes pierres se penchent l’une contre l’autre et tiennent, sans rien au milieu.",
-    stonehenge:
-      "Des pierres géantes se tiennent en rond, emboîtées comme du bois. Une pierre couchée vient de très loin au nord — bien plus loin que les autres.",
-    "us-02":
-      "Une ville de pierre dans un canyon sec. Les poutres du toit sont des arbres qui n’y poussent pas — on les a portés depuis des montagnes lointaines.",
-    "igbo-ukwu":
-      "Ils ont coulé du bronze en forme de tout petits insectes, un par un. Le métal brille encore.",
-    "tichitt-walata":
-      "Une ville de pierre sur la falaise, des centaines de pièces. Elle était déjà là, longtemps avant les caravanes du désert.",
-    "jerwan-aqueduct":
-      "Une longue route de pierre rien que pour l’eau, posée sur des arches. Les gens passaient en dessous. L’eau passait au-dessus.",
-    "aguada-fenix":
-      "Ils ont bâti une immense plateforme de terre, plus longue qu’une ville. Pas de pyramide de roi dessus. Juste la plateforme.",
-    "us-08":
-      "Ils ont entassé des collines de terre ici d’abord. Plus tard, plus loin, ils en ont fait de plus grandes.",
-    "nabta-playa":
-      "Un rond de pierres dans le désert, plus petit qu’une pièce. Ce n’est pas une grande machine du ciel. C’est un petit cercle.",
-    "ca-07":
-      "Ils ont fait une petite colline de terre pour quelqu’un de jeune, et l’ont déposé avec soin dans une caisse de pierre. C’est la plus ancienne tombe de ce genre que l’on connaisse au nord.",
-    "ca-12":
-      "Un village de bois sur une île. Dix maisons, et trente-deux grands poteaux — encore debout dans le vent.",
+    baalbek: "Le mur, c’est trois pierres. Rien que trois.",
+    "us-01": "Une colline de terre dressée en quatre-vingt-dix jours.",
+    "us-06": "Un château de terre.",
+    "gobekli-tepe": "D’immenses pierres en T, debout en cercle.",
+    "us-07": "Onze collines de terre, tracées en rond.",
+    "antikythera-mechanism": "Une horloge de bronze sortie de la mer",
+    "khufu-great-pyramid": "Une montagne de pierre, bâtie pour un tombeau.",
+    "aswan-unfinished-obelisk": "Une immense aiguille de pierre, encore prise dans la montagne.",
+    "serapeum-saqqara": "Vingt-quatre énormes caisses de pierre attendent dans le noir.",
+    pumapunku: "Pierre taillée en H, prête à s’emboîter.",
+    kalasasaya: "Toute une porte dans une seule pierre",
+    sacsayhuaman: "Le mur zigzague comme l’éclair.",
+    stonehenge: "Un rond de géants, emboîtés comme du bois.",
+    "us-02": "Une ville de pierre dans un canyon sec.",
+    "igbo-ukwu": "De tout petits insectes de bronze",
+    "tichitt-walata": "Toute une ville de pierre sur la falaise",
+    "jerwan-aqueduct": "Une route de pierre en l’air, rien que pour l’eau.",
+    "aguada-fenix": "Une plateforme de terre plus longue qu’une ville.",
+    "us-08": "Des collines de terre qui sortent de la plaine.",
+    "nabta-playa": "un rond de pierres plus petit qu’une pièce",
+    "ca-07": "La plus ancienne tombe de ce genre au nord.",
+    "ca-12": "dix maisons, trente-deux grands poteaux",
   },
 };
 for (const [id, line] of Object.entries(listBlurbs.en)) {

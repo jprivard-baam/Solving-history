@@ -132,11 +132,12 @@ function PinLaidCard({
 }
 
 function pinIcon(flash: boolean) {
-  const stroke = flash ? "#c2302a" : "#c9a44a";
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"><path d="M8 12 H24 M16 12 L10.5 23 M16 12 L21.5 23" fill="none" stroke="${stroke}" stroke-width="1.8" stroke-linecap="square" stroke-linejoin="miter"/></svg>`;
+  const glyph = flash
+    ? '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" aria-hidden="true"><path d="M8 12 H24 M16 12 L10.5 23 M16 12 L21.5 23" stroke="#e31b10" stroke-width="2.6" stroke-linecap="square" stroke-linejoin="miter"/></svg>'
+    : '<img src="/mark-pin.svg" width="32" height="32" alt="" />';
   return L.divIcon({
     className: flash ? "atlas-pin-icon atlas-pin-flash" : "atlas-pin-icon",
-    html: svg,
+    html: glyph,
     iconSize: [32, 32],
     iconAnchor: [16, 12],
   });
