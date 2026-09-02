@@ -134,7 +134,7 @@ function PinLaidCard({
 function pinIcon(active: boolean) {
   // Idle: gold circumpunct, static (img OK). Active: inline SMIL (img would freeze).
   const idle =
-    '<img src="/mark-pin.svg" width="32" height="32" alt="" />';
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" aria-hidden="true"><circle cx="16" cy="16" r="9" stroke="#c9a44a" stroke-width="1.6"/><circle cx="16" cy="16" r="2.2" fill="#c9a44a"/></svg>';
   const lit =
     '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" aria-hidden="true"><defs><filter id="pin-glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur in="SourceGraphic" stdDeviation="1.6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><g filter="url(#pin-glow)"><circle cx="16" cy="16" r="2.2" fill="#c2302a"/><circle cx="16" cy="16" r="9" fill="none" stroke="#c2302a" stroke-width="1.6"><animate attributeName="r" values="9;9;2.2;2.2;9" keyTimes="0;0.08;0.72;0.88;1" dur="5s" repeatCount="indefinite"/><animate attributeName="stroke-width" values="1.6;1.6;0.6;0.6;1.6" keyTimes="0;0.08;0.72;0.88;1" dur="5s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;1;0.35;0;1" keyTimes="0;0.08;0.72;0.88;1" dur="5s" repeatCount="indefinite"/></circle></g></svg>';
   return L.divIcon({
