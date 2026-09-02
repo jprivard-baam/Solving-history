@@ -22,7 +22,9 @@ export function SiteChrome({
   return (
     <>
       <SiteHeader locale={locale} dict={dict} path={path} />
-      <main className="flex min-h-0 flex-1 flex-col">{children}</main>
+      <main className="relative z-0 isolate flex min-h-0 flex-1 flex-col">
+        {children}
+      </main>
       <SiteFooter dict={dict} />
     </>
   );

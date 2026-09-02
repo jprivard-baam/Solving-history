@@ -72,7 +72,10 @@ if (!header.includes("/wordmark.svg")) {
 if (header.includes("mark-pin") || header.includes("mark-borne") || header.includes("favicon")) {
   errors.push("Header must not carry the pin glyph or favicon");
 }
-if (!header.includes("z-[1100]") || !header.includes("bg-paper")) {
+if (
+  !(header.includes("z-[2000]") || header.includes("z-[1100]")) ||
+  !header.includes("bg-paper")
+) {
   errors.push("Header must sit above Leaflet with a solid paper background");
 }
 if (header.includes("bg-paper/85") || header.includes("backdrop-blur")) {

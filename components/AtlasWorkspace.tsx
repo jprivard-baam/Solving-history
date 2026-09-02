@@ -172,7 +172,7 @@ export function AtlasWorkspace({
         </aside>
 
         <div
-          className="relative z-0 h-[min(48svh,28rem)] shrink-0 overflow-hidden lg:h-auto lg:min-h-0 lg:flex-1"
+          className="relative z-0 isolate h-[min(48svh,28rem)] shrink-0 overflow-hidden [contain:paint] lg:h-auto lg:min-h-0 lg:flex-1"
           role="region"
           aria-label={mapLabel}
         >

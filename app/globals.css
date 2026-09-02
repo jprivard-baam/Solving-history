@@ -65,6 +65,7 @@ a {
   width: 100%;
   isolation: isolate;
   z-index: 0;
+  overflow: hidden;
 }
 
 .atlas-map .leaflet-tile-pane {
@@ -258,4 +259,5 @@ a {
 .atlas-map {
   isolation: isolate;
   z-index: 0;
+  overflow: hidden;
 }
