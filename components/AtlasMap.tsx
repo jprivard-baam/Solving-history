@@ -131,17 +131,17 @@ function PinLaidCard({
   );
 }
 
-const ENCOCHE =
-  "M8 12 H24 M16 12 L10.5 23 M16 12 L21.5 23";
-
-function pinIcon(flash: boolean) {
-  const idle = '<img src="/mark-pin.svg" width="32" height="32" alt="" />';
-  const lit = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" aria-hidden="true"><path d="${ENCOCHE}" stroke="#ff1f0f" stroke-width="5.2" stroke-linecap="square" stroke-linejoin="miter" opacity="0.55"/><path d="${ENCOCHE}" stroke="#e31b10" stroke-width="2.6" stroke-linecap="square" stroke-linejoin="miter"/></svg>`;
+function pinIcon(active: boolean) {
+  // Idle: gold circumpunct, static (img OK). Active: inline SMIL (img would freeze).
+  const idle =
+    '<img src="/mark-pin.svg" width="32" height="32" alt="" />';
+  const lit =
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" aria-hidden="true"><defs><filter id="pin-glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur in="SourceGraphic" stdDeviation="1.6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><g filter="url(#pin-glow)"><circle cx="16" cy="16" r="2.2" fill="#c2302a"/><circle cx="16" cy="16" r="9" fill="none" stroke="#c2302a" stroke-width="1.6"><animate attributeName="r" values="9;9;2.2;2.2;9" keyTimes="0;0.08;0.72;0.88;1" dur="5s" repeatCount="indefinite"/><animate attributeName="stroke-width" values="1.6;1.6;0.6;0.6;1.6" keyTimes="0;0.08;0.72;0.88;1" dur="5s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;1;0.35;0;1" keyTimes="0;0.08;0.72;0.88;1" dur="5s" repeatCount="indefinite"/></circle></g></svg>';
   return L.divIcon({
-    className: flash ? "atlas-pin-icon atlas-pin-flash" : "atlas-pin-icon",
-    html: flash ? lit : idle,
+    className: "atlas-pin-icon",
+    html: active ? lit : idle,
     iconSize: [32, 32],
-    iconAnchor: [16, 12],
+    iconAnchor: [16, 16],
   });
 }
 
@@ -182,9 +182,9 @@ export function AtlasMap({
       />
       {pins.map((pin) => (
         <Marker
-          key={`${pin.id}-${pin.id === flashId ? "flash" : "idle"}`}
+          key={`${pin.id}-${pin.id === selectedId ? "active" : "idle"}`}
           position={[pin.lat, pin.lng]}
-          icon={pinIcon(pin.id === flashId)}
+          icon={pinIcon(pin.id === selectedId)}
           eventHandlers={{
             click: () => {
               onPinClick(pin.id);
