@@ -34,11 +34,14 @@ export const uiEn: UiCopy = {
     kicker: "Why this atlas exists",
     title: "Mission",
     paragraphs: [
-      "Solving History is an atlas of open problems in deep history and ancient engineering. It is not a channel, not a checkout, and not a finished book. It is a working table: ten files, one method, two languages.",
-      "The public conversation around these sites is loud and thin. Blocks become heavier with each retelling. Dates stretch to fit a thesis. A plaster sample is treated as if it were the monument. A unique survival is treated as if it had no workshop behind it.",
-      "This project holds a narrower rule. If a mass is estimated from volume and density, the card says estimated. If a radiocarbon date sits on plaster, the card says plaster. If a popular range is wider than the paper, the paper wins. Folklore is not banned; it is taken off the pin.",
-      "The atlas is bilingual because the questions are not national. English carries much of the technical literature. French is the other public language of the project. Neither version is a summary of the other.",
-      "The site is not live. Robots are told noindex, nofollow. Boutique is a room without a till. Help is three paths — share a file, bring data or a specialty, or help financially without turning the atlas into a cart.",
+      "History did not begin with the chapters we inherited. Across the earth stand works that no living culture can fully account for: cut stone, aligned ground, hydraulic systems, monuments too exact to be accidents and too silent to be treated as decoration.",
+      "Each of those works was left by a civilization that once flourished, and is now gone. They were not myths waiting for a caption. They were people who built, measured, organized, and then vanished. What remains is not only architecture. It is evidence that a complete human world can rise, leave its mark, and disappear.",
+      "Solving History exists to make that fact public, and then to work it.",
+      "Awareness comes first. If an unexplained monument is reduced to a postcard or a slogan, the civilization behind it dies a second time. The atlas puts those sites on a map and treats them as open problems: what is on the ground, what the current story claims, and where the story fails.",
+      "Work comes next. We reconstruct from material evidence: tool marks, quarries, dates, water, load, alignment, not from the loudest retelling. The aim is not a new dogma. It is a clearer record of who was here, what they could do, and how a flourishing world can end.",
+      "Some of what they left may still function as a warning. Not a prophecy. A residue: of climate, of water, of war, of overreach, of a knowledge that did not survive its makers. Those signals are easy to miss if the monument is treated as an isolated wonder. They are harder to ignore once the site is read as the last visible sentence of a vanished society.",
+      "English and French are both working languages of the project. The questions are not national. The map is the index. The files stay open until the ground has been answered.",
+      "This is not a finished book. It is a public workbench for a simple task: see what earlier worlds left behind, recover what can still be known, and listen for what may still apply."
     ],
   },
   methodPage: {
