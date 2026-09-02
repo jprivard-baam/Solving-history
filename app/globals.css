@@ -221,12 +221,20 @@ a {
   0%,
   100% {
     filter: none;
+    transform: scale(1);
   }
-  40% {
-    filter: drop-shadow(0 0 10px #c23b22) brightness(1.35);
+  35%,
+  55% {
+    filter: drop-shadow(0 0 8px #c2302a) drop-shadow(0 0 2px #c2302a);
+    transform: scale(1.25);
   }
 }
 
-.atlas-pin-flash img {
-  animation: atlas-pin-flash 0.55s ease-out;
+.atlas-pin-flash {
+  animation: atlas-pin-flash 0.45s ease-out 2;
+}
+
+.atlas-map {
+  isolation: isolate;
+  z-index: 0;
 }
