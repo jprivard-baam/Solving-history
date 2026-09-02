@@ -36,7 +36,7 @@ body {
 .site-header {
   position: sticky;
   top: 0;
-  z-index: 2000;
+  z-index: 1100;
   background: var(--paper);
 }
 
@@ -230,23 +230,15 @@ a {
 
 @keyframes atlas-pin-flash {
   0%,
+  50%,
   100% {
-    filter: drop-shadow(0 0 0 transparent);
+    filter: drop-shadow(0 0 0 #e31b10);
     transform: scale(1);
   }
-  18%,
-  32% {
-    filter: drop-shadow(0 0 10px #e31b10) drop-shadow(0 0 3px #ff4a2a);
-    transform: scale(1.28);
-  }
-  50% {
-    filter: drop-shadow(0 0 2px #c23b22);
-    transform: scale(1);
-  }
-  68%,
-  82% {
-    filter: drop-shadow(0 0 12px #e31b10) drop-shadow(0 0 4px #ff4a2a);
-    transform: scale(1.28);
+  20%,
+  70% {
+    filter: drop-shadow(0 0 8px #ff1f0f) drop-shadow(0 0 2px #ff4a2a);
+    transform: scale(1.18);
   }
 }
 
@@ -259,8 +251,8 @@ a {
   display: block;
   width: 32px;
   height: 32px;
-  transform-origin: 16px 16px;
-  animation: atlas-pin-flash 0.9s ease-out;
+  transform-origin: 16px 12px;
+  animation: atlas-pin-flash 0.5s ease-out;
 }
 
 .atlas-map {
