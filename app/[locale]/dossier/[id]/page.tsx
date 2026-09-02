@@ -61,7 +61,7 @@ export default async function DossierPage({
         <div className="mx-auto grid max-w-6xl gap-8 px-4 py-10 sm:px-6 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
           <div>
             <p className="text-xs uppercase tracking-[0.22em] text-gold-dim">
-              {String(index + 1).padStart(2, "0")} / 08 · {copy.cardDate}
+              {String(index + 1).padStart(2, "0")} / 22 · {copy.cardDate}
             </p>
             <h1 className="font-display mt-2 text-5xl text-gold sm:text-6xl">
               {copy.title}

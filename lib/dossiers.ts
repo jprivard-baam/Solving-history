@@ -6,7 +6,21 @@ export type DossierId =
   | "us-07"
   | "antikythera-mechanism"
   | "khufu-great-pyramid"
-  | "aswan-unfinished-obelisk";
+  | "aswan-unfinished-obelisk"
+  | "serapeum-saqqara"
+  | "pumapunku"
+  | "kalasasaya"
+  | "sacsayhuaman"
+  | "stonehenge"
+  | "us-02"
+  | "igbo-ukwu"
+  | "tichitt-walata"
+  | "jerwan-aqueduct"
+  | "aguada-fenix"
+  | "us-08"
+  | "nabta-playa"
+  | "ca-07"
+  | "ca-12";
 
 export type DossierMeta = {
   id: DossierId;
@@ -16,7 +30,7 @@ export type DossierMeta = {
   imageCredit: string;
 };
 
-/** Preview: eight places, one pin each. Most improbable first. Do not add the 63. */
+/** Preview: twenty-two places, one pin each. Most improbable first. Do not add the 63. */
 export const dossiers: DossierMeta[] = [
   {
     id: "baalbek",
@@ -72,6 +86,104 @@ export const dossiers: DossierMeta[] = [
     lat: 24.0764,
     lng: 32.8953,
     image: "/dossiers/aswan-obelisk.jpg",
+    imageCredit: "Wikimedia Commons",
+  },
+  {
+    id: "serapeum-saqqara",
+    lat: 29.87611,
+    lng: 31.21028,
+    image: "/dossiers/serapeum-saqqara.jpg",
+    imageCredit: "Wikimedia Commons",
+  },
+  {
+    id: "pumapunku",
+    lat: -16.56169,
+    lng: -68.67959,
+    image: "/dossiers/pumapunku-hblocks.jpg",
+    imageCredit: "Wikimedia Commons",
+  },
+  {
+    id: "kalasasaya",
+    lat: -16.555,
+    lng: -68.673,
+    image: "/dossiers/kalasasaya.jpg",
+    imageCredit: "Wikimedia Commons",
+  },
+  {
+    id: "sacsayhuaman",
+    lat: -13.50678,
+    lng: -71.98024,
+    image: "/dossiers/sacsayhuaman.jpg",
+    imageCredit: "Wikimedia Commons",
+  },
+  {
+    id: "stonehenge",
+    lat: 51.179,
+    lng: -1.825,
+    image: "/dossiers/stonehenge.jpg",
+    imageCredit: "Wikimedia Commons",
+  },
+  {
+    id: "us-02",
+    lat: 36.06066,
+    lng: -107.96160,
+    image: "/dossiers/chaco.jpg",
+    imageCredit: "Wikimedia Commons",
+  },
+  {
+    id: "igbo-ukwu",
+    lat: 6.017,
+    lng: 7.017,
+    image: "/dossiers/igbo-ukwu.jpg",
+    imageCredit: "Wikimedia Commons",
+  },
+  {
+    id: "tichitt-walata",
+    lat: 18.44167,
+    lng: -9.49167,
+    image: "/dossiers/tichitt-walata.jpg",
+    imageCredit: "Wikimedia Commons",
+  },
+  {
+    id: "jerwan-aqueduct",
+    lat: 36.66972,
+    lng: 43.39361,
+    image: "/dossiers/jerwan.jpg",
+    imageCredit: "Wikimedia Commons",
+  },
+  {
+    id: "aguada-fenix",
+    lat: 17.800,
+    lng: -91.150,
+    image: "/dossiers/aguada-fenix.jpg",
+    imageCredit: "Wikimedia Commons",
+  },
+  {
+    id: "us-08",
+    lat: 33.237095,
+    lng: -90.487026,
+    image: "/dossiers/jaketown.jpg",
+    imageCredit: "Wikimedia Commons",
+  },
+  {
+    id: "nabta-playa",
+    lat: 22.507967,
+    lng: 30.725600,
+    image: "/dossiers/nabta-playa.jpg",
+    imageCredit: "Wikimedia Commons",
+  },
+  {
+    id: "ca-07",
+    lat: 51.480403,
+    lng: -56.868388,
+    image: "/dossiers/anse-amour.jpg",
+    imageCredit: "Wikimedia Commons",
+  },
+  {
+    id: "ca-12",
+    lat: 52.09889,
+    lng: -131.21667,
+    image: "/dossiers/sgang-gwaay.jpg",
     imageCredit: "Wikimedia Commons",
   },
 ];

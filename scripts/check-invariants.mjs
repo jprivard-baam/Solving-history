@@ -151,6 +151,34 @@ const listBlurbs = {
       "A tomb as big as a mountain of stone. Inside, they put granite very high up.",
     "aswan-unfinished-obelisk":
       "They carved a giant needle of stone, then left it in the mountain. It cracked. It is still stuck in the rock.",
+    "serapeum-saqqara":
+      "Under the ground, a long dark hallway. In it, twenty-four huge stone boxes, sitting in the dark.",
+    pumapunku:
+      "They cut stone into the letter H, as if the pieces should lock. Beside them, a floor of huge stone slabs — still lying there.",
+    kalasasaya:
+      "A whole doorway cut from one stone. It stands in a great courtyard of tall stones.",
+    sacsayhuaman:
+      "The wall does not go straight — it zigzags. Huge stones lean into each other and hold, with nothing in between.",
+    stonehenge:
+      "Giant stones stand in a ring, fitted like wood. One lying stone came from far in the north — much farther than the others.",
+    "us-02":
+      "A stone city in a dry canyon. The roof beams are trees that do not grow there — they were carried from mountains far away.",
+    "igbo-ukwu":
+      "They poured bronze into the shape of tiny insects, one by one. The metal still shines.",
+    "tichitt-walata":
+      "A stone town on the cliff, hundreds of rooms. It was already there, long before the desert caravans.",
+    "jerwan-aqueduct":
+      "A long stone road just for water, standing on arches. People walked under it. The water walked on top.",
+    "aguada-fenix":
+      "They built a giant platform of earth, longer than a town. No king’s pyramid on top. Just the platform.",
+    "us-08":
+      "They piled hills of earth here first. Later, farther away, they piled even bigger ones.",
+    "nabta-playa":
+      "A ring of stones in the desert, smaller than a room. It is not a great sky machine. It is a small circle.",
+    "ca-07":
+      "They built a small hill of earth for someone young, and laid them with care in a box of stone. It is the oldest grave of its kind we know in the north.",
+    "ca-12":
+      "A village of wood on an island. Ten houses, and thirty-two tall poles — still standing in the wind.",
   },
   fr: {
     baalbek:
@@ -169,6 +197,34 @@ const listBlurbs = {
       "Un tombeau grand comme une montagne de pierre. Dedans, ils ont posé du granite, très haut.",
     "aswan-unfinished-obelisk":
       "Ils ont taillé une immense aiguille de pierre, puis l’ont laissée dans la montagne. Elle s’est fendue. Elle est encore prise dans le roc.",
+    "serapeum-saqqara":
+      "Sous terre, un long couloir sombre. Dedans, vingt-quatre énormes caisses de pierre, posées dans le noir.",
+    pumapunku:
+      "Ils ont taillé la pierre en forme de H, comme si les morceaux devaient s’emboîter. À côté, un sol de dalles énormes — encore là.",
+    kalasasaya:
+      "Toute une porte taillée dans une seule pierre. Elle se tient dans une grande cour de pierres hautes.",
+    sacsayhuaman:
+      "Le mur ne va pas droit — il zigzague. D’énormes pierres se penchent l’une contre l’autre et tiennent, sans rien au milieu.",
+    stonehenge:
+      "Des pierres géantes se tiennent en rond, emboîtées comme du bois. Une pierre couchée vient de très loin au nord — bien plus loin que les autres.",
+    "us-02":
+      "Une ville de pierre dans un canyon sec. Les poutres du toit sont des arbres qui n’y poussent pas — on les a portés depuis des montagnes lointaines.",
+    "igbo-ukwu":
+      "Ils ont coulé du bronze en forme de tout petits insectes, un par un. Le métal brille encore.",
+    "tichitt-walata":
+      "Une ville de pierre sur la falaise, des centaines de pièces. Elle était déjà là, longtemps avant les caravanes du désert.",
+    "jerwan-aqueduct":
+      "Une longue route de pierre rien que pour l’eau, posée sur des arches. Les gens passaient en dessous. L’eau passait au-dessus.",
+    "aguada-fenix":
+      "Ils ont bâti une immense plateforme de terre, plus longue qu’une ville. Pas de pyramide de roi dessus. Juste la plateforme.",
+    "us-08":
+      "Ils ont entassé des collines de terre ici d’abord. Plus tard, plus loin, ils en ont fait de plus grandes.",
+    "nabta-playa":
+      "Un rond de pierres dans le désert, plus petit qu’une pièce. Ce n’est pas une grande machine du ciel. C’est un petit cercle.",
+    "ca-07":
+      "Ils ont fait une petite colline de terre pour quelqu’un de jeune, et l’ont déposé avec soin dans une caisse de pierre. C’est la plus ancienne tombe de ce genre que l’on connaisse au nord.",
+    "ca-12":
+      "Un village de bois sur une île. Dix maisons, et trente-deux grands poteaux — encore debout dans le vent.",
   },
 };
 for (const [id, line] of Object.entries(listBlurbs.en)) {
@@ -194,26 +250,17 @@ if (!blob.includes("Why it does not make sense") || !blob.includes("Pourquoi ça
 
 const uiEn = readFileSync(join(root, "lib/copy/ui-en.ts"), "utf8");
 const uiFr = readFileSync(join(root, "lib/copy/ui-fr.ts"), "utf8");
-if (!uiEn.includes('kicker: "Ten open files"')) {
-  errors.push("EN atlas kicker must be Ten open files");
+if (!uiEn.includes('kicker: "Twenty-two open files"')) {
+  errors.push("EN atlas kicker must be Twenty-two open files");
 }
-if (!uiFr.includes('kicker: "Dix dossiers ouverts"')) {
-  errors.push("FR atlas kicker must be Dix dossiers ouverts");
-}
-if (!uiEn.includes("ten files, one method")) {
-  errors.push("Mission EN must say ten files only");
-}
-if (!uiFr.includes("dix dossiers, une méthode")) {
-  errors.push("Mission FR must say dix dossiers only");
+if (!uiFr.includes('kicker: "Vingt-deux dossiers ouverts"')) {
+  errors.push("FR atlas kicker must be Vingt-deux dossiers ouverts");
 }
 if (uiEn.includes("eight files") || uiFr.includes("huit dossiers")) {
   errors.push("Mission still says eight/huit");
 }
 
 const removed = [
-  "sacsayhuaman",
-  "pumapunku",
-  "serapeum-saqqara",
   "great-pyramid-khufu",
   "unfinished-obelisk-aswan",
   "baalbek-trilithon",
@@ -241,6 +288,20 @@ const ids = [
   "antikythera-mechanism",
   "khufu-great-pyramid",
   "aswan-unfinished-obelisk",
+  "serapeum-saqqara",
+  "pumapunku",
+  "kalasasaya",
+  "sacsayhuaman",
+  "stonehenge",
+  "us-02",
+  "igbo-ukwu",
+  "tichitt-walata",
+  "jerwan-aqueduct",
+  "aguada-fenix",
+  "us-08",
+  "nabta-playa",
+  "ca-07",
+  "ca-12",
 ];
 const data = readFileSync(join(root, "lib/dossiers.ts"), "utf8");
 for (const id of ids) {
@@ -249,11 +310,11 @@ for (const id of ids) {
 const order = ids
   .map((id) => data.indexOf(`id: "${id}"`))
   .filter((i) => i >= 0);
-if (order.length !== 8 || order.join() !== [...order].sort((a, b) => a - b).join()) {
-  errors.push("Atlas list order must be the locked eight-place order");
+if (order.length !== 22 || order.join() !== [...order].sort((a, b) => a - b).join()) {
+  errors.push("Atlas list order must be the locked twenty-two-place order");
 }
-if ((data.match(/id: "/g) || []).length !== 8) {
-  errors.push("Atlas must have exactly eight place pins");
+if ((data.match(/id: "/g) || []).length !== 22) {
+  errors.push("Atlas must have exactly twenty-two place pins");
 }
 
 const coords = [
@@ -265,6 +326,20 @@ const coords = [
   ["35.8886", "23.3053"],
   ["29.9792", "31.1342"],
   ["24.0764", "32.8953"],
+  ["29.87611", "31.21028"],
+  ["-16.56169", "-68.67959"],
+  ["-16.555", "-68.673"],
+  ["-13.50678", "-71.98024"],
+  ["51.179", "-1.825"],
+  ["36.06066", "-107.96160"],
+  ["6.017", "7.017"],
+  ["18.44167", "-9.49167"],
+  ["36.66972", "43.39361"],
+  ["17.800", "-91.150"],
+  ["33.237095", "-90.487026"],
+  ["22.507967", "30.725600"],
+  ["51.480403", "-56.868388"],
+  ["52.09889", "-131.21667"],
 ];
 for (const [lat, lng] of coords) {
   if (!data.includes(lat) || !data.includes(lng)) {
@@ -272,7 +347,7 @@ for (const [lat, lng] of coords) {
   }
 }
 
-if (/\b(chaco|pantheon)\b/i.test(blob)) {
+if (/\b(pantheon)\b/i.test(blob)) {
   errors.push("Forbidden extra site present");
 }
 
@@ -297,8 +372,8 @@ const dossierPage = readFileSync(
   join(root, "app/[locale]/dossier/[id]/page.tsx"),
   "utf8",
 );
-if (!dossierPage.includes("/ 08")) {
-  errors.push("Dossier chrome must count eight files");
+if (!dossierPage.includes("/ 22")) {
+  errors.push("Dossier chrome must count twenty-two files");
 }
 
 if (errors.length) {

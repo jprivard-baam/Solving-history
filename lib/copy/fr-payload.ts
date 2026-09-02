@@ -57,6 +57,9 @@ export const FR_JSON_TO_ATLAS = {
   "gobekli-tepe": "gobekli-tepe",
   khufu: "khufu-great-pyramid",
   antikythera: "antikythera-mechanism",
+  "serapeum-saqqara": "serapeum-saqqara",
+  pumapunku: "pumapunku",
+  sacsayhuaman: "sacsayhuaman",
 } as const;
 
 export type FrJsonId = keyof typeof FR_JSON_TO_ATLAS;

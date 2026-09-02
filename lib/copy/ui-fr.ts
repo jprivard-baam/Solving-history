@@ -20,7 +20,7 @@ export const uiFr: UiCopy = {
     switchTo: "English",
   },
   atlas: {
-    kicker: "Dix dossiers ouverts",
+    kicker: "Vingt-deux dossiers ouverts",
     title: "Atlas",
     intro:
       "Une contradiction ne peut pas exister dans la réalité. Ni en partie, ni en entier.",
