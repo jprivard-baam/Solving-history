@@ -4,7 +4,7 @@ import type { DossierId } from "@/lib/dossiers";
 export const dossiersEn: Record<DossierId, DossierCopy> = {
   baalbek: {
     title: "Baalbek",
-    listBlurb: "Three stones so big they make the wall. In the quarry, two more never became a wall: one still in the mountain, one cracked and left.",
+    listBlurb: "The wall is three stones. Just three. In the quarry, two more giants never moved: one still in the mountain, one cracked and left.",
     cardHook: "Three blocks of ~800 t, still in the wall",
     cardDate: "1st c. CE",
     place: "Heliopolis, Lebanon",
@@ -67,7 +67,7 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
   },
   "aswan-unfinished-obelisk": {
     title: "Unfinished obelisk of Aswan",
-    listBlurb: "They carved a giant needle of stone, then left it in the mountain. It cracked. It is still stuck in the rock.",
+    listBlurb: "A giant needle of stone, still stuck in the mountain. It cracked. It never stood up.",
     cardHook: "41.75 m — still in the bed",
     cardDate: "Date open",
     place: "Aswan granite quarries, Egypt",
@@ -129,7 +129,7 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
   },
   "gobekli-tepe": {
     title: "Göbekli Tepe",
-    listBlurb: "Before anyone planted a field, people stood up giant stones shaped like a T. They were still hunting their food.",
+    listBlurb: "Giant T-stones standing in a circle. The people who raised them still hunted their food. No fields yet.",
     cardHook: "Carbon dates the plaster, not the T-pillars",
     cardDate: "c. 9600–8000 BCE",
     place: "Şanlıurfa, Türkiye",
@@ -191,7 +191,7 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
   },
   "khufu-great-pyramid": {
     title: "Great Pyramid of Khufu",
-    listBlurb: "A tomb as big as a mountain of stone. Inside, they put granite very high up.",
+    listBlurb: "A mountain of stone, built as a tomb. Inside, they lifted granite into the sky.",
     cardHook: "Bias −3.9′. Granite of ~50 t at 43 m",
     cardDate: "c. 2580–2560 BCE",
     place: "Giza, Egypt",
@@ -253,7 +253,7 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
   },
   "antikythera-mechanism": {
     title: "Antikythera Mechanism",
-    listBlurb: "From the sea, a bronze machine with about thirty little wheels, like the inside of a clock. We have only this one.",
+    listBlurb: "A bronze clock pulled from the sea, full of little wheels \u2014 about thirty of them. We have only this one in the whole world.",
     cardHook: "Thirty gears. One surviving example",
     cardDate: "Wreck c. 60 BCE",
     place: "Antikythera wreck, Aegean",
@@ -315,7 +315,7 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
   },
   "us-01": {
     title: "Poverty Point",
-    listBlurb: "They piled a giant hill of earth in ninety days. Inside, the dirt never even became soil.",
+    listBlurb: "A hill of earth raised in ninety days. So fast the dirt inside never even became soil.",
     cardHook: "Poverty Point",
     cardDate: "Late Archaic",
     place: "Poverty Point, Louisiana",
@@ -367,7 +367,7 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
   },
   "us-06": {
     title: "Cahokia",
-    listBlurb: "A hill of earth as big as a castle. They made it in two great pushes, in less than twenty years.",
+    listBlurb: "A castle of earth. They threw it up in two great pushes, in less than twenty years.",
     cardHook: "Cahokia",
     cardDate: "Mississippian",
     place: "Cahokia, Illinois",
@@ -419,7 +419,7 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
   },
   "us-07": {
     title: "Watson Brake",
-    listBlurb: "Eleven hills of earth in a ring. The people who made them still hunted their food. No farms yet.",
+    listBlurb: "Eleven hills of earth, drawn in a ring. Hunters made this \u2014 before anyone planted a field.",
     cardHook: "Watson Brake",
     cardDate: "Middle Archaic",
     place: "Watson Brake, Louisiana",
@@ -472,7 +472,7 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
   },
   sacsayhuaman: {
     title: "Sacsayhuamán",
-    listBlurb: "The wall does not go straight — it zigzags. Huge stones lean into each other and hold, with nothing in between.",
+    listBlurb: "The wall zigzags like lightning. Huge stones hug each other and hold, with nothing in the cracks.",
     cardHook: "Limestone. Blocks of ~150 t",
     cardDate: "15th c. CE",
     place: "Cusco, Peru",
@@ -534,7 +534,7 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
   },
   pumapunku: {
     title: "Pumapunku",
-    listBlurb: "They cut stone into the letter H, as if the pieces should lock. Beside them, a floor of huge stone slabs — still lying there.",
+    listBlurb: "Stone cut into the letter H, ready to lock. Beside it, slabs so big you could lie down on one.",
     cardHook: "H-blocks of ~600 kg",
     cardDate: "c. 580–710 CE",
     place: "Tiwanaku, Bolivia",
@@ -595,7 +595,7 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
   },
   "serapeum-saqqara": {
     title: "Serapeum of Saqqara",
-    listBlurb: "Under the ground, a long dark hallway. In it, twenty-four huge stone boxes, sitting in the dark.",
+    listBlurb: "A long hallway under the earth. Twenty-four huge stone boxes wait in the dark.",
     cardHook: "Twenty-four vats, from Amasis",
     cardDate: "Greater Vaults from Amasis, c. 550 BCE",
     place: "Saqqara, Egypt",
@@ -658,7 +658,7 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
   },
   kalasasaya: {
     title: 'Tiwanaku',
-    listBlurb: 'A whole doorway cut from one stone. It stands in a great courtyard of tall stones.',
+    listBlurb: "A whole doorway from a single stone, standing in a courtyard of giants.",
     cardHook: 'Tiwanaku',
     cardDate: 'Tiwanaku',
     place: 'Tiwanaku, Bolivia',
@@ -691,7 +691,7 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
   },
   stonehenge: {
     title: 'Stonehenge',
-    listBlurb: 'Giant stones stand in a ring, fitted like wood. One lying stone came from far in the north — much farther than the others.',
+    listBlurb: "A ring of giants, fitted like wood. One stone on the ground came from far in the north \u2014 farther than all the others.",
     cardHook: 'Stonehenge',
     cardDate: 'Neolithic',
     place: 'Wiltshire, England',
@@ -724,7 +724,7 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
   },
   "us-02": {
     title: 'Chaco',
-    listBlurb: 'A stone city in a dry canyon. The roof beams are trees that do not grow there — they were carried from mountains far away.',
+    listBlurb: "A stone city in a dry canyon. The roofs stand on trees that never grew there \u2014 carried from mountains far away.",
     cardHook: 'Chaco',
     cardDate: 'Ancestral Pueblo',
     place: 'Chaco, New Mexico',
@@ -757,7 +757,7 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
   },
   "igbo-ukwu": {
     title: 'Igbo-Ukwu',
-    listBlurb: 'They poured bronze into the shape of tiny insects, one by one. The metal still shines.',
+    listBlurb: "Tiny bronze insects, poured in metal, one by one. They still shine.",
     cardHook: 'Igbo-Ukwu',
     cardDate: 'Igbo-Ukwu',
     place: 'Igbo-Ukwu, Nigeria',
@@ -790,7 +790,7 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
   },
   "tichitt-walata": {
     title: 'Tichitt–Oualata',
-    listBlurb: 'A stone town on the cliff, hundreds of rooms. It was already there, long before the desert caravans.',
+    listBlurb: "A whole stone town on the cliff \u2014 hundreds of rooms facing the desert. Already standing before the caravans.",
     cardHook: 'Tichitt–Oualata',
     cardDate: 'Tichitt',
     place: 'Tichitt, Mauritania',
@@ -823,7 +823,7 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
   },
   "jerwan-aqueduct": {
     title: 'Jerwan',
-    listBlurb: 'A long stone road just for water, standing on arches. People walked under it. The water walked on top.',
+    listBlurb: "A stone road in the air, just for water. You walk under the arches. The water walks over your head.",
     cardHook: 'Jerwan',
     cardDate: 'Jerwan',
     place: 'Jerwan, Iraq',
@@ -856,7 +856,7 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
   },
   "aguada-fenix": {
     title: 'Aguada Fénix',
-    listBlurb: 'They built a giant platform of earth, longer than a town. No king’s pyramid on top. Just the platform.',
+    listBlurb: "A platform of earth longer than a town. No pyramid. No king. Just this giant table of dirt.",
     cardHook: 'Aguada Fénix',
     cardDate: 'Aguada Fénix',
     place: 'Tabasco, Mexico',
@@ -889,7 +889,7 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
   },
   "us-08": {
     title: 'Jaketown',
-    listBlurb: 'They piled hills of earth here first. Later, farther away, they piled even bigger ones.',
+    listBlurb: "Hills of earth rising from the flat land. They were piled here first \u2014 before the bigger ones farther away.",
     cardHook: 'Jaketown',
     cardDate: 'Jaketown',
     place: 'Jaketown, Mississippi',
@@ -922,7 +922,7 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
   },
   "nabta-playa": {
     title: 'Nabta Playa',
-    listBlurb: 'A ring of stones in the desert, smaller than a room. It is not a great sky machine. It is a small circle.',
+    listBlurb: "In a huge desert, a ring of stones smaller than a room. Not a sky machine. A small circle, all alone.",
     cardHook: 'Nabta Playa',
     cardDate: 'Nabta Playa',
     place: 'Nabta Playa, Egypt',
@@ -955,7 +955,7 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
   },
   "ca-07": {
     title: 'L’Anse Amour',
-    listBlurb: 'They built a small hill of earth for someone young, and laid them with care in a box of stone. It is the oldest grave of its kind we know in the north.',
+    listBlurb: "A hill of earth for someone young. Laid in a stone box, with care. The oldest grave of its kind in the north.",
     cardHook: 'L’Anse Amour',
     cardDate: 'Archaic',
     place: 'Labrador, Canada',
@@ -988,7 +988,7 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
   },
   "ca-12": {
     title: 'SG̱ang Gwaay',
-    listBlurb: 'A village of wood on an island. Ten houses, and thirty-two tall poles — still standing in the wind.',
+    listBlurb: "An island village of wood: ten houses, thirty-two tall poles. Still standing in the wind.",
     cardHook: 'SG̱ang Gwaay',
     cardDate: 'Haida',
     place: 'Haida Gwaii, Canada',
