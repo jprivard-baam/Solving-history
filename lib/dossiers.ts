@@ -1,7 +1,5 @@
 export type DossierId =
-  | "baalbek-trilithon"
-  | "baalbek-2014-block"
-  | "baalbek-hajjar-al-hibla"
+  | "baalbek"
   | "us-01"
   | "us-06"
   | "gobekli-tepe"
@@ -18,26 +16,12 @@ export type DossierMeta = {
   imageCredit: string;
 };
 
-/** Preview TEST 10. List order: most improbable first (JP). Do not add the 63. */
+/** Preview: eight places, one pin each. Most improbable first. Do not add the 63. */
 export const dossiers: DossierMeta[] = [
   {
-    id: "baalbek-trilithon",
+    id: "baalbek",
     lat: 34.00682,
     lng: 36.20338,
-    image: "/dossiers/baalbek.jpg",
-    imageCredit: "Wikimedia Commons",
-  },
-  {
-    id: "baalbek-2014-block",
-    lat: 33.9992,
-    lng: 36.19828,
-    image: "/dossiers/baalbek.jpg",
-    imageCredit: "Wikimedia Commons",
-  },
-  {
-    id: "baalbek-hajjar-al-hibla",
-    lat: 33.999202,
-    lng: 36.199905,
     image: "/dossiers/baalbek.jpg",
     imageCredit: "Wikimedia Commons",
   },

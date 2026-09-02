@@ -2,9 +2,9 @@ import type { DossierCopy } from "./types";
 import type { DossierId } from "@/lib/dossiers";
 
 export const dossiersEn: Record<DossierId, DossierCopy> = {
-  "baalbek-trilithon": {
-    title: "Baalbek Trilithon",
-    listBlurb: "Three stones so big they make the wall. They are still there, one beside the other.",
+  baalbek: {
+    title: "Baalbek",
+    listBlurb: "Three stones so big they make the wall. In the quarry, two more never became a wall: one still in the mountain, one cracked and left.",
     cardHook: "Three blocks of ~800 t, still in the wall",
     cardDate: "1st c. CE",
     place: "Heliopolis, Lebanon",
@@ -311,107 +311,6 @@ export const dossiersEn: Record<DossierId, DossierCopy> = {
       "One exemplar.",
       "30 gears (Freeth reconstruction).",
       "Analog computer, not a ship clock. Wreck ~60 BCE.",
-    ],
-  },
-  "baalbek-2014-block": {
-    title: "Baalbek 2014 block",
-    listBlurb: "A giant stone still in the mountain. They started to free it, then stopped — they never even reached the bottom. It never moved.",
-    cardHook: "Baalbek 2014 block",
-    cardDate: "Documented 2014",
-    place: "Cheikh Abdallah quarry, Lebanon",
-    lede: "A limestone monolith still in the Cheikh Abdallah quarry at Baalbek. Documented in 2014 by the German Archaeological Institute. Extraction was started and left; the stone never moved.",
-    imageAlt: "Temple of Jupiter and the Baalbek limestone programme",
-    imageCaption:
-      "Baalbek. The 2014 block remains in the Cheikh Abdallah quarry, west of Hajjar al-Hibla.",
-    layers: [
-      {
-        title: "Layer 1 — The record",
-        common: [
-          "A giant limestone block still lies in the mountain at the Cheikh Abdallah quarry. Work to free it was begun and then stopped. The bottom of the block was never reached.",
-        ],
-        advanced: [
-          "Documented in 2014 by the German Archaeological Institute (van Ess and colleagues). The pin sits about 150 m west of Hajjar al-Hibla, from the DAI 2015 note « knapp 150 m weiter westlich », not on the Hajjar OSM node.",
-        ],
-      },
-      {
-        title: "Layer 2 — The date",
-        common: [
-          "The published record of this block is 2014. That is the date of the documentation, not a cartouche on the stone.",
-        ],
-        advanced: [
-          "No inscription on this monolith names a reign. It belongs to the same quarry basin as Hajjar al-Hibla and the sanctuary limestone programme.",
-        ],
-      },
-      {
-        title: "Layer 3 — The mechanism",
-        common: [
-          "The least-astonishing account is an abandoned extraction in the Baalbek quarry: the block was opened, then left in the bed.",
-        ],
-        advanced: [
-          "Leaving a block that was never detached is consistent with a failed or stopped quarry cut. The stone did not travel to the temple podium.",
-        ],
-      },
-      {
-        title: "Why it does not make sense",
-        common: [
-          "They started to free a stone they never finished and never moved. The quarry holds the residue.",
-        ],
-        advanced: [
-          "The residue is the unfinished cut — not a second civilization inferred from size alone. This card does not invent a mass.",
-        ],
-      },
-    ],
-    notes: [
-      "Pin: 33.99920, 36.19828 — 150 m west of Hajjar OSM node 2521507956 (van Ess DAI 2015).",
-    ],
-  },
-  "baalbek-hajjar-al-hibla": {
-    title: "Hajjar al-Hibla",
-    listBlurb: "A giant stone still glued to the quarry floor. It cracked, so they left it. It never became a wall.",
-    cardHook: "Hajjar al-Hibla",
-    cardDate: "Still in the quarry",
-    place: "Cheikh Abdallah quarry, Lebanon",
-    lede: "A limestone monolith still attached to the floor of the Cheikh Abdallah quarry. It cracked. It never became a wall.",
-    imageAlt: "Temple of Jupiter and the Baalbek limestone programme",
-    imageCaption: "Baalbek. Hajjar al-Hibla remains in the Cheikh Abdallah quarry.",
-    layers: [
-      {
-        title: "Layer 1 — The record",
-        common: [
-          "Hajjar al-Hibla is still glued to the quarry floor. The stone never left the bed.",
-        ],
-        advanced: [
-          "OSM node 2521507956 / way 244881406: 33.999202, 36.199905.",
-        ],
-      },
-      {
-        title: "Layer 2 — The date",
-        common: [
-          "No independent inscription dates this block apart from the sanctuary quarry programme.",
-        ],
-        advanced: [
-          "The file keeps it in the same limestone basin as the temple. It does not invent another millennium.",
-        ],
-      },
-      {
-        title: "Layer 3 — The mechanism",
-        common: [
-          "It cracked, so they left it. The least-astonishing account is a stopped extraction.",
-        ],
-        advanced: [
-          "A cracked stone that was never detached does not have to carry a wall. It is not the trilithon.",
-        ],
-      },
-      {
-        title: "Why it does not make sense",
-        common: ["It never became a wall."],
-        advanced: [
-          "The residue is the block left on the floor — not an invented mass, not a second temple under the quarry.",
-        ],
-      },
-    ],
-    notes: [
-      "Pin: 33.999202, 36.199905 — OSM node 2521507956 / way 244881406.",
     ],
   },
   "us-01": {

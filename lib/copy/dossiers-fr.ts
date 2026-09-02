@@ -11,12 +11,8 @@ import antikythera from "./fr-json/antikythera-fr.json";
 
 const LAYER4 = "Pourquoi ça ne tient pas";
 
-const TITLES: Partial<Record<DossierId, string>> = {
-  "baalbek-trilithon": "Trilithe de Baalbek",
-};
-
 const CARD_HOOKS: Partial<Record<DossierId, string>> = {
-  "baalbek-trilithon": "Trois blocs d’environ 800 t, encore dans le mur",
+  baalbek: "Trois blocs d’environ 800 t, encore dans le mur",
   "aswan-unfinished-obelisk": "41,75 m — encore dans le banc",
   "gobekli-tepe": "Le carbone date le plâtre, pas les piliers en T",
   "khufu-great-pyramid": "Biais −3,9′. Granite d’environ 50 t à 43 m",
@@ -24,12 +20,8 @@ const CARD_HOOKS: Partial<Record<DossierId, string>> = {
 };
 
 const LIST_BLURB: Record<DossierId, string> = {
-  "baalbek-trilithon":
-    "Trois pierres si grandes qu’elles font le mur. Elles sont encore là, l’une à côté de l’autre.",
-  "baalbek-2014-block":
-    "Une pierre géante encore dans la montagne. On a commencé à la dégager, puis on s’est arrêté — on n’a même pas touché le fond. Elle n’a jamais bougé.",
-  "baalbek-hajjar-al-hibla":
-    "Une pierre géante encore collée au sol de la carrière. Elle s’est fendue, alors on l’a laissée. Elle n’est jamais devenue un mur.",
+  baalbek:
+    "Trois pierres si grandes qu’elles font le mur. Dans la carrière, deux autres n’ont jamais fait un mur : l’une encore dans la montagne, l’autre fendue et laissée.",
   "us-01":
     "Ils ont entassé une immense colline de terre en quatre-vingt-dix jours. Au-dedans, la terre n’est même pas devenue du sol.",
   "us-06":
@@ -63,9 +55,9 @@ const payloads = {
 
 function fromPayload(p: FrResearchPayload, atlasId: DossierId): DossierCopy {
   return {
-    title: TITLES[atlasId] ?? p.name,
+    title: p.name,
     listBlurb: LIST_BLURB[atlasId],
-    cardHook: CARD_HOOKS[atlasId] ?? TITLES[atlasId] ?? p.name,
+    cardHook: CARD_HOOKS[atlasId] ?? p.name,
     cardDate: p.yearLabel,
     place: p.place,
     lede: p.common,
@@ -107,123 +99,14 @@ const remappedFr = Object.fromEntries(
   ),
 ) as Pick<
   Record<DossierId, DossierCopy>,
-  | "baalbek-trilithon"
+  | "baalbek"
   | "aswan-unfinished-obelisk"
   | "gobekli-tepe"
   | "khufu-great-pyramid"
   | "antikythera-mechanism"
 >;
 
-const newFr: Record<
-  | "baalbek-2014-block"
-  | "baalbek-hajjar-al-hibla"
-  | "us-01"
-  | "us-06"
-  | "us-07",
-  DossierCopy
-> = {
-  "baalbek-2014-block": {
-    title: "Bloc 2014 de Baalbek",
-    listBlurb: LIST_BLURB["baalbek-2014-block"],
-    cardHook: "Bloc 2014 de Baalbek",
-    cardDate: "Documenté en 2014",
-    place: "Carrière de Cheikh Abdallah, Liban",
-    lede: "Un monolithe de calcaire encore dans la carrière de Cheikh Abdallah, à Baalbek. Documenté en 2014 par l’Institut archéologique allemand. On a commencé à le dégager ; il n’a jamais bougé.",
-    imageAlt: "Temple de Jupiter et programme calcaire de Baalbek",
-    imageCaption:
-      "Baalbek. Le bloc de 2014 reste dans la carrière de Cheikh Abdallah, à l’ouest de Hajjar al-Hibla.",
-    layers: [
-      {
-        title: LAYER_TITLES[0],
-        common: [
-          "Une pierre géante est encore dans la montagne, à la carrière de Cheikh Abdallah. On a commencé à la dégager, puis on s’est arrêté. On n’a pas touché le fond.",
-        ],
-        advanced: [
-          "Documenté en 2014 par l’Institut archéologique allemand (van Ess et coll.). Le pion est à environ 150 m à l’ouest de Hajjar al-Hibla, d’après la note DAI 2015 « knapp 150 m weiter westlich » — pas sur le nœud OSM de Hajjar.",
-        ],
-      },
-      {
-        title: LAYER_TITLES[1],
-        common: [
-          "2014 est la date de la publication, pas un cartouche sur la pierre.",
-        ],
-        advanced: [
-          "Aucune inscription sur ce monolithe ne nomme un règne. Il appartient au même bassin de carrière que Hajjar al-Hibla.",
-        ],
-      },
-      {
-        title: LAYER_TITLES[2],
-        common: [
-          "Le récit le moins étonnant est une extraction abandonnée : le bloc a été ouvert, puis laissé dans le banc.",
-        ],
-        advanced: [
-          "Laisser un bloc jamais détaché est cohérent avec une coupe arrêtée. Cette pierre n’est pas allée au podium du temple.",
-        ],
-      },
-      {
-        title: LAYER_TITLES[3],
-        common: [
-          "On a commencé une pierre qu’on n’a jamais finie et qui n’a jamais bougé. La carrière garde le résidu.",
-        ],
-        advanced: [
-          "Le résidu est la coupe inachevée — pas une seconde civilisation déduite de la taille. Cette fiche n’invente pas de masse.",
-        ],
-      },
-    ],
-    notes: [
-      "Pion : 33.99920, 36.19828 — 150 m à l’ouest du nœud OSM 2521507956 (van Ess DAI 2015).",
-    ],
-  },
-  "baalbek-hajjar-al-hibla": {
-    title: "Hajjar al-Hibla",
-    listBlurb: LIST_BLURB["baalbek-hajjar-al-hibla"],
-    cardHook: "Hajjar al-Hibla",
-    cardDate: "Encore dans la carrière",
-    place: "Carrière de Cheikh Abdallah, Liban",
-    lede: "Un monolithe de calcaire encore collé au sol de la carrière de Cheikh Abdallah. Il s’est fendu. Il n’est jamais devenu un mur.",
-    imageAlt: "Temple de Jupiter et programme calcaire de Baalbek",
-    imageCaption:
-      "Baalbek. Hajjar al-Hibla reste dans la carrière de Cheikh Abdallah.",
-    layers: [
-      {
-        title: LAYER_TITLES[0],
-        common: [
-          "Hajjar al-Hibla est encore collé au sol de la carrière. La pierre n’a pas quitté le banc.",
-        ],
-        advanced: [
-          "Repère OSM : nœud 2521507956 / way 244881406, 33.999202, 36.199905.",
-        ],
-      },
-      {
-        title: LAYER_TITLES[1],
-        common: [
-          "Pas d’inscription autonome qui daterait ce bloc à part du programme de carrière du sanctuaire.",
-        ],
-        advanced: [
-          "Le dossier le laisse dans le même bassin calcaire que le temple. Il ne lui invente pas un autre millénaire.",
-        ],
-      },
-      {
-        title: LAYER_TITLES[2],
-        common: [
-          "Elle s’est fendue, alors on l’a laissée. Le récit le moins étonnant est une extraction arrêtée.",
-        ],
-        advanced: [
-          "Une pierre fendue et jamais détachée n’a pas à porter un mur. Elle n’est pas le trilithon.",
-        ],
-      },
-      {
-        title: LAYER_TITLES[3],
-        common: ["Elle n’est jamais devenue un mur."],
-        advanced: [
-          "Le résidu est le bloc laissé au sol — pas une masse inventée, pas un second temple caché sous la carrière.",
-        ],
-      },
-    ],
-    notes: [
-      "Pion : 33.999202, 36.199905 — OSM node 2521507956 / way 244881406.",
-    ],
-  },
+const newFr: Record<"us-01" | "us-06" | "us-07", DossierCopy> = {
   "us-01": {
     title: "Poverty Point",
     listBlurb: LIST_BLURB["us-01"],

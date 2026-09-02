@@ -177,7 +177,7 @@ export function AtlasMap({
       />
       {pins.map((pin) => (
         <Marker
-          key={pin.id}
+          key={`${pin.id}-${pin.id === flashId ? "flash" : "idle"}`}
           position={[pin.lat, pin.lng]}
           icon={pinIcon(pin.id === flashId)}
           eventHandlers={{

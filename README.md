@@ -1,6 +1,6 @@
 # Solving History
 
-Unpublished atlas of ten open dossiers. Preview TEST only. **Not live.**
+Unpublished atlas of eight places, one pin each. Preview TEST only. **Not live.**
 
 - English at `/`. French at `/fr/`.
 - Atlas · Mission · Method · Help. No shop. `/shop` redirects to `/boutique`.

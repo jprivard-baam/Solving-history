@@ -50,9 +50,9 @@ export type FrResearchPayload = {
   xLine: string;
 };
 
-/** Atlas id ← JSON id. Preview TEST 10. Unwired JSON stays on disk. */
+/** Atlas id ← JSON id. Unwired JSON stays on disk. */
 export const FR_JSON_TO_ATLAS = {
-  baalbek: "baalbek-trilithon",
+  baalbek: "baalbek",
   aswan: "aswan-unfinished-obelisk",
   "gobekli-tepe": "gobekli-tepe",
   khufu: "khufu-great-pyramid",

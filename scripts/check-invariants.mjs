@@ -97,6 +97,16 @@ if (!atlasWorkspace.includes("selectFromList") || !atlasWorkspace.includes("setF
 if (!atlasWorkspace.includes("setCardId(null)") || !atlasWorkspace.includes("togglePin")) {
   errors.push("Pin click must open the pin card; list click must not");
 }
+if (atlasWorkspace.includes("atlasPinId")) {
+  errors.push("List id must equal pin id — no Baalbek pin alias");
+}
+if (!atlasWorkspace.includes("setFlashId(id)") || !atlasWorkspace.includes("flashId={flashId}")) {
+  errors.push("List click must flash the marker whose id matches the row");
+}
+const css = readFileSync(join(root, "app/globals.css"), "utf8");
+if (!css.includes("@keyframes atlas-pin-flash") || !css.includes(".atlas-pin-flash")) {
+  errors.push("Pin red flash keyframes must stay");
+}
 
 const remappedHooks = {
   en: [
@@ -125,12 +135,8 @@ for (const hook of remappedHooks.fr) {
 
 const listBlurbs = {
   en: {
-    "baalbek-trilithon":
-      "Three stones so big they make the wall. They are still there, one beside the other.",
-    "baalbek-2014-block":
-      "A giant stone still in the mountain. They started to free it, then stopped — they never even reached the bottom. It never moved.",
-    "baalbek-hajjar-al-hibla":
-      "A giant stone still glued to the quarry floor. It cracked, so they left it. It never became a wall.",
+    baalbek:
+      "Three stones so big they make the wall. In the quarry, two more never became a wall: one still in the mountain, one cracked and left.",
     "us-01":
       "They piled a giant hill of earth in ninety days. Inside, the dirt never even became soil.",
     "us-06":
@@ -147,12 +153,8 @@ const listBlurbs = {
       "They carved a giant needle of stone, then left it in the mountain. It cracked. It is still stuck in the rock.",
   },
   fr: {
-    "baalbek-trilithon":
-      "Trois pierres si grandes qu’elles font le mur. Elles sont encore là, l’une à côté de l’autre.",
-    "baalbek-2014-block":
-      "Une pierre géante encore dans la montagne. On a commencé à la dégager, puis on s’est arrêté — on n’a même pas touché le fond. Elle n’a jamais bougé.",
-    "baalbek-hajjar-al-hibla":
-      "Une pierre géante encore collée au sol de la carrière. Elle s’est fendue, alors on l’a laissée. Elle n’est jamais devenue un mur.",
+    baalbek:
+      "Trois pierres si grandes qu’elles font le mur. Dans la carrière, deux autres n’ont jamais fait un mur : l’une encore dans la montagne, l’autre fendue et laissée.",
     "us-01":
       "Ils ont entassé une immense colline de terre en quatre-vingt-dix jours. Au-dedans, la terre n’est même pas devenue du sol.",
     "us-06":
@@ -214,6 +216,9 @@ const removed = [
   "serapeum-saqqara",
   "great-pyramid-khufu",
   "unfinished-obelisk-aswan",
+  "baalbek-trilithon",
+  "baalbek-2014-block",
+  "baalbek-hajjar-al-hibla",
 ];
 const live = [
   readFileSync(join(root, "lib/dossiers.ts"), "utf8"),
@@ -228,9 +233,7 @@ for (const id of removed) {
 }
 
 const ids = [
-  "baalbek-trilithon",
-  "baalbek-2014-block",
-  "baalbek-hajjar-al-hibla",
+  "baalbek",
   "us-01",
   "us-06",
   "gobekli-tepe",
@@ -246,14 +249,15 @@ for (const id of ids) {
 const order = ids
   .map((id) => data.indexOf(`id: "${id}"`))
   .filter((i) => i >= 0);
-if (order.length !== 10 || order.join() !== [...order].sort((a, b) => a - b).join()) {
-  errors.push("Atlas list order must be the locked TEST 10 order");
+if (order.length !== 8 || order.join() !== [...order].sort((a, b) => a - b).join()) {
+  errors.push("Atlas list order must be the locked eight-place order");
+}
+if ((data.match(/id: "/g) || []).length !== 8) {
+  errors.push("Atlas must have exactly eight place pins");
 }
 
 const coords = [
   ["34.00682", "36.20338"],
-  ["33.9992", "36.19828"],
-  ["33.999202", "36.199905"],
   ["32.63694", "-91.40639"],
   ["38.659", "-90.061"],
   ["37.2233", "38.9224"],
@@ -293,8 +297,8 @@ const dossierPage = readFileSync(
   join(root, "app/[locale]/dossier/[id]/page.tsx"),
   "utf8",
 );
-if (!dossierPage.includes("/ 10")) {
-  errors.push("Dossier chrome must count ten files");
+if (!dossierPage.includes("/ 08")) {
+  errors.push("Dossier chrome must count eight files");
 }
 
 if (errors.length) {
