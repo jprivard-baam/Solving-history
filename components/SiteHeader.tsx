@@ -3,12 +3,13 @@ import type { Locale } from "@/lib/i18n";
 import { localizedHref, switchLocaleHref } from "@/lib/i18n";
 import type { Dictionary } from "@/lib/copy/types";
 
-const navKeys = ["atlas", "mission", "method", "help"] as const;
+const navKeys = ["atlas", "mission", "method", "shop", "help"] as const;
 
 const navHrefs: Record<(typeof navKeys)[number], string> = {
   atlas: "/",
   mission: "/mission",
   method: "/method",
+  shop: "/boutique",
   help: "/help",
 };
 
@@ -22,13 +23,10 @@ export function SiteHeader({
   path: string;
 }) {
   return (
-    <header className="sticky top-0 z-40 border-b border-rule/80 bg-paper/85 backdrop-blur-md">
+    <header className="site-header sticky top-0 z-[1100] isolate shrink-0 border-b border-rule bg-paper">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
-        <Link
-          href={localizedHref(locale, "/")}
-          className="font-display text-xl tracking-[0.14em] text-gold uppercase"
-        >
-          Solving History
+        <Link href={localizedHref(locale, "/")} className="text-gold" aria-label="Solving History">
+          <img src="/wordmark.svg" alt="" className="h-[28px] w-auto" />
         </Link>
         <nav
           aria-label="Primary"
@@ -45,10 +43,11 @@ export function SiteHeader({
                 key={key}
                 href={href}
                 className={
-                  current
+                  key === "atlas"
                     ? "text-gold"
                     : "transition-colors hover:text-ink"
                 }
+                aria-current={current ? "page" : undefined}
               >
                 {dict.nav[key]}
               </Link>

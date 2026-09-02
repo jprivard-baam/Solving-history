@@ -4,14 +4,15 @@ export const uiFr: UiCopy = {
   meta: {
     title: "Solving History",
     description:
-      "Un atlas non publié de problèmes ouverts en ingénierie ancienne. Les mesures d’abord. Hors ligne.",
+      "Un atlas non publié de problèmes ouverts en histoire profonde et en ingénierie ancienne. Une table de travail, pas une chaîne. Hors ligne.",
     notLive: "Hors ligne. Non indexé.",
   },
   nav: {
     atlas: "Atlas",
     mission: "Mission",
     method: "Méthode",
-    help: "Aide",
+    shop: "Boutique",
+    help: "Aidez-nous",
   },
   language: {
     en: "EN",
@@ -19,21 +20,26 @@ export const uiFr: UiCopy = {
     switchTo: "English",
   },
   atlas: {
-    kicker: "Huit dossiers ouverts",
+    kicker: "Vingt-deux dossiers ouverts",
     title: "Atlas",
-    lede: "Une carte sombre de problèmes mesurés. Chaque pion est un dossier. Les masses jamais pesées restent marquées estimées. Les dates disent ce qu’elles datent vraiment.",
+    intro:
+      "Une contradiction ne peut pas exister dans la réalité. Ni en partie, ni en entier.",
+    lede: "Pour découvrir une incohérence, choisir dans la liste ou un pion sur la carte.",
     openDossier: "Ouvrir le dossier",
-    mapLabel: "Atlas mondial des huit dossiers",
+    closeCard: "Fermer",
+    listLabel: "Liste des dossiers",
+    mapLabel: "Atlas des dossiers ouverts",
   },
   mission: {
     kicker: "Pourquoi cet atlas",
     title: "Mission",
     paragraphs: [
-      "Solving History est un atlas de problèmes ouverts en histoire profonde et en ingénierie ancienne. Ce n’est pas une chaîne, pas une boutique, pas un livre fermé. C’est une table de travail : huit dossiers, une méthode, deux langues.",
-      "La conversation publique autour de ces sites est bruyante et mince. Les blocs s’alourdissent à chaque récit. Les dates s’étirent pour servir une thèse. Un échantillon d’enduit est traité comme s’il était le monument. Une pièce unique est traitée comme si aucun atelier ne l’avait précédée.",
-      "Ce projet tient une règle plus étroite. Si une masse est estimée à partir d’un volume et d’une densité, la fiche dit estimée. Si une date radiocarbone porte sur un enduit, la fiche dit enduit. Si une fourchette populaire est plus large que l’article, l’article l’emporte. Le folklore n’est pas interdit ; il est retiré du pion.",
-      "L’atlas est bilingue parce que les questions ne sont pas nationales. L’anglais porte une grande part de la littérature technique. Le français est l’autre langue publique du projet. Ni l’une ni l’autre n’est un résumé.",
-      "Le site n’est pas en ligne. Les robots reçoivent noindex, nofollow. Il n’y a ni vitrine ni paiement. L’aide tient en trois chemins — partager un mystère, apporter des données ou une spécialité, ou aider financièrement lorsque ce chemin pourra exister sans transformer l’atlas en panier.",
+      "Sur le sol, il reste des ouvrages qu’aucune culture vivante n’explique vraiment : pierre géante taillée, structures alignées, objets de précision laboratoire, monuments trop mathématiquement exacts pour être le fruit du hasard. Pour certains, des réalisations tellement impressionnantes qu’on ne pourrait pas les répliquer aujourd’hui.",
+      "Des gens ont bâti, mesuré, organisé. Ils ne sont plus là. Ce qui reste, c’est la trace d’un monde humain qui s’est élevé, a bâti quelque chose de plus grand que lui-même, puis s’est éteint.",
+      "Un monument inexpliqué réduit à une carte postale, c’est une deuxième mort pour la société qui l’a laissé.",
+      "Une part de ce qu’ils ont laissé peut être un message déposé exprès, une archive technique ou un avertissement.",
+      "Le but n’est pas un nouveau dogme. C’est d’y voir plus clair : qui était là, ce qu’ils savaient faire, comment un monde en pleine force peut finir.",
+      "Bref, résoudre les mystères de notre histoire."
     ],
   },
   methodPage: {
@@ -42,6 +48,7 @@ export const uiFr: UiCopy = {
     intro: [
       "Chaque dossier de cet atlas est coupé de la même façon. Quatre couches, dans l’ordre. Un registre commun pour qui veut le problème en langue claire. Un registre avancé pour qui veut l’échantillon, le kilogramme et la citation.",
       "Les couches ne sont pas une échelle vers un secret. Elles sont un filtre. Ce qui est au sol. Ce que la date date vraiment. Quel mécanisme porte le travail avec le moins d’inventions. Ce qui ne tient toujours pas.",
+      "La méthode est la règle plus étroite de la Mission, appliquée à un dossier. Estimée reste estimée. Une date dit ce qu’elle date. Le folklore n’est pas interdit ; il est retiré du pion.",
     ],
     commonLabel: "Commun",
     advancedLabel: "Avancé",
@@ -64,17 +71,29 @@ export const uiFr: UiCopy = {
       },
     ],
   },
+  shop: {
+    kicker: "",
+    title: "Boutique",
+    description: "La boutique ouvrira sous peu.",
+    intro: "La boutique ouvrira sous peu.",
+    body: [],
+    emptyState: "La boutique ouvrira sous peu.",
+    toHelp: "Aidez-nous",
+  },
   help: {
-    kicker: "Trois chemins, pas de boutique",
-    title: "Aide",
-    intro: "L’atlas n’est pas publié. L’aide n’est pas une boutique. Trois chemins sont ouverts comme intention. Aucun ne traite un paiement.",
+    kicker: "Trois chemins, pas de caisse",
+    title: "Aidez-nous",
+    description:
+      "Trois chemins pour resserrer un atlas non publié. Partager un dossier. Apporter des données ou une spécialité. Aider financièrement — ce chemin n’encaisse pas.",
+    intro: "L’atlas est une table de travail, non publiée. Il gagne quand un dossier peut être vérifié. L’aide n’est pas un achat. Trois chemins sont ouverts. Aucun n’encaisse.",
     paths: [
       {
         id: "share",
-        title: "Partager le mystère",
+        title: "Partager",
         body: [
           "Un site, un bloc, une fissure, une photographie avec une échelle, une mesure prise au sol. Pas une théorie finie. Le dossier.",
-          "Quand la correspondance s’ouvrira, ce chemin portera une adresse. D’ici là, gardez les notes : lieu, datum, comment le chiffre a été obtenu, et ce qui reste estimé.",
+          "Une rumeur sans lieu n’est pas un dossier.",
+          "Tant que ce chemin ne porte pas d’adresse, gardez les notes : le lieu, comment le chiffre a été obtenu, et ce qui reste estimé.",
         ],
       },
       {
@@ -82,15 +101,15 @@ export const uiFr: UiCopy = {
         title: "Données + spécialité",
         body: [
           "Pétrographie, épigraphie, photogrammétrie, géodésie, archéologie expérimentale, langues des sources premières. Une spécialité sert quand elle peut corriger une fiche.",
-          "L’atlas préfère une densité pesée à une légende de plus. Si vous travaillez dans un champ qui peut resserrer une masse, une date ou une pierre mal nommée, c’est ce chemin.",
+          "L’atlas préfère une densité pesée à une légende de plus. Si un champ peut resserrer une masse, une date ou une pierre mal nommée, c’est ce chemin.",
         ],
       },
       {
         id: "finance",
         title: "Aider financièrement",
         body: [
-          "Il n’y a pas de paiement sur ce site. Pas de panier, pas de prestataire, pas de référence, pas de boutique. /shop est renvoyé ici exprès.",
-          "L’aide financière, lorsqu’elle existera, sera indiquée ici comme une adresse ou une déclaration publique — pas comme un produit. D’ici là ce chemin est un occupant, pas un règlement.",
+          "Il n’y a pas de caisse sur ce site. Pas de panier, pas de prestataire, pas de produit. La Boutique est une salle sans caisse. Ce chemin n’est pas une seconde boutique.",
+          "Quand l’aide financière pourra exister sans faire de l’atlas un panier, elle sera indiquée ici comme une adresse ou une déclaration publique — pas comme une référence. D’ici là ce chemin nomme une intention. Il n’encaisse pas.",
         ],
       },
     ],
@@ -105,7 +124,14 @@ export const uiFr: UiCopy = {
   },
   pathsTitle: "Trois chemins",
   footer: {
-    line: "Solving History — atlas non publié. Huit dossiers. Pas de boutique.",
+    line: "Solving History — atlas non publié. Une table de travail. Pas de caisse.",
     robots: "robots : noindex, nofollow",
+    copyright: "© 2026 Solving History",
+  },
+  notFound: {
+    kicker: "404",
+    title: "Solving History",
+    body: "Ce dossier n’est pas sur l’atlas.",
+    back: "Atlas",
   },
 };

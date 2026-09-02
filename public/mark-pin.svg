@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" role="img" aria-hidden="true">
+  <!-- Pin idle: circumpunct or du site, statique. Pas d’anim, pas de glow. Ancre [16,16]. -->
+  <circle cx="16" cy="16" r="9" stroke="#c9a44a" stroke-width="1.6"/>
+  <circle cx="16" cy="16" r="2.2" fill="#c9a44a"/>
+</svg>

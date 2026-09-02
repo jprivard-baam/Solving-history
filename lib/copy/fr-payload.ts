@@ -50,16 +50,16 @@ export type FrResearchPayload = {
   xLine: string;
 };
 
-/** Atlas id ← JSON id. Do not add a ninth site. */
+/** Atlas id ← JSON id. Unwired JSON stays on disk. */
 export const FR_JSON_TO_ATLAS = {
   baalbek: "baalbek",
-  aswan: "unfinished-obelisk-aswan",
-  sacsayhuaman: "sacsayhuaman",
-  pumapunku: "pumapunku",
+  aswan: "aswan-unfinished-obelisk",
   "gobekli-tepe": "gobekli-tepe",
-  khufu: "great-pyramid-khufu",
+  khufu: "khufu-great-pyramid",
   antikythera: "antikythera-mechanism",
   "serapeum-saqqara": "serapeum-saqqara",
+  pumapunku: "pumapunku",
+  sacsayhuaman: "sacsayhuaman",
 } as const;
 
 export type FrJsonId = keyof typeof FR_JSON_TO_ATLAS;

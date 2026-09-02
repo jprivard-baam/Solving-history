@@ -11,6 +11,7 @@ const cormorant = Cormorant_Garamond({
 
 const sourceSerif = Source_Serif_4({
   subsets: ["latin", "latin-ext"],
+  style: ["normal", "italic"],
   variable: "--font-source-serif",
 });
 
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
     template: "%s · Solving History",
   },
   description:
-    "An unpublished atlas of open problems in ancient engineering. Not live.",
+    "An unpublished atlas of open problems in deep history and ancient engineering. A working table, not a channel. Not live.",
   robots: {
     index: false,
     follow: false,
@@ -30,6 +31,9 @@ export const metadata: Metadata = {
       follow: false,
       noimageindex: true,
     },
+  },
+  icons: {
+    icon: "/favicon.svg",
   },
 };
 

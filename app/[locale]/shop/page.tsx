@@ -7,5 +7,5 @@ export default async function ShopRedirect({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  redirect(localizedHref(isLocale(locale) ? locale : "en", "/help"));
+  redirect(localizedHref(isLocale(locale) ? locale : "en", "/boutique"));
 }

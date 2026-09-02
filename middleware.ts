@@ -19,10 +19,10 @@ export function middleware(request: NextRequest) {
   }
 
   if (pathname === "/shop" || pathname === "/shop/") {
-    return NextResponse.redirect(new URL("/help", request.url));
+    return NextResponse.redirect(new URL("/boutique", request.url));
   }
   if (pathname === "/fr/shop" || pathname === "/fr/shop/") {
-    return NextResponse.redirect(new URL("/fr/help", request.url));
+    return NextResponse.redirect(new URL("/fr/boutique", request.url));
   }
 
   if (pathname === "/fr" || pathname.startsWith("/fr/")) {
