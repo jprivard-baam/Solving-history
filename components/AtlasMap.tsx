@@ -5,7 +5,7 @@ import { createPortal } from "react-dom";
 import Image from "next/image";
 import Link from "next/link";
 import L from "leaflet";
-import { MapContainer, Marker, TileLayer, useMap } from "react-leaflet";
+import { MapContainer, TileLayer, useMap } from "react-leaflet";
 import { CARTO_ATTRIBUTION, CARTO_DARK_URL } from "@/lib/dossiers";
 
 export type AtlasPin = {
@@ -145,6 +145,34 @@ function pinIcon(active: boolean) {
   });
 }
 
+
+function PlacePin({
+  pin,
+  active,
+  onClick,
+}: {
+  pin: AtlasPin;
+  active: boolean;
+  onClick: (id: string) => void;
+}) {
+  const map = useMap();
+  useEffect(() => {
+    const marker = L.marker([pin.lat, pin.lng], {
+      icon: pinIcon(active),
+      zIndexOffset: active ? 1000 : 0,
+      keyboard: false,
+    });
+    marker.on("click", () => {
+      onClick(pin.id);
+    });
+    marker.addTo(map);
+    return () => {
+      marker.remove();
+    };
+  }, [map, pin.id, pin.lat, pin.lng, active, onClick]);
+  return null;
+}
+
 export function AtlasMap({
   pins,
   selectedId,
@@ -181,16 +209,11 @@ export function AtlasMap({
         focus={focused ? { lat: focused.lat, lng: focused.lng } : null}
       />
       {pins.map((pin) => (
-        <Marker
-          key={`${pin.id}-${pin.id === selectedId ? "active" : "idle"}`}
-          position={[pin.lat, pin.lng]}
-          icon={pinIcon(pin.id === selectedId)}
-          zIndexOffset={pin.id === selectedId ? 1000 : 0}
-          eventHandlers={{
-            click: () => {
-              onPinClick(pin.id);
-            },
-          }}
+        <PlacePin
+          key={pin.id}
+          pin={pin}
+          active={pin.id === selectedId}
+          onClick={onPinClick}
         />
       ))}
       {opened ? (
