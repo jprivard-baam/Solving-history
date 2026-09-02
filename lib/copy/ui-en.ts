@@ -34,14 +34,12 @@ export const uiEn: UiCopy = {
     kicker: "Why this atlas exists",
     title: "Mission",
     paragraphs: [
-      "History did not begin with the chapters we inherited. Across the earth stand works that no living culture can fully account for: cut stone, aligned ground, hydraulic systems, monuments too exact to be accidents and too silent to be treated as decoration.",
-      "Each of those works was left by a civilization that once flourished, and is now gone. They were not myths waiting for a caption. They were people who built, measured, organized, and then vanished. What remains is not only architecture. It is evidence that a complete human world can rise, leave its mark, and disappear.",
-      "Solving History exists to make that fact public, and then to work it.",
-      "Awareness comes first. If an unexplained monument is reduced to a postcard or a slogan, the civilization behind it dies a second time. The atlas puts those sites on a map and treats them as open problems: what is on the ground, what the current story claims, and where the story fails.",
-      "Work comes next. We reconstruct from material evidence: tool marks, quarries, dates, water, load, alignment, not from the loudest retelling. The aim is not a new dogma. It is a clearer record of who was here, what they could do, and how a flourishing world can end.",
-      "Some of what they left may still function as a warning. Not a prophecy. A residue: of climate, of water, of war, of overreach, of a knowledge that did not survive its makers. Those signals are easy to miss if the monument is treated as an isolated wonder. They are harder to ignore once the site is read as the last visible sentence of a vanished society.",
-      "English and French are both working languages of the project. The questions are not national. The map is the index. The files stay open until the ground has been answered.",
-      "This is not a finished book. It is a public workbench for a simple task: see what earlier worlds left behind, recover what can still be known, and listen for what may still apply."
+      "On the ground, works remain that no living culture really explains: giant cut stone, aligned structures, objects of laboratory precision, monuments too mathematically exact to be the product of chance. Some so impressive we could not replicate them today.",
+      "People built, measured, organized. They are gone. What remains is the trace of a human world that rose, built something larger than itself, then died out.",
+      "An unexplained monument reduced to a postcard is a second death for the society that left it.",
+      "Some of what they left may be a message placed on purpose, a technical archive, or a warning.",
+      "The aim is not a new dogma. It is to see more clearly: who was there, what they knew how to do, how a world at full strength can end.",
+      "In short, to solve the mysteries of our history."
     ],
   },
   methodPage: {
