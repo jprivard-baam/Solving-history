@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import Image from "next/image";
 import Link from "next/link";
@@ -156,20 +156,38 @@ function PlacePin({
   onClick: (id: string) => void;
 }) {
   const map = useMap();
-  useEffect(() => {
+  const markerRef = useRef<L.Marker | null>(null);
+  const onClickRef = useRef(onClick);
+  onClickRef.current = onClick;
+
+  useLayoutEffect(() => {
     const marker = L.marker([pin.lat, pin.lng], {
-      icon: pinIcon(active),
-      zIndexOffset: active ? 1000 : 0,
+      icon: pinIcon(false),
+      zIndexOffset: 0,
       keyboard: false,
     });
     marker.on("click", () => {
-      onClick(pin.id);
+      onClickRef.current(pin.id);
     });
     marker.addTo(map);
+    markerRef.current = marker;
     return () => {
-      marker.remove();
+      markerRef.current = null;
+      if (map.hasLayer(marker)) {
+        map.removeLayer(marker);
+      }
     };
-  }, [map, pin.id, pin.lat, pin.lng, active, onClick]);
+  }, [map, pin.id, pin.lat, pin.lng]);
+
+  useLayoutEffect(() => {
+    const marker = markerRef.current;
+    if (!marker) {
+      return;
+    }
+    marker.setIcon(pinIcon(active));
+    marker.setZIndexOffset(active ? 1000 : 0);
+  }, [active]);
+
   return null;
 }
 
