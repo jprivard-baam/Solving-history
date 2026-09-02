@@ -23,38 +23,61 @@ export type AtlasPin = {
 };
 
 function AtlasMapEffects({
-  focus,
+  focusLat,
+  focusLng,
 }: {
-  focus: { lat: number; lng: number } | null;
+  focusLat: number | null;
+  focusLng: number | null;
 }) {
   const map = useMap();
+  const movingRef = useRef(false);
 
   useEffect(() => {
+    let width = 0;
+    let height = 0;
     const invalidate = () => {
-      map.invalidateSize();
+      if (movingRef.current) {
+        return;
+      }
+      const container = map.getContainer();
+      const nextWidth = container.clientWidth;
+      const nextHeight = container.clientHeight;
+      if (nextWidth === width && nextHeight === height) {
+        return;
+      }
+      width = nextWidth;
+      height = nextHeight;
+      map.invalidateSize({ animate: false });
     };
     invalidate();
-    const frame = window.requestAnimationFrame(invalidate);
-    const timer = window.setTimeout(invalidate, 220);
     window.addEventListener("resize", invalidate);
     const observer = new ResizeObserver(invalidate);
     observer.observe(map.getContainer());
     return () => {
-      window.cancelAnimationFrame(frame);
-      window.clearTimeout(timer);
       window.removeEventListener("resize", invalidate);
       observer.disconnect();
     };
   }, [map]);
 
   useEffect(() => {
-    if (!focus) {
+    if (focusLat == null || focusLng == null) {
       return;
     }
-    map.flyTo([focus.lat, focus.lng], Math.max(map.getZoom(), 4), {
+    movingRef.current = true;
+    map.stop();
+    map.setView([focusLat, focusLng], Math.max(map.getZoom(), 4), {
+      animate: true,
       duration: 0.55,
     });
-  }, [focus, map]);
+    const onEnd = () => {
+      movingRef.current = false;
+    };
+    map.once("moveend", onEnd);
+    return () => {
+      map.off("moveend", onEnd);
+      movingRef.current = false;
+    };
+  }, [focusLat, focusLng, map]);
 
   return null;
 }
@@ -224,7 +247,8 @@ export function AtlasMap({
     >
       <TileLayer url={CARTO_DARK_URL} attribution={CARTO_ATTRIBUTION} />
       <AtlasMapEffects
-        focus={focused ? { lat: focused.lat, lng: focused.lng } : null}
+        focusLat={focused ? focused.lat : null}
+        focusLng={focused ? focused.lng : null}
       />
       {pins.map((pin) => (
         <PlacePin
