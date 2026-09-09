@@ -97,8 +97,8 @@ const nextConfig = readFileSync(join(root, "next.config.ts"), "utf8");
 if (/unoptimized\s*:\s*true/.test(nextConfig)) {
   errors.push("next/image must stay optimized so atlas list cards do not load full JPGs");
 }
-if (!nextConfig.includes("416")) {
-  errors.push("next/image imageSizes must include 416 for atlas list thumbs");
+if (!nextConfig.includes("416") || !nextConfig.includes("832")) {
+  errors.push("next/image imageSizes must include 416 and 832 so list 1x/2x stay off deviceSizes 3840");
 }
 
 const atlasWorkspace = readFileSync(join(root, "components/AtlasWorkspace.tsx"), "utf8");
