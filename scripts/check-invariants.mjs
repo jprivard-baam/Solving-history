@@ -105,7 +105,9 @@ const atlasWorkspace = readFileSync(join(root, "components/AtlasWorkspace.tsx"),
 if (atlasWorkspace.includes("absolute bottom-3") || atlasWorkspace.includes("z-[800]")) {
   errors.push("Summary card must not float in a page corner");
 }
-const listImage = atlasWorkspace.split("cards.map")[1]?.split("</ol>")[0] ?? "";
+const listImage = atlasWorkspace.includes("AtlasVirtualRow")
+  ? atlasWorkspace.slice(atlasWorkspace.indexOf("function AtlasVirtualRow"))
+  : atlasWorkspace.split("cards.map")[1]?.split("</ol>")[0] ?? "";
 if (listImage.includes("fill")) {
   errors.push("Atlas list Image must not use fill (src fallback becomes w=3840)");
 }
@@ -114,6 +116,14 @@ if (!listImage.includes("width={416}") || !listImage.includes("height={234}")) {
 }
 if (/sizes=/.test(listImage)) {
   errors.push("Atlas list Image must omit sizes (sizes without vw emits all deviceSizes including 3840)");
+}
+const virtualList = readFileSync(join(root, "lib/atlas-virtual-list.ts"), "utf8");
+if (
+  !virtualList.includes("ATLAS_LIST_OVERSCAN") ||
+  !atlasWorkspace.includes("useAtlasVirtualList") ||
+  !atlasWorkspace.includes("windowCards")
+) {
+  errors.push("Atlas list must virtualize so only a window of rows mount");
 }
 if (!atlasWorkspace.includes("kicker") || !atlasWorkspace.includes("{kicker}")) {
   errors.push("Atlas kicker must be rendered");
@@ -131,6 +141,9 @@ if (!atlasWorkspace.includes("setFlashId(id)") || !atlasWorkspace.includes("flas
   errors.push("List click must flash the marker whose id matches the row");
 }
 const css = readFileSync(join(root, "app/globals.css"), "utf8");
+if (!css.includes(".atlas-list-row") || !css.includes("content-visibility: auto")) {
+  errors.push("Atlas list rows must use content-visibility: auto");
+}
 if (!css.includes("@keyframes atlas-pin-flash") || !css.includes(".atlas-pin-flash")) {
   errors.push("Pin red flash keyframes must stay");
 }

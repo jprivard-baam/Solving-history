@@ -1,9 +1,10 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { AtlasMapLoader } from "@/components/AtlasMapLoader";
+import { useAtlasVirtualList } from "@/lib/atlas-virtual-list";
 import type { DossierId } from "@/lib/dossiers";
 
 export type AtlasCard = {
@@ -75,16 +76,25 @@ export function AtlasWorkspace({
     return () => window.removeEventListener("keydown", onKey);
   }, []);
 
+  const opened = cards.find((card) => card.id === cardId) ?? null;
+  const {
+    scrollerRef,
+    startIndex,
+    endIndex,
+    totalHeight,
+    offsetOf,
+    measure,
+    scrollToIndex,
+  } = useAtlasVirtualList(cards.length);
+  const windowCards = cards.slice(startIndex, endIndex);
+
   useEffect(() => {
     if (!focusId) {
       return;
     }
-    document
-      .getElementById(`atlas-row-${focusId}`)
-      ?.scrollIntoView({ block: "nearest" });
-  }, [focusId]);
-
-  const opened = cards.find((card) => card.id === cardId) ?? null;
+    const index = cards.findIndex((card) => card.id === focusId);
+    scrollToIndex(index);
+  }, [cards, focusId, scrollToIndex]);
 
   const selectFromList = (id: DossierId) => {
     setFocusId(id);
@@ -126,50 +136,31 @@ export function AtlasWorkspace({
             <div className="paper-rule my-4" />
             <p className="mt-3 text-sm leading-relaxed text-muted">{lede}</p>
           </div>
-          <ol className="min-h-0 flex-1 space-y-2 overflow-y-auto p-3">
-            {cards.map((card) => {
-              const active = card.id === focusId;
-              return (
-                <li key={card.id}>
-                  <button
-                    type="button"
-                    id={`atlas-row-${card.id}`}
-                    aria-pressed={active}
-                    onClick={() => selectFromList(card.id)}
-                    className={
-                      (card.id === flashId ? "atlas-row-flash " : "") +
-                      (active
-                        ? "w-full overflow-hidden rounded-none border border-[#8a7030] bg-[#1c1812] text-left shadow-none"
-                        : "w-full overflow-hidden rounded-none border border-[#3d3426] bg-[#1c1812] text-left shadow-none hover:border-[#8a7030]")
-                    }
-                  >
-                    <span className="block overflow-hidden">
-                      <Image
-                        src={card.image}
-                        alt={card.imageAlt}
-                        width={416}
-                        height={234}
-                        className="h-auto w-full object-cover opacity-90"
-                      />
-                    </span>
-                    <span className="block p-3">
-                      <span className="font-display block text-xl leading-tight text-gold">
-                        {card.title}
-                      </span>
-                      {card.listBlurb ? (
-                        <span className="mt-1 block text-sm leading-snug text-ink/90">
-                          {card.listBlurb}
-                        </span>
-                      ) : null}
-                      <span className="mt-1 block text-xs text-muted">
-                        {card.place}
-                      </span>
-                    </span>
-                  </button>
-                </li>
-              );
-            })}
-          </ol>
+          <div
+            ref={scrollerRef}
+            className="min-h-0 flex-1 overflow-y-auto p-3"
+            data-atlas-window={`${startIndex}-${endIndex}`}
+          >
+            <ol className="relative" style={{ height: totalHeight }}>
+              {windowCards.map((card, offset) => {
+                const index = startIndex + offset;
+                const active = card.id === focusId;
+                return (
+                  <AtlasVirtualRow
+                    key={card.id}
+                    card={card}
+                    index={index}
+                    top={offsetOf(index)}
+                    setSize={cards.length}
+                    active={active}
+                    flash={card.id === flashId}
+                    onSelect={selectFromList}
+                    onMeasure={measure}
+                  />
+                );
+              })}
+            </ol>
+          </div>
         </aside>
 
         <div
@@ -229,5 +220,83 @@ export function AtlasWorkspace({
         </article>
       ) : null}
     </section>
+  );
+}
+
+function AtlasVirtualRow({
+  card,
+  index,
+  top,
+  setSize,
+  active,
+  flash,
+  onSelect,
+  onMeasure,
+}: {
+  card: AtlasCard;
+  index: number;
+  top: number;
+  setSize: number;
+  active: boolean;
+  flash: boolean;
+  onSelect: (id: DossierId) => void;
+  onMeasure: (index: number, height: number) => void;
+}) {
+  const rowRef = useRef<HTMLLIElement>(null);
+
+  useLayoutEffect(() => {
+    const node = rowRef.current;
+    if (!node) {
+      return;
+    }
+    const publish = () => onMeasure(index, node.offsetHeight);
+    publish();
+    const observer = new ResizeObserver(publish);
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, [index, onMeasure]);
+
+  return (
+    <li
+      ref={rowRef}
+      className="atlas-list-row absolute right-0 left-0"
+      style={{ top }}
+      aria-setsize={setSize}
+      aria-posinset={index + 1}
+    >
+      <button
+        type="button"
+        id={`atlas-row-${card.id}`}
+        aria-pressed={active}
+        onClick={() => onSelect(card.id)}
+        className={
+          (flash ? "atlas-row-flash " : "") +
+          (active
+            ? "w-full overflow-hidden rounded-none border border-[#8a7030] bg-[#1c1812] text-left shadow-none"
+            : "w-full overflow-hidden rounded-none border border-[#3d3426] bg-[#1c1812] text-left shadow-none hover:border-[#8a7030]")
+        }
+      >
+        <span className="block overflow-hidden">
+          <Image
+            src={card.image}
+            alt={card.imageAlt}
+            width={416}
+            height={234}
+            className="h-auto w-full object-cover opacity-90"
+          />
+        </span>
+        <span className="block p-3">
+          <span className="font-display block text-xl leading-tight text-gold">
+            {card.title}
+          </span>
+          {card.listBlurb ? (
+            <span className="mt-1 block text-sm leading-snug text-ink/90">
+              {card.listBlurb}
+            </span>
+          ) : null}
+          <span className="mt-1 block text-xs text-muted">{card.place}</span>
+        </span>
+      </button>
+    </li>
   );
 }

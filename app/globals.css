@@ -323,6 +323,11 @@ a {
   animation: atlas-flash-border 0.55s ease-out;
 }
 
+.atlas-list-row {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 22rem;
+}
+
 @keyframes atlas-pin-flash {
   0%,
   50%,
