@@ -204,6 +204,7 @@ export function AtlasWorkspace({
               alt={opened.imageAlt}
               width={390}
               height={160}
+              sizes="26rem"
               className="pointer-events-none h-full w-full object-cover"
             />
           </div>

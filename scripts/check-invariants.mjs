@@ -93,9 +93,20 @@ if (pinSvg.includes("<circle") || pinSvg.includes("circumpunct")) {
   errors.push("Circumpunct must stay off the map pin");
 }
 
+const nextConfig = readFileSync(join(root, "next.config.ts"), "utf8");
+if (/unoptimized\s*:\s*true/.test(nextConfig)) {
+  errors.push("next/image must stay optimized so atlas list cards do not load full JPGs");
+}
+if (!nextConfig.includes("416")) {
+  errors.push("next/image imageSizes must include 416 to match list sizes=26rem");
+}
+
 const atlasWorkspace = readFileSync(join(root, "components/AtlasWorkspace.tsx"), "utf8");
 if (atlasWorkspace.includes("absolute bottom-3") || atlasWorkspace.includes("z-[800]")) {
   errors.push("Summary card must not float in a page corner");
+}
+if (!atlasWorkspace.includes('sizes="26rem"')) {
+  errors.push("Atlas list Image must keep sizes=26rem so the optimizer serves ~416w thumbs");
 }
 if (!atlasWorkspace.includes("kicker") || !atlasWorkspace.includes("{kicker}")) {
   errors.push("Atlas kicker must be rendered");
