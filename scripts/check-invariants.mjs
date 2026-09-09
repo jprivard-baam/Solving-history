@@ -98,15 +98,22 @@ if (/unoptimized\s*:\s*true/.test(nextConfig)) {
   errors.push("next/image must stay optimized so atlas list cards do not load full JPGs");
 }
 if (!nextConfig.includes("416")) {
-  errors.push("next/image imageSizes must include 416 to match list sizes=26rem");
+  errors.push("next/image imageSizes must include 416 for atlas list thumbs");
 }
 
 const atlasWorkspace = readFileSync(join(root, "components/AtlasWorkspace.tsx"), "utf8");
 if (atlasWorkspace.includes("absolute bottom-3") || atlasWorkspace.includes("z-[800]")) {
   errors.push("Summary card must not float in a page corner");
 }
-if (!atlasWorkspace.includes('sizes="26rem"')) {
-  errors.push("Atlas list Image must keep sizes=26rem so the optimizer serves ~416w thumbs");
+const listImage = atlasWorkspace.split("cards.map")[1]?.split("</ol>")[0] ?? "";
+if (listImage.includes("fill")) {
+  errors.push("Atlas list Image must not use fill (src fallback becomes w=3840)");
+}
+if (!listImage.includes("width={416}") || !listImage.includes("height={234}")) {
+  errors.push("Atlas list Image must be 416x234 so srcset stays in imageSizes");
+}
+if (/sizes=/.test(listImage)) {
+  errors.push("Atlas list Image must omit sizes (sizes without vw emits all deviceSizes including 3840)");
 }
 if (!atlasWorkspace.includes("kicker") || !atlasWorkspace.includes("{kicker}")) {
   errors.push("Atlas kicker must be rendered");

@@ -143,13 +143,13 @@ export function AtlasWorkspace({
                         : "w-full overflow-hidden rounded-none border border-[#3d3426] bg-[#1c1812] text-left shadow-none hover:border-[#8a7030]")
                     }
                   >
-                    <span className="relative block aspect-video">
+                    <span className="block overflow-hidden">
                       <Image
                         src={card.image}
                         alt={card.imageAlt}
-                        fill
-                        className="object-cover opacity-90"
-                        sizes="26rem"
+                        width={416}
+                        height={234}
+                        className="h-auto w-full object-cover opacity-90"
                       />
                     </span>
                     <span className="block p-3">
@@ -204,7 +204,6 @@ export function AtlasWorkspace({
               alt={opened.imageAlt}
               width={390}
               height={160}
-              sizes="26rem"
               className="pointer-events-none h-full w-full object-cover"
             />
           </div>

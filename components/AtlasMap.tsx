@@ -136,7 +136,6 @@ function PinLaidCard({
           alt={pin.imageAlt}
           width={280}
           height={158}
-          sizes="18rem"
           className="h-full w-full object-cover"
         />
       </div>
