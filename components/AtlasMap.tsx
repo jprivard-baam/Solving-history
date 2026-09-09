@@ -214,6 +214,24 @@ function PlacePin({
   return null;
 }
 
+function useLaidCardViewport() {
+  const [laid, setLaid] = useState(() =>
+    typeof window !== "undefined"
+      ? window.matchMedia("(min-width: 1024px)").matches
+      : true,
+  );
+
+  useEffect(() => {
+    const query = window.matchMedia("(min-width: 1024px)");
+    const sync = () => setLaid(query.matches);
+    sync();
+    query.addEventListener("change", sync);
+    return () => query.removeEventListener("change", sync);
+  }, []);
+
+  return laid;
+}
+
 export function AtlasMap({
   pins,
   selectedId,
@@ -235,6 +253,7 @@ export function AtlasMap({
 }) {
   const focused = pins.find((pin) => pin.id === selectedId) ?? null;
   const opened = pins.find((pin) => pin.id === openId) ?? null;
+  const showLaidCard = useLaidCardViewport();
 
   return (
     <MapContainer
@@ -258,7 +277,7 @@ export function AtlasMap({
           onClick={onPinClick}
         />
       ))}
-      {opened ? (
+      {opened && showLaidCard ? (
         <PinLaidCard
           pin={opened}
           openLabel={openLabel}

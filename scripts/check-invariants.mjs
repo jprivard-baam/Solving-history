@@ -116,6 +116,14 @@ const css = readFileSync(join(root, "app/globals.css"), "utf8");
 if (!css.includes("@keyframes atlas-pin-flash") || !css.includes(".atlas-pin-flash")) {
   errors.push("Pin red flash keyframes must stay");
 }
+if (
+  !atlasWorkspace.includes("atlas-pin-sheet") ||
+  !atlasWorkspace.includes("atlas-pin-sheet-actions") ||
+  !css.includes(".atlas-pin-sheet") ||
+  !css.includes("@media (max-width: 1023px)")
+) {
+  errors.push("Mobile pin detail must be a bottom sheet with pinned actions");
+}
 
 const remappedHooks = {
   en: [

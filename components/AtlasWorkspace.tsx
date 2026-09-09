@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { AtlasMapLoader } from "@/components/AtlasMapLoader";
 import type { DossierId } from "@/lib/dossiers";
 
@@ -83,6 +84,8 @@ export function AtlasWorkspace({
       ?.scrollIntoView({ block: "nearest" });
   }, [focusId]);
 
+  const opened = cards.find((card) => card.id === cardId) ?? null;
+
   const selectFromList = (id: DossierId) => {
     setFocusId(id);
     setCardId(null);
@@ -98,7 +101,7 @@ export function AtlasWorkspace({
   };
 
   return (
-    <section className="flex min-h-0 flex-1 flex-col">
+    <section className="relative flex min-h-0 flex-1 flex-col">
       <div className="border-b border-rule px-4 py-8 sm:px-6 lg:hidden">
         <h1 className="font-serif text-2xl uppercase tracking-[0.12em] text-gold">{title}</h1>
         <p className="font-serif mt-6 max-w-2xl text-lg font-normal italic leading-relaxed text-ink">
@@ -188,6 +191,43 @@ export function AtlasWorkspace({
           </div>
         </div>
       </div>
+
+      {opened ? (
+        <article
+          className="atlas-pin-sheet"
+          onClick={(event) => event.stopPropagation()}
+          onPointerDown={(event) => event.stopPropagation()}
+        >
+          <div className="atlas-pin-sheet-photo">
+            <Image
+              src={opened.image}
+              alt={opened.imageAlt}
+              width={390}
+              height={160}
+              className="pointer-events-none h-full w-full object-cover"
+            />
+          </div>
+          <div className="atlas-pin-sheet-body">
+            <p className="atlas-summary-meta">
+              {opened.place} · {opened.date}
+            </p>
+            <h2 className="atlas-summary-title">{opened.hook}</h2>
+            <p className="atlas-pin-sheet-lede">{opened.lede}</p>
+          </div>
+          <div className="atlas-pin-sheet-actions">
+            <button
+              type="button"
+              onClick={() => setCardId(null)}
+              className="atlas-pin-sheet-close"
+            >
+              {closeLabel}
+            </button>
+            <Link href={opened.href} className="atlas-pin-sheet-open">
+              {openLabel}
+            </Link>
+          </div>
+        </article>
+      ) : null}
     </section>
   );
 }
