@@ -9,8 +9,12 @@ export type MethodLayer = {
 
 export type DossierCopy = {
   title: string;
+  /** Atlas pin-card H2 only. Dossier page H1 stays `title`. */
+  cardHook: string;
   cardDate: string;
   place: string;
+  /** Brief list-card line. Empty until Rédaction/Textes delivers. */
+  listBlurb?: string;
   lede: string;
   imageAlt: string;
   imageCaption: string;
@@ -30,6 +34,7 @@ export type UiCopy = {
     atlas: string;
     mission: string;
     method: string;
+    shop: string;
     help: string;
   };
   language: {
@@ -40,8 +45,11 @@ export type UiCopy = {
   atlas: {
     kicker: string;
     title: string;
+    intro: string;
     lede: string;
     openDossier: string;
+    closeCard: string;
+    listLabel: string;
     mapLabel: string;
   };
   mission: {
@@ -57,9 +65,19 @@ export type UiCopy = {
     advancedLabel: string;
     layers: { title: string; body: string }[];
   };
+  shop: {
+    kicker: string;
+    title: string;
+    description: string;
+    intro: string;
+    body: string[];
+    emptyState: string;
+    toHelp: string;
+  };
   help: {
     kicker: string;
     title: string;
+    description: string;
     intro: string;
     paths: {
       id: "share" | "data" | "finance";
@@ -79,6 +97,13 @@ export type UiCopy = {
   footer: {
     line: string;
     robots: string;
+    copyright: string;
+  };
+  notFound: {
+    kicker: string;
+    title: string;
+    body: string;
+    back: string;
   };
 };
 

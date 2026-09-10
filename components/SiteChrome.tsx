@@ -18,12 +18,21 @@ export function SiteChrome({
 }) {
   const pathname = usePathname() ?? "/";
   const path = pathWithoutLocale(pathname);
+  const atlas = path === "/";
 
   return (
-    <>
+    <div
+      className={
+        atlas
+          ? "flex h-svh min-h-0 flex-col overflow-hidden"
+          : "flex min-h-svh flex-col"
+      }
+    >
       <SiteHeader locale={locale} dict={dict} path={path} />
-      <main className="flex-1">{children}</main>
+      <main className="relative z-0 isolate flex min-h-0 flex-1 flex-col">
+        {children}
+      </main>
       <SiteFooter dict={dict} />
-    </>
+    </div>
   );
 }

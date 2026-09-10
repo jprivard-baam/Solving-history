@@ -4,14 +4,15 @@ export const uiEn: UiCopy = {
   meta: {
     title: "Solving History",
     description:
-      "An unpublished atlas of open problems in ancient engineering. Measurements first. Not live.",
+      "An unpublished atlas of open problems in deep history and ancient engineering. A working table, not a channel. Not live.",
     notLive: "Not live. Not indexed.",
   },
   nav: {
     atlas: "Atlas",
     mission: "Mission",
     method: "Method",
-    help: "Help",
+    shop: "Boutique",
+    help: "Help us",
   },
   language: {
     en: "EN",
@@ -19,21 +20,26 @@ export const uiEn: UiCopy = {
     switchTo: "Français",
   },
   atlas: {
-    kicker: "Eight open files",
+    kicker: "Twenty-two open files",
     title: "Atlas",
-    lede: "A dark map of measured problems. Each pin is a dossier. Masses that were never weighed stay marked estimated. Dates say what they actually date.",
+    intro:
+      "A contradiction can not exist in reality. Not in part, nor in whole.",
+    lede: "To find an inconsistency, choose from the list or a pin on the map.",
     openDossier: "Open dossier",
-    mapLabel: "World atlas of the eight dossiers",
+    closeCard: "Close",
+    listLabel: "Dossier list",
+    mapLabel: "Atlas of open files",
   },
   mission: {
     kicker: "Why this atlas exists",
     title: "Mission",
     paragraphs: [
-      "Solving History is an atlas of open problems in deep history and ancient engineering. It is not a channel, not a shop, and not a finished book. It is a working table: eight files, one method, two languages.",
-      "The public conversation around these sites is loud and thin. Blocks become heavier with each retelling. Dates stretch to fit a thesis. A plaster sample is treated as if it were the monument. A unique survival is treated as if it had no workshop behind it.",
-      "This project holds a narrower rule. If a mass is estimated from volume and density, the card says estimated. If a radiocarbon date sits on plaster, the card says plaster. If a popular range is wider than the paper, the paper wins. Folklore is not banned; it is taken off the pin.",
-      "The atlas is bilingual because the questions are not national. English carries much of the technical literature. French is the other public language of the project. Neither version is a summary of the other.",
-      "The site is not live. Robots are told noindex, nofollow. There is no storefront and no checkout. Help is three paths — share a mystery, bring data or a specialty, or help financially when that path can exist without turning the atlas into a cart.",
+      "On the ground, works remain that no living culture really explains: giant cut stone, aligned structures, objects of laboratory precision, monuments too mathematically exact to be the product of chance. Some so impressive we could not replicate them today.",
+      "People built, measured, organized. They are gone. What remains is the trace of a human world that rose, built something larger than itself, then died out.",
+      "An unexplained monument reduced to a postcard is a second death for the society that left it.",
+      "Some of what they left may be a message placed on purpose, a technical archive, or a warning.",
+      "The aim is not a new dogma. It is to see more clearly: who was there, what they knew how to do, how a world at full strength can end.",
+      "In short, to solve the mysteries of our history."
     ],
   },
   methodPage: {
@@ -42,6 +48,7 @@ export const uiEn: UiCopy = {
     intro: [
       "Every dossier on this atlas is cut the same way. Four layers, in order. A common register for the reader who wants the problem in clear language. An advanced register for the reader who wants the sample, the kilogram, and the citation.",
       "The layers are not a ladder toward a secret. They are a filter. What is on the ground. What the date actually dates. What mechanism carries the work with the fewest inventions. What still does not hold.",
+      "The method is the Mission’s narrower rule, applied to a file. Estimated stays estimated. A date says what it dates. Folklore is not banned; it is taken off the pin.",
     ],
     commonLabel: "Common",
     advancedLabel: "Advanced",
@@ -64,17 +71,29 @@ export const uiEn: UiCopy = {
       },
     ],
   },
+  shop: {
+    kicker: "",
+    title: "Boutique",
+    description: "The shop will open shortly.",
+    intro: "The shop will open shortly.",
+    body: [],
+    emptyState: "The shop will open shortly.",
+    toHelp: "Help us",
+  },
   help: {
-    kicker: "Three paths, no storefront",
-    title: "Help",
-    intro: "The atlas is unpublished. Help is not a shop. Three paths are open as intention. None of them processes a payment.",
+    kicker: "Three paths, no till",
+    title: "Help us",
+    description:
+      "Three paths to sharpen an unpublished atlas. Share a file. Bring data or a specialty. Help financially — this path does not take a payment.",
+    intro: "The atlas is a working table, unpublished. It gets sharper when a file can be checked. Help is not a purchase. Three paths are open. None of them takes a payment.",
     paths: [
       {
         id: "share",
-        title: "Share the mystery",
+        title: "Share",
         body: [
           "A site, a block, a crack, a photograph with a scale, a measurement taken on the ground. Not a finished theory. The file.",
-          "When correspondence opens, this path will carry an address. Until then, keep the notes: place, datum, how the number was obtained, and what remains estimated.",
+          "A rumor without a place is not a file.",
+          "Until this path carries an address, keep the notes: place, how the figure was obtained, and what remains estimated.",
         ],
       },
       {
@@ -82,15 +101,15 @@ export const uiEn: UiCopy = {
         title: "Data + specialty",
         body: [
           "Petrography, epigraphy, photogrammetry, geodesy, experimental archaeology, the languages of the primary sources. A specialty is useful when it can correct a card.",
-          "The atlas would rather have one weighed density than another legend. If you work in a field that can tighten a mass, a date, or a misnamed stone, that is this path.",
+          "The atlas would rather have one weighed density than another legend. If a field can tighten a mass, a date, or a misnamed stone, that is this path.",
         ],
       },
       {
         id: "finance",
         title: "Help financially",
         body: [
-          "There is no checkout on this site. No cart, no processor, no SKU, no shop. /shop is sent to this page on purpose.",
-          "Financial help, when it exists, will be listed here as an address or a public statement — not as a product. Until then this path is a placeholder, not a payment.",
+          "There is no checkout on this site. No cart, no processor, no product. Boutique is a room without a till. This path is not a second shop.",
+          "When financial help can exist without turning the atlas into a cart, it will be listed here as an address or a public statement — not as a SKU. Until then this path names an intention. It does not collect a payment.",
         ],
       },
     ],
@@ -105,7 +124,14 @@ export const uiEn: UiCopy = {
   },
   pathsTitle: "Three paths",
   footer: {
-    line: "Solving History — unpublished atlas. Eight dossiers. No shop.",
+    line: "Solving History — unpublished atlas. A working table. No checkout.",
     robots: "robots: noindex, nofollow",
+    copyright: "© 2026 Solving History",
+  },
+  notFound: {
+    kicker: "404",
+    title: "Solving History",
+    body: "This file is not on the atlas.",
+    back: "Atlas",
   },
 };

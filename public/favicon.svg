@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Solving History">
   <rect width="32" height="32" fill="#14110c"/>
-  <circle cx="16" cy="16" r="6" fill="none" stroke="#c9a44a" stroke-width="1.5"/>
-  <circle cx="16" cy="16" r="1.5" fill="#c9a44a"/>
+  <path d="M8 12 H24 M16 12 L10.5 23 M16 12 L21.5 23"
+        fill="none" stroke="#c9a44a" stroke-width="1.9" stroke-linecap="square" stroke-linejoin="miter"/>
 </svg>

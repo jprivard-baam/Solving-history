@@ -11,7 +11,8 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   if (!isLocale(locale)) return {};
-  return { title: getDictionary(locale).help.title };
+  const help = getDictionary(locale).help;
+  return { title: help.title, description: help.description };
 }
 
 export default async function HelpPage({

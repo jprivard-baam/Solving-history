@@ -12,9 +12,6 @@ export function FrResearchExtras({ research }: { research: FrResearchPayload }) 
         <h2 id="fr-help-roles" className="font-display text-2xl text-gold">
           {FIELD_LABELS.help}
         </h2>
-        <p className="mt-1 text-[0.7rem] uppercase tracking-[0.18em] text-gold-dim">
-          help
-        </p>
         <ul className="mt-4 space-y-4">
           {research.help.map((item) => (
             <li key={item.role} className="border border-rule bg-paper-2 p-4">
@@ -29,9 +26,6 @@ export function FrResearchExtras({ research }: { research: FrResearchPayload }) 
         <h2 id="fr-sources" className="font-display text-2xl text-gold">
           {FIELD_LABELS.sources}
         </h2>
-        <p className="mt-1 text-[0.7rem] uppercase tracking-[0.18em] text-gold-dim">
-          sources
-        </p>
         <ol className="mt-4 list-decimal space-y-3 pl-5 text-sm leading-relaxed text-muted">
           {research.sources.map((s) => (
             <li key={s.cite}>
